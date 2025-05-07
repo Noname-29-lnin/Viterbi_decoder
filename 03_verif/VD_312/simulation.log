@@ -1,0 +1,5 @@
+Time=              115000, i_rst_n=1, i_start=1, i_data=1101010001010011, o_data=11011010, o_valid=1, TestCase=PASS, BER_in=1.000000, BER_out=0.000000
+Time=              225000, i_rst_n=1, i_start=1, i_data=1110001000100011, o_data=10101010, o_valid=1, TestCase=PASS, BER_in=1.000000, BER_out=0.000000
+Time=              335000, i_rst_n=1, i_start=1, i_data=0000000000000111, o_data=00000001, o_valid=1, TestCase=PASS, BER_in=1.000000, BER_out=0.000000
+Time=              445000, i_rst_n=1, i_start=1, i_data=0000110101111101, o_data=00110011, o_valid=1, TestCase=PASS, BER_in=0.000000, BER_out=0.000000
+- tb_viterbi.sv:105: Verilog $finish
