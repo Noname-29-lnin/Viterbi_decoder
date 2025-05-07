@@ -1,0 +1,60 @@
+Starting Add_unit testbench...
+============================
+Test case 1: PASS - Inputs: 00 + 00 | Output: 00 | Expected: 00
+Test case 2: PASS - Inputs: 00 + 01 | Output: 01 | Expected: 01
+Test case 3: PASS - Inputs: 00 + 10 | Output: 10 | Expected: 10
+Test case 4: PASS - Inputs: 00 + 11 | Output: 11 | Expected: 11
+Test case 5: PASS - Inputs: 01 + 00 | Output: 01 | Expected: 01
+Test case 6: PASS - Inputs: 01 + 01 | Output: 10 | Expected: 10
+Test case 7: PASS - Inputs: 01 + 10 | Output: 11 | Expected: 11
+Test case 8: PASS - Inputs: 01 + 11 | Output: 11 | Expected: 11
+Test case 9: PASS - Inputs: 10 + 00 | Output: 10 | Expected: 10
+Test case 10: PASS - Inputs: 10 + 01 | Output: 11 | Expected: 11
+Test case 11: PASS - Inputs: 10 + 10 | Output: 11 | Expected: 11
+Test case 12: PASS - Inputs: 10 + 11 | Output: 11 | Expected: 11
+Test case 13: PASS - Inputs: 11 + 00 | Output: 11 | Expected: 11
+Test case 14: PASS - Inputs: 11 + 01 | Output: 11 | Expected: 11
+Test case 15: PASS - Inputs: 11 + 10 | Output: 11 | Expected: 11
+Test case 16: PASS - Inputs: 11 + 11 | Output: 11 | Expected: 11
+Test case 17: PASS - Inputs: 00 + 00 | Output: 00 | Expected: 00
+Test case 18: PASS - Inputs: 10 + 00 | Output: 10 | Expected: 10
+Test case 19: PASS - Inputs: 00 + 00 | Output: 00 | Expected: 00
+Test case 20: PASS - Inputs: 10 + 00 | Output: 10 | Expected: 10
+Test case 21: PASS - Inputs: 11 + 11 | Output: 11 | Expected: 11
+Test case 22: PASS - Inputs: 01 + 01 | Output: 10 | Expected: 10
+Test case 23: PASS - Inputs: 01 + 10 | Output: 11 | Expected: 11
+Test case 24: PASS - Inputs: 10 + 01 | Output: 11 | Expected: 11
+Test case 25: PASS - Inputs: 10 + 10 | Output: 11 | Expected: 11
+Test case 26: PASS - Inputs: 01 + 00 | Output: 01 | Expected: 01
+Test case 27: PASS - Inputs: 11 + 00 | Output: 11 | Expected: 11
+Test case 28: PASS - Inputs: 10 + 00 | Output: 10 | Expected: 10
+Test case 29: PASS - Inputs: 10 + 10 | Output: 11 | Expected: 11
+Test case 30: PASS - Inputs: 10 + 10 | Output: 11 | Expected: 11
+Test case 31: PASS - Inputs: 00 + 10 | Output: 10 | Expected: 10
+Test case 32: PASS - Inputs: 11 + 00 | Output: 11 | Expected: 11
+Test case 33: PASS - Inputs: 01 + 10 | Output: 11 | Expected: 11
+Test case 34: PASS - Inputs: 10 + 01 | Output: 11 | Expected: 11
+Test case 35: PASS - Inputs: 11 + 00 | Output: 11 | Expected: 11
+Test case 36: PASS - Inputs: 11 + 10 | Output: 11 | Expected: 11
+Test case 37: PASS - Inputs: 11 + 01 | Output: 11 | Expected: 11
+Test case 38: PASS - Inputs: 10 + 11 | Output: 11 | Expected: 11
+Test case 39: PASS - Inputs: 10 + 00 | Output: 10 | Expected: 10
+Test case 40: PASS - Inputs: 11 + 11 | Output: 11 | Expected: 11
+Test case 41: PASS - Inputs: 00 + 10 | Output: 10 | Expected: 10
+Test case 42: PASS - Inputs: 10 + 11 | Output: 11 | Expected: 11
+Test case 43: PASS - Inputs: 01 + 11 | Output: 11 | Expected: 11
+Test case 44: PASS - Inputs: 11 + 00 | Output: 11 | Expected: 11
+Test case 45: PASS - Inputs: 01 + 11 | Output: 11 | Expected: 11
+Test case 46: PASS - Inputs: 11 + 00 | Output: 11 | Expected: 11
+Test case 47: PASS - Inputs: 11 + 01 | Output: 11 | Expected: 11
+Test case 48: PASS - Inputs: 01 + 10 | Output: 11 | Expected: 11
+Test case 49: PASS - Inputs: 01 + 11 | Output: 11 | Expected: 11
+Test case 50: PASS - Inputs: 00 + 11 | Output: 11 | Expected: 11
+
+Test Summary:
+=============
+Total tests : 50
+Passed      : 50
+Failed      : 0
+Pass rate   : 100.00%
+- tb_addunit.sv:88: Verilog $finish

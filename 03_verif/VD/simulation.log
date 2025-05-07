@@ -1,0 +1,30 @@
+Starting Viterbi (3,1,2) Decoder Testbench
+=========================================
+Reset released at 20000 ps
+Time =                26000 	| i_rst_n = 1 	| i_data = 0 	| o_data = 0 	| o_valid = 1 	|
+
+Time =                36000 	| i_rst_n = 1 	| i_data = 3 	| o_data = 0 	| o_valid = 1 	|
+
+Time =                46000 	| i_rst_n = 1 	| i_data = 2 	| o_data = 1 	| o_valid = 1 	|
+
+Time =                56000 	| i_rst_n = 1 	| i_data = 0 	| o_data = 0 	| o_valid = 1 	|
+
+Time =                66000 	| i_rst_n = 1 	| i_data = 2 	| o_data = 1 	| o_valid = 1 	|
+
+Time =                76000 	| i_rst_n = 1 	| i_data = 0 	| o_data = 0 	| o_valid = 1 	|
+
+Time =                86000 	| i_rst_n = 1 	| i_data = 1 	| o_data = 1 	| o_valid = 1 	|
+
+Time =                96000 	| i_rst_n = 1 	| i_data = 2 	| o_data = 1 	| o_valid = 1 	|
+
+Time =               106000 	| i_rst_n = 1 	| i_data = 3 	| o_data = 1 	| o_valid = 1 	|
+
+Time =               116000 	| i_rst_n = 1 	| i_data = 1 	| o_data = 0 	| o_valid = 1 	|
+
+Time =               126000 	| i_rst_n = 1 	| i_data = 3 	| o_data = 0 	| o_valid = 1 	|
+
+Time =               136000 	| i_rst_n = 1 	| i_data = 0 	| o_data = 0 	| o_valid = 1 	|
+
+Testbench completed successfully
+==================================
+- tb_viterbi_decoder.sv:63: Verilog $finish

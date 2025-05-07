@@ -1,0 +1,213 @@
+module add_compare_select_unit(
+    input logic        i_clk,
+    input logic        i_rst_n,
+    input logic        i_en,
+
+    input logic [1:0]  i_BM_0,
+    input logic [1:0]  i_BM_1,
+    input logic [1:0]  i_BM_2,
+    input logic [1:0]  i_BM_3,
+
+	input logic [1:0]  i_PM_0,
+    input logic [1:0]  i_PM_1,
+    input logic [1:0]  i_PM_2,
+    input logic [1:0]  i_PM_3,
+
+    output logic [1:0]  o_PM_0,
+    output logic [1:0]  o_PM_1,
+    output logic [1:0]  o_PM_2,
+    output logic [1:0]  o_PM_3,
+
+    output logic [1:0]  o_SP_0,
+    output logic [1:0]  o_SP_1,
+    output logic [1:0]  o_SP_2,
+    output logic [1:0]  o_SP_3,
+
+    output logic        o_done      // when o_done = 1, the unit has finished the computation
+);
+
+// Add
+wire [1:0] w_metric_0, w_metric_1, w_metric_2, w_metric_3;
+wire w_select_0, w_select_1, w_select_2, w_select_3;
+wire [1:0] w_oPM0, w_oPM1, w_oPM2, w_oPM3;
+wire [1:0] w_oSP0, w_oSP1, w_oSP2, w_oSP3;
+Carry_Save_Adder CSA0(
+    .i_a		(i_BM_0),
+    .i_b		(i_PM_0),
+    .o_sum	(w_metric_0)
+);
+Carry_Save_Adder CSA1(
+    .i_a		(i_BM_1),
+    .i_b		(i_PM_1),
+    .o_sum	(w_metric_1)
+);
+Carry_Save_Adder CSA2(
+    .i_a		(i_BM_2),
+    .i_b		(i_PM_2),
+    .o_sum	(w_metric_2)
+);
+Carry_Save_Adder CSA3(
+    .i_a		(i_BM_3),
+    .i_b		(i_PM_3),
+    .o_sum	(w_metric_3)
+);
+
+// Compare
+// State 0
+Compare_Less CP0(
+		.i_a		(w_metric_0),
+		.i_b		(w_metric_1),
+		.o_less	(w_select_0)
+);
+// State 1
+Compare_Less CP1(
+		.i_a		(w_metric_2),
+		.i_b		(w_metric_3),
+		.o_less	(w_select_1)
+);
+// State 2
+Compare_Less CP2(
+		.i_a		(w_metric_0),
+		.i_b		(w_metric_1),
+		.o_less	(w_select_2)
+);
+// State 3
+Compare_Less CP3(
+		.i_a		(w_metric_2),
+		.i_b		(w_metric_3),
+		.o_less	(w_select_3)
+);
+
+// Select
+Select SL0(
+	.i_a			(w_metric_0),
+	.i_b			(w_metric_1),
+	.i_select	    (w_select_0),
+	.o_data		    (w_oPM_0)
+);
+Select SL1(
+	.i_a			(w_metric_2),
+	.i_b			(w_metric_3),
+	.i_select	    (w_selet_1),
+	.o_data		    (w_oPM_1)
+);
+Select SL2(
+	.i_a			(w_metric_0),
+	.i_b			(w_metric_1),
+	.i_select	    (w_selet_2),
+	.o_data		    (w_oPM_2)
+);
+Select SL3(
+	.i_a			(w_metric_2),
+	.i_b			(w_metric_3),
+	.i_select	    (w_selet_3),
+	.o_data		    (w_oPM_3)
+);
+
+// o_SP
+assign w_oSP_0 = w_select_0 ? 2'b00 : 2'b01;
+assign w_oSP_1 = w_select_1 ? 2'b10 : 2'b11;
+assign w_oSP_2 = w_select_2 ? 2'b00 : 2'b01;
+assign w_oSP_3 = w_select_3 ? 2'b10 : 2'b11;
+
+// output
+always_ff @(posedge i_clk or negedge i_rst_n) begin
+    if(~i_rst_n) begin
+        o_done <= 1'b0;
+        o_PM_0 <= 2'b00;
+        o_PM_1 <= 2'b00;
+        o_PM_2 <= 2'b00;
+        o_PM_3 <= 2'b00;
+        o_SP_0 <= 2'b00;
+        o_SP_1 <= 2'b00;
+        o_SP_2 <= 2'b00;
+        o_SP_3 <= 2'b00;
+    end else begin
+        if(~i_en) begin
+            o_done <= 1'b0;
+            o_PM_0 <= 2'b00;
+            o_PM_1 <= 2'b00;
+            o_PM_2 <= 2'b00;
+            o_PM_3 <= 2'b00;
+            o_SP_0 <= 2'b00;
+            o_SP_1 <= 2'b00;
+            o_SP_2 <= 2'b00;
+            o_SP_3 <= 2'b00;
+        end else begin
+            o_done <= 1'b1;
+            o_PM_0 <= w_oPM_0;
+            o_PM_1 <= w_oPM_1;
+            o_PM_2 <= w_oPM_2;
+            o_PM_3 <= w_oPM_3;
+            o_SP_0 <= w_oSP_0;
+            o_SP_1 <= w_oSP_1;
+            o_SP_2 <= w_oSP_2;
+            o_SP_3 <= w_oSP_3;
+        end
+    end
+end
+endmodule
+
+module Full_Adder(
+    input  logic i_a,
+    input  logic i_b,
+    input  logic i_carry,
+    output logic o_sum,
+    output logic o_carry
+);
+    assign o_sum = i_a ^ i_b ^ i_carry;
+    assign o_carry = (i_a & i_b) | (i_b & i_carry) | (i_carry & i_a);
+endmodule
+
+module Carry_Save_Adder(
+    input  logic [1:0] i_a,
+    input  logic [1:0] i_b,
+    output logic [1:0] o_sum
+);
+// Nếu giá trị i_a + i_b vượt quá 3, ta cho giá trị o_sum = 3
+logic [2:0] sum;
+logic c0, c1;
+
+Full_Adder fa0 (
+    .i_a(i_a[0]),
+    .i_b(i_b[0]),
+    .i_carry(0),
+    .o_sum(sum[0]),
+    .o_carry(c0)
+);
+Full_Adder fa1 (
+    .i_a(i_a[1]),
+    .i_b(i_b[1]),
+    .i_carry(c0),
+    .o_sum(sum[1]),
+    .o_carry(c1)
+);
+Full_Adder fa2 (
+    .i_a(1'b0),
+    .i_b(1'b0),
+    .i_carry(c1),
+    .o_sum(sum[2]),
+    .o_carry()
+);
+assign o_sum = (sum[2]) ? 2'b11 : sum[1:0];
+endmodule
+
+module Compare_Less(
+	input logic [1:0] 	i_a,
+	input logic [1:0]	i_b,
+	
+	output logic		o_less
+);
+
+assign o_less = (~i_a[1] & i_b[1]) | (~i_a[0] & ~i_a[1] & i_b[0]) | (~i_a[0] & i_a[1] & i_b[0] & i_b[1]);
+
+endmodule
+
+module Select(
+	input logic [1:0] 	i_a,
+	input logic [1:0]   i_b,
+	input logic         i_select,
+	output logic [1:0]	o_data
+);
+	assign o_data = (i_select) ? i_a : i_b;
+endmodule

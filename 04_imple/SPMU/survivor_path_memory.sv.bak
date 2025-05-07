@@ -1,0 +1,73 @@
+module survivor_path_memory #(
+    parameter K = 9   // Constraint Length
+)(
+    input  logic        i_clk,
+    input  logic        i_rst_n,
+    input  logic        i_en,
+    
+    // Input từ ACSU
+    input  logic [1:0]  i_SP_0, i_SP_1, i_SP_2, i_SP_3, // Survivor Path
+    input  logic [1:0]  i_PM_0, i_PM_1, i_PM_2, i_PM_3, // Path Metric
+    input  logic        i_done,  // Báo hiệu ACSU hoàn thành cập nhật
+    
+    // Output dữ liệu giải mã
+    output logic        o_decoded_bit,
+    output logic        o_valid
+);
+
+    // Lưu lịch sử path trong `K` bước
+    logic [1:0] survivor_memory [0:K-1];
+
+    // Trạng thái traceback
+    logic [1:0] state;
+    logic [3:0] traceback_index; // Đếm bước traceback
+
+    // Tìm trạng thái có Path Metric nhỏ nhất
+    always_ff @(posedge i_clk or negedge i_rst_n) begin
+        if (~i_rst_n) begin
+            state <= 2'b00;
+        end else if (i_done) begin
+            if (i_PM_0 <= i_PM_1 && i_PM_0 <= i_PM_2 && i_PM_0 <= i_PM_3) begin
+                state <= 2'b00;
+            end else if (i_PM_1 <= i_PM_0 && i_PM_1 <= i_PM_2 && i_PM_1 <= i_PM_3) begin
+                state <= 2'b01;
+            end else if (i_PM_2 <= i_PM_0 && i_PM_2 <= i_PM_1 && i_PM_2 <= i_PM_3) begin
+                state <= 2'b10;
+            end else begin
+                state <= 2'b11;
+            end
+        end
+    end
+
+    // Lưu survivor path vào bộ nhớ
+    always_ff @(posedge i_clk or negedge i_rst_n) begin
+        if (~i_rst_n) begin
+            survivor_memory <= '{default: 0};
+        end else if (i_done) begin
+            survivor_memory[0] <= (state == 2'b00) ? i_SP_0 :
+                                  (state == 2'b01) ? i_SP_1 :
+                                  (state == 2'b10) ? i_SP_2 : i_SP_3;
+            for (int i = 1; i < K; i++) begin
+                survivor_memory[i] <= survivor_memory[i - 1];
+            end
+        end
+    end
+
+    // Traceback để xuất bit giải mã
+    always_ff @(posedge i_clk or negedge i_rst_n) begin
+        if (~i_rst_n) begin
+            traceback_index <= 0;
+            o_decoded_bit <= 0;
+            o_valid <= 0;
+        end else if (i_done && i_en) begin
+            if (traceback_index < K) begin
+                o_decoded_bit <= survivor_memory[traceback_index][0]; // Lấy LSB làm bit quyết định
+                traceback_index <= traceback_index + 1;
+                o_valid <= 1;
+            end else begin
+                o_valid <= 0;
+            end
+        end
+    end
+
+endmodule

@@ -1,0 +1,58 @@
+|survivor_path_memory
+i_clk => i_clk.IN1
+i_rst_n => i_rst_n.IN1
+i_path_metric_0[0] => i_path_metric_0[0].IN1
+i_path_metric_0[1] => i_path_metric_0[1].IN1
+i_path_metric_1[0] => i_path_metric_1[0].IN1
+i_path_metric_1[1] => i_path_metric_1[1].IN1
+i_path_metric_2[0] => i_path_metric_2[0].IN1
+i_path_metric_2[1] => i_path_metric_2[1].IN1
+i_path_metric_3[0] => i_path_metric_3[0].IN1
+i_path_metric_3[1] => i_path_metric_3[1].IN1
+o_decision_bit <= state_machine:comb_3.o_data
+o_done <= state_machine:comb_3.o_done
+
+
+|survivor_path_memory|Compare_unit:CP_02
+i_path_metric_0[0] => o_less_select.IN0
+i_path_metric_0[0] => o_less_select.IN0
+i_path_metric_0[1] => o_less_select.IN1
+i_path_metric_0[1] => o_less_select.IN0
+i_path_metric_0[1] => o_less_select.IN0
+i_path_metric_0[1] => o_less_select.IN1
+i_path_metric_1[0] => o_less_select.IN1
+i_path_metric_1[0] => o_less_select.IN0
+i_path_metric_1[0] => o_less_select.IN1
+i_path_metric_1[1] => o_less_select.IN1
+i_path_metric_1[1] => o_less_select.IN1
+o_less_select <= o_less_select.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|survivor_path_memory|Compare_unit:CP_13
+i_path_metric_0[0] => o_less_select.IN0
+i_path_metric_0[0] => o_less_select.IN0
+i_path_metric_0[1] => o_less_select.IN1
+i_path_metric_0[1] => o_less_select.IN0
+i_path_metric_0[1] => o_less_select.IN0
+i_path_metric_0[1] => o_less_select.IN1
+i_path_metric_1[0] => o_less_select.IN1
+i_path_metric_1[0] => o_less_select.IN0
+i_path_metric_1[0] => o_less_select.IN1
+i_path_metric_1[1] => o_less_select.IN1
+i_path_metric_1[1] => o_less_select.IN1
+o_less_select <= o_less_select.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|survivor_path_memory|state_machine:comb_3
+i_clk => state~1.DATAIN
+i_rst_n => state~3.DATAIN
+i_comare_02 => nstate.S0.DATAB
+i_comare_02 => data.DATAB
+i_comare_02 => nstate.S2.DATAB
+i_comare_13 => nstate.S1.DATAA
+i_comare_13 => data.DATAA
+i_comare_13 => nstate.S0.DATAA
+o_data <= data.DB_MAX_OUTPUT_PORT_TYPE
+o_done <= <VCC>
+
+
