@@ -1,0 +1,105 @@
+Time =                    0 	| wrt_n = 0 |
+Transmitter: 	 | w_tx_en = 0 	| w_fifo_empty = 0 	| w_idata = 00000000 	| w_uart_data = 0 	| o_tx_done = 0
+Receiver: 	 | w_rx_en = 0 	| w_fifo_full = 0 	| w_uart_data = 0 	| w_odata = 00000000 	| o_rx_done = 0
+---------------------------------------------------------
+Time =                10000 	| wrt_n = 0 |
+Transmitter: 	 | w_tx_en = 0 	| w_fifo_empty = 0 	| w_idata = 00000000 	| w_uart_data = 1 	| o_tx_done = 0
+Receiver: 	 | w_rx_en = 0 	| w_fifo_full = 0 	| w_uart_data = 1 	| w_odata = 00000000 	| o_rx_done = 0
+---------------------------------------------------------
+Time =               140000 	| wrt_n = 1 |
+Transmitter: 	 | w_tx_en = 1 	| w_fifo_empty = 0 	| w_idata = 00101001 	| w_uart_data = 1 	| o_tx_done = 0
+Receiver: 	 | w_rx_en = 1 	| w_fifo_full = 0 	| w_uart_data = 1 	| w_odata = 00000000 	| o_rx_done = 0
+---------------------------------------------------------
+Time =               170000 	| wrt_n = 1 |
+Transmitter: 	 | w_tx_en = 1 	| w_fifo_empty = 0 	| w_idata = 00101001 	| w_uart_data = 0 	| o_tx_done = 0
+Receiver: 	 | w_rx_en = 1 	| w_fifo_full = 0 	| w_uart_data = 0 	| w_odata = 00000000 	| o_rx_done = 0
+---------------------------------------------------------
+Time =             97870000 	| wrt_n = 1 |
+Transmitter: 	 | w_tx_en = 1 	| w_fifo_empty = 0 	| w_idata = 00101001 	| w_uart_data = 1 	| o_tx_done = 0
+Receiver: 	 | w_rx_en = 1 	| w_fifo_full = 0 	| w_uart_data = 1 	| w_odata = 00000000 	| o_rx_done = 0
+---------------------------------------------------------
+Time =            195670000 	| wrt_n = 1 |
+Transmitter: 	 | w_tx_en = 1 	| w_fifo_empty = 0 	| w_idata = 00101001 	| w_uart_data = 0 	| o_tx_done = 0
+Receiver: 	 | w_rx_en = 1 	| w_fifo_full = 0 	| w_uart_data = 0 	| w_odata = 00000000 	| o_rx_done = 0
+---------------------------------------------------------
+Time =            391270000 	| wrt_n = 1 |
+Transmitter: 	 | w_tx_en = 1 	| w_fifo_empty = 0 	| w_idata = 00101001 	| w_uart_data = 1 	| o_tx_done = 0
+Receiver: 	 | w_rx_en = 1 	| w_fifo_full = 0 	| w_uart_data = 1 	| w_odata = 00000000 	| o_rx_done = 0
+---------------------------------------------------------
+Time =            489070000 	| wrt_n = 1 |
+Transmitter: 	 | w_tx_en = 1 	| w_fifo_empty = 0 	| w_idata = 00101001 	| w_uart_data = 0 	| o_tx_done = 0
+Receiver: 	 | w_rx_en = 1 	| w_fifo_full = 0 	| w_uart_data = 0 	| w_odata = 00000000 	| o_rx_done = 0
+---------------------------------------------------------
+Time =            586870000 	| wrt_n = 1 |
+Transmitter: 	 | w_tx_en = 1 	| w_fifo_empty = 0 	| w_idata = 00101001 	| w_uart_data = 1 	| o_tx_done = 0
+Receiver: 	 | w_rx_en = 1 	| w_fifo_full = 0 	| w_uart_data = 1 	| w_odata = 00000000 	| o_rx_done = 0
+---------------------------------------------------------
+Time =            684670000 	| wrt_n = 1 |
+Transmitter: 	 | w_tx_en = 1 	| w_fifo_empty = 0 	| w_idata = 00101001 	| w_uart_data = 0 	| o_tx_done = 0
+Receiver: 	 | w_rx_en = 1 	| w_fifo_full = 0 	| w_uart_data = 0 	| w_odata = 00000000 	| o_rx_done = 0
+---------------------------------------------------------
+Time =            880270000 	| wrt_n = 1 |
+Transmitter: 	 | w_tx_en = 1 	| w_fifo_empty = 0 	| w_idata = 00101001 	| w_uart_data = 1 	| o_tx_done = 0
+Receiver: 	 | w_rx_en = 1 	| w_fifo_full = 0 	| w_uart_data = 1 	| w_odata = 00000000 	| o_rx_done = 0
+---------------------------------------------------------
+Time =            978050000 	| wrt_n = 1 |
+Transmitter: 	 | w_tx_en = 1 	| w_fifo_empty = 0 	| w_idata = 00101001 	| w_uart_data = 1 	| o_tx_done = 1
+Receiver: 	 | w_rx_en = 1 	| w_fifo_full = 0 	| w_uart_data = 1 	| w_odata = 00000000 	| o_rx_done = 0
+---------------------------------------------------------
+Time =            978070000 	| wrt_n = 1 |
+Transmitter: 	 | w_tx_en = 1 	| w_fifo_empty = 0 	| w_idata = 00101001 	| w_uart_data = 1 	| o_tx_done = 0
+Receiver: 	 | w_rx_en = 1 	| w_fifo_full = 0 	| w_uart_data = 1 	| w_odata = 00000000 	| o_rx_done = 0
+---------------------------------------------------------
+Time =            978090000 	| wrt_n = 1 |
+Transmitter: 	 | w_tx_en = 1 	| w_fifo_empty = 0 	| w_idata = 00101001 	| w_uart_data = 0 	| o_tx_done = 0
+Receiver: 	 | w_rx_en = 1 	| w_fifo_full = 0 	| w_uart_data = 0 	| w_odata = 00000000 	| o_rx_done = 0
+---------------------------------------------------------
+Time =           1030210000 	| wrt_n = 1 |
+Transmitter: 	 | w_tx_en = 1 	| w_fifo_empty = 0 	| w_idata = 00101001 	| w_uart_data = 0 	| o_tx_done = 0
+Receiver: 	 | w_rx_en = 1 	| w_fifo_full = 0 	| w_uart_data = 0 	| w_odata = 00101001 	| o_rx_done = 1
+---------------------------------------------------------
+Time =           1030230000 	| wrt_n = 1 |
+Transmitter: 	 | w_tx_en = 1 	| w_fifo_empty = 0 	| w_idata = 00101001 	| w_uart_data = 0 	| o_tx_done = 0
+Receiver: 	 | w_rx_en = 1 	| w_fifo_full = 0 	| w_uart_data = 0 	| w_odata = 00101001 	| o_rx_done = 0
+---------------------------------------------------------
+Time =           1075870000 	| wrt_n = 1 |
+Transmitter: 	 | w_tx_en = 1 	| w_fifo_empty = 0 	| w_idata = 00101001 	| w_uart_data = 1 	| o_tx_done = 0
+Receiver: 	 | w_rx_en = 1 	| w_fifo_full = 0 	| w_uart_data = 1 	| w_odata = 00101001 	| o_rx_done = 0
+---------------------------------------------------------
+Time =           1173670000 	| wrt_n = 1 |
+Transmitter: 	 | w_tx_en = 1 	| w_fifo_empty = 0 	| w_idata = 00101001 	| w_uart_data = 0 	| o_tx_done = 0
+Receiver: 	 | w_rx_en = 1 	| w_fifo_full = 0 	| w_uart_data = 0 	| w_odata = 00101001 	| o_rx_done = 0
+---------------------------------------------------------
+Time =           1369270000 	| wrt_n = 1 |
+Transmitter: 	 | w_tx_en = 1 	| w_fifo_empty = 0 	| w_idata = 00101001 	| w_uart_data = 1 	| o_tx_done = 0
+Receiver: 	 | w_rx_en = 1 	| w_fifo_full = 0 	| w_uart_data = 1 	| w_odata = 00101001 	| o_rx_done = 0
+---------------------------------------------------------
+Time =           1467070000 	| wrt_n = 1 |
+Transmitter: 	 | w_tx_en = 1 	| w_fifo_empty = 0 	| w_idata = 00101001 	| w_uart_data = 0 	| o_tx_done = 0
+Receiver: 	 | w_rx_en = 1 	| w_fifo_full = 0 	| w_uart_data = 0 	| w_odata = 00101001 	| o_rx_done = 0
+---------------------------------------------------------
+Time =           1564870000 	| wrt_n = 1 |
+Transmitter: 	 | w_tx_en = 1 	| w_fifo_empty = 0 	| w_idata = 00101001 	| w_uart_data = 1 	| o_tx_done = 0
+Receiver: 	 | w_rx_en = 1 	| w_fifo_full = 0 	| w_uart_data = 1 	| w_odata = 00101001 	| o_rx_done = 0
+---------------------------------------------------------
+Time =           1662670000 	| wrt_n = 1 |
+Transmitter: 	 | w_tx_en = 1 	| w_fifo_empty = 0 	| w_idata = 00101001 	| w_uart_data = 0 	| o_tx_done = 0
+Receiver: 	 | w_rx_en = 1 	| w_fifo_full = 0 	| w_uart_data = 0 	| w_odata = 00101001 	| o_rx_done = 0
+---------------------------------------------------------
+Time =           1858270000 	| wrt_n = 1 |
+Transmitter: 	 | w_tx_en = 1 	| w_fifo_empty = 0 	| w_idata = 00101001 	| w_uart_data = 1 	| o_tx_done = 0
+Receiver: 	 | w_rx_en = 1 	| w_fifo_full = 0 	| w_uart_data = 1 	| w_odata = 00101001 	| o_rx_done = 0
+---------------------------------------------------------
+Time =           1956050000 	| wrt_n = 1 |
+Transmitter: 	 | w_tx_en = 1 	| w_fifo_empty = 0 	| w_idata = 00101001 	| w_uart_data = 1 	| o_tx_done = 1
+Receiver: 	 | w_rx_en = 1 	| w_fifo_full = 0 	| w_uart_data = 1 	| w_odata = 00101001 	| o_rx_done = 0
+---------------------------------------------------------
+Time =           1956070000 	| wrt_n = 1 |
+Transmitter: 	 | w_tx_en = 1 	| w_fifo_empty = 0 	| w_idata = 00101001 	| w_uart_data = 1 	| o_tx_done = 0
+Receiver: 	 | w_rx_en = 1 	| w_fifo_full = 0 	| w_uart_data = 1 	| w_odata = 00101001 	| o_rx_done = 0
+---------------------------------------------------------
+Time =           1956090000 	| wrt_n = 1 |
+Transmitter: 	 | w_tx_en = 1 	| w_fifo_empty = 0 	| w_idata = 00101001 	| w_uart_data = 0 	| o_tx_done = 0
+Receiver: 	 | w_rx_en = 1 	| w_fifo_full = 0 	| w_uart_data = 0 	| w_odata = 00101001 	| o_rx_done = 0
+---------------------------------------------------------
+- tb_uart.sv:83: Verilog $finish

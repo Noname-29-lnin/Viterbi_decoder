@@ -1,0 +1,17 @@
+Time =                    0 	| w_tx_en = 0 	| w_idata = 00000000 	| w_odata = 0 	| o_tx_done = 0
+Time =             10000000 	| w_tx_en = 0 	| w_idata = 00000000 	| w_odata = 1 	| o_tx_done = 0
+Time =           1000000000 	| w_tx_en = 1 	| w_idata = 01010101 	| w_odata = 1 	| o_tx_done = 0
+Time =           1030000000 	| w_tx_en = 1 	| w_idata = 01010101 	| w_odata = 0 	| o_tx_done = 0
+Time =          98830000000 	| w_tx_en = 1 	| w_idata = 01010101 	| w_odata = 1 	| o_tx_done = 0
+Time =         196630000000 	| w_tx_en = 1 	| w_idata = 01010101 	| w_odata = 0 	| o_tx_done = 0
+Time =         294430000000 	| w_tx_en = 1 	| w_idata = 01010101 	| w_odata = 1 	| o_tx_done = 0
+Time =         392230000000 	| w_tx_en = 1 	| w_idata = 01010101 	| w_odata = 0 	| o_tx_done = 0
+Time =         490030000000 	| w_tx_en = 1 	| w_idata = 01010101 	| w_odata = 1 	| o_tx_done = 0
+Time =         587830000000 	| w_tx_en = 1 	| w_idata = 01010101 	| w_odata = 0 	| o_tx_done = 0
+Time =         685630000000 	| w_tx_en = 1 	| w_idata = 01010101 	| w_odata = 1 	| o_tx_done = 0
+Time =         783430000000 	| w_tx_en = 1 	| w_idata = 01010101 	| w_odata = 0 	| o_tx_done = 0
+Time =         881230000000 	| w_tx_en = 1 	| w_idata = 01010101 	| w_odata = 1 	| o_tx_done = 0
+Time =         979010000000 	| w_tx_en = 1 	| w_idata = 01010101 	| w_odata = 1 	| o_tx_done = 1
+Time =         979030000000 	| w_tx_en = 1 	| w_idata = 01010101 	| w_odata = 1 	| o_tx_done = 0
+Time =         979050000000 	| w_tx_en = 1 	| w_idata = 01010101 	| w_odata = 0 	| o_tx_done = 0
+- tb_Transmitter.sv:59: Verilog $finish
