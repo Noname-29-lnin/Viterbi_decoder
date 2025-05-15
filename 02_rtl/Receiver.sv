@@ -171,7 +171,7 @@
 // endmodule
 
 module Receiver #(
-    parameter SIZE_DATA = 8,
+    parameter SIZE_DATA = 16,
     parameter OVER_SAMPLE = 16,
     parameter MID_SAMPLE = 8
 )(
@@ -195,11 +195,11 @@ localparam [SIZE_STATUS-1:0] IDLE        = 3'b000,
                              //STOP_II     = 3'b101;
 reg [SIZE_STATUS-1:0] state, n_state;
 
-localparam SIZE_COUNT = 5;// 1start bit + 8 data bits + 1 parity bit + 2 stop bits
-reg [SIZE_COUNT-1:0] count, n_count; // counter for data bits
+localparam SIZE_COUNT = $clog2(OVER_SAMPLE);// 
+reg [SIZE_COUNT:0] count, n_count; // counter for data bits
 
-localparam SIZE_INDEX = 4;
-reg [SIZE_INDEX-1:0] index, n_index; // counter for data bits
+localparam SIZE_INDEX = $clog2(SIZE_DATA); // 8bits
+reg [SIZE_INDEX:0] index, n_index; // counter for data bits
 
 // localparam MID_SAMPLE = OVER_SAMPLE / 2; // Mid sample point
 // localparam MID_SAMPLE = 8;
@@ -298,14 +298,17 @@ reg t_rx_data [SIZE_DATA - 1 : 0];
 reg w_rx_done;
 always_ff @(posedge i_clk or negedge i_rst_n) begin : proc_rx_out
     if(~i_rst_n) begin
-        t_rx_data[0] <= 1'b0;
-        t_rx_data[1] <= 1'b0;
-        t_rx_data[2] <= 1'b0;
-        t_rx_data[3] <= 1'b0;
-        t_rx_data[4] <= 1'b0;
-        t_rx_data[5] <= 1'b0;
-        t_rx_data[6] <= 1'b0;
-        t_rx_data[7] <= 1'b0;
+        // t_rx_data[0] <= 1'b0;
+        // t_rx_data[1] <= 1'b0;
+        // t_rx_data[2] <= 1'b0;
+        // t_rx_data[3] <= 1'b0;
+        // t_rx_data[4] <= 1'b0;
+        // t_rx_data[5] <= 1'b0;
+        // t_rx_data[6] <= 1'b0;
+        // t_rx_data[7] <= 1'b0;
+        for(int i = 0; i < SIZE_DATA; i++) begin
+            t_rx_data[i] <= 1'b0;
+        end
     end else begin
         case(state)
             // IDLE, START: begin
@@ -322,27 +325,33 @@ always_ff @(posedge i_clk or negedge i_rst_n) begin : proc_rx_out
                 // if(w_update_sample & i_stick) begin
                 //     t_rx_data[index] <= i_rx_serial;
                 // end
-                t_rx_data[index[SIZE_INDEX-2:0]] <= w_idata;
+                t_rx_data[index[SIZE_INDEX-1:0]] <= w_idata;
             end
             STOP_I: begin
-                t_rx_data[0] <= t_rx_data[0];
-                t_rx_data[1] <= t_rx_data[1];
-                t_rx_data[2] <= t_rx_data[2];
-                t_rx_data[3] <= t_rx_data[3];
-                t_rx_data[4] <= t_rx_data[4];
-                t_rx_data[5] <= t_rx_data[5];
-                t_rx_data[6] <= t_rx_data[6];
-                t_rx_data[7] <= t_rx_data[7];
+                // t_rx_data[0] <= t_rx_data[0];
+                // t_rx_data[1] <= t_rx_data[1];
+                // t_rx_data[2] <= t_rx_data[2];
+                // t_rx_data[3] <= t_rx_data[3];
+                // t_rx_data[4] <= t_rx_data[4];
+                // t_rx_data[5] <= t_rx_data[5];
+                // t_rx_data[6] <= t_rx_data[6];
+                // t_rx_data[7] <= t_rx_data[7];
+                for(int i = 0; i < SIZE_DATA; i++) begin
+                    t_rx_data[i] <= t_rx_data[i];
+                end
             end
             default: begin
-                t_rx_data[0] <= 1'b0;
-                t_rx_data[1] <= 1'b0;
-                t_rx_data[2] <= 1'b0;
-                t_rx_data[3] <= 1'b0;
-                t_rx_data[4] <= 1'b0;
-                t_rx_data[5] <= 1'b0;
-                t_rx_data[6] <= 1'b0;
-                t_rx_data[7] <= 1'b0;
+                // t_rx_data[0] <= 1'b0;
+                // t_rx_data[1] <= 1'b0;
+                // t_rx_data[2] <= 1'b0;
+                // t_rx_data[3] <= 1'b0;
+                // t_rx_data[4] <= 1'b0;
+                // t_rx_data[5] <= 1'b0;
+                // t_rx_data[6] <= 1'b0;
+                // t_rx_data[7] <= 1'b0;
+                for(int i = 0; i < SIZE_DATA; i++) begin
+                    t_rx_data[i] <= 1'b0;
+                end
             end
         endcase
     end
@@ -355,6 +364,29 @@ always_ff @(posedge i_clk or negedge i_rst_n) begin : proc_rx_done
     end
 end
 
-assign o_rx_data = (w_rx_done) ? {t_rx_data[7], t_rx_data[6], t_rx_data[5], t_rx_data[4], t_rx_data[3], t_rx_data[2], t_rx_data[1], t_rx_data[0]} : o_rx_data; // output data;
+// assign o_rx_data = (w_rx_done) ? {t_rx_data[7], t_rx_data[6], t_rx_data[5], t_rx_data[4], t_rx_data[3], t_rx_data[2], t_rx_data[1], t_rx_data[0]} : o_rx_data; // output data;
+always_comb begin : proc_rx_data
+    // for(int i = 0; i < SIZE_DATA; i++) begin
+    //     if(w_rx_done) begin
+    //         // Đảo ngược bit: bit thứ i của o_rx_data = bit thứ (SIZE_DATA-1 -i) của t_rx_data
+    //         // o_rx_data[i] = t_rx_data[SIZE_DATA-1 - i];
+    //         o_rx_data[i] = t_rx_data[i];
+    //     end else begin
+    //         o_rx_data[i] = o_rx_data[i];
+    //     end
+    // end
+    if(w_rx_done) begin
+        for(int i = 0; i < SIZE_DATA; i++) begin
+            // Đảo ngược bit: bit thứ i của o_rx_data = bit thứ (SIZE_DATA-1 -i) của t_rx_data
+            // o_rx_data[i] = t_rx_data[SIZE_DATA-1 - i];
+            o_rx_data[i] = t_rx_data[i];
+        end
+    end else begin
+        for (int i = 0; i < SIZE_DATA; i++) begin
+            o_rx_data[i] = o_rx_data[i];
+        end
+    end
+end
+
 assign o_rx_done = w_rx_done; // end signal
 endmodule 
