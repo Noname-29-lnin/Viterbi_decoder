@@ -1,0 +1,17 @@
+Time: 5000 | Start: 0 | PISO Data: 00 | VD Out: 0 | SIPO Out: 00000000 | Done: 0
+Time: 15000 | Start: 0 | PISO Data: 00 | VD Out: 0 | SIPO Out: 00000000 | Done: 0
+Time: 25000 | Start: 0 | PISO Data: 00 | VD Out: 0 | SIPO Out: 00000000 | Done: 0
+Time: 35000 | Start: 1 | PISO Data: 00 | VD Out: 0 | SIPO Out: 00000000 | Done: 0
+Time: 45000 | Start: 1 | PISO Data: 01 | VD Out: 0 | SIPO Out: 00000000 | Done: 0
+Time: 55000 | Start: 1 | PISO Data: 01 | VD Out: 0 | SIPO Out: 00000000 | Done: 0
+Time: 65000 | Start: 1 | PISO Data: 01 | VD Out: 0 | SIPO Out: 00000000 | Done: 0
+Time: 75000 | Start: 1 | PISO Data: 10 | VD Out: 0 | SIPO Out: 00000000 | Done: 0
+Time: 85000 | Start: 1 | PISO Data: 10 | VD Out: 0 | SIPO Out: 00000000 | Done: 0
+Time: 95000 | Start: 1 | PISO Data: 01 | VD Out: 0 | SIPO Out: 00000000 | Done: 0
+Time: 105000 | Start: 1 | PISO Data: 01 | VD Out: 0 | SIPO Out: 00000000 | Done: 0
+Time: 115000 | Start: 1 | PISO Data: 10 | VD Out: 0 | SIPO Out: 00000000 | Done: 0
+Time: 125000 | Start: 1 | PISO Data: 00 | VD Out: 0 | SIPO Out: 00000000 | Done: 0
+Time: 135000 | Start: 1 | PISO Data: 00 | VD Out: 0 | SIPO Out: 00000000 | Done: 0
+[145000] %Error: tb_Testcase1.sv:78: Assertion failed in TOP.tb_Testcase1: Test Case 1 Failed: Got 00000000, Expected 10100101
+%Error: tb_Testcase1.sv:78: Verilog $stop
+Aborting...

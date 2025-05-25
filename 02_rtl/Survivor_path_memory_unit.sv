@@ -69,8 +69,8 @@ module state_machine(
                );
 
   output_logic OL(
-                 .i_curr_state     (nstate),
-                //  .i_curr_state     (state),
+                //  .i_curr_state     (nstate),
+                 .i_curr_state     (state),
                  .o_decision_bit   (o_decision)
                );
 
