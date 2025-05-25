@@ -1,0 +1,11 @@
+|Time =                10000 	| i_start = 1 	| i_data = aaaa 	|
+|o_data = 2 	| o_valid = 1 	| o_done = 0 |
+|Time =               170000 	| i_start = 1 	| i_data = aaaa 	|
+|o_data = 0 	| o_valid = 0 	| o_done = 1 |
+|Time =               210000 	| i_start = 1 	| i_data = aaaa 	|
+|o_data = 2 	| o_valid = 1 	| o_done = 0 |
+|Time =               490000 	| i_start = 1 	| i_data = 1234 	|
+|o_data = 0 	| o_valid = 1 	| o_done = 0 |
+|Time =               650000 	| i_start = 1 	| i_data = 1234 	|
+|o_data = 0 	| o_valid = 0 	| o_done = 1 |
+- tb_SIPO.sv:64: Verilog $finish
