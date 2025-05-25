@@ -1,0 +1,20 @@
+| Time =                    0 	| i_start = 0 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	|
+| Time =                20000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	|
+| Time =                95000 	| i_start = 0 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	|
+| Time =               105000 	| i_start = 0 	| i_data = 1 	| o_data = 00000000 	| o_done = 0 	|
+| Time =               155000 	| i_start = 0 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	|
+| Time =               175000 	| i_start = 1 	| i_data = 1 	| o_data = 00000000 	| o_done = 0 	|
+| Time =               185000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	|
+| Time =               195000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 1 	|
+| Time =               205000 	| i_start = 1 	| i_data = 1 	| o_data = 00000000 	| o_done = 1 	|
+| Time =               205000 	| i_start = 1 	| i_data = 1 	| o_data = 00000000 	| o_done = 0 	|
+| Time =               215000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	|
+| Time =               225000 	| i_start = 1 	| i_data = 1 	| o_data = 00000000 	| o_done = 0 	|
+| Time =               235000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	|
+| Time =               375000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 1 	|
+| Time =               385000 	| i_start = 1 	| i_data = 1 	| o_data = 00000000 	| o_done = 1 	|
+| Time =               385000 	| i_start = 1 	| i_data = 1 	| o_data = 00000000 	| o_done = 0 	|
+| Time =               395000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	|
+| Time =               475000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 1 	|
+| Time =               485000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	|
+- tb_SIPO.sv:82: Verilog $finish
