@@ -1,4 +1,4 @@
-module SIPO #(
+module PISO #(
     parameter SIZE_DATA_IN = 16,
     parameter SIZE_DATA_OUT = 2
 )(

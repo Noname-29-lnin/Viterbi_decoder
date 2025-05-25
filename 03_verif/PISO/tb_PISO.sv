@@ -10,7 +10,7 @@ logic [SIZE_DATA_IN-1:0] w_idata;
 logic [SIZE_DATA_OUT-1:0] w_odata;
 logic w_valid, w_done;
 
-SIPO #(
+PISO #(
     .SIZE_DATA_IN (SIZE_DATA_IN),
     .SIZE_DATA_OUT(SIZE_DATA_OUT)
 ) uut (

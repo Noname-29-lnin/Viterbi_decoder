@@ -8,4 +8,4 @@
 |o_data = 0 	| o_valid = 1 	| o_done = 0 |
 |Time =               650000 	| i_start = 1 	| i_data = 1234 	|
 |o_data = 0 	| o_valid = 0 	| o_done = 1 |
-- tb_SIPO.sv:64: Verilog $finish
+- tb_PISO.sv:64: Verilog $finish
