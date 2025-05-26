@@ -21,7 +21,7 @@ sim:
 
 clean:
 	@echo "-> Cleaning project..."
-	@rm -rf *.vcd obj_dir *.log *.dmp
+	@rm -rf obj_dir *.dmp
 
 help:
 	@echo "Makefile targets:"

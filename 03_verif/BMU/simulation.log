@@ -1,20 +1,24 @@
+Test case 1: 0x00
 | Time =                10000 	|
 | w_idata = 00 	|
 | w_BM_0 = 00 	| w_BM_1 = 01 	| w_BM_2 = 01 	| w_BM_3 = 10 	|
-Test case 1: Passed
+-> PASS
 --------------------------------------------------
+Test case 2: 0x01
 | Time =                20000 	|
 | w_idata = 01 	|
 | w_BM_0 = 01 	| w_BM_1 = 00 	| w_BM_2 = 10 	| w_BM_3 = 01 	|
-Test case 2: Passed
+-> PASS
 --------------------------------------------------
+Test case 3: 0x10
 | Time =                30000 	|
 | w_idata = 10 	|
 | w_BM_0 = 01 	| w_BM_1 = 10 	| w_BM_2 = 00 	| w_BM_3 = 01 	|
-Test case 3: Passed
+-> PASS
 --------------------------------------------------
+Test case 4: 0x11
 | Time =                40000 	|
 | w_idata = 11 	|
 | w_BM_0 = 10 	| w_BM_1 = 01 	| w_BM_2 = 01 	| w_BM_3 = 00 	|
-Test case 4: Passed
+-> PASS
 --------------------------------------------------
