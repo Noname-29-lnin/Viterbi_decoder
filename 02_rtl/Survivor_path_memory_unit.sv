@@ -3,12 +3,14 @@ module Survivor_path_memory_unit(
     input logic         i_rst_n     ,
 
     input logic         i_valid     ,
+    
     input logic [1:0]   i_PM_0      ,
     input logic [1:0]   i_PM_1      ,
     input logic [1:0]   i_PM_2      ,
     input logic [1:0]   i_PM_3      ,
 
-    output logic        o_decision
+    output logic        o_decision  ,
+    output logic        o_valid     
   );
   wire w_compare_0;
   wire w_compare_1;
@@ -32,7 +34,8 @@ module Survivor_path_memory_unit(
                   .i_valid(i_valid),
                   .i_compare_0(w_compare_0),
                   .i_compare_1(w_compare_1),
-                  .o_decision(o_decision)
+                  .o_decision(o_decision),
+                  .o_valid(o_valid)
                 );
 
 endmodule
@@ -43,35 +46,39 @@ module state_machine(
     input logic         i_valid,
     input logic         i_compare_0,
     input logic         i_compare_1,
-    output logic        o_decision
+    output logic        o_decision,
+    output logic        o_valid  
   );
 
-  parameter logic [1:0] S0 = 2'b00;
-  parameter logic [1:0] S1 = 2'b01;
-  parameter logic [1:0] S2 = 2'b10;
-  parameter logic [1:0] S3 = 2'b11;
+  // parameter logic [1:0] S0 = 2'b00;
+  // parameter logic [1:0] S1 = 2'b01;
+  // parameter logic [1:0] S2 = 2'b10;
+  // parameter logic [1:0] S3 = 2'b11;
 
   logic [1:0] state, nstate;
-
+  logic w_valid;
   next_state_logic NSL(
                      .i_valid          (i_valid),
                      .i_compare_0      (i_compare_0),
                      .i_compare_1      (i_compare_1),
                      .i_pre_state      (state),
-                     .o_next_state     (nstate)
+                     .o_next_state     (nstate),
+                     .o_valid          (w_valid)
                    );
 
   state_memory SM(
                  .i_clk            (i_clk),
                  .i_rst_n          (i_rst_n),
+                 .i_valid          (w_valid),
                  .i_next_state     (nstate),
-                 .o_curr_state     (state)
+                 .o_curr_state     (state),
+                .o_valid           (o_valid)
                );
 
   output_logic OL(
                 //  .i_curr_state     (nstate),
-                 .i_curr_state     (state),
-                 .o_decision_bit   (o_decision)
+                .i_curr_state     (state),
+                .o_decision_bit   (o_decision)
                );
 
 endmodule
@@ -81,7 +88,8 @@ module next_state_logic(
     input logic         i_compare_0,
     input logic         i_compare_1,
     input logic [1:0]   i_pre_state,
-    output logic [1:0]  o_next_state
+    output logic [1:0]  o_next_state,
+    output logic        o_valid
   );
 
   parameter logic [1:0] S0 = 2'b00;
@@ -94,6 +102,7 @@ module next_state_logic(
     if (!i_valid)
     begin
       o_next_state = i_pre_state;
+      o_valid = 1'b0;
     end
     else
     begin
@@ -104,6 +113,8 @@ module next_state_logic(
             o_next_state = S0;
           else
             o_next_state = S2;
+          
+          o_valid = 1'b1;
         end
         S2, S3:
         begin
@@ -111,9 +122,15 @@ module next_state_logic(
             o_next_state = S1;
           else
             o_next_state = S3;
+
+          o_valid = 1'b1;
         end
-        default:
+        default: 
+        begin
           o_next_state = S0;
+
+          o_valid = 1'b0; 
+        end
       endcase
     end
   end
@@ -122,23 +139,27 @@ endmodule
 module state_memory(
     input logic         i_clk,
     input logic         i_rst_n,
+    input logic         i_valid,
     input logic [1:0]   i_next_state,
-    output logic [1:0]  o_curr_state
+    output logic [1:0]  o_curr_state,
+    output logic        o_valid
   );
 
   parameter logic [1:0] S0 = 2'b00;
-  parameter logic [1:0] S1 = 2'b01;
-  parameter logic [1:0] S2 = 2'b10;
-  parameter logic [1:0] S3 = 2'b11;
+  // parameter logic [1:0] S1 = 2'b01;
+  // parameter logic [1:0] S2 = 2'b10;
+  // parameter logic [1:0] S3 = 2'b11;
 
   always_ff @(posedge i_clk or negedge i_rst_n)
   begin
     if (!i_rst_n)
     begin
+      o_valid <= 1'b0;
       o_curr_state <= S0;
     end
     else
     begin
+      o_valid <= i_valid;
       o_curr_state <= i_next_state;
     end
   end

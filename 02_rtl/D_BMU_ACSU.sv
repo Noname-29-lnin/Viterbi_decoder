@@ -22,7 +22,7 @@ module D_BMU_ACSU(
 );
 
 always_ff @(posedge i_clk or negedge i_rst_n) begin
-    if(~i_rst_n) begin
+    if(~i_rst_n) begin 
        o_BM_0       <=  0;     
        o_BM_1       <=  0;
        o_BM_2       <=  0;

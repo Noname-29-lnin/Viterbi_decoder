@@ -5,7 +5,7 @@ module Add_unit(
 );
 
 assign o_PM[0] = (!i_PM[0]&i_BM[0]) | (i_PM[0]&!i_BM[0]) | 
-                 (i_PM[0]&i_BM[1]) | (i_PM[1]&i_BM[0]) | 
+                 (i_PM[0]&i_BM[1]) | (i_PM[1]&i_BM[0])   | 
                  (i_PM[1]&i_BM[1]);
 assign o_PM[1] = (i_PM[1] | i_BM[1]) | (i_PM[0] & i_BM[0]);
 
