@@ -1,5 +1,5 @@
 # Configuration
-TOPMODULE := tb_viterbi
+TOPMODULE := tb_Viterbi_decoding
 VERILATOR_FLAGS := --binary --timing --trace --build -f flist.f
 WARNING_IGNORE := -Wno-fatal -Wno-lint -Wno-style -Wno-width
 
@@ -21,7 +21,7 @@ sim:
 
 clean:
 	@echo "-> Cleaning project..."
-	@rm -rf *.vcd obj_dir *.log *.dmp
+	@rm -rf obj_dir *.dmp
 
 help:
 	@echo "Makefile targets:"

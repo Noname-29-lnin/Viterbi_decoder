@@ -1,8 +1,9 @@
-./tb_viterbi.sv
-./../../02_rtl/Block_VD.sv
+//./tb_viterbi.sv
+./tb_Viterbi_decoding.sv
+// ./../../02_rtl/Block_VD.sv
 ./../../02_rtl/Viterbi_decoding.sv
-./../../02_rtl/Input_interface_block.sv
-./../../02_rtl/Output_interface_block.sv
+// ./../../02_rtl/Input_interface_block.sv
+// ./../../02_rtl/Output_interface_block.sv
 ./../../02_rtl/Full_adder.sv
 ./../../02_rtl/Hamming_distance.sv
 ./../../02_rtl/Branch_metric_unit.sv

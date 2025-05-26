@@ -1,5 +1,31 @@
-Time=              115000, i_rst_n=1, i_start=1, i_data=1101010001010011, o_data=11011010, o_valid=1, TestCase=PASS, BER_in=1.000000, BER_out=0.000000
-Time=              225000, i_rst_n=1, i_start=1, i_data=1110001000100011, o_data=10101010, o_valid=1, TestCase=PASS, BER_in=1.000000, BER_out=0.000000
-Time=              335000, i_rst_n=1, i_start=1, i_data=0000000000000111, o_data=00000001, o_valid=1, TestCase=PASS, BER_in=1.000000, BER_out=0.000000
-Time=              445000, i_rst_n=1, i_start=1, i_data=0000110101111101, o_data=00110011, o_valid=1, TestCase=PASS, BER_in=0.000000, BER_out=0.000000
-- tb_viterbi.sv:105: Verilog $finish
+Time: 0, o_decision: 0, o_valid: 0
+TestCase 1:
+ Data input: 10101010
+ Data conv : 1110001000100010
+Time: 50000, o_decision: 0, o_valid: 1
+Time: 51000 	| i_valid = 1 	| i_data: 11 	| o_decision = 0 	| o_valid = 1 	|
+Time: 71000 	| i_valid = 1 	| i_data: 10 	| o_decision = 1 	| o_valid = 1 	|
+Time: 91000 	| i_valid = 1 	| i_data: 00 	| o_decision = 0 	| o_valid = 1 	|
+Time: 111000 	| i_valid = 1 	| i_data: 10 	| o_decision = 1 	| o_valid = 1 	|
+Time: 131000 	| i_valid = 1 	| i_data: 00 	| o_decision = 0 	| o_valid = 1 	|
+Time: 151000 	| i_valid = 1 	| i_data: 10 	| o_decision = 1 	| o_valid = 1 	|
+Time: 171000 	| i_valid = 1 	| i_data: 00 	| o_decision = 0 	| o_valid = 1 	|
+Time: 191000 	| i_valid = 1 	| i_data: 10 	| o_decision = 1 	| o_valid = 1 	|
+Time: 210000 	| i_valid = 1 	| i_data: 10 	| o_decision = 1 	| o_valid = 1 	|
+==========================================================
+Time: 210000, o_decision: 0, o_valid: 0
+TestCase 2:
+ Data input: 00101001
+ Data conv : 0000111000101111
+Time: 250000, o_decision: 0, o_valid: 1
+Time: 271000 	| i_valid = 1 	| i_data: 00 	| o_decision = 0 	| o_valid = 1 	|
+Time: 291000 	| i_valid = 1 	| i_data: 00 	| o_decision = 1 	| o_valid = 1 	|
+Time: 311000 	| i_valid = 1 	| i_data: 11 	| o_decision = 0 	| o_valid = 1 	|
+Time: 331000 	| i_valid = 1 	| i_data: 10 	| o_decision = 0 	| o_valid = 1 	|
+Time: 351000 	| i_valid = 1 	| i_data: 00 	| o_decision = 0 	| o_valid = 1 	|
+Time: 371000 	| i_valid = 1 	| i_data: 10 	| o_decision = 1 	| o_valid = 1 	|
+Time: 391000 	| i_valid = 1 	| i_data: 11 	| o_decision = 0 	| o_valid = 1 	|
+Time: 411000 	| i_valid = 1 	| i_data: 11 	| o_decision = 0 	| o_valid = 1 	|
+Time: 430000 	| i_valid = 1 	| i_data: 11 	| o_decision = 0 	| o_valid = 1 	|
+==========================================================
+- tb_Viterbi_decoding.sv:119: Verilog $finish
