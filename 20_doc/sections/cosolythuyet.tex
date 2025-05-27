@@ -206,7 +206,7 @@ trong đó:
 
 \subsection{Hard Decision và Soft Decision trong Giải Mã Mã Hóa Sửa Lỗi}
 
-Trong các hệ thống thông tin số, mã hóa sửa lỗi (error-correction coding) đóng vai trò quan trọng trong việc đảm bảo dữ liệu được truyền qua kênh nhiễu một cách đáng tin cậy. Hai phương pháp giải mã phổ biến là \textbf{hard decision} và \textbf{soft decision}, được áp dụng cho cả mã khối (block codes) và mã chập (convolutional codes). Hard decision đơn giản hóa quá trình giải mã bằng cách đưa ra quyết định nhị phân, trong khi soft decision tận dụng thông tin xác suất để cải thiện hiệu suất. Phần tiếp theo sẽ trình bày cơ sở lý thuyết của hai phương pháp này, với các khái niệm được tham chiếu từ \cite{Clark1981}.
+Trong các hệ thống thông tin số, mã hóa sửa lỗi (error-correction coding) đóng vai trò quan trọng trong việc đảm bảo dữ liệu được truyền qua kênh nhiễu một cách đáng tin cậy. Hai phương pháp giải mã phổ biến là \textbf{hard decision} và \textbf{soft decision}, được áp dụng cho cả mã khối (block codes) và mã chập (convolutional codes). Hard decision đơn giản hóa quá trình giải mã bằng cách đưa ra quyết định nhị phân, trong khi soft decision tận dụng thông tin xác suất để cải thiện hiệu suất. Phần tiếp theo sẽ trình bày cơ sở lý thuyết của hai phương pháp này \cite{Clark1981}.
 
 \subsubsection{Hard decision (Quyết định cứng)}
 Hard decision là phương pháp giải mã trong đó bộ giải mã nhận đầu vào dưới dạng các giá trị nhị phân (0 hoặc 1). Tại bộ giải điều chế (demodulator), tín hiệu nhận được sẽ được so sánh với một ngưỡng (threshold) để quyết định giá trị bit:
