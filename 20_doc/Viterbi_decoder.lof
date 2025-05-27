@@ -1,16 +1,18 @@
 \babel@toc {nil}{}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces Mô hình hệ thống truyền thông số.}}{3}{figure.1}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Cấu trúc tổng quát của một bộ mã hóa chập}}{4}{figure.2}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Bộ mã hóa $(3, 1, 2)$.}}{5}{figure.3}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Sơ đồ lưới giữa hai đơn vị thời gian của bộ mã hóa $(3, 1, 2)$.}}{6}{figure.4}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Sơ đồ khối hệ thống.}}{10}{figure.5}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Lưu đồ mô phỏng.}}{11}{figure.6}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Lưu đồ giải thuật của Bộ mã Tích chập.}}{12}{figure.7}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Lưu đồ giải thuật của Bộ giải mã Viterbi.}}{13}{figure.8}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Bộ tính toán khoảng cách Hamming.}}{16}{figure.9}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Bộ BMU.}}{17}{figure.10}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Cách chuyển trạng thái trong bộ giải mã Viterbi ($3, 1, 2$).}}{20}{figure.11}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Bộ Add Compare Select.}}{21}{figure.12}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Bộ ACSU hoàn chỉnh.}}{22}{figure.13}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Máy trạng thái viết ở dạng Moore.}}{24}{figure.14}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Bộ SPMU.}}{24}{figure.15}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Mô hình hệ thống truyền thông số.}}{4}{figure.1}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Cấu trúc tổng quát của một bộ mã hóa chập}}{5}{figure.2}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Bộ mã hóa $(3, 1, 2)$.}}{6}{figure.3}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Sơ đồ lưới giữa hai đơn vị thời gian của bộ mã hóa $(3, 1, 2)$.}}{7}{figure.4}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Sơ đồ khối hệ thống.}}{12}{figure.5}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Lưu đồ mô phỏng.}}{13}{figure.6}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Lưu đồ của Khối nhận chuỗi bits đầu vào.}}{14}{figure.7}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Lưu đồ giải thuật của Bộ mã Tích chập.}}{15}{figure.8}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Lưu đồ giải thuật của Bộ giải mã Viterbi.}}{16}{figure.9}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Bộ tính toán khoảng cách Hamming.}}{19}{figure.10}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Bộ BMU.}}{20}{figure.11}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Cách chuyển trạng thái trong bộ giải mã Viterbi ($3, 1, 2$).}}{21}{figure.12}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Bộ Add Compare Select.}}{22}{figure.13}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Bộ ACSU hoàn chỉnh.}}{23}{figure.14}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Máy trạng thái viết ở dạng Moore.}}{24}{figure.15}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Bộ SPMU.}}{25}{figure.16}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Bộ Viterbi Decoder.}}{26}{figure.17}%

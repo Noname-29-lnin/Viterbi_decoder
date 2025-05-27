@@ -36,6 +36,10 @@
 \renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}.}
 \renewcommand{\thesubsubsection}{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.}
 
+%\usepackage[backend=biber, style=ieee]{biblatex}
+%\usepackage[style=ieee]{biblatex}
+%\addbibresource{ref.bib} % Đường dẫn đúng đến tệp .bib
+
 %% Định nghĩa counter trước
 %\newcounter{subsubsubsection}[subsubsection]
 %\renewcommand{\thesubsubsubsection}{\alph{subsubsubsection})}
@@ -164,7 +168,7 @@
 }
 % Định nghĩa cho thêm result
 \lstdefinelanguage{Result}{
-	keywords={PASS, FAIL, finish},
+	keywords={PASS, FAIL, Time},
 	sensitive=true
 }
 
@@ -176,4 +180,8 @@
 	\include{sections/cosolythuyet.tex}
 	\include{sections/mophongthuattoanbangC.tex}
 	\include{sections/mophongthuattoanbangVerilog.tex}
+	\include{sections/implem.tex
+	}
+	\bibliographystyle{ieeetr} % IEEE style
+	\bibliography{ref} % Without .bib extension
 \end{document}

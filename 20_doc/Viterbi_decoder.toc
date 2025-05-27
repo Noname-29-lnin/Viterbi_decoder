@@ -1,17 +1,23 @@
 \babel@toc {nil}{}\relax 
-\contentsline {section}{\numberline {Chương 1.}Cơ sở lý thuyết}{3}{section.1}%
-\contentsline {subsection}{\numberline {1.1.}Mã hóa kênh truyền trong lĩnh vực truyền thông thông tin}{3}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2.}Mã hóa sử dụng Mã chập (Convolutional Encoder)}{4}{subsection.1.2}%
-\contentsline {subsubsection}{\numberline {1.2.1.}Ma trận sinh (Generator matrix)}{5}{subsubsection.1.2.1}%
-\contentsline {subsubsection}{\numberline {1.2.2.}Sơ đồ lưới (Trellis Diagram)}{5}{subsubsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.3.}Giải mã kênh truyền trong lĩnh vực truyền thông thông tin}{7}{subsection.1.3}%
-\contentsline {subsection}{\numberline {1.4.}Giải mã kênh truyền sửa dụng thuật toán Viterbi}{7}{subsection.1.4}%
-\contentsline {section}{\numberline {Chương 2.}Mô phỏng thuật toán giải mã Viterbi bằng C}{10}{section.2}%
-\contentsline {subsection}{\numberline {2.1.}Khối nhận chuỗi Bits đầu vào}{11}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2.}Bộ mã tích chập}{11}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3.}Bộ giải mã Viterbi}{13}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4.}Kết quả}{13}{subsection.2.4}%
-\contentsline {section}{\numberline {Chương 3.}Mô phỏng thuật toán giải mã Viterbi bằng System Verilog}{16}{section.3}%
-\contentsline {subsection}{\numberline {3.1.}Branch Metric Unit (BMU)}{16}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2.}Add Compare Select Unit (ACSU)}{20}{subsection.3.2}%
+\contentsline {section}{\numberline {Chương 1.}Cơ sở lý thuyết}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1.}Mã hóa kênh truyền trong lĩnh vực truyền thông thông tin}{4}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2.}Mã hóa sử dụng Mã chập (Convolutional Encoder)}{5}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1.}Ma trận sinh (Generator matrix)}{6}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2.}Sơ đồ lưới (Trellis Diagram)}{6}{subsubsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.3.}Giải mã kênh truyền trong lĩnh vực truyền thông thông tin}{8}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4.}Giải mã kênh truyền sửa dụng thuật toán Viterbi}{8}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5.}Hard Decision và Soft Decision trong Giải Mã Mã Hóa Sửa Lỗi}{10}{subsection.1.5}%
+\contentsline {subsubsection}{\numberline {1.5.1.}Hard decision (Quyết định cứng)}{10}{subsubsection.1.5.1}%
+\contentsline {subsubsection}{\numberline {1.5.2.}Soft decision (Quyết định mềm)}{11}{subsubsection.1.5.2}%
+\contentsline {subsubsection}{\numberline {1.5.3.}So sánh Hard Decision và Soft Decision}{11}{subsubsection.1.5.3}%
+\contentsline {section}{\numberline {Chương 2.}Mô phỏng thuật toán giải mã Viterbi bằng C}{12}{section.2}%
+\contentsline {subsection}{\numberline {2.1.}Khối nhận chuỗi Bits đầu vào}{13}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2.}Bộ mã tích chập}{14}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3.}Bộ giải mã Viterbi}{16}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4.}Kết quả}{16}{subsection.2.4}%
+\contentsline {section}{\numberline {Chương 3.}Mô phỏng thuật toán giải mã Viterbi bằng System Verilog}{19}{section.3}%
+\contentsline {subsection}{\numberline {3.1.}Branch Metric Unit (BMU)}{19}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2.}Add Compare Select Unit (ACSU)}{21}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3.}Survivor Path Memory Unit (SPMU)}{24}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4.}Viterbi Decoder Block}{26}{subsection.3.4}%
+\contentsline {section}{\numberline {Chương 4.}Thực hiện trên Kit DE2}{27}{section.4}%

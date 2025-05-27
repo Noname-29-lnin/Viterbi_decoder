@@ -21,6 +21,12 @@ Dựa vào hình \ref{f_system_conv}, ta thực hiện theo sơ đồ sau:
 
 Cho phép người dùng nhập giá trị chuỗi bit đầu vào ở dạng chuỗi (\texttt{char}) và chuỗi chuỗi vừa nhận thành mảng một chuỗi chứa các giá trị số thực (\texttt{int}).
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.44\linewidth]{sections/pic/mophongbangC/Trans_string_to_binary.png}
+	\caption{Lưu đồ của Khối nhận chuỗi bits đầu vào.}
+\end{figure}
+
 % Thêm đoạn code hiển thị kết quả ở đây
 
 \subsection{Bộ mã tích chập}
@@ -52,7 +58,7 @@ Ta có lưu đồ giải thuật của Bộ mã Tích chập,
 
 \subsection{Kết quả}
 
-\begin{lstlisting}[style=StyleResult]
+\begin{lstlisting}[style=StyleResult, caption={Mô phỏng việc mã hóa và giải mã với 0bit sai.}]
 	------------------- Input Data -------------------
 	Input data: 110110
 	The constraint length K = 3
@@ -81,50 +87,45 @@ Ta có lưu đồ giải thuật của Bộ mã Tích chập,
 	Conv Data: 110101000101
 	
 	------------- Viterbi Decoder -------------
-	Viterbi data: 110101000101
+	Viterbi Data: 110101000101 - BER = 0
+	Viterbi Data: 110110
+\end{lstlisting}
+
+\begin{lstlisting}[style=StyleResult, caption={Mô phỏng việc mã hóa và giải mã với 1bit sai.}, escapeinside={\%*}{*)}]
+	------------------- Input Data -------------------
+	Input data: 110110
+	The constraint length K = 3
+	The number of input M = 1
+	The number of output N = 2
+	Enter the Generator Polynomial Matrix (G[n][k]): = [(1 1 1) (1 0 1)]
 	
-	Input Viterbi: 11
-	BM0 = 2, BM1 = 1, BM2 = 1, BM3 = 0
-	iPM0 = 0, iPM1 = 3, iPM2 = 3, iPM3 = 3
-	oPM0 = 2, oPM1 = 4, oPM2 = 0, oPM3 = 4
-	State = 1
-	Nex State = 3
-	Decision Bit = 1
-	Input Viterbi: 10
-	BM0 = 1, BM1 = 0, BM2 = 2, BM3 = 1
-	iPM0 = 2, iPM1 = 4, iPM2 = 0, iPM3 = 4
-	oPM0 = 3, oPM1 = 2, oPM2 = 3, oPM3 = 0
-	State = 3
-	Nex State = 4
-	Decision Bit = 1
-	Input Viterbi: 10
-	BM0 = 1, BM1 = 0, BM2 = 2, BM3 = 1
-	iPM0 = 3, iPM1 = 2, iPM2 = 3, iPM3 = 0
-	oPM0 = 3, oPM1 = 0, oPM2 = 3, oPM3 = 2
-	State = 4
-	Nex State = 2
-	Decision Bit = 0
-	Input Viterbi: 00
-	BM0 = 0, BM1 = 1, BM2 = 1, BM3 = 2
-	iPM0 = 3, iPM1 = 0, iPM2 = 3, iPM3 = 2
-	oPM0 = 2, oPM1 = 3, oPM2 = 0, oPM3 = 3
-	State = 2
-	Nex State = 3
-	Decision Bit = 1
-	Input Viterbi: 10
-	BM0 = 1, BM1 = 0, BM2 = 2, BM3 = 1
-	iPM0 = 2, iPM1 = 3, iPM2 = 0, iPM3 = 3
-	oPM0 = 3, oPM1 = 2, oPM2 = 3, oPM3 = 0
-	State = 3
-	Nex State = 4
-	Decision Bit = 1
-	Input Viterbi: 10
-	BM0 = 1, BM1 = 0, BM2 = 2, BM3 = 1
-	iPM0 = 3, iPM1 = 2, iPM2 = 3, iPM3 = 0
-	oPM0 = 3, oPM1 = 0, oPM2 = 3, oPM3 = 2
-	State = 4
-	Nex State = 2
-	Decision Bit = 0
+	Input data: 110110
+	
+	------------- Ouput Conv Data -------------
+	
+	Conv Data: 110101000101
+	
+	------------- Viterbi Decoder -------------
+	Viterbi data: 1101%*\textcolor{red}{1}*)1000101 - BER = 1
+	Viterbi Data: 110110
+\end{lstlisting}
+
+\begin{lstlisting}[style=StyleResult, caption={Mô phỏng việc mã hóa và giải mã với 0bit sai.}, escapeinside={\%*}{*)}]
+	------------------- Input Data -------------------
+	Input data: 110110
+	The constraint length K = 3
+	The number of input M = 1
+	The number of output N = 2
+	Enter the Generator Polynomial Matrix (G[n][k]): = [(1 1 1) (1 0 1)]
+	
+	Input data: 110110
+	
+	------------- Ouput Conv Data -------------
+	
+	Conv Data: 110101000101
+	
+	------------- Viterbi Decoder -------------
+	Viterbi data: 1101%*\textcolor{red}{1}*)10001%*\textcolor{red}{1}*)1 - BER = 2
 	Viterbi Data: 110110
 \end{lstlisting}
 

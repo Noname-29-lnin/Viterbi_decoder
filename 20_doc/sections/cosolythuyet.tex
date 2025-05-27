@@ -198,8 +198,66 @@ Phương trình cập nhật metric:
 \gamma_t(s',s) = \gamma_{t-1}(s') + \sum_{i=1}^n (r_i^{(t)} - c_i^{(t)})^2
 \]
 trong đó:
-\begin{itemize}
+\begin{itemize}[label=-]
 	\item $s', s$: các trạng thái liên tiếp
 	\item $r_i^{(t)}$: bit nhận được tại thời điểm t
 	\item $c_i^{(t)}$: bit mã hóa tương ứng
+\end{itemize}
+
+\subsection{Hard Decision và Soft Decision trong Giải Mã Mã Hóa Sửa Lỗi}
+
+Trong các hệ thống thông tin số, mã hóa sửa lỗi (error-correction coding) đóng vai trò quan trọng trong việc đảm bảo dữ liệu được truyền qua kênh nhiễu một cách đáng tin cậy. Hai phương pháp giải mã phổ biến là \textbf{hard decision} và \textbf{soft decision}, được áp dụng cho cả mã khối (block codes) và mã chập (convolutional codes). Hard decision đơn giản hóa quá trình giải mã bằng cách đưa ra quyết định nhị phân, trong khi soft decision tận dụng thông tin xác suất để cải thiện hiệu suất. Phần tiếp theo sẽ trình bày cơ sở lý thuyết của hai phương pháp này, với các khái niệm được tham chiếu từ \cite{Clark1981}.
+
+\subsubsection{Hard decision (Quyết định cứng)}
+Hard decision là phương pháp giải mã trong đó bộ giải mã nhận đầu vào dưới dạng các giá trị nhị phân (0 hoặc 1). Tại bộ giải điều chế (demodulator), tín hiệu nhận được sẽ được so sánh với một ngưỡng (threshold) để quyết định giá trị bit:
+
+\begin{itemize}[label=-]
+	\item Nếu tín hiệu vượt ngưỡng, bit được gán giá trị 1.
+	\item Nếu tín hiệu dưới ngưỡng, bit được gán giá trị 0.
+\end{itemize}
+Quá trình này bỏ qua thông tin về độ tin cậy của tín hiệu, chỉ dựa vào quyết định cứng (hard decision).
+
+Trong hard decision, bộ giải mã sử dụng khoảng cách Hamming (Hamming distance) để xác định chuỗi mã (codeword) gần nhất với chuỗi nhận được. Khoảng cách Hamming được định nghĩa là số vị trí mà hai chuỗi bit khác nhau. Ví dụ, với mã khối, thuật toán giải mã sẽ tìm chuỗi mã hợp lệ sao cho:
+\[
+d_H({r}, {c}) = \min_{{c} \in C} d_H({r}, {c}),
+\]
+trong đó $r$ là chuỗi nhận được, $c$ là chuỗi mã hợp lệ trong tập mã $C$, và $d_H$ là khoảng cách Hamming.
+
+\textbf{Ưu và nhược điểm}
+
+\begin{itemize}[label=-]
+	\item Ưu điểm: Đơn giản, dễ triển khai trên phần cứng, yêu cầu tính toán thấp.
+	\item Nhược điểm: Mất thông tin về độ tin cậy của tín hiệu, dẫn đến hiệu suất kém hơn trong kênh nhiễu mạnh, đặc biệt với các mã chập khi sử dụng thuật toán Viterbi.
+\end{itemize}
+
+\subsubsection{Soft decision (Quyết định mềm)}
+
+Soft decision là phương pháp giải mã sử dụng thông tin xác suất hoặc giá trị liên tục từ bộ giải điều chế, thay vì quyết định nhị phân. Thay vì gán bit 0 hoặc 1, bộ giải mã nhận các giá trị thực (real-valued) đại diện cho độ tin cậy của mỗi bit. Phương pháp này tận dụng thông tin bổ sung để cải thiện khả năng sửa lỗi.
+
+Trong soft decision, bộ giải mã thường sử dụng khoảng cách Euclidean (Euclidean distance) thay vì khoảng cách Hamming. Với chuỗi nhận được ${r} = (r_1, r_2, \ldots, r_n)$ và chuỗi mã ${c} = (c_1, c_2, \ldots, c_n)$, khoảng cách Euclidean được tính như sau:
+\[
+d_E({r}, {c}) = \sqrt{\sum_{i=1}^n (r_i - c_i)^2}.
+\]
+Bộ giải mã tìm chuỗi mã ${c}$ sao cho $d_E({r}, {c})$ là nhỏ nhất. Trong trường hợp mã chập, thuật toán Viterbi sử dụng soft decision bằng cách tính path metric dựa trên giá trị xác suất hoặc độ tin cậy của mỗi bit, thay vì chỉ đếm lỗi nhị phân.
+
+\textbf{Ưu và nhược điểm}
+
+\begin{itemize}[label=-]
+	\item Ưu điểm: Cải thiện hiệu suất giải mã, đặc biệt trong kênh nhiễu Gaussian, nhờ sử dụng thông tin độ tin cậy. Hiệu suất có thể cải thiện 2–3 dB so với hard decision.
+	\item Nhược điểm: Phức tạp hơn, yêu cầu tính toán cao hơn và bộ nhớ lớn hơn, đặc biệt khi triển khai trên phần cứng.
+\end{itemize}
+
+\subsubsection{So sánh Hard Decision và Soft Decision}
+
+Hard decision và soft decision khác nhau ở cách xử lý đầu vào và độ phức tạp:
+\begin{itemize}[label=-]
+	\item Đầu vào: Hard decision chỉ nhận giá trị nhị phân, trong khi soft decision sử dụng giá trị liên tục hoặc xác suất.
+	\item Hiệu suất: Soft decision thường vượt trội hơn trong môi trường nhiễu mạnh, đặc biệt với mã chập khi sử dụng thuật toán Viterbi.
+	\item Độ phức tạp: Hard decision đơn giản hơn, phù hợp với các hệ thống có tài nguyên hạn chế, trong khi soft decision yêu cầu phần cứng mạnh hơn.
+\end{itemize}
+
+Cả hai phương pháp đều được sử dụng rộng rãi trong các hệ thống thông tin:
+\begin{itemize}[label=-]
+	\item Hard decision: Thường được dùng trong các hệ thống đơn giản như truyền dữ liệu tốc độ thấp hoặc khi tài nguyên phần cứng hạn chế.
+	\item Soft decision: Được áp dụng trong các hệ thống hiện đại như truyền hình vệ tinh (DVB-S2), mạng không dây (Wi-Fi, LTE), và các hệ thống yêu cầu hiệu suất cao.
 \end{itemize}
