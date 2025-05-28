@@ -5,13 +5,23 @@ Reallocating 'name_of_file' (item size: 1) to 17 items.
 A level-1 auxiliary file: sections/bia.aux
 Reallocating 'name_of_file' (item size: 1) to 26 items.
 A level-1 auxiliary file: sections/cosolythuyet.aux
+Reallocating 'name_of_file' (item size: 1) to 35 items.
+A level-1 auxiliary file: sections/mophongthuattoanbangC.aux
+Reallocating 'name_of_file' (item size: 1) to 41 items.
+A level-1 auxiliary file: sections/mophongthuattoanbangVerilog.aux
+Reallocating 'name_of_file' (item size: 1) to 20 items.
+A level-1 auxiliary file: sections/implem.aux
+Reallocating 'name_of_file' (item size: 1) to 37 items.
+A level-1 auxiliary file: sections/ketluanvahuongphattrien.aux
 Reallocating 'name_of_file' (item size: 1) to 7 items.
 The style file: ieeetr.bst
 Reallocating 'name_of_file' (item size: 1) to 4 items.
+Reallocating 'name_of_file' (item size: 1) to 20 items.
+A level-1 auxiliary file: sections/phuluc.aux
 Database file #1: ref.bib
 You've used 1 entry,
             1876 wiz_defined-function locations,
-            486 strings with 3682 characters,
+            491 strings with 3830 characters,
 and the built_in function-call counts, 190 in all, are:
 = -- 16
 > -- 8
