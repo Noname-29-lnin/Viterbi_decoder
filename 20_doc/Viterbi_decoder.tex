@@ -11,8 +11,8 @@
 \usepackage{nameref}
 \usepackage{babel}
 \usepackage{hyperref}
-%\usepackage[pages=some]{background}
-%\usepackage{graphics}
+\usepackage[pages=some]{background}
+\usepackage{graphics}
 \usepackage{float}
 \usepackage{enumerate}
 \usepackage[]{enumitem}
@@ -38,7 +38,7 @@
 %\usepackage{chngcntr}   % Để reset counter
 \usepackage{tocloft}
 \fancyhf{}
-\renewcommand{\thesection}{Chương \arabic{section}.}
+\renewcommand{\thesection}{CHƯƠNG \arabic{section}.}
 \renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}.}
 \renewcommand{\thesubsubsection}{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.}
 
@@ -71,7 +71,7 @@
 %\makeatother
 
 % Cấu hình mục lục
-\renewcommand{\cftsecnumwidth}{6em} % Độ rộng cho "Chương X."
+\renewcommand{\cftsecnumwidth}{8em} % Độ rộng cho "Chương X."
 \renewcommand{\cftsubsecnumwidth}{4em} % Cho "X.Y."
 \setlength{\cftsubsecindent}{2em} % Thụt lề subsection
 
@@ -90,15 +90,15 @@
 \renewcommand{\footrulewidth}{0.4pt}
 
 % Cấu hình background
-%\backgroundsetup{
-%	scale=1,
-%	color=black, 
-%	opacity=0.4,
-%	angle=0,
-%	contents={
-%		\includegraphics[width=\paperwidth, height=\paperheight]{sections/pic/bia.jpg}
-%	}
-%}
+\backgroundsetup{
+	scale=1,
+	color=black, 
+	opacity=0.4,
+	angle=0,
+	contents={
+		\includegraphics[width=\paperwidth, height=\paperheight]{sections/pic/bia.jpg}
+	}
+}
 
 \usepackage{listings}
 
@@ -174,7 +174,7 @@
 }
 % Định nghĩa cho thêm result
 \lstdefinelanguage{Result}{
-	keywords={PASS, FAIL, Time},
+	keywords={PASS, FAIL, Time, TestCase},
 	sensitive=true
 }
 
