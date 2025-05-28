@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.12) (preloaded format=pdflatex 2025.2.13)  28 MAY 2025 10:16
+=======
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.10)  27 MAY 2025 22:50
+>>>>>>> 13f36cb12182c50c9c2c7ecc66383fd9ef074d8f
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -740,29 +744,29 @@ File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__pdf_internal_box=\box108
 ) (Viterbi_decoder.aux (sections/bia.aux) (sections/cosolythuyet.aux)
 (sections/mophongthuattoanbangC.aux) (sections/mophongthuattoanbangVerilog.aux)
-)
+(sections/implem.aux))
 \openout1 = `Viterbi_decoder.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 171.
-LaTeX Font Info:    ... okay on input line 171.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 171.
-LaTeX Font Info:    ... okay on input line 171.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 171.
-LaTeX Font Info:    ... okay on input line 171.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 171.
-LaTeX Font Info:    ... okay on input line 171.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 171.
-LaTeX Font Info:    ... okay on input line 171.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 171.
-LaTeX Font Info:    ... okay on input line 171.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 171.
-LaTeX Font Info:    ... okay on input line 171.
-LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 171.
-LaTeX Font Info:    ... okay on input line 171.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 171.
-LaTeX Font Info:    ... okay on input line 171.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 171.
-LaTeX Font Info:    ... okay on input line 171.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 175.
+LaTeX Font Info:    ... okay on input line 175.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 175.
+LaTeX Font Info:    ... okay on input line 175.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 175.
+LaTeX Font Info:    ... okay on input line 175.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 175.
+LaTeX Font Info:    ... okay on input line 175.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 175.
+LaTeX Font Info:    ... okay on input line 175.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 175.
+LaTeX Font Info:    ... okay on input line 175.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 175.
+LaTeX Font Info:    ... okay on input line 175.
+LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 175.
+LaTeX Font Info:    ... okay on input line 175.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 175.
+LaTeX Font Info:    ... okay on input line 175.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 175.
+LaTeX Font Info:    ... okay on input line 175.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -821,16 +825,27 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 (/home/noname_lnin/.miktex/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
+<<<<<<< HEAD
 Package hyperref Info: Link coloring OFF on input line 171.
 (Viterbi_decoder.out) (Viterbi_decoder.out)
 \@outlinefile=\write3
 \openout3 = `Viterbi_decoder.out'.
+=======
+Package hyperref Info: Link coloring OFF on input line 175.
+ (Viterbi_decoder.out) (Viterbi_decoder.out)
+\@outlinefile=\write4
+\openout4 = `Viterbi_decoder.out'.
+>>>>>>> 13f36cb12182c50c9c2c7ecc66383fd9ef074d8f
 
 \c@lstlisting=\count330
 \openout2 = `sections/bia.aux'.
 
  (sections/bia.tex
+<<<<<<< HEAD
 <sections/pic/01_logobachkhoatoi.png, id=67, 471.9231pt x 478.9092pt>
+=======
+<sections/pic/01_logobachkhoatoi.png, id=94, 471.9231pt x 478.9092pt>
+>>>>>>> 13f36cb12182c50c9c2c7ecc66383fd9ef074d8f
 File: sections/pic/01_logobachkhoatoi.png Graphic file (type png)
 <use sections/pic/01_logobachkhoatoi.png>
 Package pdftex.def Info: sections/pic/01_logobachkhoatoi.png  used on input lin
@@ -854,6 +869,14 @@ Overfull \hbox (46.75922pt too wide) in paragraph at lines 22--27
 
 
 
+<<<<<<< HEAD
+=======
+<sections/pic/bia.jpg, id=96, 301.125pt x 414.95026pt>
+File: sections/pic/bia.jpg Graphic file (type jpg)
+<use sections/pic/bia.jpg>
+Package pdftex.def Info: sections/pic/bia.jpg  used on input line 33.
+(pdftex.def)             Requested size: 597.62614pt x 845.06903pt.
+>>>>>>> 13f36cb12182c50c9c2c7ecc66383fd9ef074d8f
 [1
 
 
@@ -907,9 +930,17 @@ LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <6.5> not available
 \tf@toc=\write4
 \openout4 = `Viterbi_decoder.toc'.
 
+<<<<<<< HEAD
  (Viterbi_decoder.lof)
 \tf@lof=\write5
 \openout5 = `Viterbi_decoder.lof'.
+=======
+ (Viterbi_decoder.lof
+
+[2])
+\tf@lof=\write6
+\openout6 = `Viterbi_decoder.lof'.
+>>>>>>> 13f36cb12182c50c9c2c7ecc66383fd9ef074d8f
 
  (Viterbi_decoder.lot)
 \tf@lot=\write6
@@ -917,6 +948,7 @@ LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <6.5> not available
 
 )
 
+<<<<<<< HEAD
 [4]
 
 
@@ -931,6 +963,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
  (sections/cosolythuyet.tex
 <sections/pic/cosolythuyet/ma-hoa-kenh.png, id=149, 644.4075pt x 262.9825pt>
+=======
+[3]
+\openout2 = `sections/cosolythuyet.aux'.
+
+ (sections/cosolythuyet.tex
+<sections/pic/cosolythuyet/ma-hoa-kenh.png, id=175, 644.4075pt x 262.9825pt>
+>>>>>>> 13f36cb12182c50c9c2c7ecc66383fd9ef074d8f
 File: sections/pic/cosolythuyet/ma-hoa-kenh.png Graphic file (type png)
 <use sections/pic/cosolythuyet/ma-hoa-kenh.png>
 Package pdftex.def Info: sections/pic/cosolythuyet/ma-hoa-kenh.png  used on inp
@@ -938,6 +977,14 @@ ut line 8.
 (pdftex.def)             Requested size: 290.22107pt x 118.44135pt.
 
 
+<<<<<<< HEAD
+=======
+<sections/pic/bk_name_en.png, id=177, 923.8515pt x 129.8451pt>
+File: sections/pic/bk_name_en.png Graphic file (type png)
+<use sections/pic/bk_name_en.png>
+Package pdftex.def Info: sections/pic/bk_name_en.png  used on input line 28.
+(pdftex.def)             Requested size: 193.47578pt x 27.191pt.
+>>>>>>> 13f36cb12182c50c9c2c7ecc66383fd9ef074d8f
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.93912pt, for example:
@@ -945,7 +992,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.93912pt}.
 
+<<<<<<< HEAD
 [6
+=======
+[4
+>>>>>>> 13f36cb12182c50c9c2c7ecc66383fd9ef074d8f
 
 
 
@@ -956,8 +1007,13 @@ s been already used, duplicate ignored
                                                   \__shipout_drop_firstpage_...
 l.29 	\item M
              ã Turbo (Turbo Codes): Kết hợp nhiều bộ mã hóa và s...
+<<<<<<< HEAD
  <./sections/pic/cosolythuyet/ma-hoa-kenh.png>]
 <sections/pic/cosolythuyet/structure_convolutional_code.png, id=156, 623.32875p
+=======
+ <./sections/pic/bk_name_en.png> <./sections/pic/cosolythuyet/ma-hoa-kenh.png>]
+<sections/pic/cosolythuyet/structure_convolutional_code.png, id=184, 623.32875p
+>>>>>>> 13f36cb12182c50c9c2c7ecc66383fd9ef074d8f
 t x 266.9975pt>
 File: sections/pic/cosolythuyet/structure_convolutional_code.png Graphic file (
 type png)
@@ -983,7 +1039,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.93912pt}.
 
+<<<<<<< HEAD
 [7
+=======
+[5
+>>>>>>> 13f36cb12182c50c9c2c7ecc66383fd9ef074d8f
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -991,7 +1051,11 @@ s been already used, duplicate ignored
 l.60 	\item \(
                g_{i,j} \): Hệ số kết hợp (0 hoặc 1) cho biết bit...
  <./sections/pic/cosolythuyet/structure_convolutional_code.png>]
+<<<<<<< HEAD
 <sections/pic/cosolythuyet/block_convolutional_encoder.png, id=172, 984.67876pt
+=======
+<sections/pic/cosolythuyet/block_convolutional_encoder.png, id=199, 984.67876pt
+>>>>>>> 13f36cb12182c50c9c2c7ecc66383fd9ef074d8f
  x 216.81pt>
 File: sections/pic/cosolythuyet/block_convolutional_encoder.png Graphic file (t
 ype png)
@@ -1008,7 +1072,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.93912pt}.
 
+<<<<<<< HEAD
 [8
+=======
+[6
+>>>>>>> 13f36cb12182c50c9c2c7ecc66383fd9ef074d8f
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -1021,7 +1089,11 @@ LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 1
 (/home/noname_lnin/.miktex/texmfs/install/tex/latex/vntex/t5cmtt.fd
 File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
+<<<<<<< HEAD
 <sections/pic/cosolythuyet/trellis-fsm-convolutional-code-coban.png, id=188, 36
+=======
+<sections/pic/cosolythuyet/trellis-fsm-convolutional-code-coban.png, id=215, 36
+>>>>>>> 13f36cb12182c50c9c2c7ecc66383fd9ef074d8f
 2.35374pt x 372.39125pt>
 File: sections/pic/cosolythuyet/trellis-fsm-convolutional-code-coban.png Graphi
 c file (type png)
@@ -1029,7 +1101,11 @@ c file (type png)
 Package pdftex.def Info: sections/pic/cosolythuyet/trellis-fsm-convolutional-co
 de-coban.png  used on input line 132.
 (pdftex.def)             Requested size: 241.84843pt x 248.55191pt.
+<<<<<<< HEAD
 <sections/pic/cosolythuyet/trellis-fsm-convolutional-code.png, id=189, 844.1537
+=======
+<sections/pic/cosolythuyet/trellis-fsm-convolutional-code.png, id=216, 844.1537
+>>>>>>> 13f36cb12182c50c9c2c7ecc66383fd9ef074d8f
 5pt x 382.42876pt>
 File: sections/pic/cosolythuyet/trellis-fsm-convolutional-code.png Graphic file
  (type png)
@@ -1046,7 +1122,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.93912pt}.
 
+<<<<<<< HEAD
 [9
+=======
+[7
+>>>>>>> 13f36cb12182c50c9c2c7ecc66383fd9ef074d8f
 pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -1067,12 +1147,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.93912pt}.
 
+<<<<<<< HEAD
 [10 <./sections/pic/cosolythuyet/trellis-fsm-convolutional-code.png>]
 
 LaTeX Font Warning: Font shape `TS1/cmr/m/n' in size <13> not available
 (Font)              size <12> substituted on input line 203.
 
 
+=======
+[8 <./sections/pic/cosolythuyet/trellis-fsm-convolutional-code.png>]
+>>>>>>> 13f36cb12182c50c9c2c7ecc66383fd9ef074d8f
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1081,8 +1165,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.93912pt}.
 
+<<<<<<< HEAD
 [11])
 
+=======
+[9]
+
+File: sections/pic/bk_name_en.png Graphic file (type png)
+<use sections/pic/bk_name_en.png>
+Package pdftex.def Info: sections/pic/bk_name_en.png  used on input line 236.
+(pdftex.def)             Requested size: 193.47578pt x 27.191pt.
+>>>>>>> 13f36cb12182c50c9c2c7ecc66383fd9ef074d8f
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.93912pt, for example:
@@ -1090,17 +1183,42 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.93912pt}.
 
+<<<<<<< HEAD
 [12]
 \openout2 = `sections/mophongthuattoanbangC.aux'.
 
  (sections/mophongthuattoanbangC.tex
 <sections/pic/mophongbangC/system_conv.png, id=215, 728.7225pt x 191.71625pt>
+=======
+[10])
+
+File: sections/pic/bk_name_en.png Graphic file (type png)
+<use sections/pic/bk_name_en.png>
+Package pdftex.def Info: sections/pic/bk_name_en.png  used on input line 180.
+(pdftex.def)             Requested size: 193.47578pt x 27.191pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 31.54103pt, for example:
+(fancyhdr)                \setlength{\headheight}{31.54103pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-19.54103pt}.
+
+[11]
+\openout2 = `sections/mophongthuattoanbangC.aux'.
+
+ (sections/mophongthuattoanbangC.tex
+<sections/pic/mophongbangC/system_conv.png, id=248, 728.7225pt x 191.71625pt>
+>>>>>>> 13f36cb12182c50c9c2c7ecc66383fd9ef074d8f
 File: sections/pic/mophongbangC/system_conv.png Graphic file (type png)
 <use sections/pic/mophongbangC/system_conv.png>
 Package pdftex.def Info: sections/pic/mophongbangC/system_conv.png  used on inp
 ut line 5.
 (pdftex.def)             Requested size: 386.95897pt x 101.80219pt.
+<<<<<<< HEAD
 <sections/pic/mophongbangC/flowchart_diagram_withC.png, id=217, 604.2575pt x 86
+=======
+<sections/pic/mophongbangC/flowchart_diagram_withC.png, id=250, 604.2575pt x 86
+>>>>>>> 13f36cb12182c50c9c2c7ecc66383fd9ef074d8f
 4.22874pt>
 File: sections/pic/mophongbangC/flowchart_diagram_withC.png Graphic file (type 
 png)
@@ -1117,7 +1235,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.93912pt}.
 
+<<<<<<< HEAD
 [13
+=======
+[12
+>>>>>>> 13f36cb12182c50c9c2c7ecc66383fd9ef074d8f
 
 
 
@@ -1128,7 +1250,11 @@ s been already used, duplicate ignored
                                                   \__shipout_drop_firstpage_...
 l.19 
       <./sections/pic/mophongbangC/system_conv.png>]
+<<<<<<< HEAD
 <sections/pic/mophongbangC/Trans_string_to_binary.png, id=224, 614.295pt x 492.
+=======
+<sections/pic/mophongbangC/Trans_string_to_binary.png, id=256, 614.295pt x 492.
+>>>>>>> 13f36cb12182c50c9c2c7ecc66383fd9ef074d8f
 84125pt>
 File: sections/pic/mophongbangC/Trans_string_to_binary.png Graphic file (type p
 ng)
@@ -1136,6 +1262,7 @@ ng)
 Package pdftex.def Info: sections/pic/mophongbangC/Trans_string_to_binary.png  
 used on input line 26.
 (pdftex.def)             Requested size: 212.82779pt x 170.75233pt.
+<<<<<<< HEAD
 
 
 
@@ -1185,6 +1312,14 @@ n input line 55.
 (pdftex.def)             Requested size: 290.22107pt x 534.57718pt.
 
 
+=======
+
+
+File: sections/pic/bk_name_en.png Graphic file (type png)
+<use sections/pic/bk_name_en.png>
+Package pdftex.def Info: sections/pic/bk_name_en.png  used on input line 29.
+(pdftex.def)             Requested size: 193.47578pt x 27.191pt.
+>>>>>>> 13f36cb12182c50c9c2c7ecc66383fd9ef074d8f
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.93912pt, for example:
@@ -1192,7 +1327,66 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.93912pt}.
 
+<<<<<<< HEAD
 [16
+=======
+[13
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.29 
+      <./sections/pic/mophongbangC/flowchart_diagram_withC.png>]
+<sections/pic/mophongbangC/flowchart_conv_block_withC.png, id=263, 673.51625pt 
+x 849.1725pt>
+File: sections/pic/mophongbangC/flowchart_conv_block_withC.png Graphic file (ty
+pe png)
+<use sections/pic/mophongbangC/flowchart_conv_block_withC.png>
+Package pdftex.def Info: sections/pic/mophongbangC/flowchart_conv_block_withC.p
+ng  used on input line 47.
+(pdftex.def)             Requested size: 386.95897pt x 487.88168pt.
+
+
+File: sections/pic/bk_name_en.png Graphic file (type png)
+<use sections/pic/bk_name_en.png>
+Package pdftex.def Info: sections/pic/bk_name_en.png  used on input line 50.
+(pdftex.def)             Requested size: 193.47578pt x 27.191pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 31.54103pt, for example:
+(fancyhdr)                \setlength{\headheight}{31.54103pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-19.54103pt}.
+
+[14
+pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.50 
+      <./sections/pic/mophongbangC/Trans_string_to_binary.png>]
+<sections/pic/mophongbangC/flowchart_VD_312.png, id=269, 584.1825pt x 1076.02pt
+>
+File: sections/pic/mophongbangC/flowchart_VD_312.png Graphic file (type png)
+<use sections/pic/mophongbangC/flowchart_VD_312.png>
+Package pdftex.def Info: sections/pic/mophongbangC/flowchart_VD_312.png  used o
+n input line 55.
+(pdftex.def)             Requested size: 290.22107pt x 534.57718pt.
+
+
+File: sections/pic/bk_name_en.png Graphic file (type png)
+<use sections/pic/bk_name_en.png>
+Package pdftex.def Info: sections/pic/bk_name_en.png  used on input line 58.
+(pdftex.def)             Requested size: 193.47578pt x 27.191pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 31.54103pt, for example:
+(fancyhdr)                \setlength{\headheight}{31.54103pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-19.54103pt}.
+
+[15
+>>>>>>> 13f36cb12182c50c9c2c7ecc66383fd9ef074d8f
 pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -1203,6 +1397,7 @@ Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 61.
 
 
+<<<<<<< HEAD
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.93912pt, for example:
@@ -1211,6 +1406,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.93912pt}.
 
 [17
+=======
+File: sections/pic/bk_name_en.png Graphic file (type png)
+<use sections/pic/bk_name_en.png>
+Package pdftex.def Info: sections/pic/bk_name_en.png  used on input line 68.
+(pdftex.def)             Requested size: 193.47578pt x 27.191pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 31.54103pt, for example:
+(fancyhdr)                \setlength{\headheight}{31.54103pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-19.54103pt}.
+
+[16
+>>>>>>> 13f36cb12182c50c9c2c7ecc66383fd9ef074d8f
 pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -1218,6 +1427,13 @@ s been already used, duplicate ignored
 l.68 	
        <./sections/pic/mophongbangC/flowchart_VD_312.png>]
 
+<<<<<<< HEAD
+=======
+File: sections/pic/bk_name_en.png Graphic file (type png)
+<use sections/pic/bk_name_en.png>
+Package pdftex.def Info: sections/pic/bk_name_en.png  used on input line 119.
+(pdftex.def)             Requested size: 193.47578pt x 27.191pt.
+>>>>>>> 13f36cb12182c50c9c2c7ecc66383fd9ef074d8f
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.93912pt, for example:
@@ -1225,8 +1441,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.93912pt}.
 
+<<<<<<< HEAD
 [18])
 
+=======
+[17])
+
+File: sections/pic/bk_name_en.png Graphic file (type png)
+<use sections/pic/bk_name_en.png>
+Package pdftex.def Info: sections/pic/bk_name_en.png  used on input line 181.
+(pdftex.def)             Requested size: 193.47578pt x 27.191pt.
+>>>>>>> 13f36cb12182c50c9c2c7ecc66383fd9ef074d8f
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.93912pt, for example:
@@ -1234,6 +1459,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.93912pt}.
 
+<<<<<<< HEAD
 [19]
 \openout2 = `sections/mophongthuattoanbangVerilog.aux'.
 
@@ -1243,6 +1469,13 @@ Overfull \hbox (44.62073pt too wide) in paragraph at lines 2--2
  []
 
 <sections/pic/mophongbangSystemVerilog/HD_unit.png, id=322, 643.40375pt x 703.6
+=======
+[18]
+\openout2 = `sections/mophongthuattoanbangVerilog.aux'.
+
+ (sections/mophongthuattoanbangVerilog.tex
+<sections/pic/mophongbangSystemVerilog/HD_unit.png, id=354, 643.40375pt x 703.6
+>>>>>>> 13f36cb12182c50c9c2c7ecc66383fd9ef074d8f
 2875pt>
 File: sections/pic/mophongbangSystemVerilog/HD_unit.png Graphic file (type png)
 
@@ -1250,7 +1483,11 @@ File: sections/pic/mophongbangSystemVerilog/HD_unit.png Graphic file (type png)
 Package pdftex.def Info: sections/pic/mophongbangSystemVerilog/HD_unit.png  use
 d on input line 8.
 (pdftex.def)             Requested size: 386.95897pt x 423.18973pt.
+<<<<<<< HEAD
 <sections/pic/mophongbangSystemVerilog/BM_unit.png, id=323, 815.045pt x 895.345
+=======
+<sections/pic/mophongbangSystemVerilog/BM_unit.png, id=355, 815.045pt x 895.345
+>>>>>>> 13f36cb12182c50c9c2c7ecc66383fd9ef074d8f
 pt>
 File: sections/pic/mophongbangSystemVerilog/BM_unit.png Graphic file (type png)
 
@@ -1267,7 +1504,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.93912pt}.
 
+<<<<<<< HEAD
 [20
+=======
+[19
+>>>>>>> 13f36cb12182c50c9c2c7ecc66383fd9ef074d8f
 
 
 
@@ -1276,6 +1517,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
+<<<<<<< HEAD
 l.17 
       <./sections/pic/mophongbangSystemVerilog/HD_unit.png>]
 
@@ -1310,6 +1552,15 @@ Package pdftex.def Info: sections/pic/mophongbangSystemVerilog/ACS.png  used on
 (pdftex.def)             Requested size: 386.95897pt x 450.85423pt.
 
 
+=======
+l.16 
+      <./sections/pic/mophongbangSystemVerilog/HD_unit.png>]
+
+File: sections/pic/bk_name_en.png Graphic file (type png)
+<use sections/pic/bk_name_en.png>
+Package pdftex.def Info: sections/pic/bk_name_en.png  used on input line 36.
+(pdftex.def)             Requested size: 193.47578pt x 27.191pt.
+>>>>>>> 13f36cb12182c50c9c2c7ecc66383fd9ef074d8f
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.93912pt, for example:
@@ -1317,22 +1568,79 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.93912pt}.
 
+<<<<<<< HEAD
 [22
+=======
+[20
+pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.36 	
+      - tb_bmu.sv:53: Verilog $finish <./sections/pic/mophongbangSystemVerilog/
+BM_unit.png>]
+<sections/pic/mophongbangSystemVerilog/ACSU_proc_state.png, id=385, 392.21532pt
+ x 678.28406pt>
+File: sections/pic/mophongbangSystemVerilog/ACSU_proc_state.png Graphic file (t
+ype png)
+<use sections/pic/mophongbangSystemVerilog/ACSU_proc_state.png>
+Package pdftex.def Info: sections/pic/mophongbangSystemVerilog/ACSU_proc_state.
+png  used on input line 43.
+(pdftex.def)             Requested size: 290.22107pt x 501.9327pt.
+<sections/pic/mophongbangSystemVerilog/ACS.png, id=386, 845.1575pt x 984.67876p
+t>
+File: sections/pic/mophongbangSystemVerilog/ACS.png Graphic file (type png)
+<use sections/pic/mophongbangSystemVerilog/ACS.png>
+Package pdftex.def Info: sections/pic/mophongbangSystemVerilog/ACS.png  used on
+ input line 49.
+(pdftex.def)             Requested size: 386.95897pt x 450.85423pt.
+
+
+File: sections/pic/bk_name_en.png Graphic file (type png)
+<use sections/pic/bk_name_en.png>
+Package pdftex.def Info: sections/pic/bk_name_en.png  used on input line 52.
+(pdftex.def)             Requested size: 193.47578pt x 27.191pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 31.54103pt, for example:
+(fancyhdr)                \setlength{\headheight}{31.54103pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-19.54103pt}.
+
+[21
+>>>>>>> 13f36cb12182c50c9c2c7ecc66383fd9ef074d8f
 pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
+<<<<<<< HEAD
 l.113 
        <./sections/pic/mophongbangSystemVerilog/ACSU_proc_state.png>]
 <sections/pic/mophongbangSystemVerilog/ACSU.png, id=366, 855.195pt x 985.6825pt
+=======
+l.52 
+      <./sections/pic/mophongbangSystemVerilog/ACSU_proc_state.png>]
+<sections/pic/mophongbangSystemVerilog/ACSU.png, id=394, 855.195pt x 985.6825pt
+>>>>>>> 13f36cb12182c50c9c2c7ecc66383fd9ef074d8f
 >
 File: sections/pic/mophongbangSystemVerilog/ACSU.png Graphic file (type png)
 <use sections/pic/mophongbangSystemVerilog/ACSU.png>
 Package pdftex.def Info: sections/pic/mophongbangSystemVerilog/ACSU.png  used o
+<<<<<<< HEAD
 n input line 116.
 (pdftex.def)             Requested size: 386.95897pt x 446.0046pt.
 
 
+=======
+n input line 55.
+(pdftex.def)             Requested size: 386.95897pt x 446.0046pt.
+
+
+File: sections/pic/bk_name_en.png Graphic file (type png)
+<use sections/pic/bk_name_en.png>
+Package pdftex.def Info: sections/pic/bk_name_en.png  used on input line 58.
+(pdftex.def)             Requested size: 193.47578pt x 27.191pt.
+>>>>>>> 13f36cb12182c50c9c2c7ecc66383fd9ef074d8f
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.93912pt, for example:
@@ -1345,14 +1653,26 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
+<<<<<<< HEAD
 l.119 
        <./sections/pic/mophongbangSystemVerilog/ACS.png>]
 
 
+=======
+l.58 
+      <./sections/pic/mophongbangSystemVerilog/ACS.png>]
+
+File: sections/pic/bk_name_en.png Graphic file (type png)
+<use sections/pic/bk_name_en.png>
+Package pdftex.def Info: sections/pic/bk_name_en.png  used on input line 77.
+(pdftex.def)             Requested size: 193.47578pt x 27.191pt.
+
+>>>>>>> 13f36cb12182c50c9c2c7ecc66383fd9ef074d8f
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.93912pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.93912pt}.
 (fancyhdr)                You might also make \topmargin smaller:
+<<<<<<< HEAD
 (fancyhdr)                \addtolength{\topmargin}{-2.93912pt}.
 
 [24
@@ -1397,10 +1717,51 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.93912pt}.
 
 [26
+=======
+(fancyhdr)                \addtolength{\topmargin}{-19.54103pt}.
+
+[23
+pdfTeX warning (ext4): destination with the same identifier (name{figure.14}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.77 	
+      Time: 35000 | i_rst_n = 1 | <./sections/pic/mophongbangSystemVerilog/ACSU
+.png>]
+<sections/pic/mophongbangSystemVerilog/FSM.png, id=422, 788.9475pt x 522.95375p
+t>
+File: sections/pic/mophongbangSystemVerilog/FSM.png Graphic file (type png)
+<use sections/pic/mophongbangSystemVerilog/FSM.png>
+Package pdftex.def Info: sections/pic/mophongbangSystemVerilog/FSM.png  used on
+ input line 107.
+(pdftex.def)             Requested size: 386.95897pt x 256.49695pt.
+<sections/pic/mophongbangSystemVerilog/SPMU.png, id=423, 824.07875pt x 563.1037
+4pt>
+File: sections/pic/mophongbangSystemVerilog/SPMU.png Graphic file (type png)
+<use sections/pic/mophongbangSystemVerilog/SPMU.png>
+Package pdftex.def Info: sections/pic/mophongbangSystemVerilog/SPMU.png  used o
+n input line 113.
+(pdftex.def)             Requested size: 386.95897pt x 264.41821pt.
+
+
+File: sections/pic/bk_name_en.png Graphic file (type png)
+<use sections/pic/bk_name_en.png>
+Package pdftex.def Info: sections/pic/bk_name_en.png  used on input line 116.
+(pdftex.def)             Requested size: 193.47578pt x 27.191pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 31.54103pt, for example:
+(fancyhdr)                \setlength{\headheight}{31.54103pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-19.54103pt}.
+
+[24
+>>>>>>> 13f36cb12182c50c9c2c7ecc66383fd9ef074d8f
 pdfTeX warning (ext4): destination with the same identifier (name{figure.15}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
+<<<<<<< HEAD
 l.232 	
        PM_0 = 00 	| PM_1 = 01 	| PM_2 = 10 	| PM_3 = 11 	|
 pdfTeX warning (ext4): destination with the same identifier (name{figure.16}) h
@@ -1412,6 +1773,15 @@ l.232
 ongbangSystemVerilog/FSM.png> <./sections/pic/mophongbangSystemVerilog/SPMU.png
 >]
 
+=======
+l.116 
+       <./sections/pic/mophongbangSystemVerilog/FSM.png>]
+
+File: sections/pic/bk_name_en.png Graphic file (type png)
+<use sections/pic/bk_name_en.png>
+Package pdftex.def Info: sections/pic/bk_name_en.png  used on input line 147.
+(pdftex.def)             Requested size: 193.47578pt x 27.191pt.
+>>>>>>> 13f36cb12182c50c9c2c7ecc66383fd9ef074d8f
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.93912pt, for example:
@@ -1419,6 +1789,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.93912pt}.
 
+<<<<<<< HEAD
 [27])
 
 
@@ -1430,7 +1801,83 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [28] (Viterbi_decoder.aux (sections/bia.aux) (sections/cosolythuyet.aux)
 (sections/mophongthuattoanbangC.aux) (sections/mophongthuattoanbangVerilog.aux)
+=======
+[25
+pdfTeX warning (ext4): destination with the same identifier (name{figure.16}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.147 	
+       Time = 65000 	| i_rst_n = 1 	| o_decision = 1 	| o_valid = 1 	| <./secti
+ons/pic/mophongbangSystemVerilog/SPMU.png>]
+<sections/pic/mophongbangSystemVerilog/viterbi_decoder.png, id=489, 1347.0325pt
+ x 522.95375pt>
+File: sections/pic/mophongbangSystemVerilog/viterbi_decoder.png Graphic file (t
+ype png)
+<use sections/pic/mophongbangSystemVerilog/viterbi_decoder.png>
+Package pdftex.def Info: sections/pic/mophongbangSystemVerilog/viterbi_decoder.
+png  used on input line 160.
+(pdftex.def)             Requested size: 338.58632pt x 131.4483pt.
+>>>>>>> 13f36cb12182c50c9c2c7ecc66383fd9ef074d8f
 )
+
+File: sections/pic/bk_name_en.png Graphic file (type png)
+<use sections/pic/bk_name_en.png>
+Package pdftex.def Info: sections/pic/bk_name_en.png  used on input line 182.
+(pdftex.def)             Requested size: 193.47578pt x 27.191pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 31.54103pt, for example:
+(fancyhdr)                \setlength{\headheight}{31.54103pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-19.54103pt}.
+
+[26
+pdfTeX warning (ext4): destination with the same identifier (name{figure.17}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.182 ...sections/mophongthuattoanbangVerilog.tex}
+                                                   <./sections/pic/mophongbangS
+ystemVerilog/viterbi_decoder.png>]
+\openout2 = `sections/implem.aux'.
+
+ (sections/implem.tex)
+
+File: sections/pic/bk_name_en.png Graphic file (type png)
+<use sections/pic/bk_name_en.png>
+Package pdftex.def Info: sections/pic/bk_name_en.png  used on input line 184.
+(pdftex.def)             Requested size: 193.47578pt x 27.191pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 31.54103pt, for example:
+(fancyhdr)                \setlength{\headheight}{31.54103pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-19.54103pt}.
+
+[27
+
+
+
+] (Viterbi_decoder.bbl)
+
+File: sections/pic/bk_name_en.png Graphic file (type png)
+<use sections/pic/bk_name_en.png>
+Package pdftex.def Info: sections/pic/bk_name_en.png  used on input line 187.
+(pdftex.def)             Requested size: 193.47578pt x 27.191pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 31.54103pt, for example:
+(fancyhdr)                \setlength{\headheight}{31.54103pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-19.54103pt}.
+
+[28
+
+
+] (Viterbi_decoder.aux (sections/bia.aux) (sections/cosolythuyet.aux)
+(sections/mophongthuattoanbangC.aux) (sections/mophongthuattoanbangVerilog.aux)
+(sections/implem.aux))
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -1441,6 +1888,7 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
 Package rerunfilecheck Info: File `Viterbi_decoder.out' has not changed.
+<<<<<<< HEAD
 (rerunfilecheck)             Checksum: 3F2C196300C9E8743765A712C9A94D0E;3964.
  ) 
 Here is how much of TeX's memory you used:
@@ -1451,10 +1899,23 @@ Here is how much of TeX's memory you used:
  590963 words of font info for 114 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  69i,12n,79p,1289b,2045s stack positions out of 10000i,1000n,20000p,200000b,200000s
+=======
+(rerunfilecheck)             Checksum: CD9AA731799843BD3F9E5D490F92C762;5593.
+ ) 
+Here is how much of TeX's memory you used:
+ 26868 strings out of 473530
+ 490367 string characters out of 5714794
+ 1113013 words of memory out of 5000000
+ 49326 multiletter control sequences out of 15000+600000
+ 590626 words of font info for 113 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 99i,16n,102p,1075b,2095s stack positions out of 10000i,1000n,20000p,200000b,200000s
+>>>>>>> 13f36cb12182c50c9c2c7ecc66383fd9ef074d8f
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
 
+<<<<<<< HEAD
  </home/noname_lnin/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm
 1200.pk></home/noname_lnin/.miktex/texmfs/install/fonts/type1/public/amsfonts/c
 m/cmbx12.pfb></home/noname_lnin/.miktex/texmfs/install/fonts/type1/public/amsfo
@@ -1482,4 +1943,32 @@ PDF statistics:
  646 PDF objects out of 1000 (max. 8388607)
  262 named destinations out of 1000 (max. 500000)
  219 words of extra memory for PDF output out of 10000 (max. 10000000)
+=======
+<C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+bx12.pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmex10.pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmmi10.pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/nguye/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/nguye/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/nguye/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/nguye/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/ng
+uye/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:
+/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9
+.pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnbx12
+.pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnbx8.
+pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr10.p
+fb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr12.pf
+b><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr17.pfb
+><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr7.pfb><
+C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr9.pfb><C:
+/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnti12.pfb><C:
+/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vntt10.pfb><C:
+/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vntt12.pfb>
+Output written on Viterbi_decoder.pdf (28 pages, 840660 bytes).
+PDF statistics:
+ 668 PDF objects out of 1000 (max. 8388607)
+ 257 named destinations out of 1000 (max. 500000)
+ 294 words of extra memory for PDF output out of 10000 (max. 10000000)
+>>>>>>> 13f36cb12182c50c9c2c7ecc66383fd9ef074d8f
 
