@@ -4,3 +4,6 @@
 ./../../02_rtl/Compare_unit.sv
 ./../../02_rtl/Path_metric_unit.sv
 ./../../02_rtl/ACS.sv
+./../../02_rtl/Branch_metric_unit.sv
+./../../02_rtl/Hamming_distance.sv
+./../../02_rtl/Full_adder.sv
