@@ -208,7 +208,7 @@ task CheckResult();
     logic [1:0] t_PM_0, t_PM_1, t_PM_2, t_PM_3;
 
     @(posedge i_clk); // Wait for clock edge to capture PMU outputs
-    $display("Time: %0t \t| i_data = %b \t| i_valid \t|", $time, i_data, i_valid);
+    $display("Time: %0t \t| i_data = %b \t| i_valid = %b \t|", $time, i_data, i_valid);
     $display("| i_BM_0: %b \t| i_BM_1: %b \t| i_BM_2: %b \t| i_BM_3: %b \t|", 
             i_BM_0, i_BM_1, i_BM_2, i_BM_3);
     $display("| i_PM_0: %b \t| i_PM_1: %b \t| i_PM_2: %b \t| i_PM_3: %b \t|",
