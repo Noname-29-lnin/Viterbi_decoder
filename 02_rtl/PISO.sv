@@ -33,15 +33,29 @@ always_ff @(posedge i_clk or negedge i_rst_n) begin : proc_count
 end
 
 // Setup shift register
+logic [SIZE_DATA_IN-1:0] w_idata;
+logic [SIZE_DATA_IN-1:0] w_idata_next; 
+logic w_update_idata;
+assign w_update_idata = i_start & (~w_count_next);
+assign w_idata = w_update_idata ? i_data : w_idata_next;
+
+always_ff @(posedge i_clk or negedge i_rst_n) begin : save_idata
+    if (~i_rst_n) begin
+        w_idata_next <= '0;
+    end else begin     
+        w_idata_next <= w_idata;
+    end
+end
+
 always_comb begin : proc_shift_reg
-    shift_reg[0] = i_data[1:0];
-    shift_reg[1] = i_data[3:2];
-    shift_reg[2] = i_data[5:4];
-    shift_reg[3] = i_data[7:6];
-    shift_reg[4] = i_data[9:8];
-    shift_reg[5] = i_data[11:10];
-    shift_reg[6] = i_data[13:12];
-    shift_reg[7] = i_data[15:14];
+    shift_reg[0] = w_idata[1:0];
+    shift_reg[1] = w_idata[3:2];
+    shift_reg[2] = w_idata[5:4];
+    shift_reg[3] = w_idata[7:6];
+    shift_reg[4] = w_idata[9:8];
+    shift_reg[5] = w_idata[11:10];
+    shift_reg[6] = w_idata[13:12];
+    shift_reg[7] = w_idata[15:14];
 end
 
 // Setup output data
@@ -61,9 +75,21 @@ always_ff @(posedge i_clk or negedge i_rst_n) begin : proc_outut_data
         w_output <= shift_reg[count];
     end
 end
-assign o_data = w_count_next ? w_output : '0;
-assign o_valid = w_count_next ? 1'b1 : 1'b0;
+// assign o_data = w_count_next ? w_output : '0;
+assign o_data = o_valid ? w_output : '0;
+// assign o_data = o_valid & w_output;
 
+// Setup Output valid signal
+wire w_ovalid;
+assign w_ovalid = w_count_next;
+// assign w_ovalid = w_count_next ? 1'b1 : 1'b0;
+always_ff @( posedge i_clk or negedge i_rst_n ) begin : proc_valid
+    if(~i_rst_n) begin
+        o_valid <= 1'b0;
+    end else begin
+        o_valid <= w_ovalid;
+    end
+end
 // Setup Output done signal
 logic w_done;
 assign w_done = &count;

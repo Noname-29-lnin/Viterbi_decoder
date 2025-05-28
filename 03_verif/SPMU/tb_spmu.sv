@@ -13,7 +13,8 @@ Survivor_path_memory_unit spmu(
     .i_PM_1      (w_PM_1),
     .i_PM_2      (w_PM_2),
     .i_PM_3      (w_PM_3),
-    .o_decision  (w_decision)
+    .o_decision  (w_decision),
+    .o_valid     () // Not used in this testbench
 );
 
 always #5 i_clk = ~i_clk;

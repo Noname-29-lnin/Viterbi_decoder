@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.10)  7 MAY 2025 15:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.12) (preloaded format=pdflatex 2025.2.13)  28 MAY 2025 10:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,9 +6,9 @@ entering extended mode
 (Viterbi_decoder.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/base/article.cls
 Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/base/size12.clo
 File: size12.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count196
@@ -23,21 +23,21 @@ File: size12.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
 \belowcaptionskip=\skip50
 \bibindent=\dimen141
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/vntex\vietnam.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/vntex/vietnam.sty
 Package: vietnam 2009/07/12 v1.3 support for Vietnamese
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/base/ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/vntex\t5enc.def
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/vntex/t5enc.def
 File: t5enc.def 2006/11/21 v1.4 Vietnamese T5 encoding
 Now handling font encoding T5 ...
 ... processing UTF-8 mapping file for font encoding T5
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/vntex\t5enc.dfu
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/vntex/t5enc.dfu
 File: t5enc.dfu 2006/08/19 v1.1 UTF8 support for Vietnamese
    defining Unicode char U+00AB (decimal 171)
    defining Unicode char U+00BB (decimal 187)
@@ -194,28 +194,28 @@ File: t5enc.dfu 2006/08/19 v1.1 UTF8 support for Vietnamese
 LaTeX Font Info:    Trying to load font information for T5+cmr on input line 11
 6.
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/vntex\t5cmr.fd
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/vntex/t5cmr.fd
 File: t5cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 ))
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/base/inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/vntex\vncaps.tex
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/vntex/vncaps.tex
 File: vncaps.tex 2006/06/07 v1.1 Captions in Vietnamese
 ))
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks19
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/generic/iftex/iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 ))
 \Gm@cnth=\count270
@@ -231,32 +231,31 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@layoutvoffset=\dimen149
 \Gm@dimlist=\toks20
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/geometry/geometry.cfg))
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/graphics/graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/graphics/trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
-fg
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen150
 \Gin@req@width=\dimen151
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks21
 \symAMSa=\mathgroup4
@@ -264,7 +263,8 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
+))
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
 \thm@style=\toks22
 \thm@bodyfont=\toks23
@@ -276,24 +276,24 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@headsep=\skip53
 \dth@everypar=\toks27
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2024/11/05 v2.17t AMS math features
 \@mathmargin=\skip54
 
 For additional information on amsmath, use the `?' option.
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/amsmath/amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks28
 \ex@=\dimen152
 ))
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen153
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count273
@@ -344,14 +344,15 @@ LaTeX Info: Redefining \Relbar on input line 970.
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/graphics/mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1365.
@@ -361,98 +362,97 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
-) (C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+)
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/hyperref/nameref.sty
 Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
-ty
+(/home/noname_lnin/.miktex/texmfs/install/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 ))
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettit
-lestring.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/generic/gettitlestring/gettitlest
+ring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 )))
 \c@section@level=\count285
-) (C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
-Package: babel 2025/01/25 v25.2 The multilingual framework for pdfLaTeX, LuaLaT
+) (/home/noname_lnin/.miktex/texmfs/install/tex/generic/babel/babel.sty
+Package: babel 2025/02/02 v25.3 The multilingual framework for pdfLaTeX, LuaLaT
 eX and XeLaTeX
 \babel@savecnt=\count286
 \U@D=\dimen161
-\l@unhyphenated=\language79
+\l@unhyphenated=\language2
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+(/home/noname_lnin/.miktex/texmfs/install/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
 \bbl@dirlevel=\count287
 
 *************************************
 * Local config file bblopts.cfg used
 *
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/arabi/bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
 Package babel Info: You haven't specified a language as a class or package
 (babel)             option. I'll load 'nil'. Reported on input line 4188.
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/babel\nil.ldf
-Language: nil 2025/01/25 v25.2 Nil language
-\l@nil=\language80
+(/home/noname_lnin/.miktex/texmfs/install/tex/generic/babel/nil.ldf
+Language: nil 2025/02/02 v25.3 Nil language
+\l@nil=\language3
 ))
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2024-11-05 v7.01l Hypertext links for LaTeX
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
-keys.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/generic/kvdefinekeys/kvdefinekeys
+.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
-ty
+(/home/noname_lnin/.miktex/texmfs/install/tex/generic/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
-.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-))
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+)) (/home/noname_lnin/.miktex/texmfs/install/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count288
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.s
-ty
+(/home/noname_lnin/.miktex/texmfs/install/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
 \@linkdim=\dimen162
 \Hy@linkcounter=\count289
 \Hy@pagecounter=\count290
- (C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-) (C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+)
+(/home/noname_lnin/.miktex/texmfs/install/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count291
- (C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/hyperref/puenc.def
 File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
@@ -466,18 +466,17 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4424.
 \c@Hy@tempcnt=\count292
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/url/url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4763.
 \XeTeXLinkMargin=\dimen163
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc
-.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
@@ -491,8 +490,7 @@ Package hyperref Info: backreferencing OFF on input line 6057.
 Package hyperref Info: Link coloring OFF on input line 6062.
 Package hyperref Info: Link coloring with OCG OFF on input line 6067.
 Package hyperref Info: PDF/A mode OFF on input line 6072.
-
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+ (/home/noname_lnin/.miktex/texmfs/install/tex/latex/base/atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
@@ -501,10 +499,11 @@ package with kernel methods
 \c@Hfootnote=\count296
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2024-11-05 v7.01l Hyperref driver for pdfTeX
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/base/atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
@@ -512,405 +511,79 @@ with kernel methods
 \Fld@listcount=\count297
 \c@bookmark@seq@number=\count298
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
-echeck.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/rerunfilecheck/rerunfileche
+ck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquec
-ounter.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/generic/uniquecounter/uniquecount
+er.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 85.
 )
 \Hy@SectionHShift=\skip57
-)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/background\background.s
-ty
-Package: background 2014/03/04 v2.1 background material
- (C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
-Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
-
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
-\XKV@toks=\toks33
-\XKV@tempa@toks=\toks34
-)
-\XKV@depth=\count299
-File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-))
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.
-sty
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.st
-y
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
--common.tex
-\pgfutil@everybye=\toks35
-\pgfutil@tempdima=\dimen166
-\pgfutil@tempdimb=\dimen167
-)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
--latex.def
-\pgfutil@abb=\box54
-)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
-code.tex
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
-Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
-))
-Package: pgf 2023-01-15 v3.1.10 (3.1.10)
-
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.
-sty
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.
-sty
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
-s.code.tex
-Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
-
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
-.code.tex
-\pgfkeys@pathtoks=\toks36
-\pgfkeys@temptoks=\toks37
-
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
-libraryfiltered.code.tex
-\pgfkeys@tmptoks=\toks38
-))
-\pgf@x=\dimen168
-\pgf@y=\dimen169
-\pgf@xa=\dimen170
-\pgf@ya=\dimen171
-\pgf@xb=\dimen172
-\pgf@yb=\dimen173
-\pgf@xc=\dimen174
-\pgf@yc=\dimen175
-\pgf@xd=\dimen176
-\pgf@yd=\dimen177
-\w@pgf@writea=\write3
-\r@pgf@reada=\read3
-\c@pgf@counta=\count300
-\c@pgf@countb=\count301
-\c@pgf@countc=\count302
-\c@pgf@countd=\count303
-\t@pgf@toka=\toks39
-\t@pgf@tokb=\toks40
-\t@pgf@tokc=\toks41
-\pgf@sys@id@count=\count304
-
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
-fg
-File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
-)
-Driver file for pgf: pgfsys-pdftex.def
-
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
-s-pdftex.def
-File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
-
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
-s-common-pdf.def
-File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
-)))
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
-ssoftpath.code.tex
-File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count305
-\pgfsyssoftpath@bigbuffer@items=\count306
-)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
-sprotocol.code.tex
-File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-e.code.tex
-Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
-
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
-.tex
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.
-code.tex)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
-r.code.tex
-\pgfmath@dimen=\dimen178
-\pgfmath@count=\count307
-\pgfmath@box=\box55
-\pgfmath@toks=\toks42
-\pgfmath@stack@operand=\toks43
-\pgfmath@stack@operation=\toks44
-)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.code.tex)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.basic.code.tex)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.trigonometric.code.tex)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.random.code.tex)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.comparison.code.tex)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.base.code.tex)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.round.code.tex)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.misc.code.tex)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.integerarithmetics.code.tex)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.
-code.tex)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
-.code.tex
-\c@pgfmathroundto@lastzeros=\count308
-))
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
-tex)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-epoints.code.tex
-File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@picminx=\dimen179
-\pgf@picmaxx=\dimen180
-\pgf@picminy=\dimen181
-\pgf@picmaxy=\dimen182
-\pgf@pathminx=\dimen183
-\pgf@pathmaxx=\dimen184
-\pgf@pathminy=\dimen185
-\pgf@pathmaxy=\dimen186
-\pgf@xx=\dimen187
-\pgf@xy=\dimen188
-\pgf@yx=\dimen189
-\pgf@yy=\dimen190
-\pgf@zx=\dimen191
-\pgf@zy=\dimen192
-)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-epathconstruct.code.tex
-File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@path@lastx=\dimen193
-\pgf@path@lasty=\dimen194
-)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-epathusage.code.tex
-File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@shorten@end@additional=\dimen195
-\pgf@shorten@start@additional=\dimen196
-)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-escopes.code.tex
-File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfpic=\box56
-\pgf@hbox=\box57
-\pgf@layerbox@main=\box58
-\pgf@picture@serial@count=\count309
-)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-egraphicstate.code.tex
-File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgflinewidth=\dimen197
-)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-etransformations.code.tex
-File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@pt@x=\dimen198
-\pgf@pt@y=\dimen199
-\pgf@pt@temp=\dimen256
-)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-equick.code.tex
-File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-eobjects.code.tex
-File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-epathprocessing.code.tex
-File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-earrows.code.tex
-File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowsep=\dimen257
-)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-eshade.code.tex
-File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@max=\dimen258
-\pgf@sys@shading@range@num=\count310
-\pgf@shadingcount=\count311
-)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-eimage.code.tex
-File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-eexternal.code.tex
-File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfexternal@startupbox=\box59
-)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-elayers.code.tex
-File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-etransparency.code.tex
-File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-epatterns.code.tex
-File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-erdf.code.tex
-File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)))
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
-shapes.code.tex
-File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfnodeparttextbox=\box60
-)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
-plot.code.tex
-File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
-mp-version-0-65.sty
-Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen259
-\pgf@nodesepend=\dimen260
-)
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
-mp-version-1-18.sty
-Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
-))
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.st
-y
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.s
-ty
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
-.code.tex))
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
-.tex))
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.
-code.tex
-Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
-\pgffor@iter=\dimen261
-\pgffor@skip=\dimen262
-\pgffor@stack=\toks45
-\pgffor@toks=\toks46
-))
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
-z\tikz.code.tex
-Package: tikz 2023-01-15 v3.1.10 (3.1.10)
-
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
-aryplothandlers.code.tex
-File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count312
-\pgfplotmarksize=\dimen263
-)
-\tikz@lastx=\dimen264
-\tikz@lasty=\dimen265
-\tikz@lastxsaved=\dimen266
-\tikz@lastysaved=\dimen267
-\tikz@lastmovetox=\dimen268
-\tikz@lastmovetoy=\dimen269
-\tikzleveldistance=\dimen270
-\tikzsiblingdistance=\dimen271
-\tikz@figbox=\box61
-\tikz@figbox@bg=\box62
-\tikz@tempbox=\box63
-\tikz@tempbox@bg=\box64
-\tikztreelevel=\count313
-\tikznumberofchildren=\count314
-\tikznumberofcurrentchild=\count315
-\tikz@fig@count=\count316
-
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
-matrix.code.tex
-File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count317
-\pgfmatrixcurrentcolumn=\count318
-\pgf@matrix@numberofcolumns=\count319
-)
-\tikz@expandcount=\count320
-
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
-z/libraries\tikzlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)))
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/everypage\everypage.sty
-Package: everypage 2020/10/17 R2.0b Hooks to run on every page
-
-Package everypage Warning: Functionality similar to this package has recently
-(everypage)                been implemented in LaTeX. This package is now in
-(everypage)                legacy status.
-(everypage)                Please, don't use it in new documents and packages.
-
-
-Package everypage Warning: You appear to be running a version of LaTeX
-(everypage)                providing the new functionality.
-(everypage)                Doing the best to deliver the original `everypage`
-(everypage)                interface on top of it. Strict equivalence is
-(everypage)                not possible, breakage may occur.
-(everypage)                If truly needed, Use `everypage-1x` to force the
-(everypage)                loading of an older code base.
-
-) (C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/tools\afterpage.sty
-Package: afterpage 2023/07/04 v1.08 After-Page Package (DPC)
-\AP@output=\toks47
-\AP@partial=\box65
-\AP@footins=\box66
-)) (C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+) (/home/noname_lnin/.miktex/texmfs/install/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count321
-\float@exts=\toks48
-\float@box=\box67
-\@float@everytoks=\toks49
-\@floatcapt=\box68
+\c@float@type=\count299
+\float@exts=\toks33
+\float@box=\box54
+\@float@everytoks=\toks34
+\@floatcapt=\box55
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/tools\enumerate.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/tools/enumerate.sty
 Package: enumerate 2023/07/04 v3.00 enumerate extensions (DPC)
-\@enLab=\toks50
+\@enLab=\toks35
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
-Package: enumitem 2025/01/19 v3.10 Customized lists
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
 \labelindent=\skip58
-\enit@outerparindent=\dimen272
-\enit@toks=\toks51
-\enit@inbox=\box69
-\enit@count@id=\count322
-\enitdp@description=\count323
+\enit@outerparindent=\dimen166
+\enit@toks=\toks36
+\enit@inbox=\box56
+\enit@count@id=\count300
+\enitdp@description=\count301
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/tools\indentfirst.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/tools/indentfirst.sty
 Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/tools/multicol.sty
 Package: multicol 2024/09/14 v1.9i multicolumn formatting (FMi)
-\c@tracingmulticols=\count324
-\mult@box=\box70
-\multicol@leftmargin=\dimen273
-\c@unbalance=\count325
-\c@collectmore=\count326
-\doublecol@number=\count327
-\multicoltolerance=\count328
-\multicolpretolerance=\count329
-\full@width=\dimen274
-\page@free=\dimen275
-\premulticols=\dimen276
-\postmulticols=\dimen277
+\c@tracingmulticols=\count302
+\mult@box=\box57
+\multicol@leftmargin=\dimen167
+\c@unbalance=\count303
+\c@collectmore=\count304
+\doublecol@number=\count305
+\multicoltolerance=\count306
+\multicolpretolerance=\count307
+\full@width=\dimen168
+\page@free=\dimen169
+\premulticols=\dimen170
+\postmulticols=\dimen171
 \multicolsep=\skip59
 \multicolbaselineskip=\skip60
-\partial@page=\box71
-\last@line=\box72
-\mc@boxedresult=\box73
-\maxbalancingoverflow=\dimen278
-\mult@rightbox=\box74
-\mult@grightbox=\box75
-\mult@firstbox=\box76
-\mult@gfirstbox=\box77
+\partial@page=\box58
+\last@line=\box59
+\mc@boxedresult=\box60
+\maxbalancingoverflow=\dimen172
+\mult@rightbox=\box61
+\mult@grightbox=\box62
+\mult@firstbox=\box63
+\mult@gfirstbox=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
 \@tempa=\box78
 \@tempa=\box79
 \@tempa=\box80
@@ -934,52 +607,39 @@ Package: multicol 2024/09/14 v1.9i multicolumn formatting (FMi)
 \@tempa=\box98
 \@tempa=\box99
 \@tempa=\box100
-\@tempa=\box101
-\@tempa=\box102
-\@tempa=\box103
-\@tempa=\box104
-\@tempa=\box105
-\@tempa=\box106
-\@tempa=\box107
-\@tempa=\box108
-\@tempa=\box109
-\@tempa=\box110
-\@tempa=\box111
-\@tempa=\box112
-\@tempa=\box113
-\c@minrows=\count330
-\c@columnbadness=\count331
-\c@finalcolumnbadness=\count332
-\last@try=\dimen279
-\multicolovershoot=\dimen280
-\multicolundershoot=\dimen281
-\mult@nat@firstbox=\box114
-\colbreak@box=\box115
-\mc@col@check@num=\count333
+\c@minrows=\count308
+\c@columnbadness=\count309
+\c@finalcolumnbadness=\count310
+\last@try=\dimen173
+\multicolovershoot=\dimen174
+\multicolundershoot=\dimen175
+\mult@nat@firstbox=\box101
+\colbreak@box=\box102
+\mc@col@check@num=\count311
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/multirow/multirow.sty
 Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
 \multirow@colwidth=\skip61
-\multirow@cntb=\count334
+\multirow@cntb=\count312
 \multirow@dima=\skip62
-\bigstrutjot=\dimen282
+\bigstrutjot=\dimen176
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/tools/array.sty
 Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
-\col@sep=\dimen283
-\ar@mcellbox=\box116
-\extrarowheight=\dimen284
-\NC@list=\toks52
+\col@sep=\dimen177
+\ar@mcellbox=\box103
+\extrarowheight=\dimen178
+\NC@list=\toks37
 \extratabsurround=\skip63
 \backup@length=\skip64
-\ar@cellbox=\box117
+\ar@cellbox=\box104
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
-Package: fancyhdr 2025/01/07 v5.1.1 Extensive control of page headers and foote
-rs
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+
 \f@nch@headwidth=\skip65
 \f@nch@offset@elh=\skip66
 \f@nch@offset@erh=\skip67
@@ -994,21 +654,21 @@ rs
 \f@nch@widthL=\skip76
 \f@nch@widthC=\skip77
 \f@nch@widthR=\skip78
-\@temptokenb=\toks53
+\@temptokenb=\toks38
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
-\ttl@box=\box118
+\ttl@box=\box105
 \beforetitleunit=\skip79
 \aftertitleunit=\skip80
-\ttl@plus=\dimen285
-\ttl@minus=\dimen286
-\ttl@toksa=\toks54
-\titlewidth=\dimen287
-\titlewidthlast=\dimen288
-\titlewidthfirst=\dimen289
+\ttl@plus=\dimen179
+\ttl@minus=\dimen180
+\ttl@toksa=\toks39
+\titlewidth=\dimen181
+\titlewidthlast=\dimen182
+\titlewidthfirst=\dimen183
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/tocloft\tocloft.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has section divisions on input line 51.
 \cftparskip=\skip81
@@ -1037,47 +697,47 @@ Package tocloft Info: The document has section divisions on input line 51.
 \cftbeforefigskip=\skip104
 \cftfigindent=\skip105
 \cftfignumwidth=\skip106
-\c@lofdepth=\count335
-\c@lotdepth=\count336
+\c@lofdepth=\count313
+\c@lotdepth=\count314
 \cftbeforelottitleskip=\skip107
 \cftafterlottitleskip=\skip108
 \cftbeforetabskip=\skip109
 \cfttabindent=\skip110
 \cfttabnumwidth=\skip111
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
-\lst@mode=\count337
-\lst@gtempboxa=\box119
-\lst@token=\toks55
-\lst@length=\count338
-\lst@currlwidth=\dimen290
-\lst@column=\count339
-\lst@pos=\count340
-\lst@lostspace=\dimen291
-\lst@width=\dimen292
-\lst@newlines=\count341
-\lst@lineno=\count342
-\lst@maxwidth=\dimen293
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/listings/listings.sty
+\lst@mode=\count315
+\lst@gtempboxa=\box106
+\lst@token=\toks40
+\lst@length=\count316
+\lst@currlwidth=\dimen184
+\lst@column=\count317
+\lst@pos=\count318
+\lst@lostspace=\dimen185
+\lst@width=\dimen186
+\lst@newlines=\count319
+\lst@lineno=\count320
+\lst@maxwidth=\dimen187
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/listings/lstpatch.sty
 File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
-\c@lstnumber=\count343
-\lst@skipnumbers=\count344
-\lst@framebox=\box120
+\c@lstnumber=\count321
+\lst@skipnumbers=\count322
+\lst@framebox=\box107
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/listings/listings.cfg
 File: listings.cfg 2024/09/23 1.10c listings configuration
 ))
 Package: listings 2024/09/23 1.10c (Carsten Heinz)
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
-tex.def
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/l3backend/l3backend-pdftex.
+def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count345
-\l__pdf_internal_box=\box121
+\l__color_backend_stack_int=\count323
+\l__pdf_internal_box=\box108
 ) (Viterbi_decoder.aux (sections/bia.aux) (sections/cosolythuyet.aux)
 (sections/mophongthuattoanbangC.aux) (sections/mophongthuattoanbangVerilog.aux)
 )
@@ -1138,42 +798,39 @@ LaTeX Font Info:    ... okay on input line 171.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
-ii
+(/home/noname_lnin/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count346
-\scratchdimen=\dimen294
-\scratchbox=\box122
-\nofMPsegments=\count347
-\nofMParguments=\count348
-\everyMPshowfont=\toks56
-\MPscratchCnt=\count349
-\MPscratchDim=\dimen295
-\MPnumerator=\count350
-\makeMPintoPDFobject=\count351
-\everyMPtoPDFconversion=\toks57
+\scratchcounter=\count324
+\scratchdimen=\dimen188
+\scratchbox=\box109
+\nofMPsegments=\count325
+\nofMParguments=\count326
+\everyMPshowfont=\toks41
+\MPscratchCnt=\count327
+\MPscratchDim=\dimen189
+\MPnumerator=\count328
+\makeMPintoPDFobject=\count329
+\everyMPtoPDFconversion=\toks42
 )
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
-ase.sty
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.
+sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
-fg
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring OFF on input line 171.
- (Viterbi_decoder.out) (Viterbi_decoder.out)
-\@outlinefile=\write4
-\openout4 = `Viterbi_decoder.out'.
+(Viterbi_decoder.out) (Viterbi_decoder.out)
+\@outlinefile=\write3
+\openout3 = `Viterbi_decoder.out'.
 
-\c@lstlisting=\count352
+\c@lstlisting=\count330
 \openout2 = `sections/bia.aux'.
 
  (sections/bia.tex
-<sections/pic/01_logobachkhoatoi.png, id=70, 471.9231pt x 478.9092pt>
+<sections/pic/01_logobachkhoatoi.png, id=67, 471.9231pt x 478.9092pt>
 File: sections/pic/01_logobachkhoatoi.png Graphic file (type png)
 <use sections/pic/01_logobachkhoatoi.png>
 Package pdftex.def Info: sections/pic/01_logobachkhoatoi.png  used on input lin
@@ -1182,13 +839,13 @@ e 7.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 22.
 
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 22.
 
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Overfull \hbox (46.75922pt too wide) in paragraph at lines 22--27
@@ -1197,16 +854,29 @@ Overfull \hbox (46.75922pt too wide) in paragraph at lines 22--27
 
 
 
-<sections/pic/bia.jpg, id=72, 301.125pt x 414.95026pt>
-File: sections/pic/bia.jpg Graphic file (type jpg)
-<use sections/pic/bia.jpg>
-Package pdftex.def Info: sections/pic/bia.jpg  used on input line 33.
-(pdftex.def)             Requested size: 597.62614pt x 845.06903pt.
 [1
 
 
-{C:/Users/nguye/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./sections/p
-ic/bia.jpg> <./sections/pic/01_logobachkhoatoi.png>] (Viterbi_decoder.toc
+{/home/noname_lnin/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map} <./sections
+/pic/01_logobachkhoatoi.png>]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.93912pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.93912pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.93912pt}.
+
+[2]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.93912pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.93912pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.93912pt}.
+
+[3] (Viterbi_decoder.toc
 LaTeX Font Info:    Calculating math sizes for size <13> on input line 2.
 
 
@@ -1234,44 +904,48 @@ LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <6.5> not available
 (Font)              size <6> substituted on input line 2.
 
 )
-\tf@toc=\write5
-\openout5 = `Viterbi_decoder.toc'.
+\tf@toc=\write4
+\openout4 = `Viterbi_decoder.toc'.
 
  (Viterbi_decoder.lof)
-\tf@lof=\write6
-\openout6 = `Viterbi_decoder.lof'.
+\tf@lof=\write5
+\openout5 = `Viterbi_decoder.lof'.
 
  (Viterbi_decoder.lot)
-\tf@lot=\write7
-\openout7 = `Viterbi_decoder.lot'.
+\tf@lot=\write6
+\openout6 = `Viterbi_decoder.lot'.
 
 )
 
-[2]
+[4]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.93912pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.93912pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.93912pt}.
+
+[5]
 \openout2 = `sections/cosolythuyet.aux'.
 
  (sections/cosolythuyet.tex
-<sections/pic/cosolythuyet/ma-hoa-kenh.png, id=137, 644.4075pt x 262.9825pt>
+<sections/pic/cosolythuyet/ma-hoa-kenh.png, id=149, 644.4075pt x 262.9825pt>
 File: sections/pic/cosolythuyet/ma-hoa-kenh.png Graphic file (type png)
 <use sections/pic/cosolythuyet/ma-hoa-kenh.png>
 Package pdftex.def Info: sections/pic/cosolythuyet/ma-hoa-kenh.png  used on inp
-ut line 7.
+ut line 8.
 (pdftex.def)             Requested size: 290.22107pt x 118.44135pt.
 
 
-<sections/pic/bk_name_en.png, id=139, 923.8515pt x 129.8451pt>
-File: sections/pic/bk_name_en.png Graphic file (type png)
-<use sections/pic/bk_name_en.png>
-Package pdftex.def Info: sections/pic/bk_name_en.png  used on input line 28.
-(pdftex.def)             Requested size: 193.47578pt x 27.191pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 31.54103pt, for example:
-(fancyhdr)                \setlength{\headheight}{31.54103pt}.
+(fancyhdr)                Make it at least 14.93912pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.93912pt}.
 (fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-19.54103pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.93912pt}.
 
-[3
+[6
 
 
 
@@ -1280,176 +954,153 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.28 	\item M
+l.29 	\item M
              ã Turbo (Turbo Codes): Kết hợp nhiều bộ mã hóa và s...
- <./sections/pic/bk_name_en.png> <./sections/pic/cosolythuyet/ma-hoa-kenh.png>]
-<sections/pic/cosolythuyet/structure_convolutional_code.png, id=146, 623.32875p
+ <./sections/pic/cosolythuyet/ma-hoa-kenh.png>]
+<sections/pic/cosolythuyet/structure_convolutional_code.png, id=156, 623.32875p
 t x 266.9975pt>
 File: sections/pic/cosolythuyet/structure_convolutional_code.png Graphic file (
 type png)
 <use sections/pic/cosolythuyet/structure_convolutional_code.png>
 Package pdftex.def Info: sections/pic/cosolythuyet/structure_convolutional_code
-.png  used on input line 36.
+.png  used on input line 37.
 (pdftex.def)             Requested size: 338.58632pt x 145.03204pt.
 
+
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <13> not available
-(Font)              size <12> substituted on input line 48.
+(Font)              size <12> substituted on input line 49.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 48.
+(Font)              size <6> substituted on input line 49.
 
 
 
-File: sections/pic/bk_name_en.png Graphic file (type png)
-<use sections/pic/bk_name_en.png>
-Package pdftex.def Info: sections/pic/bk_name_en.png  used on input line 59.
-(pdftex.def)             Requested size: 193.47578pt x 27.191pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 31.54103pt, for example:
-(fancyhdr)                \setlength{\headheight}{31.54103pt}.
+(fancyhdr)                Make it at least 14.93912pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.93912pt}.
 (fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-19.54103pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.93912pt}.
 
-[4
+[7
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.59 	\item \(
+l.60 	\item \(
                g_{i,j} \): Hệ số kết hợp (0 hoặc 1) cho biết bit...
  <./sections/pic/cosolythuyet/structure_convolutional_code.png>]
-<sections/pic/cosolythuyet/block_convolutional_encoder.png, id=161, 984.67876pt
+<sections/pic/cosolythuyet/block_convolutional_encoder.png, id=172, 984.67876pt
  x 216.81pt>
 File: sections/pic/cosolythuyet/block_convolutional_encoder.png Graphic file (t
 ype png)
 <use sections/pic/cosolythuyet/block_convolutional_encoder.png>
 Package pdftex.def Info: sections/pic/cosolythuyet/block_convolutional_encoder.
-png  used on input line 71.
+png  used on input line 72.
 (pdftex.def)             Requested size: 483.69687pt x 106.50249pt.
 
 
-File: sections/pic/bk_name_en.png Graphic file (type png)
-<use sections/pic/bk_name_en.png>
-Package pdftex.def Info: sections/pic/bk_name_en.png  used on input line 107.
-(pdftex.def)             Requested size: 193.47578pt x 27.191pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 31.54103pt, for example:
-(fancyhdr)                \setlength{\headheight}{31.54103pt}.
+(fancyhdr)                Make it at least 14.93912pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.93912pt}.
 (fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-19.54103pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.93912pt}.
 
-[5
+[8
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.107 
+l.108 
        <./sections/pic/cosolythuyet/block_convolutional_encoder.png>]
 LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 1
-08.
+09.
 
-(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/vntex\t5cmtt.fd
+(/home/noname_lnin/.miktex/texmfs/install/tex/latex/vntex/t5cmtt.fd
 File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-<sections/pic/cosolythuyet/trellis-fsm-convolutional-code-coban.png, id=177, 36
+<sections/pic/cosolythuyet/trellis-fsm-convolutional-code-coban.png, id=188, 36
 2.35374pt x 372.39125pt>
 File: sections/pic/cosolythuyet/trellis-fsm-convolutional-code-coban.png Graphi
 c file (type png)
 <use sections/pic/cosolythuyet/trellis-fsm-convolutional-code-coban.png>
 Package pdftex.def Info: sections/pic/cosolythuyet/trellis-fsm-convolutional-co
-de-coban.png  used on input line 131.
+de-coban.png  used on input line 132.
 (pdftex.def)             Requested size: 241.84843pt x 248.55191pt.
-<sections/pic/cosolythuyet/trellis-fsm-convolutional-code.png, id=178, 844.1537
+<sections/pic/cosolythuyet/trellis-fsm-convolutional-code.png, id=189, 844.1537
 5pt x 382.42876pt>
 File: sections/pic/cosolythuyet/trellis-fsm-convolutional-code.png Graphic file
  (type png)
 <use sections/pic/cosolythuyet/trellis-fsm-convolutional-code.png>
 Package pdftex.def Info: sections/pic/cosolythuyet/trellis-fsm-convolutional-co
-de.png  used on input line 140.
+de.png  used on input line 141.
 (pdftex.def)             Requested size: 483.69687pt x 219.13622pt.
 
 
-File: sections/pic/bk_name_en.png Graphic file (type png)
-<use sections/pic/bk_name_en.png>
-Package pdftex.def Info: sections/pic/bk_name_en.png  used on input line 143.
-(pdftex.def)             Requested size: 193.47578pt x 27.191pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 31.54103pt, for example:
-(fancyhdr)                \setlength{\headheight}{31.54103pt}.
+(fancyhdr)                Make it at least 14.93912pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.93912pt}.
 (fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-19.54103pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.93912pt}.
 
-[6
+[9
 pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.143 
+l.144 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.143 
+l.144 
        <./sections/pic/cosolythuyet/trellis-fsm-convolutional-code-coban.png>]
 
-File: sections/pic/bk_name_en.png Graphic file (type png)
-<use sections/pic/bk_name_en.png>
-Package pdftex.def Info: sections/pic/bk_name_en.png  used on input line 164.
-(pdftex.def)             Requested size: 193.47578pt x 27.191pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 31.54103pt, for example:
-(fancyhdr)                \setlength{\headheight}{31.54103pt}.
+(fancyhdr)                Make it at least 14.93912pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.93912pt}.
 (fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-19.54103pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.93912pt}.
 
-[7 <./sections/pic/cosolythuyet/trellis-fsm-convolutional-code.png>]
+[10 <./sections/pic/cosolythuyet/trellis-fsm-convolutional-code.png>]
 
 LaTeX Font Warning: Font shape `TS1/cmr/m/n' in size <13> not available
-(Font)              size <12> substituted on input line 202.
+(Font)              size <12> substituted on input line 203.
 
 
 
-File: sections/pic/bk_name_en.png Graphic file (type png)
-<use sections/pic/bk_name_en.png>
-Package pdftex.def Info: sections/pic/bk_name_en.png  used on input line 204.
-(pdftex.def)             Requested size: 193.47578pt x 27.191pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 31.54103pt, for example:
-(fancyhdr)                \setlength{\headheight}{31.54103pt}.
+(fancyhdr)                Make it at least 14.93912pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.93912pt}.
 (fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-19.54103pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.93912pt}.
 
-[8])
+[11])
 
-File: sections/pic/bk_name_en.png Graphic file (type png)
-<use sections/pic/bk_name_en.png>
-Package pdftex.def Info: sections/pic/bk_name_en.png  used on input line 176.
-(pdftex.def)             Requested size: 193.47578pt x 27.191pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 31.54103pt, for example:
-(fancyhdr)                \setlength{\headheight}{31.54103pt}.
+(fancyhdr)                Make it at least 14.93912pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.93912pt}.
 (fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-19.54103pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.93912pt}.
 
-[9]
+[12]
 \openout2 = `sections/mophongthuattoanbangC.aux'.
 
  (sections/mophongthuattoanbangC.tex
-<sections/pic/mophongbangC/system_conv.png, id=205, 728.7225pt x 191.71625pt>
+<sections/pic/mophongbangC/system_conv.png, id=215, 728.7225pt x 191.71625pt>
 File: sections/pic/mophongbangC/system_conv.png Graphic file (type png)
 <use sections/pic/mophongbangC/system_conv.png>
 Package pdftex.def Info: sections/pic/mophongbangC/system_conv.png  used on inp
 ut line 5.
 (pdftex.def)             Requested size: 386.95897pt x 101.80219pt.
-<sections/pic/mophongbangC/flowchart_diagram_withC.png, id=207, 604.2575pt x 86
+<sections/pic/mophongbangC/flowchart_diagram_withC.png, id=217, 604.2575pt x 86
 4.22874pt>
 File: sections/pic/mophongbangC/flowchart_diagram_withC.png Graphic file (type 
 png)
@@ -1459,18 +1110,14 @@ Package pdftex.def Info: sections/pic/mophongbangC/flowchart_diagram_withC.png
 (pdftex.def)             Requested size: 290.22107pt x 415.07564pt.
 
 
-File: sections/pic/bk_name_en.png Graphic file (type png)
-<use sections/pic/bk_name_en.png>
-Package pdftex.def Info: sections/pic/bk_name_en.png  used on input line 19.
-(pdftex.def)             Requested size: 193.47578pt x 27.191pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 31.54103pt, for example:
-(fancyhdr)                \setlength{\headheight}{31.54103pt}.
+(fancyhdr)                Make it at least 14.93912pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.93912pt}.
 (fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-19.54103pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.93912pt}.
 
-[10
+[13
 
 
 
@@ -1481,346 +1128,307 @@ s been already used, duplicate ignored
                                                   \__shipout_drop_firstpage_...
 l.19 
       <./sections/pic/mophongbangC/system_conv.png>]
-<sections/pic/mophongbangC/flowchart_conv_block_withC.png, id=213, 673.51625pt 
+<sections/pic/mophongbangC/Trans_string_to_binary.png, id=224, 614.295pt x 492.
+84125pt>
+File: sections/pic/mophongbangC/Trans_string_to_binary.png Graphic file (type p
+ng)
+<use sections/pic/mophongbangC/Trans_string_to_binary.png>
+Package pdftex.def Info: sections/pic/mophongbangC/Trans_string_to_binary.png  
+used on input line 26.
+(pdftex.def)             Requested size: 212.82779pt x 170.75233pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.93912pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.93912pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.93912pt}.
+
+[14
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.29 
+      <./sections/pic/mophongbangC/flowchart_diagram_withC.png>]
+<sections/pic/mophongbangC/flowchart_conv_block_withC.png, id=230, 673.51625pt 
 x 849.1725pt>
 File: sections/pic/mophongbangC/flowchart_conv_block_withC.png Graphic file (ty
 pe png)
 <use sections/pic/mophongbangC/flowchart_conv_block_withC.png>
 Package pdftex.def Info: sections/pic/mophongbangC/flowchart_conv_block_withC.p
-ng  used on input line 41.
+ng  used on input line 47.
 (pdftex.def)             Requested size: 386.95897pt x 487.88168pt.
 
 
-File: sections/pic/bk_name_en.png Graphic file (type png)
-<use sections/pic/bk_name_en.png>
-Package pdftex.def Info: sections/pic/bk_name_en.png  used on input line 44.
-(pdftex.def)             Requested size: 193.47578pt x 27.191pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 31.54103pt, for example:
-(fancyhdr)                \setlength{\headheight}{31.54103pt}.
+(fancyhdr)                Make it at least 14.93912pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.93912pt}.
 (fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-19.54103pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.93912pt}.
 
-[11
-pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.44 
-      <./sections/pic/mophongbangC/flowchart_diagram_withC.png>]
-<sections/pic/mophongbangC/flowchart_VD_312.png, id=219, 584.1825pt x 1076.02pt
->
-File: sections/pic/mophongbangC/flowchart_VD_312.png Graphic file (type png)
-<use sections/pic/mophongbangC/flowchart_VD_312.png>
-Package pdftex.def Info: sections/pic/mophongbangC/flowchart_VD_312.png  used o
-n input line 49.
-(pdftex.def)             Requested size: 290.22107pt x 534.57718pt.
-
-
-File: sections/pic/bk_name_en.png Graphic file (type png)
-<use sections/pic/bk_name_en.png>
-Package pdftex.def Info: sections/pic/bk_name_en.png  used on input line 52.
-(pdftex.def)             Requested size: 193.47578pt x 27.191pt.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 31.54103pt, for example:
-(fancyhdr)                \setlength{\headheight}{31.54103pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-19.54103pt}.
-
-[12
+[15
 pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.52 
-      <./sections/pic/mophongbangC/flowchart_conv_block_withC.png>]
+l.50 
+      <./sections/pic/mophongbangC/Trans_string_to_binary.png>]
+<sections/pic/mophongbangC/flowchart_VD_312.png, id=236, 584.1825pt x 1076.02pt
+>
+File: sections/pic/mophongbangC/flowchart_VD_312.png Graphic file (type png)
+<use sections/pic/mophongbangC/flowchart_VD_312.png>
+Package pdftex.def Info: sections/pic/mophongbangC/flowchart_VD_312.png  used o
+n input line 55.
+(pdftex.def)             Requested size: 290.22107pt x 534.57718pt.
 
-File: sections/pic/bk_name_en.png Graphic file (type png)
-<use sections/pic/bk_name_en.png>
-Package pdftex.def Info: sections/pic/bk_name_en.png  used on input line 62.
-(pdftex.def)             Requested size: 193.47578pt x 27.191pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 31.54103pt, for example:
-(fancyhdr)                \setlength{\headheight}{31.54103pt}.
+(fancyhdr)                Make it at least 14.93912pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.93912pt}.
 (fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-19.54103pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.93912pt}.
 
-[13
+[16
 pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.62 	
+l.58 
+      <./sections/pic/mophongbangC/flowchart_conv_block_withC.png>]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 61.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.93912pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.93912pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.93912pt}.
+
+[17
+pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.68 	
        <./sections/pic/mophongbangC/flowchart_VD_312.png>]
 
-File: sections/pic/bk_name_en.png Graphic file (type png)
-<use sections/pic/bk_name_en.png>
-Package pdftex.def Info: sections/pic/bk_name_en.png  used on input line 111.
-(pdftex.def)             Requested size: 193.47578pt x 27.191pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 31.54103pt, for example:
-(fancyhdr)                \setlength{\headheight}{31.54103pt}.
+(fancyhdr)                Make it at least 14.93912pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.93912pt}.
 (fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-19.54103pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.93912pt}.
 
-[14])
+[18])
 
-File: sections/pic/bk_name_en.png Graphic file (type png)
-<use sections/pic/bk_name_en.png>
-Package pdftex.def Info: sections/pic/bk_name_en.png  used on input line 177.
-(pdftex.def)             Requested size: 193.47578pt x 27.191pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 31.54103pt, for example:
-(fancyhdr)                \setlength{\headheight}{31.54103pt}.
+(fancyhdr)                Make it at least 14.93912pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.93912pt}.
 (fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-19.54103pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.93912pt}.
 
-[15]
+[19]
 \openout2 = `sections/mophongthuattoanbangVerilog.aux'.
 
  (sections/mophongthuattoanbangVerilog.tex
-<sections/pic/mophongbangSystemVerilog/HD_unit.png, id=314, 643.40375pt x 703.6
+Overfull \hbox (44.62073pt too wide) in paragraph at lines 2--2
+|[]\T5/cmr/bx/n/17.28 M� PH�NG THU�T TO�N GI�I M� VITERBI
+ []
+
+<sections/pic/mophongbangSystemVerilog/HD_unit.png, id=322, 643.40375pt x 703.6
 2875pt>
 File: sections/pic/mophongbangSystemVerilog/HD_unit.png Graphic file (type png)
 
 <use sections/pic/mophongbangSystemVerilog/HD_unit.png>
 Package pdftex.def Info: sections/pic/mophongbangSystemVerilog/HD_unit.png  use
-d on input line 7.
+d on input line 8.
 (pdftex.def)             Requested size: 386.95897pt x 423.18973pt.
-<sections/pic/mophongbangSystemVerilog/BM_unit.png, id=315, 815.045pt x 895.345
+<sections/pic/mophongbangSystemVerilog/BM_unit.png, id=323, 815.045pt x 895.345
 pt>
 File: sections/pic/mophongbangSystemVerilog/BM_unit.png Graphic file (type png)
 
 <use sections/pic/mophongbangSystemVerilog/BM_unit.png>
 Package pdftex.def Info: sections/pic/mophongbangSystemVerilog/BM_unit.png  use
-d on input line 13.
+d on input line 14.
 (pdftex.def)             Requested size: 386.95897pt x 425.08836pt.
 
 
-File: sections/pic/bk_name_en.png Graphic file (type png)
-<use sections/pic/bk_name_en.png>
-Package pdftex.def Info: sections/pic/bk_name_en.png  used on input line 16.
-(pdftex.def)             Requested size: 193.47578pt x 27.191pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 31.54103pt, for example:
-(fancyhdr)                \setlength{\headheight}{31.54103pt}.
+(fancyhdr)                Make it at least 14.93912pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.93912pt}.
 (fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-19.54103pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.93912pt}.
 
-[16
-
-
+[20
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.16 
-      <./sections/pic/mophongbangSystemVerilog/HD_unit.png>]
 
-File: sections/pic/bk_name_en.png Graphic file (type png)
-<use sections/pic/bk_name_en.png>
-Package pdftex.def Info: sections/pic/bk_name_en.png  used on input line 27.
-(pdftex.def)             Requested size: 193.47578pt x 27.191pt.
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 31.54103pt, for example:
-(fancyhdr)                \setlength{\headheight}{31.54103pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-19.54103pt}.
-
-[17
 pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.27 	
-      Time: 20000 | i_rst_n = 1 | i_data: 00 | o_BM_0: 00 | o_BM_1: 01 | o_B...
- <./sections/pic/mophongbangSystemVerilog/BM_unit.png>]
+l.17 
+      <./sections/pic/mophongbangSystemVerilog/HD_unit.png>]
 
-File: sections/pic/bk_name_en.png Graphic file (type png)
-<use sections/pic/bk_name_en.png>
-Package pdftex.def Info: sections/pic/bk_name_en.png  used on input line 52.
-(pdftex.def)             Requested size: 193.47578pt x 27.191pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 31.54103pt, for example:
-(fancyhdr)                \setlength{\headheight}{31.54103pt}.
+(fancyhdr)                Make it at least 14.93912pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.93912pt}.
 (fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-19.54103pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.93912pt}.
 
-[18]
-<sections/pic/mophongbangSystemVerilog/ACSU_proc_state.png, id=364, 392.21532pt
+[21
+pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.92 	
+      Test case 4: 0x11 <./sections/pic/mophongbangSystemVerilog/BM_unit.png>]
+<sections/pic/mophongbangSystemVerilog/ACSU_proc_state.png, id=352, 392.21532pt
  x 678.28406pt>
 File: sections/pic/mophongbangSystemVerilog/ACSU_proc_state.png Graphic file (t
 ype png)
 <use sections/pic/mophongbangSystemVerilog/ACSU_proc_state.png>
 Package pdftex.def Info: sections/pic/mophongbangSystemVerilog/ACSU_proc_state.
-png  used on input line 76.
+png  used on input line 104.
 (pdftex.def)             Requested size: 290.22107pt x 501.9327pt.
-
-
-File: sections/pic/bk_name_en.png Graphic file (type png)
-<use sections/pic/bk_name_en.png>
-Package pdftex.def Info: sections/pic/bk_name_en.png  used on input line 79.
-(pdftex.def)             Requested size: 193.47578pt x 27.191pt.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 31.54103pt, for example:
-(fancyhdr)                \setlength{\headheight}{31.54103pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-19.54103pt}.
-
-[19]
-<sections/pic/mophongbangSystemVerilog/ACS.png, id=389, 845.1575pt x 984.67876p
+<sections/pic/mophongbangSystemVerilog/ACS.png, id=353, 845.1575pt x 984.67876p
 t>
 File: sections/pic/mophongbangSystemVerilog/ACS.png Graphic file (type png)
 <use sections/pic/mophongbangSystemVerilog/ACS.png>
 Package pdftex.def Info: sections/pic/mophongbangSystemVerilog/ACS.png  used on
- input line 82.
+ input line 110.
 (pdftex.def)             Requested size: 386.95897pt x 450.85423pt.
 
 
-File: sections/pic/bk_name_en.png Graphic file (type png)
-<use sections/pic/bk_name_en.png>
-Package pdftex.def Info: sections/pic/bk_name_en.png  used on input line 85.
-(pdftex.def)             Requested size: 193.47578pt x 27.191pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 31.54103pt, for example:
-(fancyhdr)                \setlength{\headheight}{31.54103pt}.
+(fancyhdr)                Make it at least 14.93912pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.93912pt}.
 (fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-19.54103pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.93912pt}.
 
-[20
-pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) h
-as been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.85 
-      <./sections/pic/mophongbangSystemVerilog/ACSU_proc_state.png>]
-<sections/pic/mophongbangSystemVerilog/ACSU.png, id=395, 855.195pt x 985.6825pt
->
-File: sections/pic/mophongbangSystemVerilog/ACSU.png Graphic file (type png)
-<use sections/pic/mophongbangSystemVerilog/ACSU.png>
-Package pdftex.def Info: sections/pic/mophongbangSystemVerilog/ACSU.png  used o
-n input line 88.
-(pdftex.def)             Requested size: 386.95897pt x 446.0046pt.
-
-
-File: sections/pic/bk_name_en.png Graphic file (type png)
-<use sections/pic/bk_name_en.png>
-Package pdftex.def Info: sections/pic/bk_name_en.png  used on input line 91.
-(pdftex.def)             Requested size: 193.47578pt x 27.191pt.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 31.54103pt, for example:
-(fancyhdr)                \setlength{\headheight}{31.54103pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-19.54103pt}.
-
-[21
+[22
 pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.91 
-      <./sections/pic/mophongbangSystemVerilog/ACS.png>]
+l.113 
+       <./sections/pic/mophongbangSystemVerilog/ACSU_proc_state.png>]
+<sections/pic/mophongbangSystemVerilog/ACSU.png, id=366, 855.195pt x 985.6825pt
+>
+File: sections/pic/mophongbangSystemVerilog/ACSU.png Graphic file (type png)
+<use sections/pic/mophongbangSystemVerilog/ACSU.png>
+Package pdftex.def Info: sections/pic/mophongbangSystemVerilog/ACSU.png  used o
+n input line 116.
+(pdftex.def)             Requested size: 386.95897pt x 446.0046pt.
 
-File: sections/pic/bk_name_en.png Graphic file (type png)
-<use sections/pic/bk_name_en.png>
-Package pdftex.def Info: sections/pic/bk_name_en.png  used on input line 110.
-(pdftex.def)             Requested size: 193.47578pt x 27.191pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 31.54103pt, for example:
-(fancyhdr)                \setlength{\headheight}{31.54103pt}.
+(fancyhdr)                Make it at least 14.93912pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.93912pt}.
 (fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-19.54103pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.93912pt}.
 
-[22
+[23
 pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.110 	
-       | o_oPM_0: 00 | o_oPM_1: 00 | o_oPM_2: 00 | o_oPM_3: 00 <./sections/pic/
-mophongbangSystemVerilog/ACSU.png>]
-<sections/pic/mophongbangSystemVerilog/FSM.png, id=423, 788.9475pt x 522.95375p
-t>
-File: sections/pic/mophongbangSystemVerilog/FSM.png Graphic file (type png)
-<use sections/pic/mophongbangSystemVerilog/FSM.png>
-Package pdftex.def Info: sections/pic/mophongbangSystemVerilog/FSM.png  used on
- input line 156.
-(pdftex.def)             Requested size: 386.95897pt x 256.49695pt.
+l.119 
+       <./sections/pic/mophongbangSystemVerilog/ACS.png>]
 
-
-File: sections/pic/bk_name_en.png Graphic file (type png)
-<use sections/pic/bk_name_en.png>
-Package pdftex.def Info: sections/pic/bk_name_en.png  used on input line 159.
-(pdftex.def)             Requested size: 193.47578pt x 27.191pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 31.54103pt, for example:
-(fancyhdr)                \setlength{\headheight}{31.54103pt}.
+(fancyhdr)                Make it at least 14.93912pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.93912pt}.
 (fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-19.54103pt}.
-
-[23]
-<sections/pic/mophongbangSystemVerilog/SPMU.png, id=469, 824.07875pt x 563.1037
-4pt>
-File: sections/pic/mophongbangSystemVerilog/SPMU.png Graphic file (type png)
-<use sections/pic/mophongbangSystemVerilog/SPMU.png>
-Package pdftex.def Info: sections/pic/mophongbangSystemVerilog/SPMU.png  used o
-n input line 162.
-(pdftex.def)             Requested size: 386.95897pt x 264.41821pt.
-
-
-File: sections/pic/bk_name_en.png Graphic file (type png)
-<use sections/pic/bk_name_en.png>
-Package pdftex.def Info: sections/pic/bk_name_en.png  used on input line 172.
-(pdftex.def)             Requested size: 193.47578pt x 27.191pt.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 31.54103pt, for example:
-(fancyhdr)                \setlength{\headheight}{31.54103pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-19.54103pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.93912pt}.
 
 [24
 pdfTeX warning (ext4): destination with the same identifier (name{figure.14}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.172 	
-       PM_0 = 0 	| PM_1 = 1 	| PM_2 = 2 	| PM_3 = 3 	|
+l.138 	
+       | o_oPM_0: 00 | o_oPM_1: 00 | o_oPM_2: 00 | o_oPM_3: 00 <./sections/pic/
+mophongbangSystemVerilog/ACSU.png>]
+<sections/pic/mophongbangSystemVerilog/FSM.png, id=394, 788.9475pt x 522.95375p
+t>
+File: sections/pic/mophongbangSystemVerilog/FSM.png Graphic file (type png)
+<use sections/pic/mophongbangSystemVerilog/FSM.png>
+Package pdftex.def Info: sections/pic/mophongbangSystemVerilog/FSM.png  used on
+ input line 184.
+(pdftex.def)             Requested size: 386.95897pt x 256.49695pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.93912pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.93912pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.93912pt}.
+
+[25]
+<sections/pic/mophongbangSystemVerilog/SPMU.png, id=441, 824.07875pt x 563.1037
+4pt>
+File: sections/pic/mophongbangSystemVerilog/SPMU.png Graphic file (type png)
+<use sections/pic/mophongbangSystemVerilog/SPMU.png>
+Package pdftex.def Info: sections/pic/mophongbangSystemVerilog/SPMU.png  used o
+n input line 190.
+(pdftex.def)             Requested size: 386.95897pt x 264.41821pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.93912pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.93912pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.93912pt}.
+
+[26
 pdfTeX warning (ext4): destination with the same identifier (name{figure.15}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.172 	
-       PM_0 = 0 	| PM_1 = 1 	| PM_2 = 2 	| PM_3 = 3 	| <./sections/pic/mophongb
-angSystemVerilog/FSM.png> <./sections/pic/mophongbangSystemVerilog/SPMU.png>])
+l.232 	
+       PM_0 = 00 	| PM_1 = 01 	| PM_2 = 10 	| PM_3 = 11 	|
+pdfTeX warning (ext4): destination with the same identifier (name{figure.16}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.232 	
+       PM_0 = 00 	| PM_1 = 01 	| PM_2 = 10 	| PM_3 = 11 	| <./sections/pic/moph
+ongbangSystemVerilog/FSM.png> <./sections/pic/mophongbangSystemVerilog/SPMU.png
+>]
 
-File: sections/pic/bk_name_en.png Graphic file (type png)
-<use sections/pic/bk_name_en.png>
-Package pdftex.def Info: sections/pic/bk_name_en.png  used on input line 178.
-(pdftex.def)             Requested size: 193.47578pt x 27.191pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 31.54103pt, for example:
-(fancyhdr)                \setlength{\headheight}{31.54103pt}.
+(fancyhdr)                Make it at least 14.93912pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.93912pt}.
 (fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-19.54103pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.93912pt}.
 
-[25] (Viterbi_decoder.aux (sections/bia.aux) (sections/cosolythuyet.aux)
+[27])
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.93912pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.93912pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.93912pt}.
+
+[28] (Viterbi_decoder.aux (sections/bia.aux) (sections/cosolythuyet.aux)
 (sections/mophongthuattoanbangC.aux) (sections/mophongthuattoanbangVerilog.aux)
 )
  ***********
@@ -1833,45 +1441,45 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
 Package rerunfilecheck Info: File `Viterbi_decoder.out' has not changed.
-(rerunfilecheck)             Checksum: D367AF85AF920A414F90EA03C4275D46;4059.
+(rerunfilecheck)             Checksum: 3F2C196300C9E8743765A712C9A94D0E;3964.
  ) 
 Here is how much of TeX's memory you used:
- 26842 strings out of 473530
- 488723 string characters out of 5714794
- 1490572 words of memory out of 5000000
- 49288 multiletter control sequences out of 15000+600000
- 589831 words of font info for 112 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 99i,16n,102p,1075b,2079s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 16477 strings out of 475442
+ 259736 string characters out of 5765834
+ 1137056 words of memory out of 5000000
+ 38929 multiletter control sequences out of 15000+600000
+ 590963 words of font info for 114 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 69i,12n,79p,1289b,2045s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
 
- <C:\Users\nguye\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm12
-00.pk><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmbx12.pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmex10.pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/amsfonts/cm/cmmi10.pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/nguye/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/nguye/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/nguye/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/ngu
-ye/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Us
-ers/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.p
-fb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmsy9.pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/
-vnbx12.pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/
-vnbx8.pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/v
-nr10.pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vn
-r12.pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr
-17.pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr7
-.pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr9.p
-fb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vntt10.p
-fb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vntt12.p
-fb>
-Output written on Viterbi_decoder.pdf (25 pages, 774349 bytes).
+ </home/noname_lnin/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm
+1200.pk></home/noname_lnin/.miktex/texmfs/install/fonts/type1/public/amsfonts/c
+m/cmbx12.pfb></home/noname_lnin/.miktex/texmfs/install/fonts/type1/public/amsfo
+nts/cm/cmex10.pfb></home/noname_lnin/.miktex/texmfs/install/fonts/type1/public/
+amsfonts/cm/cmmi10.pfb></home/noname_lnin/.miktex/texmfs/install/fonts/type1/pu
+blic/amsfonts/cm/cmmi12.pfb></home/noname_lnin/.miktex/texmfs/install/fonts/typ
+e1/public/amsfonts/cm/cmmi9.pfb></home/noname_lnin/.miktex/texmfs/install/fonts
+/type1/public/amsfonts/cm/cmr10.pfb></home/noname_lnin/.miktex/texmfs/install/f
+onts/type1/public/amsfonts/cm/cmr12.pfb></home/noname_lnin/.miktex/texmfs/insta
+ll/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/noname_lnin/.miktex/texmfs/in
+stall/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/noname_lnin/.miktex/texm
+fs/install/fonts/type1/public/amsfonts/cm/cmsy9.pfb></home/noname_lnin/.miktex/
+texmfs/install/fonts/type1/vntex/vnr/vnbx12.pfb></home/noname_lnin/.miktex/texm
+fs/install/fonts/type1/vntex/vnr/vnbx8.pfb></home/noname_lnin/.miktex/texmfs/in
+stall/fonts/type1/vntex/vnr/vnr10.pfb></home/noname_lnin/.miktex/texmfs/install
+/fonts/type1/vntex/vnr/vnr12.pfb></home/noname_lnin/.miktex/texmfs/install/font
+s/type1/vntex/vnr/vnr17.pfb></home/noname_lnin/.miktex/texmfs/install/fonts/typ
+e1/vntex/vnr/vnr7.pfb></home/noname_lnin/.miktex/texmfs/install/fonts/type1/vnt
+ex/vnr/vnr9.pfb></home/noname_lnin/.miktex/texmfs/install/fonts/type1/vntex/vnr
+/vnti12.pfb></home/noname_lnin/.miktex/texmfs/install/fonts/type1/vntex/vnr/vnt
+t10.pfb></home/noname_lnin/.miktex/texmfs/install/fonts/type1/vntex/vnr/vntt12.
+pfb>
+Output written on Viterbi_decoder.pdf (28 pages, 725016 bytes).
 PDF statistics:
- 654 PDF objects out of 1000 (max. 8388607)
- 279 named destinations out of 1000 (max. 500000)
- 236 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 646 PDF objects out of 1000 (max. 8388607)
+ 262 named destinations out of 1000 (max. 500000)
+ 219 words of extra memory for PDF output out of 10000 (max. 10000000)
 

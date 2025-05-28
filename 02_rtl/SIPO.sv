@@ -18,7 +18,8 @@ logic [SIZE_DATA_IN-1:0] shift_reg [0:DEPTH-1];
 logic [SIZE_DEPTH-1:0] count, ncount;
 logic w_update_count;
 logic w_count, w_count_next;
-assign w_update_count = i_start & (~o_done);
+// assign w_update_count = i_start & (~o_done);
+assign w_update_count = i_start;
 assign w_count_next = w_update_count & w_count;
 assign ncount = w_count_next ? count + 1'b1 : count;
 always_ff @(posedge i_clk or negedge i_rst_n) begin : proc_count
@@ -33,7 +34,15 @@ end
 
 // Setup shift register
 logic [SIZE_DATA_IN-1:0] w_idata;
-assign w_idata = i_data;
+logic [SIZE_DATA_IN-1:0] w_idata_next;
+always_ff @(posedge i_clk or negedge i_rst_n) begin : proc_save_idata
+    if(~i_rst_n) begin
+        w_idata_next <= '0;
+    end else begin
+        w_idata_next <= w_idata;
+    end
+end
+assign w_idata = (w_update_count) ? i_data : w_idata_next;
 always_ff @(posedge i_clk or negedge i_rst_n) begin : proc_shift_count
     if(~i_rst_n) begin
         for (int i = 0; i < DEPTH; i++) begin
@@ -46,6 +55,7 @@ end
 
 // Setup output data
 logic [SIZE_DATA_OUT-1:0] w_odata;
+logic [SIZE_DATA_OUT-1:0] w_odata_next;
 always_comb begin : proc_output_data
     w_odata[0] = shift_reg[0];
     w_odata[1] = shift_reg[1];
@@ -56,7 +66,14 @@ always_comb begin : proc_output_data
     w_odata[6] = shift_reg[6];
     w_odata[7] = shift_reg[7];
 end
-assign o_data = (o_done) ? w_odata : '0;
+always_ff @(posedge i_clk or negedge i_rst_n) begin : proc_save_odata
+    if(~i_rst_n) begin
+        w_odata_next <= '0;
+    end else begin
+        w_odata_next <= w_odata;
+    end
+end
+assign o_data = (o_done) ? w_odata_next : '0;
 
 // Setup done signal
 logic w_done;

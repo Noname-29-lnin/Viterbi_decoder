@@ -93,33 +93,26 @@
 `timescale 1ns/1ps
 module tb_acsu();
 
-logic w_clk, w_rst_n, i_valid, o_valid;
+logic i_clk, i_rst_n, i_valid, o_valid;
 logic [1:0] i_BM_0, i_BM_1, i_BM_2, i_BM_3;
 logic [1:0] o_BM_0, o_BM_1, o_BM_2, o_BM_3;
 logic [1:0] i_PM_0, i_PM_1, i_PM_2, i_PM_3;
 logic [1:0] o_PM_0, o_PM_1, o_PM_2, o_PM_3;
 
-D_BMU_ACSU DFF(
-    .i_clk        (w_clk),
-    .i_rst_n      (w_rst_n),
-    .i_valid      (i_valid),
-    .i_BM_0       (i_BM_0),
-    .i_BM_1       (i_BM_1),
-    .i_BM_2       (i_BM_2),
-    .i_BM_3       (i_BM_3),
-    .i_PM_0       (o_PM_0),
-    .i_PM_1       (o_PM_1),
-    .i_PM_2       (o_PM_2),
-    .i_PM_3       (o_PM_3),
-    .o_BM_0       (o_BM_0),
-    .o_BM_1       (o_BM_1),
-    .o_BM_2       (o_BM_2),
-    .o_BM_3       (o_BM_3),
-    .o_PM_0       (i_PM_0),
-    .o_PM_1       (i_PM_1),
-    .o_PM_2       (i_PM_2),
-    .o_PM_3       (i_PM_3),
-    .o_valid      (o_valid)
+Path_metric_unit #(
+    .SIZE_DATA (2)
+) PMU (
+    .i_clk      (i_clk),
+    .i_rst_n    (i_rst_n),
+    .i_valid    (i_valid),
+    .i_PM_0     (o_PM_0),
+    .i_PM_1     (o_PM_1),
+    .i_PM_2     (o_PM_2),
+    .i_PM_3     (o_PM_3),
+    .o_PM_0     (i_PM_0),
+    .o_PM_1     (i_PM_1),
+    .o_PM_2     (i_PM_2),
+    .o_PM_3     (i_PM_3)
 );
 
 Add_compare_select_unit ACSU(
@@ -144,7 +137,7 @@ end
 
 // Clock generation
 always begin
-    #5 w_clk = ~w_clk; // Toggle clock every 5 time units
+    #5 i_clk = ~i_clk; // Toggle clock every 5 time units
 end
 task automatic CheckResult(
     input logic [1:0] t_i_BM_0, t_i_BM_1, t_i_BM_2, t_i_BM_3,
@@ -158,7 +151,7 @@ task automatic CheckResult(
     t_oPM_2 = (t_i_BM_3 + t_i_PM_0) <= (t_i_BM_0 + t_i_PM_1) ? (t_i_BM_3 + t_i_PM_0) : (t_i_BM_0 + t_i_PM_1);
     t_oPM_3 = (t_i_BM_1 + t_i_PM_2) <= (t_i_BM_2 + t_i_PM_3) ? (t_i_BM_1 + t_i_PM_2) : (t_i_BM_2 + t_i_PM_3);
     
-    @(posedge w_clk); // Wait for clock edge to capture outputs
+    @(posedge i_clk); // Wait for clock edge to capture outputs
     $display("Time: %0t", $time);
     $display("| i_BM_0: %b | i_BM_1: %b | i_BM_2: %b | i_BM_3: %b |", 
              t_i_BM_0, t_i_BM_1, t_i_BM_2, t_i_BM_3);
@@ -175,11 +168,11 @@ task automatic CheckResult(
 endtask
 
 initial begin
-    w_rst_n = 0;
+    i_rst_n = 0;
     i_valid = 0;
     #10; // Hold reset for 10 time units
     $display("Starting Add_compare_select_unit testbench...");
-    w_rst_n = 1; // Release reset
+    i_rst_n = 1; // Release reset
     i_valid = 1; // Set valid signal to indicate inputs are ready
     i_BM_0 = 2'b00; i_BM_1 = 2'b00; i_BM_2 = 2'b00; i_BM_3 = 2'b00;
     $display("TestCase 0: Initialize signals");
@@ -191,14 +184,14 @@ initial begin
     $display("=====================================");
     
     // Test case 1: All inputs are equal
-    @(posedge w_clk);
+    @(posedge i_clk);
     $display("TestCase 1: All inputs are equal");
     i_BM_0 = 2'b01; i_BM_1 = 2'b01; i_BM_2 = 2'b01; i_BM_3 = 2'b01;
     CheckResult(i_BM_0, i_BM_1, i_BM_2, i_BM_3, i_PM_0, i_PM_1, i_PM_2, i_PM_3, 
                 o_PM_0, o_PM_1, o_PM_2, o_PM_3);
     
     // Test case 2: Different values
-    @(posedge w_clk);
+    @(posedge i_clk);
     $display("TestCase 2: Different values");
     i_BM_0 = 2'b00; i_BM_1 = 2'b01; i_BM_2 = 2'b10; i_BM_3 = 2'b11;
     CheckResult(i_BM_0, i_BM_1, i_BM_2, i_BM_3, i_PM_0, i_PM_1, i_PM_2, i_PM_3, 
@@ -207,7 +200,7 @@ initial begin
     // Random test cases
     $display("TestCase 3: Random test cases");
     for(int i = 0; i < 5; i++) begin
-        @(posedge w_clk);
+        @(posedge i_clk);
         i_BM_0 = $urandom % 4;
         i_BM_1 = $urandom % 4;
         i_BM_2 = $urandom % 4;

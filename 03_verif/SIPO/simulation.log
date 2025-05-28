@@ -1,20 +1,49 @@
-| Time =                    0 	| i_start = 0 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	|
-| Time =                20000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	|
-| Time =                95000 	| i_start = 0 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	|
-| Time =               105000 	| i_start = 0 	| i_data = 1 	| o_data = 00000000 	| o_done = 0 	|
-| Time =               155000 	| i_start = 0 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	|
-| Time =               175000 	| i_start = 1 	| i_data = 1 	| o_data = 00000000 	| o_done = 0 	|
-| Time =               185000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	|
-| Time =               195000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 1 	|
-| Time =               205000 	| i_start = 1 	| i_data = 1 	| o_data = 00000000 	| o_done = 1 	|
-| Time =               205000 	| i_start = 1 	| i_data = 1 	| o_data = 00000000 	| o_done = 0 	|
-| Time =               215000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	|
-| Time =               225000 	| i_start = 1 	| i_data = 1 	| o_data = 00000000 	| o_done = 0 	|
-| Time =               235000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	|
-| Time =               375000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 1 	|
-| Time =               385000 	| i_start = 1 	| i_data = 1 	| o_data = 00000000 	| o_done = 1 	|
-| Time =               385000 	| i_start = 1 	| i_data = 1 	| o_data = 00000000 	| o_done = 0 	|
-| Time =               395000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	|
-| Time =               475000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 1 	|
-| Time =               485000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	|
-- tb_SIPO.sv:82: Verilog $finish
+Test case 1: Reset and send fixed data 0xAA (LSB first)
+Time =                91000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	| count = 0
+Time =               111000 	| i_start = 1 	| i_data = 1 	| o_data = 00000000 	| o_done = 0 	| count = 1
+Time =               131000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	| count = 2
+Time =               151000 	| i_start = 1 	| i_data = 1 	| o_data = 00000000 	| o_done = 0 	| count = 3
+Time =               171000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	| count = 4
+Time =               191000 	| i_start = 1 	| i_data = 1 	| o_data = 00000000 	| o_done = 0 	| count = 5
+Time =               211000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	| count = 6
+Time =               231000 	| i_start = 1 	| i_data = 1 	| o_data = 00000000 	| o_done = 0 	| count = 7
+Test case 2: Send fixed data 0x55 (LSB first)
+Time =               331000 	| i_start = 1 	| i_data = 1 	| o_data = 00000000 	| o_done = 0 	| count = 0
+Time =               351000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	| count = 1
+Time =               371000 	| i_start = 1 	| i_data = 1 	| o_data = 00000000 	| o_done = 0 	| count = 2
+Time =               391000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	| count = 3
+Time =               411000 	| i_start = 1 	| i_data = 1 	| o_data = 00000000 	| o_done = 0 	| count = 4
+Time =               431000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	| count = 5
+Time =               451000 	| i_start = 1 	| i_data = 1 	| o_data = 00000000 	| o_done = 0 	| count = 6
+Time =               471000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	| count = 7
+Test case 3: Send data 0xAA (LSB first), i_start low, then send 0xCC (LSB first)
+Time =               571000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	| count = 0
+Time =               591000 	| i_start = 1 	| i_data = 1 	| o_data = 00000000 	| o_done = 0 	| count = 1
+Time =               611000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	| count = 2
+Time =               631000 	| i_start = 1 	| i_data = 1 	| o_data = 00000000 	| o_done = 0 	| count = 3
+Time =               651000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	| count = 4
+Time =               671000 	| i_start = 1 	| i_data = 1 	| o_data = 00000000 	| o_done = 0 	| count = 5
+Time =               691000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	| count = 6
+Time =               711000 	| i_start = 1 	| i_data = 1 	| o_data = 00000000 	| o_done = 0 	| count = 7
+Time =               771000 	| i_start = 1 	| i_data = 0 	| o_data = 11010101 	| o_done = 1 	| count = 7
+Output done at time               771000, o_data = d5
+Test case 4: Send data 0xF0 (LSB first), then reset, then send with i_start=0
+Time =               891000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	| count = 1
+Time =               911000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	| count = 2
+Time =               931000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	| count = 3
+Time =               951000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	| count = 4
+Time =               971000 	| i_start = 1 	| i_data = 1 	| o_data = 00000000 	| o_done = 0 	| count = 5
+Time =               991000 	| i_start = 1 	| i_data = 1 	| o_data = 00000000 	| o_done = 0 	| count = 6
+Time =              1011000 	| i_start = 1 	| i_data = 1 	| o_data = 00000000 	| o_done = 0 	| count = 7
+Time =              1031000 	| i_start = 1 	| i_data = 1 	| o_data = 01110000 	| o_done = 1 	| count = 0
+Output done at time              1031000, o_data = 70
+Time =              1111000 	| i_start = 0 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	| count = 0
+Time =              1131000 	| i_start = 0 	| i_data = 1 	| o_data = 00000000 	| o_done = 0 	| count = 0
+Time =              1151000 	| i_start = 0 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	| count = 0
+Time =              1171000 	| i_start = 0 	| i_data = 1 	| o_data = 00000000 	| o_done = 0 	| count = 0
+Time =              1191000 	| i_start = 0 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	| count = 0
+Time =              1211000 	| i_start = 0 	| i_data = 1 	| o_data = 00000000 	| o_done = 0 	| count = 0
+Time =              1231000 	| i_start = 0 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	| count = 0
+Time =              1251000 	| i_start = 0 	| i_data = 1 	| o_data = 00000000 	| o_done = 0 	| count = 0
+Simulation completed successfully!
+- tb_SIPO.sv:349: Verilog $finish

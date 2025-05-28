@@ -43,4 +43,4 @@ PM_0 = 00 	| PM_1 = 01 	| PM_2 = 01 	| PM_3 = 10 	|
 =========================================
 Testbench completed successfully
 ==================================
-- tb_spmu.sv:167: Verilog $finish
+- tb_spmu.sv:168: Verilog $finish

@@ -1,5 +1,5 @@
 # Configuration
-TOPMODULE := SIPO
+TOPMODULE := PISO
 VERILATOR_FLAGS := --binary --timing --trace --build -f flist.f
 WARNING_IGNORE := -Wno-fatal -Wno-lint -Wno-style -Wno-width
 
