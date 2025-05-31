@@ -190,7 +190,7 @@ initial begin
     // i_data = 16'b1101010001010010;
     i_data = 16'b1101010001010011;
     wait(o_valid);
-    $display("Time=%t, i_rst_n=%b, i_start=%b, i_data=%b, o_data=%b, o_valid=%b, TestCase=%s, BER_in=%f, BER_out=%f", $time, i_rst_n, i_start, i_data, o_data, o_valid, (o_data==8'b11011010)?"PASS":"FAIL", calc_ber_16bit(i_data, 16'b1101010001010010), calc_ber_8bit(o_data, 8'b11011010));
+    $display("Time=%t, i_rst_n=%b, i_start=%b, i_data=%b, o_data=%b (Expected = %b), o_valid=%b, TestCase=%s, BER_in=%f, BER_out=%f", $time, i_rst_n, i_start, i_data, o_data, 8'b11011010, o_valid, (o_data==8'b11011010)?"PASS":"FAIL", calc_ber_16bit(i_data, 16'b1101010001010010), calc_ber_8bit(o_data, 8'b11011010));
 
     #10;
     i_rst_n   = 0;
@@ -203,7 +203,7 @@ initial begin
     i_data = 16'b1110001000100011;
     wait(o_valid);
     // $display("Time=%t, i_rst_n=%b, i_start=%b, i_data=%b, o_data=%b, o_valid=%b, TestCase=%s", $time, i_rst_n, i_start, i_data, o_data, o_valid, (o_data==8'b10101010)?"PASS":"FAIL");
-    $display("Time=%t, i_rst_n=%b, i_start=%b, i_data=%b, o_data=%b, o_valid=%b, TestCase=%s, BER_in=%f, BER_out=%f", $time, i_rst_n, i_start, i_data, o_data, o_valid, (o_data==8'b10101010)?"PASS":"FAIL", calc_ber_16bit(i_data, 16'b1110001000100010), calc_ber_8bit(o_data, 8'b10101010));
+    $display("Time=%t, i_rst_n=%b, i_start=%b, i_data=%b, o_data=%b (Expected = %b), o_valid=%b, TestCase=%s, BER_in=%f, BER_out=%f", $time, i_rst_n, i_start, i_data, o_data, 8'b10101010, o_valid, (o_data==8'b10101010)?"PASS":"FAIL", calc_ber_16bit(i_data, 16'b1110001000100010), calc_ber_8bit(o_data, 8'b10101010));
 
     #10;
     i_rst_n   = 0;
@@ -216,7 +216,7 @@ initial begin
     i_data = 16'b0000000000000111;
     wait(o_valid);
     // $display("Time=%t, i_rst_n=%b, i_start=%b, i_data=%b, o_data=%b, o_valid=%b, TestCase=%s", $time, i_rst_n, i_start, i_data, o_data, o_valid, (o_data==8'b00000001)?"PASS":"FAIL");
-    $display("Time=%t, i_rst_n=%b, i_start=%b, i_data=%b, o_data=%b, o_valid=%b, TestCase=%s, BER_in=%f, BER_out=%f", $time, i_rst_n, i_start, i_data, o_data, o_valid, (o_data==8'b00000001)?"PASS":"FAIL", calc_ber_16bit(i_data, 16'b0000000000000011), calc_ber_8bit(o_data, 8'b00000001));
+    $display("Time=%t, i_rst_n=%b, i_start=%b, i_data=%b, o_data=%b (Expected = %b), o_valid=%b, TestCase=%s, BER_in=%f, BER_out=%f", $time, i_rst_n, i_start, i_data, o_data, 8'b00000001, o_valid, (o_data==8'b00000001)?"PASS":"FAIL", calc_ber_16bit(i_data, 16'b0000000000000011), calc_ber_8bit(o_data, 8'b00000001));
     
     #10;
     i_rst_n   = 0;
@@ -228,7 +228,7 @@ initial begin
     i_data = 16'b0000110101111101;
     wait(o_valid);
     // $display("Time=%t, i_rst_n=%b, i_start=%b, i_data=%b, o_data=%b, o_valid=%b, TestCase=%s", $time, i_rst_n, i_start, i_data, o_data, o_valid, (o_data==8'b00110011)?"PASS":"FAIL");
-    $display("Time=%t, i_rst_n=%b, i_start=%b, i_data=%b, o_data=%b, o_valid=%b, TestCase=%s, BER_in=%f, BER_out=%f", $time, i_rst_n, i_start, i_data, o_data, o_valid, (o_data==8'b00110011)?"PASS":"FAIL", calc_ber_16bit(i_data, 16'b0000110101111101), calc_ber_8bit(o_data, 8'b00110011));
+    $display("Time=%t, i_rst_n=%b, i_start=%b, i_data=%b, o_data=%b (Expected = %b), o_valid=%b, TestCase=%s, BER_in=%f, BER_out=%f", $time, i_rst_n, i_start, i_data, o_data, 8'b00110011, o_valid, (o_data==8'b00110011)?"PASS":"FAIL", calc_ber_16bit(i_data, 16'b0000110101111101), calc_ber_8bit(o_data, 8'b00110011));
     #100;
     $finish;
 end 

@@ -66,6 +66,8 @@ initial begin
     #1;
     $display("Time: %0t \t| i_valid = %b \t| i_data: %b \t| o_decision = %b \t| o_valid = %b \t|", $time, i_valid, i_data, o_decision, o_valid);
     @(posedge i_clk);
+    i_valid = 0; // Start valid signal
+    #1;
     $display("Time: %0t \t| i_valid = %b \t| i_data: %b \t| o_decision = %b \t| o_valid = %b \t|", $time, i_valid, i_data, o_decision, o_valid);
     $display("==========================================================");
 
@@ -113,6 +115,67 @@ initial begin
     #1;
     $display("Time: %0t \t| i_valid = %b \t| i_data: %b \t| o_decision = %b \t| o_valid = %b \t|", $time, i_valid, i_data, o_decision, o_valid);
     @(posedge i_clk);
+    i_valid = 0; // Start valid signal
+    #1;
+    $display("Time: %0t \t| i_valid = %b \t| i_data: %b \t| o_decision = %b \t| o_valid = %b \t|", $time, i_valid, i_data, o_decision, o_valid);
+    $display("==========================================================");
+
+    // Test case 3: Data input: b00000001
+    //              Data conv : b0000000000000011
+    i_rst_n = 0;
+    i_valid = 0;
+    #20;
+    i_rst_n = 1; // Release reset
+    #20;
+    i_valid = 1; // Start valid signal
+    $display("TestCase 3:");
+    $display(" Data input: 00000001");
+    $display(" Data conv : 0000000000000011");
+    @(posedge i_clk);
+    i_data = 2'b00;
+    #1;
+    $display("Time: %0t \t| i_valid = %b \t| i_data: %b \t| o_decision = %b \t| o_valid = %b \t|", $time, i_valid, i_data, o_decision, o_valid);
+    @(posedge i_clk);
+    i_data = 2'b00;
+    #1;
+    $display("Time: %0t \t| i_valid = %b \t| i_data: %b \t| o_decision = %b \t| o_valid = %b \t|", $time, i_valid, i_data, o_decision, o_valid);
+    @(posedge i_clk);
+    i_data = 2'b00;
+    #1;
+    $display("Time: %0t \t| i_valid = %b \t| i_data: %b \t| o_decision = %b \t| o_valid = %b \t|", $time, i_valid, i_data, o_decision, o_valid);
+    @(posedge i_clk);
+    i_data = 2'b00;
+    #1;
+    $display("Time: %0t \t| i_valid = %b \t| i_data: %b \t| o_decision = %b \t| o_valid = %b \t|", $time, i_valid, i_data, o_decision, o_valid);
+    @(posedge i_clk);
+    i_data = 2'b01;
+    i_valid = 0;
+    #1;
+    $display("Time: %0t \t| i_valid = %b \t| i_data: %b \t| o_decision = %b \t| o_valid = %b \t|", $time, i_valid, i_data, o_decision, o_valid);
+    @(posedge i_clk);
+    i_data = 2'b10;
+    #1;
+    $display("Time: %0t \t| i_valid = %b \t| i_data: %b \t| o_decision = %b \t| o_valid = %b \t|", $time, i_valid, i_data, o_decision, o_valid);
+    @(posedge i_clk);
+    i_data = 2'b00;
+    i_valid = 1;
+    #1;
+    $display("Time: %0t \t| i_valid = %b \t| i_data: %b \t| o_decision = %b \t| o_valid = %b \t|", $time, i_valid, i_data, o_decision, o_valid);
+    @(posedge i_clk);
+    i_data = 2'b00;
+    #1;
+    $display("Time: %0t \t| i_valid = %b \t| i_data: %b \t| o_decision = %b \t| o_valid = %b \t|", $time, i_valid, i_data, o_decision, o_valid);
+    @(posedge i_clk);
+    i_data = 2'b00;
+    #1;
+    $display("Time: %0t \t| i_valid = %b \t| i_data: %b \t| o_decision = %b \t| o_valid = %b \t|", $time, i_valid, i_data, o_decision, o_valid);
+    @(posedge i_clk);
+    i_data = 2'b11;
+    #1;
+    $display("Time: %0t \t| i_valid = %b \t| i_data: %b \t| o_decision = %b \t| o_valid = %b \t|", $time, i_valid, i_data, o_decision, o_valid);
+    @(posedge i_clk);
+    i_valid = 0; // Start valid signal
+    #1;
     $display("Time: %0t \t| i_valid = %b \t| i_data: %b \t| o_decision = %b \t| o_valid = %b \t|", $time, i_valid, i_data, o_decision, o_valid);
     $display("==========================================================");
     #100;

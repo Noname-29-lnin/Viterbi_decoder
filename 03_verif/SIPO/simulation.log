@@ -26,24 +26,25 @@ Time =               671000 	| i_start = 1 	| i_data = 1 	| o_data = 00000000 	|
 Time =               691000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	| count = 6
 Time =               711000 	| i_start = 1 	| i_data = 1 	| o_data = 00000000 	| o_done = 0 	| count = 7
 Time =               771000 	| i_start = 1 	| i_data = 0 	| o_data = 11010101 	| o_done = 1 	| count = 7
-Output done at time               771000, o_data = d5
+Output done at time               791000, o_data = 55
 Test case 4: Send data 0xF0 (LSB first), then reset, then send with i_start=0
-Time =               891000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	| count = 1
-Time =               911000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	| count = 2
-Time =               931000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	| count = 3
-Time =               951000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	| count = 4
-Time =               971000 	| i_start = 1 	| i_data = 1 	| o_data = 00000000 	| o_done = 0 	| count = 5
-Time =               991000 	| i_start = 1 	| i_data = 1 	| o_data = 00000000 	| o_done = 0 	| count = 6
-Time =              1011000 	| i_start = 1 	| i_data = 1 	| o_data = 00000000 	| o_done = 0 	| count = 7
-Time =              1031000 	| i_start = 1 	| i_data = 1 	| o_data = 01110000 	| o_done = 1 	| count = 0
-Output done at time              1031000, o_data = 70
-Time =              1111000 	| i_start = 0 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	| count = 0
-Time =              1131000 	| i_start = 0 	| i_data = 1 	| o_data = 00000000 	| o_done = 0 	| count = 0
-Time =              1151000 	| i_start = 0 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	| count = 0
-Time =              1171000 	| i_start = 0 	| i_data = 1 	| o_data = 00000000 	| o_done = 0 	| count = 0
-Time =              1191000 	| i_start = 0 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	| count = 0
-Time =              1211000 	| i_start = 0 	| i_data = 1 	| o_data = 00000000 	| o_done = 0 	| count = 0
-Time =              1231000 	| i_start = 0 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	| count = 0
-Time =              1251000 	| i_start = 0 	| i_data = 1 	| o_data = 00000000 	| o_done = 0 	| count = 0
+Time =               911000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	| count = 1
+Time =               931000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	| count = 2
+Time =               951000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	| count = 3
+Time =               971000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	| count = 4
+Time =               991000 	| i_start = 1 	| i_data = 1 	| o_data = 00000000 	| o_done = 0 	| count = 5
+Time =              1011000 	| i_start = 1 	| i_data = 1 	| o_data = 00000000 	| o_done = 0 	| count = 6
+Time =              1031000 	| i_start = 1 	| i_data = 1 	| o_data = 00000000 	| o_done = 0 	| count = 7
+Time =              1051000 	| i_start = 1 	| i_data = 1 	| o_data = 00000000 	| o_done = 1 	| count = 0
+Output done at time              1071000, o_data = f0
+Time =              1151000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	| count = 1
+Time =              1171000 	| i_start = 1 	| i_data = 1 	| o_data = 00000000 	| o_done = 0 	| count = 2
+Time =              1191000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	| count = 3
+Time =              1211000 	| i_start = 1 	| i_data = 1 	| o_data = 00000000 	| o_done = 0 	| count = 4
+Time =              1231000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	| count = 5
+Time =              1251000 	| i_start = 1 	| i_data = 1 	| o_data = 00000000 	| o_done = 0 	| count = 6
+Time =              1271000 	| i_start = 1 	| i_data = 0 	| o_data = 00000000 	| o_done = 0 	| count = 7
+Time =              1291000 	| i_start = 1 	| i_data = 1 	| o_data = 00000000 	| o_done = 1 	| count = 0
+Output done at time              1311000, o_data = aa
 Simulation completed successfully!
-- tb_SIPO.sv:349: Verilog $finish
+- tb_SIPO.sv:131: Verilog $finish
