@@ -6,6 +6,7 @@ module IP_LCD_timer_counter #(
     input logic         i_clk   ,
     input logic         i_rst_n ,
     input logic         i_en_lcd,
+    input logic         i_on_lcd,
     input logic         i_lcd_blon,
     input logic [SIZE_DATA-1:0] i_data,
     input logic [SIZE_FUNC-1:0] i_func,
@@ -540,7 +541,7 @@ always_ff @( posedge i_clk or negedge i_rst_n ) begin : proc_o_LCD_RS
     end
 end
 
-assign o_LCD_ON = i_en_lcd;
+assign o_LCD_ON = i_on_lcd;
 assign o_LCD_BLON = i_lcd_blon;
 always_ff @( posedge i_clk or negedge i_rst_n ) begin : proc_done_LCD
     if(~i_rst_n) begin

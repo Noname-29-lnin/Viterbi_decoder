@@ -221,7 +221,7 @@ always_ff @( posedge i_clk or negedge i_rst_n ) begin
         end
     end
 end
-assign o_done = (count == SIZE_DATA_OUT+1);
+assign o_done = (count == SIZE_DATA_OUT);
 logic [SIZE_DATA_OUT-1:0] w_odata;
 logic [SIZE_DATA_OUT-1:0] w_odata_next;
 assign o_data = (o_done) ? w_odata : w_odata_next;

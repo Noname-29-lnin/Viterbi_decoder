@@ -14,34 +14,33 @@ module Testcase1 #(
 
 logic [SIZE_PISO-1:0] w_data_PISO;
 logic w_valid_PISO;
-// logic w_done_PISO;
 
-// PISO #(
-//     .SIZE_DATA_IN  (16),
-//     .SIZE_DATA_OUT ( 2)
-// ) PISO_unit (
-//     .i_clk          (i_clk),
-//     .i_rst_n        (i_rst_n),
-//     .i_start        (i_start),
-//     .i_data         (i_data),
-//     .o_data         (w_data_PISO),
-//     .o_valid        (w_valid_PISO),
-//     .o_done         ()
-// );
-
-Input_interface_block #(
-    .SIZE_IN   (16),
-    .SIZE_OUT  (2 )
-) IIB (
-    .i_clk              (i_clk  ),
-    .i_rst_n            (i_rst_n),
-
-    .i_start            (i_start),
-    .i_data             (i_data),
-    .o_data             (w_data_PISO),
-    .o_valid            (w_valid_PISO),
-    .o_stop             ()   
+PISO #(
+    .SIZE_DATA_IN  (16),
+    .SIZE_DATA_OUT ( 2)
+) PISO_unit (
+    .i_clk          (i_clk),
+    .i_rst_n        (i_rst_n),
+    .i_start        (i_start),
+    .i_data         (i_data),
+    .o_data         (w_data_PISO),
+    .o_valid        (w_valid_PISO),
+    .o_done         (w_done_PISO)
 );
+
+// Input_interface_block #(
+//     .SIZE_IN   (16),
+//     .SIZE_OUT  (2 )
+// ) IIB (
+//     .i_clk              (i_clk  ),
+//     .i_rst_n            (i_rst_n),
+
+//     .i_start            (i_start),
+//     .i_data             (i_data),
+//     .o_data             (w_data_PISO),
+//     .o_valid            (w_valid_PISO),
+//     .o_stop             ()   
+// );
 
 logic w_valid_VD;
 Viterbi_decoding VD_unit(
@@ -77,6 +76,49 @@ SIPO #(
 //     input logic [SIZE_IN-1:0]   i_data,
 //     output logic [SIZE_OUT-1:0] o_data,
 //     output logic                o_valid
+// );
+// logic w_done_PISO;
+// logic w_en_lcd, w_done_LCD;
+// logic [SIZE_DATA_OUT-1:0] w_LCD_idata;
+// logic [3:0] w_LCD_func;
+// LCD_control #(
+//     .SIZE_DATA (8),
+//     .SIZE_FUNC (4)
+// ) LCD_control (
+//     .i_clk              (i_clk),
+//     .i_rst_n            (i_rst_n),
+//     .i_en_init          (),
+//     .i_done_PISO        (w_done_PISO),
+//     .i_done_SIPO        (w_done_SIPO),
+//     .i_done_LCD         (w_done_LCD),
+//     .i_data             (o_data),
+
+//     .o_en_lcd           (w_en_lcd),
+//     .o_data             (w_LCD_idata),    
+//     .o_func             (w_LCD_func),
+//     .o_done             (),    
+//     .o_start            ()
+// );
+// IP_LCD_timer_counter #(
+//     .SIZE_DATA(8) ,
+//     .SIZE_FUNC(4) //,
+//     // parameter FREQ          = 50_000_000
+// )(
+//     .i_clk              (i_clk),
+//     .i_rst_n            (i_rst_n),
+//     .i_en_lcd           (w_en_lcd),
+//     .i_on_lcd           (),
+//     .i_lcd_blon         (),
+//     .i_data             (w_LCD_idata),
+//     .i_func             (w_LCD_func),
+
+//     .o_LCD_DATA         (),
+//     .o_LCD_E            (),
+//     .o_LCD_RW           (),
+//     .o_LCD_RS           (),
+//     .o_LCD_ON           (),
+//     .o_LCD_BLON         (),
+//     .o_done_lcd         (w_done_LCD)
 // );
 
 
