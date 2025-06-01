@@ -54,6 +54,11 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name SYSTEMVERILOG_FILE ../../02_rtl/IP_LCD_timer_counter.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../../02_rtl/LCD_control.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../../02_rtl/ACS.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../../02_rtl/Add_compare_select_unit.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../../02_rtl/Add_unit.sv
@@ -66,8 +71,5 @@ set_global_assignment -name SYSTEMVERILOG_FILE ../../02_rtl/Path_metric_unit.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../../02_rtl/PISO.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../../02_rtl/Survivor_path_memory_unit.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../../02_rtl/Viterbi_decoding.sv
-set_global_assignment -name SYSTEMVERILOG_FILE ../../02_rtl/Testcase1.sv
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name SYSTEMVERILOG_FILE Testcase1.sv
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

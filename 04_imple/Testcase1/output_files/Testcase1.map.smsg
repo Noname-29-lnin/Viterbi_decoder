@@ -1,0 +1,1 @@
+Info (10281): Verilog HDL Declaration information at IP_LCD_timer_counter.sv(90): object "INIT_STEP" differs only in case from object "init_step" in the same scope File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/IP_LCD_timer_counter.sv Line: 90

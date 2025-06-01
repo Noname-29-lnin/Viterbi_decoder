@@ -13,8 +13,7 @@ module LCD_control #(
     output logic                 o_en_lcd,
     output logic [SIZE_DATA-1:0] o_data,
     output logic [SIZE_FUNC-1:0] o_func,
-    output logic                 o_done,    
-    output logic                 o_start
+    output logic                 o_done
 );
 
 parameter SIZE_STATE = 3;
@@ -66,7 +65,7 @@ always @(*) begin : proc_next_state
         DATA:
             nstate = (o_func == FUNC_DATA) ? DONE : DATA;
         DONE: 
-            nstate = SETCURSOR;
+            nstate = (i_done_PISO) ? SETCURSOR : DONE;
         default:
             nstate = IDLE;
     endcase
@@ -125,8 +124,5 @@ always_ff @( posedge i_clk or negedge i_rst_n ) begin : proc_done
                 o_done <= 1'b0;
         endcase
     end
-end
-always @(*) begin : proc_start
-    o_start = (state == DONE);
 end
 endmodule
