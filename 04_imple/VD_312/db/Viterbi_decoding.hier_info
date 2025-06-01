@@ -1,0 +1,535 @@
+|Viterbi_decoding
+i_clk => i_clk.IN2
+i_rst_n => i_rst_n.IN2
+i_valid => i_valid.IN2
+i_data[0] => i_data[0].IN1
+i_data[1] => i_data[1].IN1
+o_decision <= Survivor_path_memory_unit:SPMU.o_decision
+o_valid <= Survivor_path_memory_unit:SPMU.o_valid
+
+
+|Viterbi_decoding|Branch_metric_unit:BMU
+i_data[0] => i_data[0].IN4
+i_data[1] => i_data[1].IN4
+o_BM_0[0] <= Hamming_distance:HD0.o_hamming_distance
+o_BM_0[1] <= Hamming_distance:HD0.o_hamming_distance
+o_BM_1[0] <= Hamming_distance:HD1.o_hamming_distance
+o_BM_1[1] <= Hamming_distance:HD1.o_hamming_distance
+o_BM_2[0] <= Hamming_distance:HD2.o_hamming_distance
+o_BM_2[1] <= Hamming_distance:HD2.o_hamming_distance
+o_BM_3[0] <= Hamming_distance:HD3.o_hamming_distance
+o_BM_3[1] <= Hamming_distance:HD3.o_hamming_distance
+
+
+|Viterbi_decoding|Branch_metric_unit:BMU|Hamming_distance:HD0
+i_data[0] => w_data_0.IN0
+i_data[1] => w_data_1.IN0
+i_exp_code[0] => w_data_0.IN1
+i_exp_code[1] => w_data_1.IN1
+o_hamming_distance[0] <= Full_adder:FA.o_s
+o_hamming_distance[1] <= Full_adder:FA.o_c
+
+
+|Viterbi_decoding|Branch_metric_unit:BMU|Hamming_distance:HD0|Full_adder:FA
+i_a => o_s.IN0
+i_a => o_c.IN0
+i_a => o_c.IN0
+i_b => o_s.IN1
+i_b => o_c.IN1
+i_b => o_c.IN0
+i_c => o_s.IN1
+i_c => o_c.IN1
+i_c => o_c.IN1
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Viterbi_decoding|Branch_metric_unit:BMU|Hamming_distance:HD1
+i_data[0] => w_data_0.IN0
+i_data[1] => w_data_1.IN0
+i_exp_code[0] => w_data_0.IN1
+i_exp_code[1] => w_data_1.IN1
+o_hamming_distance[0] <= Full_adder:FA.o_s
+o_hamming_distance[1] <= Full_adder:FA.o_c
+
+
+|Viterbi_decoding|Branch_metric_unit:BMU|Hamming_distance:HD1|Full_adder:FA
+i_a => o_s.IN0
+i_a => o_c.IN0
+i_a => o_c.IN0
+i_b => o_s.IN1
+i_b => o_c.IN1
+i_b => o_c.IN0
+i_c => o_s.IN1
+i_c => o_c.IN1
+i_c => o_c.IN1
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Viterbi_decoding|Branch_metric_unit:BMU|Hamming_distance:HD2
+i_data[0] => w_data_0.IN0
+i_data[1] => w_data_1.IN0
+i_exp_code[0] => w_data_0.IN1
+i_exp_code[1] => w_data_1.IN1
+o_hamming_distance[0] <= Full_adder:FA.o_s
+o_hamming_distance[1] <= Full_adder:FA.o_c
+
+
+|Viterbi_decoding|Branch_metric_unit:BMU|Hamming_distance:HD2|Full_adder:FA
+i_a => o_s.IN0
+i_a => o_c.IN0
+i_a => o_c.IN0
+i_b => o_s.IN1
+i_b => o_c.IN1
+i_b => o_c.IN0
+i_c => o_s.IN1
+i_c => o_c.IN1
+i_c => o_c.IN1
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Viterbi_decoding|Branch_metric_unit:BMU|Hamming_distance:HD3
+i_data[0] => w_data_0.IN0
+i_data[1] => w_data_1.IN0
+i_exp_code[0] => w_data_0.IN1
+i_exp_code[1] => w_data_1.IN1
+o_hamming_distance[0] <= Full_adder:FA.o_s
+o_hamming_distance[1] <= Full_adder:FA.o_c
+
+
+|Viterbi_decoding|Branch_metric_unit:BMU|Hamming_distance:HD3|Full_adder:FA
+i_a => o_s.IN0
+i_a => o_c.IN0
+i_a => o_c.IN0
+i_b => o_s.IN1
+i_b => o_c.IN1
+i_b => o_c.IN0
+i_c => o_s.IN1
+i_c => o_c.IN1
+i_c => o_c.IN1
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Viterbi_decoding|Path_metric_unit:PMU
+i_clk => o_PM_3[0]~reg0.CLK
+i_clk => o_PM_3[1]~reg0.CLK
+i_clk => o_PM_2[0]~reg0.CLK
+i_clk => o_PM_2[1]~reg0.CLK
+i_clk => o_PM_1[0]~reg0.CLK
+i_clk => o_PM_1[1]~reg0.CLK
+i_clk => o_PM_0[0]~reg0.CLK
+i_clk => o_PM_0[1]~reg0.CLK
+i_rst_n => o_PM_3[0]~reg0.PRESET
+i_rst_n => o_PM_3[1]~reg0.PRESET
+i_rst_n => o_PM_2[0]~reg0.PRESET
+i_rst_n => o_PM_2[1]~reg0.PRESET
+i_rst_n => o_PM_1[0]~reg0.PRESET
+i_rst_n => o_PM_1[1]~reg0.PRESET
+i_rst_n => o_PM_0[0]~reg0.ACLR
+i_rst_n => o_PM_0[1]~reg0.ACLR
+i_valid => o_PM_3[0]~reg0.ENA
+i_valid => o_PM_0[1]~reg0.ENA
+i_valid => o_PM_0[0]~reg0.ENA
+i_valid => o_PM_1[1]~reg0.ENA
+i_valid => o_PM_1[0]~reg0.ENA
+i_valid => o_PM_2[1]~reg0.ENA
+i_valid => o_PM_2[0]~reg0.ENA
+i_valid => o_PM_3[1]~reg0.ENA
+i_PM_0[0] => o_PM_0[0]~reg0.DATAIN
+i_PM_0[1] => o_PM_0[1]~reg0.DATAIN
+i_PM_1[0] => o_PM_1[0]~reg0.DATAIN
+i_PM_1[1] => o_PM_1[1]~reg0.DATAIN
+i_PM_2[0] => o_PM_2[0]~reg0.DATAIN
+i_PM_2[1] => o_PM_2[1]~reg0.DATAIN
+i_PM_3[0] => o_PM_3[0]~reg0.DATAIN
+i_PM_3[1] => o_PM_3[1]~reg0.DATAIN
+o_PM_0[0] <= o_PM_0[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_PM_0[1] <= o_PM_0[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_PM_1[0] <= o_PM_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_PM_1[1] <= o_PM_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_PM_2[0] <= o_PM_2[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_PM_2[1] <= o_PM_2[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_PM_3[0] <= o_PM_3[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_PM_3[1] <= o_PM_3[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Viterbi_decoding|Add_compare_select_unit:ACSU
+i_BM_0[0] => i_BM_0[0].IN2
+i_BM_0[1] => i_BM_0[1].IN2
+i_BM_1[0] => i_BM_1[0].IN2
+i_BM_1[1] => i_BM_1[1].IN2
+i_BM_2[0] => i_BM_2[0].IN2
+i_BM_2[1] => i_BM_2[1].IN2
+i_BM_3[0] => i_BM_3[0].IN2
+i_BM_3[1] => i_BM_3[1].IN2
+i_PM_0[0] => i_PM_0[0].IN2
+i_PM_0[1] => i_PM_0[1].IN2
+i_PM_1[0] => i_PM_1[0].IN2
+i_PM_1[1] => i_PM_1[1].IN2
+i_PM_2[0] => i_PM_2[0].IN2
+i_PM_2[1] => i_PM_2[1].IN2
+i_PM_3[0] => i_PM_3[0].IN2
+i_PM_3[1] => i_PM_3[1].IN2
+o_PM_0[0] <= ACS:ACS_0.o_PM
+o_PM_0[1] <= ACS:ACS_0.o_PM
+o_PM_1[0] <= ACS:ACS_1.o_PM
+o_PM_1[1] <= ACS:ACS_1.o_PM
+o_PM_2[0] <= ACS:ACS_2.o_PM
+o_PM_2[1] <= ACS:ACS_2.o_PM
+o_PM_3[0] <= ACS:ACS_3.o_PM
+o_PM_3[1] <= ACS:ACS_3.o_PM
+
+
+|Viterbi_decoding|Add_compare_select_unit:ACSU|ACS:ACS_0
+i_BM_0[0] => i_BM_0[0].IN1
+i_BM_0[1] => i_BM_0[1].IN1
+i_BM_1[0] => i_BM_1[0].IN1
+i_BM_1[1] => i_BM_1[1].IN1
+i_PM_0[0] => i_PM_0[0].IN1
+i_PM_0[1] => i_PM_0[1].IN1
+i_PM_1[0] => i_PM_1[0].IN1
+i_PM_1[1] => i_PM_1[1].IN1
+o_PM[0] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+o_PM[1] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Viterbi_decoding|Add_compare_select_unit:ACSU|ACS:ACS_0|Add_unit:ADD0
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+o_PM[0] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+o_PM[1] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Viterbi_decoding|Add_compare_select_unit:ACSU|ACS:ACS_0|Add_unit:ADD1
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+o_PM[0] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+o_PM[1] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Viterbi_decoding|Add_compare_select_unit:ACSU|ACS:ACS_0|Compare_unit:CP
+i_metric_path_0[0] => o_compare_less.IN0
+i_metric_path_0[0] => o_compare_less.IN0
+i_metric_path_0[1] => o_compare_less.IN0
+i_metric_path_0[1] => o_compare_less.IN0
+i_metric_path_0[1] => o_compare_less.IN1
+i_metric_path_1[0] => o_compare_less.IN0
+i_metric_path_1[0] => o_compare_less.IN1
+i_metric_path_1[1] => o_compare_less.IN1
+i_metric_path_1[1] => o_compare_less.IN1
+i_metric_path_1[1] => o_compare_less.IN1
+o_compare_less <= o_compare_less.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Viterbi_decoding|Add_compare_select_unit:ACSU|ACS:ACS_1
+i_BM_0[0] => i_BM_0[0].IN1
+i_BM_0[1] => i_BM_0[1].IN1
+i_BM_1[0] => i_BM_1[0].IN1
+i_BM_1[1] => i_BM_1[1].IN1
+i_PM_0[0] => i_PM_0[0].IN1
+i_PM_0[1] => i_PM_0[1].IN1
+i_PM_1[0] => i_PM_1[0].IN1
+i_PM_1[1] => i_PM_1[1].IN1
+o_PM[0] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+o_PM[1] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Viterbi_decoding|Add_compare_select_unit:ACSU|ACS:ACS_1|Add_unit:ADD0
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+o_PM[0] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+o_PM[1] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Viterbi_decoding|Add_compare_select_unit:ACSU|ACS:ACS_1|Add_unit:ADD1
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+o_PM[0] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+o_PM[1] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Viterbi_decoding|Add_compare_select_unit:ACSU|ACS:ACS_1|Compare_unit:CP
+i_metric_path_0[0] => o_compare_less.IN0
+i_metric_path_0[0] => o_compare_less.IN0
+i_metric_path_0[1] => o_compare_less.IN0
+i_metric_path_0[1] => o_compare_less.IN0
+i_metric_path_0[1] => o_compare_less.IN1
+i_metric_path_1[0] => o_compare_less.IN0
+i_metric_path_1[0] => o_compare_less.IN1
+i_metric_path_1[1] => o_compare_less.IN1
+i_metric_path_1[1] => o_compare_less.IN1
+i_metric_path_1[1] => o_compare_less.IN1
+o_compare_less <= o_compare_less.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Viterbi_decoding|Add_compare_select_unit:ACSU|ACS:ACS_2
+i_BM_0[0] => i_BM_0[0].IN1
+i_BM_0[1] => i_BM_0[1].IN1
+i_BM_1[0] => i_BM_1[0].IN1
+i_BM_1[1] => i_BM_1[1].IN1
+i_PM_0[0] => i_PM_0[0].IN1
+i_PM_0[1] => i_PM_0[1].IN1
+i_PM_1[0] => i_PM_1[0].IN1
+i_PM_1[1] => i_PM_1[1].IN1
+o_PM[0] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+o_PM[1] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Viterbi_decoding|Add_compare_select_unit:ACSU|ACS:ACS_2|Add_unit:ADD0
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+o_PM[0] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+o_PM[1] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Viterbi_decoding|Add_compare_select_unit:ACSU|ACS:ACS_2|Add_unit:ADD1
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+o_PM[0] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+o_PM[1] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Viterbi_decoding|Add_compare_select_unit:ACSU|ACS:ACS_2|Compare_unit:CP
+i_metric_path_0[0] => o_compare_less.IN0
+i_metric_path_0[0] => o_compare_less.IN0
+i_metric_path_0[1] => o_compare_less.IN0
+i_metric_path_0[1] => o_compare_less.IN0
+i_metric_path_0[1] => o_compare_less.IN1
+i_metric_path_1[0] => o_compare_less.IN0
+i_metric_path_1[0] => o_compare_less.IN1
+i_metric_path_1[1] => o_compare_less.IN1
+i_metric_path_1[1] => o_compare_less.IN1
+i_metric_path_1[1] => o_compare_less.IN1
+o_compare_less <= o_compare_less.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Viterbi_decoding|Add_compare_select_unit:ACSU|ACS:ACS_3
+i_BM_0[0] => i_BM_0[0].IN1
+i_BM_0[1] => i_BM_0[1].IN1
+i_BM_1[0] => i_BM_1[0].IN1
+i_BM_1[1] => i_BM_1[1].IN1
+i_PM_0[0] => i_PM_0[0].IN1
+i_PM_0[1] => i_PM_0[1].IN1
+i_PM_1[0] => i_PM_1[0].IN1
+i_PM_1[1] => i_PM_1[1].IN1
+o_PM[0] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+o_PM[1] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Viterbi_decoding|Add_compare_select_unit:ACSU|ACS:ACS_3|Add_unit:ADD0
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+o_PM[0] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+o_PM[1] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Viterbi_decoding|Add_compare_select_unit:ACSU|ACS:ACS_3|Add_unit:ADD1
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+o_PM[0] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+o_PM[1] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Viterbi_decoding|Add_compare_select_unit:ACSU|ACS:ACS_3|Compare_unit:CP
+i_metric_path_0[0] => o_compare_less.IN0
+i_metric_path_0[0] => o_compare_less.IN0
+i_metric_path_0[1] => o_compare_less.IN0
+i_metric_path_0[1] => o_compare_less.IN0
+i_metric_path_0[1] => o_compare_less.IN1
+i_metric_path_1[0] => o_compare_less.IN0
+i_metric_path_1[0] => o_compare_less.IN1
+i_metric_path_1[1] => o_compare_less.IN1
+i_metric_path_1[1] => o_compare_less.IN1
+i_metric_path_1[1] => o_compare_less.IN1
+o_compare_less <= o_compare_less.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Viterbi_decoding|Survivor_path_memory_unit:SPMU
+i_clk => i_clk.IN1
+i_rst_n => i_rst_n.IN1
+i_valid => i_valid.IN1
+i_PM_0[0] => i_PM_0[0].IN1
+i_PM_0[1] => i_PM_0[1].IN1
+i_PM_1[0] => i_PM_1[0].IN1
+i_PM_1[1] => i_PM_1[1].IN1
+i_PM_2[0] => i_PM_2[0].IN1
+i_PM_2[1] => i_PM_2[1].IN1
+i_PM_3[0] => i_PM_3[0].IN1
+i_PM_3[1] => i_PM_3[1].IN1
+o_decision <= state_machine:u_state_machine.o_decision
+o_valid <= state_machine:u_state_machine.o_valid
+
+
+|Viterbi_decoding|Survivor_path_memory_unit:SPMU|Compare_unit:CP0
+i_metric_path_0[0] => o_compare_less.IN0
+i_metric_path_0[0] => o_compare_less.IN0
+i_metric_path_0[1] => o_compare_less.IN0
+i_metric_path_0[1] => o_compare_less.IN0
+i_metric_path_0[1] => o_compare_less.IN1
+i_metric_path_1[0] => o_compare_less.IN0
+i_metric_path_1[0] => o_compare_less.IN1
+i_metric_path_1[1] => o_compare_less.IN1
+i_metric_path_1[1] => o_compare_less.IN1
+i_metric_path_1[1] => o_compare_less.IN1
+o_compare_less <= o_compare_less.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Viterbi_decoding|Survivor_path_memory_unit:SPMU|Compare_unit:CP1
+i_metric_path_0[0] => o_compare_less.IN0
+i_metric_path_0[0] => o_compare_less.IN0
+i_metric_path_0[1] => o_compare_less.IN0
+i_metric_path_0[1] => o_compare_less.IN0
+i_metric_path_0[1] => o_compare_less.IN1
+i_metric_path_1[0] => o_compare_less.IN0
+i_metric_path_1[0] => o_compare_less.IN1
+i_metric_path_1[1] => o_compare_less.IN1
+i_metric_path_1[1] => o_compare_less.IN1
+i_metric_path_1[1] => o_compare_less.IN1
+o_compare_less <= o_compare_less.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Viterbi_decoding|Survivor_path_memory_unit:SPMU|state_machine:u_state_machine
+i_clk => i_clk.IN1
+i_rst_n => i_rst_n.IN1
+i_valid => i_valid.IN1
+i_compare_0 => i_compare_0.IN1
+i_compare_1 => i_compare_1.IN1
+o_decision <= output_logic:OL.o_decision_bit
+o_valid <= state_memory:SM.o_valid
+
+
+|Viterbi_decoding|Survivor_path_memory_unit:SPMU|state_machine:u_state_machine|next_state_logic:NSL
+i_valid => o_next_state.OUTPUTSELECT
+i_valid => o_next_state.OUTPUTSELECT
+i_valid => o_valid.DATAIN
+i_compare_0 => o_next_state.DATAA
+i_compare_1 => o_next_state.DATAB
+i_pre_state[0] => Decoder0.IN1
+i_pre_state[0] => o_next_state.DATAB
+i_pre_state[1] => Decoder0.IN0
+i_pre_state[1] => o_next_state.DATAB
+o_next_state[0] <= o_next_state.DB_MAX_OUTPUT_PORT_TYPE
+o_next_state[1] <= o_next_state.DB_MAX_OUTPUT_PORT_TYPE
+o_valid <= i_valid.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Viterbi_decoding|Survivor_path_memory_unit:SPMU|state_machine:u_state_machine|state_memory:SM
+i_clk => o_curr_state[0]~reg0.CLK
+i_clk => o_curr_state[1]~reg0.CLK
+i_clk => o_valid~reg0.CLK
+i_rst_n => o_curr_state[0]~reg0.ACLR
+i_rst_n => o_curr_state[1]~reg0.ACLR
+i_rst_n => o_valid~reg0.ACLR
+i_valid => o_valid~reg0.DATAIN
+i_next_state[0] => o_curr_state[0]~reg0.DATAIN
+i_next_state[1] => o_curr_state[1]~reg0.DATAIN
+o_curr_state[0] <= o_curr_state[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_curr_state[1] <= o_curr_state[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_valid <= o_valid~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Viterbi_decoding|Survivor_path_memory_unit:SPMU|state_machine:u_state_machine|output_logic:OL
+i_curr_state[0] => Decoder0.IN1
+i_curr_state[1] => Decoder0.IN0
+o_decision_bit <= o_decision_bit.DB_MAX_OUTPUT_PORT_TYPE
+
+

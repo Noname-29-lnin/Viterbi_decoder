@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sun Jun  1 09:17:52 2025
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Revision Name : Testcase1
+Top-level Entity Name : Testcase1
+Family : Cyclone 10 LP
+Device : 10CL080YF780C8G
+Timing Models : Final
+Total logic elements : 104 / 81,264 ( < 1 % )
+    Total combinational functions : 100 / 81,264 ( < 1 % )
+    Dedicated logic registers : 56 / 81,264 ( < 1 % )
+Total registers : 56
+Total pins : 28 / 424 ( 7 % )
+Total virtual pins : 0
+Total memory bits : 0 / 2,810,880 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 488 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

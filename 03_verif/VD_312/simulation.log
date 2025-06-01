@@ -32,20 +32,21 @@ Time: 431000 	| i_valid = 0 	| i_data: 11 	| o_decision = 1 	| o_valid = 0 	|
 TestCase 3:
  Data input: 00000001
  Data conv : 0000000000000011
-Time: 490000, o_decision: 0, o_valid: 1
-Time: 491000 	| i_valid = 1 	| i_data: 00 	| o_decision = 0 	| o_valid = 1 	|
+Time: 491000 	| i_valid = 0 	| i_data: 00 	| o_decision = 0 	| o_valid = 0 	|
+Time: 510000, o_decision: 0, o_valid: 1
 Time: 511000 	| i_valid = 1 	| i_data: 00 	| o_decision = 0 	| o_valid = 1 	|
 Time: 531000 	| i_valid = 1 	| i_data: 00 	| o_decision = 0 	| o_valid = 1 	|
 Time: 551000 	| i_valid = 1 	| i_data: 00 	| o_decision = 0 	| o_valid = 1 	|
-Time: 570000, o_decision: 0, o_valid: 0
-Time: 571000 	| i_valid = 0 	| i_data: 01 	| o_decision = 0 	| o_valid = 0 	|
-Time: 591000 	| i_valid = 0 	| i_data: 10 	| o_decision = 0 	| o_valid = 0 	|
-Time: 610000, o_decision: 0, o_valid: 1
-Time: 611000 	| i_valid = 1 	| i_data: 00 	| o_decision = 0 	| o_valid = 1 	|
+Time: 571000 	| i_valid = 1 	| i_data: 00 	| o_decision = 0 	| o_valid = 1 	|
+Time: 590000, o_decision: 0, o_valid: 0
+Time: 591000 	| i_valid = 0 	| i_data: 01 	| o_decision = 0 	| o_valid = 0 	|
+Time: 611000 	| i_valid = 0 	| i_data: 10 	| o_decision = 0 	| o_valid = 0 	|
+Time: 630000, o_decision: 0, o_valid: 1
 Time: 631000 	| i_valid = 1 	| i_data: 00 	| o_decision = 0 	| o_valid = 1 	|
 Time: 651000 	| i_valid = 1 	| i_data: 00 	| o_decision = 0 	| o_valid = 1 	|
-Time: 671000 	| i_valid = 1 	| i_data: 11 	| o_decision = 1 	| o_valid = 1 	|
-Time: 690000, o_decision: 1, o_valid: 0
-Time: 691000 	| i_valid = 0 	| i_data: 11 	| o_decision = 1 	| o_valid = 0 	|
+Time: 671000 	| i_valid = 1 	| i_data: 00 	| o_decision = 0 	| o_valid = 1 	|
+Time: 691000 	| i_valid = 1 	| i_data: 11 	| o_decision = 1 	| o_valid = 1 	|
+Time: 710000, o_decision: 1, o_valid: 0
+Time: 711000 	| i_valid = 0 	| i_data: 11 	| o_decision = 1 	| o_valid = 0 	|
 ==========================================================
-- tb_Viterbi_decoding.sv:182: Verilog $finish
+- tb_Viterbi_decoding.sv:209: Verilog $finish
