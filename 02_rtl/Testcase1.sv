@@ -16,17 +16,31 @@ logic [SIZE_PISO-1:0] w_data_PISO;
 logic w_valid_PISO;
 // logic w_done_PISO;
 
-PISO #(
-    .SIZE_DATA_IN  (16),
-    .SIZE_DATA_OUT ( 2)
-) PISO_unit (
-    .i_clk          (i_clk),
-    .i_rst_n        (i_rst_n),
-    .i_start        (i_start),
-    .i_data         (i_data),
-    .o_data         (w_data_PISO),
-    .o_valid        (w_valid_PISO),
-    .o_done         ()
+// PISO #(
+//     .SIZE_DATA_IN  (16),
+//     .SIZE_DATA_OUT ( 2)
+// ) PISO_unit (
+//     .i_clk          (i_clk),
+//     .i_rst_n        (i_rst_n),
+//     .i_start        (i_start),
+//     .i_data         (i_data),
+//     .o_data         (w_data_PISO),
+//     .o_valid        (w_valid_PISO),
+//     .o_done         ()
+// );
+
+Input_interface_block #(
+    .SIZE_IN   (16),
+    .SIZE_OUT  (2 )
+) IIB (
+    .i_clk              (i_clk  ),
+    .i_rst_n            (i_rst_n),
+
+    .i_start            (i_start),
+    .i_data             (i_data),
+    .o_data             (w_data_PISO),
+    .o_valid            (w_valid_PISO),
+    .o_stop             ()   
 );
 
 logic w_valid_VD;
@@ -52,6 +66,19 @@ SIPO #(
     .o_data         (o_data),
     .o_done         (w_done_SIPO)
 );
+// Output_interface_block #(
+//     .SIZE_IN  (1),
+//     .SIZE_OUT (8)
+// ) OIP (
+//     .i_clk              (i_clk),
+//     .i_rst_n            (i_rst_n),
+//     .i_start            (w_valid_VD),
+//     .i_valid            (),
+//     input logic [SIZE_IN-1:0]   i_data,
+//     output logic [SIZE_OUT-1:0] o_data,
+//     output logic                o_valid
+// );
+
 
 assign o_done = w_done_SIPO;
 

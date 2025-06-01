@@ -1,5 +1,5 @@
-Time=              135000, i_rst_n=1, i_start=1, i_data=1101010001010011, o_data=00000000 (Expected = 11011010), o_valid=1, TestCase=FAIL, BER_in=1.000000, BER_out=0.625000
-Time=              265000, i_rst_n=1, i_start=1, i_data=1110001000100011, o_data=00000000 (Expected = 10101010), o_valid=1, TestCase=FAIL, BER_in=1.000000, BER_out=0.500000
-Time=              395000, i_rst_n=1, i_start=1, i_data=0000000000000111, o_data=00000000 (Expected = 00000001), o_valid=1, TestCase=FAIL, BER_in=1.000000, BER_out=0.125000
-Time=              525000, i_rst_n=1, i_start=1, i_data=0000110101111101, o_data=00000000 (Expected = 00110011), o_valid=1, TestCase=FAIL, BER_in=0.000000, BER_out=0.500000
+Time=              135000, i_rst_n=1, i_start=1, i_data=1101010001010010, o_data=10110100 (Expected = 11011010), o_valid=1, TestCase=FAIL, BER_in=0.000000, BER_out=0.625000
+Time=              265000, i_rst_n=1, i_start=1, i_data=1110001000100010, o_data=01010100 (Expected = 10101010), o_valid=1, TestCase=FAIL, BER_in=0.000000, BER_out=0.875000
+Time=              395000, i_rst_n=1, i_start=1, i_data=0000000000000011, o_data=00000010 (Expected = 00000001), o_valid=1, TestCase=FAIL, BER_in=0.000000, BER_out=0.250000
+Time=              525000, i_rst_n=1, i_start=1, i_data=0000110101111101, o_data=01100110 (Expected = 00110011), o_valid=1, TestCase=FAIL, BER_in=0.000000, BER_out=0.500000
 - tb_Testcase1.sv:233: Verilog $finish

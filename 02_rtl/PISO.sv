@@ -48,14 +48,14 @@ always_ff @(posedge i_clk or negedge i_rst_n) begin : save_idata
 end
 
 always_comb begin : proc_shift_reg
-    shift_reg[0] = w_idata[1:0];
-    shift_reg[1] = w_idata[3:2];
-    shift_reg[2] = w_idata[5:4];
-    shift_reg[3] = w_idata[7:6];
-    shift_reg[4] = w_idata[9:8];
-    shift_reg[5] = w_idata[11:10];
-    shift_reg[6] = w_idata[13:12];
-    shift_reg[7] = w_idata[15:14];
+    shift_reg[7] = w_idata[1:0];
+    shift_reg[6] = w_idata[3:2];
+    shift_reg[5] = w_idata[5:4];
+    shift_reg[4] = w_idata[7:6];
+    shift_reg[3] = w_idata[9:8];
+    shift_reg[2] = w_idata[11:10];
+    shift_reg[1] = w_idata[13:12];
+    shift_reg[0] = w_idata[15:14];
 end
 
 // Setup output data

@@ -87,6 +87,101 @@
 // end
 // endmodule
 
+// module SIPO #(
+//     parameter SIZE_DATA_IN  = 1,
+//     parameter SIZE_DATA_OUT = 8
+// )(
+//     input logic i_clk,
+//     input logic i_rst_n,
+//     input logic i_start,
+//     input logic [SIZE_DATA_IN-1:0] i_data,
+//     output logic [SIZE_DATA_OUT-1:0] o_data,
+//     output logic o_done
+// );
+
+// // Counter
+// parameter SIZE_DEPTH = SIZE_DATA_OUT/SIZE_DATA_IN;
+// parameter SIZE_COUNT = $clog2(SIZE_DEPTH);
+// logic [SIZE_COUNT-1:0] count, n_count;
+// logic w_update_count, w_start_next;
+// always_ff @( posedge i_clk or negedge i_rst_n ) begin 
+//     if(~i_rst_n) begin
+//         w_start_next <= 1'b0;
+//     end else begin
+//         w_start_next <= i_start;
+//     end
+// end
+// assign w_update_count = i_start & w_start_next & ~o_done;
+// assign n_count = (w_update_count) ? count + 1'b1 : count;
+// always_ff @( posedge i_clk or negedge i_rst_n ) begin 
+//     if(~i_rst_n) begin
+//         count <= '0;
+//     end else begin
+//         count <= n_count;
+//     end
+// end
+
+// // Save input 
+// logic [SIZE_DATA_IN-1:0] w_idata;
+// logic [SIZE_DATA_IN-1:0] w_idata_next;
+// assign w_idata = (i_start) ? i_data : w_idata_next;
+// always_ff @( posedge i_clk or negedge i_rst_n ) begin : proc_save_in_data
+//     if(~i_rst_n) 
+//         w_idata_next <= '0;
+//     else
+//         w_idata_next <= w_idata;
+// end
+
+// // shift_reg
+// logic [SIZE_DATA_IN-1:0] shift_reg [SIZE_DEPTH-1:0];
+// always_ff @( posedge i_clk or negedge i_rst_n ) begin : proc_shift_reg
+//     if(~i_rst_n) begin
+//         for(int i = 0; i < SIZE_DEPTH; i++) begin
+//             shift_reg[i] <= '0;
+//         end
+//     end else begin
+//         shift_reg[count] <= w_idata;
+//     end
+// end
+
+// // Output Data
+// logic [SIZE_DATA_OUT-1:0] w_odata;
+// always @(*) begin : proc_output_data
+//     for(int i = 0; i < SIZE_DEPTH; i++) begin
+//         w_odata[i] = shift_reg[i];
+//     end
+// end
+// // Data thay doi sau xung clock
+// always @( posedge i_clk or negedge i_rst_n ) begin
+//     if(~i_rst_n) begin
+//         o_data <= '0;
+//     end else begin
+//         if(o_done)
+//             o_data <= w_odata;
+//         else
+//             o_data <= o_data;
+//     end
+// end
+// // Code danh cho viec lay data thay doi lien
+// // logic [SIZE_DATA_OUT-1:0] w_odata_next;
+// // assign o_data = (o_done) ? w_odata : w_odata_next;
+// // always_ff @( posedge i_clk or negedge i_rst_n ) begin : proc_output_data_save
+// //     if(~i_rst_n)
+// //         w_odata_next <= '0;
+// //     else 
+// //         w_odata_next <= o_data;
+// // end
+
+// // Done Signal
+// logic w_done;
+// assign w_done = (&count);
+// always_ff @( posedge i_clk or negedge i_rst_n ) begin : proc_done_signal
+//     if(~i_rst_n)
+//         o_done <= 1'b0;
+//     else
+//         o_done <= (o_done) ? 1'b0 : w_done;
+// end
+// endmodule
 module SIPO #(
     parameter SIZE_DATA_IN  = 1,
     parameter SIZE_DATA_OUT = 8
@@ -98,87 +193,56 @@ module SIPO #(
     output logic [SIZE_DATA_OUT-1:0] o_data,
     output logic o_done
 );
-
-// Counter
 parameter SIZE_DEPTH = SIZE_DATA_OUT/SIZE_DATA_IN;
-parameter SIZE_COUNT = $clog2(SIZE_DEPTH);
-logic [SIZE_COUNT-1:0] count, n_count;
-logic w_update_count, w_start_next;
-always_ff @( posedge i_clk or negedge i_rst_n ) begin 
-    if(~i_rst_n) begin
-        w_start_next <= 1'b0;
-    end else begin
-        w_start_next <= i_start;
-    end
-end
-assign w_update_count = i_start & w_start_next & ~o_done;
-assign n_count = (w_update_count) ? count + 1'b1 : count;
-always_ff @( posedge i_clk or negedge i_rst_n ) begin 
-    if(~i_rst_n) begin
-        count <= '0;
-    end else begin
-        count <= n_count;
-    end
-end
-
-// Save input 
-logic [SIZE_DATA_IN-1:0] w_idata;
-logic [SIZE_DATA_IN-1:0] w_idata_next;
-assign w_idata = (i_start) ? i_data : w_idata_next;
-always_ff @( posedge i_clk or negedge i_rst_n ) begin : proc_save_in_data
-    if(~i_rst_n) 
-        w_idata_next <= '0;
-    else
-        w_idata_next <= w_idata;
-end
-
-// shift_reg
 logic [SIZE_DATA_IN-1:0] shift_reg [SIZE_DEPTH-1:0];
-always_ff @( posedge i_clk or negedge i_rst_n ) begin : proc_shift_reg
+logic [SIZE_DATA_OUT-1:0] count;
+always_ff @( posedge i_clk or negedge i_rst_n ) begin
     if(~i_rst_n) begin
-        for(int i = 0; i < SIZE_DEPTH; i++) begin
+        for( int i = 0; i < SIZE_DEPTH; i ++ ) begin
             shift_reg[i] <= '0;
         end
+        count <= '0;
     end else begin
-        shift_reg[count] <= w_idata;
+        if(i_start) begin
+            shift_reg[0] <= i_data;
+            for( int i = 1; i < SIZE_DEPTH; i ++ ) begin
+                shift_reg[i] <= shift_reg[i-1];
+            end
+            // shift_reg[SIZE_DEPTH-1] <= i_data;
+            // for(int i = SIZE_DEPTH-1; i > 0; i-- ) begin
+            //     shift_reg[i-1] <= shift_reg[i];
+            // end
+            count <= (o_done) ? '0 : count + 1'b1;
+        end else begin
+            for( int i = 0; i < SIZE_DEPTH; i ++ ) begin
+                shift_reg[i] <= shift_reg[i];
+            end
+            count <= count;
+        end
     end
 end
-
-// Output Data
+assign o_done = (count == SIZE_DATA_OUT+1);
 logic [SIZE_DATA_OUT-1:0] w_odata;
-always @(*) begin : proc_output_data
-    for(int i = 0; i < SIZE_DEPTH; i++) begin
-        w_odata[i] = shift_reg[i];
-    end
+logic [SIZE_DATA_OUT-1:0] w_odata_next;
+assign o_data = (o_done) ? w_odata : w_odata_next;
+always_ff @( posedge i_clk or negedge i_rst_n ) begin
+    if(~i_rst_n) 
+        w_odata_next <= '0;
+    else
+        w_odata_next <= o_data;
 end
-// Data thay doi sau xung clock
-always @( posedge i_clk or negedge i_rst_n ) begin
-    if(~i_rst_n) begin
-        o_data <= '0;
-    end else begin
-        if(o_done)
-            o_data <= w_odata;
-        else
-            o_data <= o_data;
-    end
+always @(*) begin
+    w_odata = {shift_reg[SIZE_DEPTH-1], shift_reg[SIZE_DEPTH-2], shift_reg[SIZE_DEPTH-3], shift_reg[SIZE_DEPTH-4], shift_reg[SIZE_DEPTH-5], shift_reg[SIZE_DEPTH-6], shift_reg[SIZE_DEPTH-7], shift_reg[0]};
 end
-// Code danh cho viec lay data thay doi lien
-// logic [SIZE_DATA_OUT-1:0] w_odata_next;
-// assign o_data = (o_done) ? w_odata : w_odata_next;
-// always_ff @( posedge i_clk or negedge i_rst_n ) begin : proc_output_data_save
-//     if(~i_rst_n)
-//         w_odata_next <= '0;
-//     else 
-//         w_odata_next <= o_data;
+// always_ff @( posedge i_clk or negedge i_rst_n ) begin
+//     if(~i_rst_n) 
+//         o_data <= '0;w
+//     else begin
+//         if (o_done) 
+//             o_data <= {shift_reg[SIZE_DEPTH-1], shift_reg[SIZE_DEPTH-2], shift_reg[SIZE_DEPTH-3], shift_reg[SIZE_DEPTH-4], shift_reg[SIZE_DEPTH-5], shift_reg[SIZE_DEPTH-6], shift_reg[SIZE_DEPTH-7], shift_reg[0]};
+//         else
+//             o_data <= o_data;
+//     end
 // end
 
-// Done Signal
-logic w_done;
-assign w_done = (&count);
-always_ff @( posedge i_clk or negedge i_rst_n ) begin : proc_done_signal
-    if(~i_rst_n)
-        o_done <= 1'b0;
-    else
-        o_done <= (o_done) ? 1'b0 : w_done;
-end
 endmodule
