@@ -1,5 +1,5 @@
 # Configuration
-TOPMODULE := IP_LCD_control
+TOPMODULE := IP_LCD_timer_counter
 VERILATOR_FLAGS := --binary --timing --trace --build -f flist.f
 WARNING_IGNORE := -Wno-fatal -Wno-lint -Wno-style -Wno-width
 
