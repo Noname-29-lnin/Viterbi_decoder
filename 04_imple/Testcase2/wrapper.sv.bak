@@ -12,21 +12,18 @@ module wrapper(
     output logic        LCD_BLON
 );
 
-logic w_KEY;
-assign w_KEY = ~KEY[0];
-
 IP_LCD_timer_counter #(
     .SIZE_DATA     (8) ,
-    .SIZE_FUNC     (2) ,
+    .SIZE_FUNC     (4) ,
     .FREQ          (50_000_000)
 ) uut (
     .i_clk          (CLOCK_50),
     .i_rst_n        (SW[17]),
-    .i_en_lcd       (w_KEY), 
+    .i_en_lcd       (KEY[0]), 
     .i_on_lcd       (SW[16]),
     .i_lcd_blon     (SW[15]),
     .i_data         (SW[7:0]),
-    .i_func         (SW[9:8]),
+    .i_func         (SW[11:8]),
 
     .o_LCD_DATA     (LCD_DATA),
     .o_LCD_E        (LCD_EN),
@@ -38,7 +35,7 @@ IP_LCD_timer_counter #(
 );
 
 assign LEDR[17:0] = SW[17:0];
-assign LEDG[0] = w_KEY;
+assign LEDG[0] = KEY[0];
 assign LEDG[1] = LCD_EN;
 assign LEDG[2] = LCD_RS;
 assign LEDG[3] = LCD_RW;
