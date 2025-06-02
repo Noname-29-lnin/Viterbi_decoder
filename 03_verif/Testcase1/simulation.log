@@ -1,5 +1,22 @@
-Time=              271000, i_rst_n=1, i_start=1, i_data=1101010001010010, o_data=11011010 (Expected = 11011010), o_valid=1, TestCase=PASS, BER_in=0.000000, BER_out=0.000000
-Time=              590000, i_rst_n=1, i_start=1, i_data=1110001000100010, o_data=10101010 (Expected = 10101010), o_valid=1, TestCase=PASS, BER_in=0.000000, BER_out=0.000000
-Time=              910000, i_rst_n=1, i_start=1, i_data=0000000000000011, o_data=00000001 (Expected = 00000001), o_valid=1, TestCase=PASS, BER_in=0.000000, BER_out=0.000000
-Time=             1230000, i_rst_n=1, i_start=1, i_data=0000110101111101, o_data=00110011 (Expected = 00110011), o_valid=1, TestCase=PASS, BER_in=0.000000, BER_out=0.000000
-- tb_Testcase1.sv:235: Verilog $finish
+========== Testcase: 1 ==========
+Data Input: 1101010001010010
+Data after decoder: 11011010
+| Time =               210000 	| i_rst_n = 1 	| i_start = 1 	| i_data = 1101010001010010 	|
+| Time =               411000 	| o_data = 11011010 	| HEX_0 = 08 	| HEX_1 = 21 	| o_done_PISO = 0 	| o_done_SIPO = 1 	|
+========== Testcase: 2 ==========
+Data Input: 1110001000100010
+Data after decoder: 10101010
+| Time =               730000 	| i_rst_n = 1 	| i_start = 1 	| i_data = 1110001000100010 	|
+| Time =               931000 	| o_data = 10101010 	| HEX_0 = 08 	| HEX_1 = 08 	| o_done_PISO = 0 	| o_done_SIPO = 1 	|
+========== Testcase: 3 ==========
+Data Input: 0000000000000011
+Data after decoder: 00000001
+| Time =              1250000 	| i_rst_n = 1 	| i_start = 1 	| i_data = 0000000000000011 	|
+| Time =              1451000 	| o_data = 00000001 	| HEX_0 = 79 	| HEX_1 = 40 	| o_done_PISO = 0 	| o_done_SIPO = 1 	|
+========== Testcase: 4 ==========
+Data Input: 0000110101111101
+Data after decoder: 00110011
+| Time =              1770000 	| i_rst_n = 1 	| i_start = 1 	| i_data = 0000110101111101 	|
+| Time =              1971000 	| o_data = 00110011 	| HEX_0 = 30 	| HEX_1 = 30 	| o_done_PISO = 0 	| o_done_SIPO = 1 	|
+All testcases passed successfully!
+- tb_Testcase1.sv:167: Verilog $finish

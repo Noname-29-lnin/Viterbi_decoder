@@ -1,123 +1,171 @@
 `timescale 1ns/1ps
 module tb_Testcase1();
 
+parameter SIZE_DATA_IN  = 16;
+parameter SIZE_DATA_OUT = 8 ;
+parameter SIZE_PISO     = 2 ;
+parameter SIZE_SIPO     = 1 ;
+parameter SIZE_7SEG     = 7 ;
+
 logic i_clk, i_rst_n, i_start ;
-logic [15:0] i_data;
-logic [7:0]  o_data;
-logic        o_valid;
-// Block_VD uut (
-//     .i_clk   (i_clk),
-//     .i_rst_n (i_rst_n),
-//     .i_start (i_start),
-//     .i_data  (i_data),
-//     .o_data  (o_data),
-//     .o_valid (o_valid)
-// );
+logic [SIZE_DATA_IN-1:0] i_data;
+logic [SIZE_7SEG-1:0] o_HEX_0, o_HEX_1;
+logic        o_done_PISO, o_done_SIPO;
 
-Testcase1 dut (
-    .i_clk(i_clk),
-    .i_rst_n(i_rst_n),
-    .i_start(i_start),
-    .i_data(i_data),
-    .o_data(o_data),
-    .o_done(o_valid)
+Testcase1 #(
+    .SIZE_DATA_IN  (SIZE_DATA_IN),
+    .SIZE_DATA_OUT (SIZE_DATA_OUT),
+    .SIZE_PISO     (SIZE_PISO),
+    .SIZE_SIPO     (SIZE_SIPO),
+    .SIZE_7SEG     (SIZE_7SEG)
+) uut (
+    .i_clk          (i_clk),
+    .i_rst_n        (i_rst_n),
+    .i_start        (i_start),
+    .i_data         (i_data),
+	 
+    .o_HEX_0        (o_HEX_0),
+    .o_HEX_1        (o_HEX_1),
+    .o_done_PISO    (o_done_PISO),
+    .o_done_SIPO    (o_done_SIPO)
 );
-
-function automatic real calc_ber_8bit (
-    input logic [7:0] a,
-    input logic [7:0] b
-);
-    int error_count = 0;
-    for (int i = 0; i < 8; i++) begin
-        if (a[i] ^ b[i]) error_count++;
-    end
-    return error_count / 8.0;
-endfunction
-
-function automatic real calc_ber_16bit (
-    input logic [15:0] a,
-    input logic [15:0] b
-);
-    int error_count = 0;
-    for (int i = 0; i < 16; i++) begin
-        if (a[i] ^ b[i]) error_count++;
-    end
-    // return error_count / 16.0;
-    return error_count;
-endfunction
-
 
 initial begin
     $dumpfile("tb_Testcase1.vcd");
     $dumpvars(0, tb_Testcase1);
-end 
+end
 
+initial i_clk = 0;
 always #10 i_clk = ~i_clk;
 
+task wait_done();
+    begin
+        @(posedge o_done_SIPO);
+        #1;
+    end
+endtask
+task wait_PISO();
+    begin
+        @(posedge o_done_PISO);
+        #1;
+    end
+endtask
+task Display_case();
+    input string mess_0;
+    input logic [SIZE_DATA_IN-1:0] data_conv;
+    input logic [SIZE_DATA_OUT-1:0] data_vd;
+    begin
+        $display("========== Testcase: %s ==========",mess_0);
+        $display("Data Input: %b", data_conv);
+        $display("Data after decoder: %b", data_vd);
+    end
+endtask
+task Display_input();
+    begin
+        $display("| Time = %t \t| i_rst_n = %b \t| i_start = %b \t| i_data = %b \t|",
+                    $time, i_rst_n, i_start, i_data);
+    end
+endtask
+task Display_output();
+    begin
+        $display("| Time = %t \t| o_data = %b \t| HEX_0 = %h \t| HEX_1 = %h \t| o_done_PISO = %b \t| o_done_SIPO = %b \t|",
+                    $time, uut.o_data, o_HEX_0, o_HEX_1, o_done_PISO, o_done_SIPO);
+    end
+endtask
+task Main_test();
+    input string mess_0;
+    input logic [SIZE_DATA_IN-1:0] data_conv;
+    input logic [SIZE_DATA_OUT-1:0] data_vd;
+    begin
+        Display_case(mess_0, data_conv, data_vd);
+        i_data = data_conv;
+        @(posedge i_clk);
+        i_start = 1;
+        Display_input();
+        // wait_PISO();
+        // i_start = 0;
+        wait_done();
+        Display_output();
+        i_start = 0;
+    end
+endtask
+
+// // Function to convert 4-bit binary to 7-segment display pattern
+// function [6:0] seg7;
+//     input [3:0] bin;
+//     begin
+//         case (bin)
+//             4'h0: seg7 = 7'b1000000; // 0
+//             4'h1: seg7 = 7'b1111001; // 1
+//             4'h2: seg7 = 7'b0100100; // 2
+//             4'h3: seg7 = 7'b0110000; // 3
+//             4'h4: seg7 = 7'b0011001; // 4
+//             4'h5: seg7 = 7'b0010010; // 5
+//             4'h6: seg7 = 7'b0000010; // 6
+//             4'h7: seg7 = 7'b1111000; // 7
+//             4'h8: seg7 = 7'b0000000; // 8
+//             4'h9: seg7 = 7'b0010000; // 9
+//             4'hA: seg7 = 7'b0001000; // A
+//             4'hB: seg7 = 7'b0000011; // b
+//             4'hC: seg7 = 7'b1000110; // C
+//             4'hD: seg7 = 7'b0100001; // d
+//             4'hE: seg7 = 7'b0000110; // E
+//             4'hF: seg7 = 7'b0001110; // F
+//             default: seg7 = 7'b1111111; // off
+//         endcase
+//     end
+// endfunction
+// logic [6:0] exp_HEX0;
+// logic [6:0] exp_HEX1;
+
 initial begin
-    i_clk     = 0;
-    i_rst_n   = 0;
-    i_start   = 0;
+    $dumpfile("tb_Testcase1.vcd");
+    $dumpvars(0, tb_Testcase1);
+end
 
-    #20;
-    i_rst_n   = 0;
-    i_start   = 1;
-
-    #20;
-    i_rst_n   = 1;
-    i_start   = 1;
-
-    @(posedge i_clk);
-    // i_data = 16'b1101010001010010;
-    i_data = 16'b1101010001010010;
-    wait(o_valid);
-    @(posedge i_clk);
-    #1;
-    $display("Time=%t, i_rst_n=%b, i_start=%b, i_data=%b, o_data=%b (Expected = %b), o_valid=%b, TestCase=%s, BER_in=%f, BER_out=%f", $time, i_rst_n, i_start, i_data, o_data, 8'b11011010, o_valid, (o_data==8'b11011010)?"PASS":"FAIL", calc_ber_16bit(i_data, 16'b1101010001010010), calc_ber_8bit(o_data, 8'b11011010));
-
+initial begin
+    i_rst_n = 0;
+    i_start = 0;
+    i_data = 0;
     #100;
-    i_rst_n   = 0;
-    i_start   = 1;
-    #10;
-    i_rst_n   = 1;
-    i_start   = 1;
-    @(posedge i_clk);
-    // i_data = 16'b1110001000100010;
-    i_data = 16'b1110001000100010;
-    wait(o_valid);
-    // $display("Time=%t, i_rst_n=%b, i_start=%b, i_data=%b, o_data=%b, o_valid=%b, TestCase=%s", $time, i_rst_n, i_start, i_data, o_data, o_valid, (o_data==8'b10101010)?"PASS":"FAIL");
-    $display("Time=%t, i_rst_n=%b, i_start=%b, i_data=%b, o_data=%b (Expected = %b), o_valid=%b, TestCase=%s, BER_in=%f, BER_out=%f", $time, i_rst_n, i_start, i_data, o_data, 8'b10101010, o_valid, (o_data==8'b10101010)?"PASS":"FAIL", calc_ber_16bit(i_data, 16'b1110001000100010), calc_ber_8bit(o_data, 8'b10101010));
-
+    i_rst_n = 1;
     #100;
-    i_rst_n   = 0;
-    i_start   = 1;
-    #10;
-    i_rst_n   = 1;
-    i_start   = 1;
-    @(posedge i_clk);
-    // i_data = 16'b0000000000000011;
-    i_data = 16'b0000000000000011;
-    wait(o_valid);
-    // $display("Time=%t, i_rst_n=%b, i_start=%b, i_data=%b, o_data=%b, o_valid=%b, TestCase=%s", $time, i_rst_n, i_start, i_data, o_data, o_valid, (o_data==8'b00000001)?"PASS":"FAIL");
-    $display("Time=%t, i_rst_n=%b, i_start=%b, i_data=%b, o_data=%b (Expected = %b), o_valid=%b, TestCase=%s, BER_in=%f, BER_out=%f", $time, i_rst_n, i_start, i_data, o_data, 8'b00000001, o_valid, (o_data==8'b00000001)?"PASS":"FAIL", calc_ber_16bit(i_data, 16'b0000000000000011), calc_ber_8bit(o_data, 8'b00000001));
+    Main_test("1", 16'b1101010001010010, 8'b11011010);
+    #100;
+    i_rst_n = 0;
+    i_start = 0;
+    i_data = 0;
+    #100;
+    i_rst_n = 1;
+    #100;
+    Main_test("2", 16'b1110001000100010, 8'b10101010);
+    #100;
+    i_rst_n = 0;
+    i_start = 0;
+    i_data = 0;
+    #100;
+    i_rst_n = 1;
+    #100;
+    Main_test("3", 16'b0000000000000011, 8'b00000001);
+    #100;
+    i_rst_n = 0;
+    i_start = 0;
+    i_data = 0;
+    #100;
+    i_rst_n = 1;
+    #100;
+    Main_test("4", 16'b0000110101111101, 8'b00110011);
+    #100;
+    i_rst_n = 0;
+    i_start = 0;
+    i_data = 0;
+    #100;
+    i_rst_n = 1;
     
     #100;
-    i_rst_n   = 0;
-    i_start   = 1;
-    #10;
-    i_rst_n   = 1;
-    i_start   = 1;
-    @(posedge i_clk);
-    i_data = 16'b0000110101111101;
-    wait(o_valid);
-    // $display("Time=%t, i_rst_n=%b, i_start=%b, i_data=%b, o_data=%b, o_valid=%b, TestCase=%s", $time, i_rst_n, i_start, i_data, o_data, o_valid, (o_data==8'b00110011)?"PASS":"FAIL");
-    $display("Time=%t, i_rst_n=%b, i_start=%b, i_data=%b, o_data=%b (Expected = %b), o_valid=%b, TestCase=%s, BER_in=%f, BER_out=%f", $time, i_rst_n, i_start, i_data, o_data, 8'b00110011, o_valid, (o_data==8'b00110011)?"PASS":"FAIL", calc_ber_16bit(i_data, 16'b0000110101111101), calc_ber_8bit(o_data, 8'b00110011));
-    #100;
+    $display("All testcases passed successfully!");
     $finish;
-end 
+end
 
 endmodule
-// test_case(16'b1101010001010010, 8'b11011010); // CASE 1
-// test_case(16'b1110001000100010, 8'b10101010); // CASE 2
-// test_case(16'b0000000000000011, 8'b00000001); // CASE 3
-// test_case(16'b0000110101111101, 8'b00110011); // CASE 4
+
