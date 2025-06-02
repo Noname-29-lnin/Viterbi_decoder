@@ -1,6 +1,6 @@
 module IP_LCD_timer_counter #(
     parameter SIZE_DATA     = 8 ,
-    parameter SIZE_FUNC     = 4 ,
+    parameter SIZE_FUNC     = 2 ,
     parameter FREQ          = 50_000_000
 )(
     input logic         i_clk   ,
@@ -26,9 +26,9 @@ logic [SIZE_DELAY-1:0] count, ncount;
 assign ncount = count + 1'b1;
 localparam int  DELAY_15ms      = int'(0.015 * FREQ  + 0.5),
                 DELAY_4_1_ms    = int'(0.0041 * FREQ + 0.5),
-                DELAY_1_52ms    = int'(0.00152 * FREQ + 0.5),
+                DELAY_1_52ms    = int'(0.00153 * FREQ + 0.5),
                 DELAY_100us     = int'(0.0001 * FREQ + 0.5),
-                DELAY_37us      = int'(0.000037 * FREQ + 0.5),
+                DELAY_37us      = int'(0.000039 * FREQ + 0.5),
                 DELAY_230ns     = int'(0.00000023 * FREQ + 0.5);
 // localparam int  DELAY_15ms      = 50,
 //                 DELAY_4_1_ms    = 30,
