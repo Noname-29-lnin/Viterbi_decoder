@@ -1,5 +1,5 @@
 Flow report for warpper_testcase1
-Mon Jun  2 13:19:08 2025
+Mon Jun  2 14:19:25 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -41,25 +41,25 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +---------------------------------+------------------------------------------------+
-; Flow Status                     ; Successful - Mon Jun  2 13:19:08 2025          ;
+; Flow Status                     ; Successful - Mon Jun  2 14:19:24 2025          ;
 ; Quartus Prime Version           ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                   ; warpper_testcase1                              ;
 ; Top-level Entity Name           ; warpper_testcase1                              ;
 ; Family                          ; Cyclone V                                      ;
 ; Device                          ; 5CEFA7F31C8                                    ;
 ; Timing Models                   ; Final                                          ;
-; Logic utilization (in ALMs)     ; N/A                                            ;
-; Total registers                 ; 58                                             ;
-; Total pins                      ; 58                                             ;
+; Logic utilization (in ALMs)     ; 47 / 56,480 ( < 1 % )                          ;
+; Total registers                 ; 62                                             ;
+; Total pins                      ; 58 / 480 ( 12 % )                              ;
 ; Total virtual pins              ; 0                                              ;
-; Total block memory bits         ; 0                                              ;
-; Total DSP Blocks                ; 0                                              ;
+; Total block memory bits         ; 0 / 7,024,640 ( 0 % )                          ;
+; Total DSP Blocks                ; 0 / 156 ( 0 % )                                ;
 ; Total HSSI RX PCSs              ; 0                                              ;
 ; Total HSSI PMA RX Deserializers ; 0                                              ;
 ; Total HSSI TX PCSs              ; 0                                              ;
 ; Total HSSI PMA TX Serializers   ; 0                                              ;
-; Total PLLs                      ; 0                                              ;
-; Total DLLs                      ; 0                                              ;
+; Total PLLs                      ; 0 / 7 ( 0 % )                                  ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                                  ;
 +---------------------------------+------------------------------------------------+
 
 
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/02/2025 13:19:02 ;
+; Start date & time ; 06/02/2025 14:18:39 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; warpper_testcase1   ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 18039803683899.174884514246416         ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 18039803683899.174884871910265         ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -103,8 +103,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 469 MB              ; 00:00:15                           ;
-; Total                ; 00:00:07     ; --                      ; --                  ; 00:00:15                           ;
+; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 453 MB              ; 00:00:16                           ;
+; Fitter               ; 00:00:25     ; 1.0                     ; 1913 MB             ; 00:00:46                           ;
+; Assembler            ; 00:00:06     ; 1.0                     ; 524 MB              ; 00:00:05                           ;
+; Timing Analyzer      ; 00:00:04     ; 1.1                     ; 882 MB              ; 00:00:04                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 667 MB              ; 00:00:01                           ;
+; Total                ; 00:00:42     ; --                      ; --                  ; 00:01:12                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -114,6 +118,10 @@ https://fpgasoftware.intel.com/eula.
 ; Module Name          ; Machine Hostname ; OS Name        ; OS Version ; Processor type ;
 +----------------------+------------------+----------------+------------+----------------+
 ; Analysis & Synthesis ; Noname           ; Ubuntu 24.04.2 ; 24         ; x86_64         ;
+; Fitter               ; Noname           ; Ubuntu 24.04.2 ; 24         ; x86_64         ;
+; Assembler            ; Noname           ; Ubuntu 24.04.2 ; 24         ; x86_64         ;
+; Timing Analyzer      ; Noname           ; Ubuntu 24.04.2 ; 24         ; x86_64         ;
+; EDA Netlist Writer   ; Noname           ; Ubuntu 24.04.2 ; 24         ; x86_64         ;
 +----------------------+------------------+----------------+------------+----------------+
 
 
@@ -121,6 +129,10 @@ https://fpgasoftware.intel.com/eula.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off warpper_testcase1 -c warpper_testcase1
+quartus_fit --read_settings_files=off --write_settings_files=off warpper_testcase1 -c warpper_testcase1
+quartus_asm --read_settings_files=off --write_settings_files=off warpper_testcase1 -c warpper_testcase1
+quartus_sta warpper_testcase1 -c warpper_testcase1
+quartus_eda --read_settings_files=off --write_settings_files=off warpper_testcase1 -c warpper_testcase1
 
 
 
