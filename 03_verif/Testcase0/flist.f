@@ -1,5 +1,5 @@
-./tb_Testcase1.sv
-./../../02_rtl/Testcase1.sv
+./tb_Testcase0.sv
+./../../02_rtl/Testcase0.sv
 ./../../02_rtl/PISO.sv
 ./../../02_rtl/Viterbi_decoding.sv
 ./../../02_rtl/Full_adder.sv
@@ -12,4 +12,3 @@
 ./../../02_rtl/Path_metric_unit.sv
 ./../../02_rtl/Survivor_path_memory_unit.sv
 ./../../02_rtl/SIPO.sv
-// ./../../02_rtl/Hex_to_7seg.sv

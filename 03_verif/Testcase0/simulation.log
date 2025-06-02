@@ -1,0 +1,5 @@
+Time=              271000, i_rst_n=1, i_start=1, i_data=1101010001010010, o_data=11011010 (Expected = 11011010), o_valid=1, TestCase=PASS, BER_in=0.000000, BER_out=0.000000
+Time=              590000, i_rst_n=1, i_start=1, i_data=1110001000100010, o_data=10101010 (Expected = 10101010), o_valid=1, TestCase=PASS, BER_in=0.000000, BER_out=0.000000
+Time=              910000, i_rst_n=1, i_start=1, i_data=0000000000000011, o_data=00000001 (Expected = 00000001), o_valid=1, TestCase=PASS, BER_in=0.000000, BER_out=0.000000
+Time=             1230000, i_rst_n=1, i_start=1, i_data=0000110101111101, o_data=00110011 (Expected = 00110011), o_valid=1, TestCase=PASS, BER_in=0.000000, BER_out=0.000000
+- tb_Testcase0.sv:117: Verilog $finish

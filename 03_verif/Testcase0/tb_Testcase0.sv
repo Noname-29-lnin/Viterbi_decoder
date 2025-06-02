@@ -1,5 +1,5 @@
 `timescale 1ns/1ps
-module tb_Testcase1();
+module tb_Testcase0();
 
 logic i_clk, i_rst_n, i_start ;
 logic [15:0] i_data;
@@ -14,13 +14,14 @@ logic        o_valid;
 //     .o_valid (o_valid)
 // );
 
-Testcase1 dut (
+Testcase0 dut (
     .i_clk(i_clk),
     .i_rst_n(i_rst_n),
     .i_start(i_start),
     .i_data(i_data),
     .o_data(o_data),
-    .o_done(o_valid)
+    .o_done_PISO(),
+    .o_done_SIPO(o_valid)
 );
 
 function automatic real calc_ber_8bit (
@@ -48,8 +49,8 @@ endfunction
 
 
 initial begin
-    $dumpfile("tb_Testcase1.vcd");
-    $dumpvars(0, tb_Testcase1);
+    $dumpfile("tb_Testcase0.vcd");
+    $dumpvars(0, tb_Testcase0);
 end 
 
 always #10 i_clk = ~i_clk;
@@ -117,7 +118,3 @@ initial begin
 end 
 
 endmodule
-// test_case(16'b1101010001010010, 8'b11011010); // CASE 1
-// test_case(16'b1110001000100010, 8'b10101010); // CASE 2
-// test_case(16'b0000000000000011, 8'b00000001); // CASE 3
-// test_case(16'b0000110101111101, 8'b00110011); // CASE 4
