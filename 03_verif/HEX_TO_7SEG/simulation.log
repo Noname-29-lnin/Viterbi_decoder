@@ -1,4 +1,4 @@
-Pass: Disabled - All segments off
+Error (Disabled): Expected 8'hFF, got 7f
 Hex 0 (0x0) - Output: 01000000 -> PASS
 Hex 1 (0x1) - Output: 01111001 -> PASS
 Hex 2 (0x2) - Output: 00100100 -> PASS
@@ -15,7 +15,7 @@ Hex C (0xc) - Output: 01000110 -> PASS
 Hex d (0xd) - Output: 00100001 -> PASS
 Hex E (0xe) - Output: 00000110 -> PASS
 Hex F (0xf) - Output: 00001110 -> PASS
-Pass: Re-Disable - All segments off
+Error (Re-Disable): Expected 8'hFF, got 7f
 
 All tests completed!
 - tb_Hex_to_7seg.sv:69: Verilog $finish

@@ -1,13 +1,13 @@
 module Hex_to_7seg #(
     parameter SIZE_DATA = 4,
-    parameter SIZE_7SEG = 8
+    parameter SIZE_7SEG = 7
 )(
     input  logic                     i_en_hex   ,  
     input  logic [SIZE_DATA-1:0]     i_data     ,  
     output logic [SIZE_7SEG-1:0]     o_HEX      
 );
 
-    logic [6:0] seg;
+    logic [SIZE_7SEG-1:0] seg;
 
     always @(*) begin
         case (i_data)
@@ -31,6 +31,6 @@ module Hex_to_7seg #(
         endcase
     end
 
-    assign o_HEX = (i_en_hex) ? {1'b0, seg} : 8'hFF;
+    assign o_HEX = (i_en_hex) ? seg : 7'b1111111;
 
 endmodule

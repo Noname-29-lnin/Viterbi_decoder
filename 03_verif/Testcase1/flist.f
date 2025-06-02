@@ -12,5 +12,4 @@
 ./../../02_rtl/Path_metric_unit.sv
 ./../../02_rtl/Survivor_path_memory_unit.sv
 ./../../02_rtl/SIPO.sv
-// ./../../02_rtl/LCD_control.sv
-// ./../../02_rtl/IP_LCD_timer_counter.sv
+./../../02_rtl/Hex_to_7seg.sv

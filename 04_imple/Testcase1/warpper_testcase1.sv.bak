@@ -1,0 +1,30 @@
+module warpper_testcase1(
+    input logic i_clk,
+    input logic [17:0]  i_SW,
+    output logic [17:0] o_LEDR,
+    output logic [6:0]  o_LEDG,
+    output logic [6:0]  o_HEX0,
+    output logic [6:0]  o_HEX1
+);
+
+Testcase1 #(
+    .SIZE_DATA_IN  (16    ),
+    .SIZE_DATA_OUT (8     ),
+    .SIZE_PISO     (2     ),
+    .SIZE_SIPO     (1     ),
+    .SIZE_7SEG     (7     )
+) uut (
+    .i_clk          (i_clk),
+    .i_rst_n        (i_SW[17]),
+    .i_start        (i_SW[16]),
+    .i_data         (i_SW[15:0]),
+	 
+    .o_HEX_0        (o_HEX0),
+    .o_HEX_1        (o_HEX1),
+    .o_done_PISO    (o_LEDG[0]),
+    .o_done_SIPO    (o_LEDG[1])
+);
+
+assign o_LEDR[17:0] = i_SW[17:0];
+
+endmodule
