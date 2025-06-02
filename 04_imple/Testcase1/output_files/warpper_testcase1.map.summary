@@ -1,17 +1,14 @@
-Analysis & Synthesis Status : Successful - Mon Jun  2 14:18:45 2025
-Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Analysis & Synthesis Status : Successful - Mon Jun 02 15:11:12 2025
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : warpper_testcase1
 Top-level Entity Name : warpper_testcase1
-Family : Cyclone V
-Logic utilization (in ALMs) : N/A
-Total registers : 58
-Total pins : 58
+Family : Cyclone II
+Total logic elements : 187
+    Total combinational functions : 178
+    Dedicated logic registers : 91
+Total registers : 91
+Total pins : 62
 Total virtual pins : 0
-Total block memory bits : 0
-Total DSP Blocks : 0
-Total HSSI RX PCSs : 0
-Total HSSI PMA RX Deserializers : 0
-Total HSSI TX PCSs : 0
-Total HSSI PMA TX Serializers : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
 Total PLLs : 0
-Total DLLs : 0

@@ -1,6 +1,6 @@
 Analysis & Synthesis report for warpper_testcase1
-Mon Jun  2 14:18:45 2025
-Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Mon Jun 02 15:11:12 2025
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -17,22 +17,22 @@ Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
   9. General Register Statistics
  10. Inverted Register Statistics
  11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Parameter Settings for User Entity Instance: Testcase1:uut
- 13. Parameter Settings for User Entity Instance: Testcase1:uut|PISO:PISO_unit
- 14. Parameter Settings for User Entity Instance: Testcase1:uut|Viterbi_decoding:VD_unit|Branch_metric_unit:BMU
- 15. Parameter Settings for User Entity Instance: Testcase1:uut|Viterbi_decoding:VD_unit|Path_metric_unit:PMU
- 16. Parameter Settings for User Entity Instance: Testcase1:uut|Viterbi_decoding:VD_unit|Survivor_path_memory_unit:SPMU|state_machine:u_state_machine|next_state_logic:NSL
- 17. Parameter Settings for User Entity Instance: Testcase1:uut|Viterbi_decoding:VD_unit|Survivor_path_memory_unit:SPMU|state_machine:u_state_machine|state_memory:SM
- 18. Parameter Settings for User Entity Instance: Testcase1:uut|Viterbi_decoding:VD_unit|Survivor_path_memory_unit:SPMU|state_machine:u_state_machine|output_logic:OL
- 19. Parameter Settings for User Entity Instance: Testcase1:uut|SIPO:SIPO_unit
- 20. Parameter Settings for User Entity Instance: Testcase1:uut|Hex_to_7seg:HEX_0_unit
- 21. Parameter Settings for User Entity Instance: Testcase1:uut|Hex_to_7seg:HEX_1_unit
- 22. Port Connectivity Checks: "Testcase1:uut|Viterbi_decoding:VD_unit|Branch_metric_unit:BMU|Hamming_distance:HD3"
- 23. Port Connectivity Checks: "Testcase1:uut|Viterbi_decoding:VD_unit|Branch_metric_unit:BMU|Hamming_distance:HD2"
- 24. Port Connectivity Checks: "Testcase1:uut|Viterbi_decoding:VD_unit|Branch_metric_unit:BMU|Hamming_distance:HD1"
- 25. Port Connectivity Checks: "Testcase1:uut|Viterbi_decoding:VD_unit|Branch_metric_unit:BMU|Hamming_distance:HD0|Full_adder:FA"
- 26. Port Connectivity Checks: "Testcase1:uut|Viterbi_decoding:VD_unit|Branch_metric_unit:BMU|Hamming_distance:HD0"
- 27. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Parameter Settings for User Entity Instance: Top-level Entity: |warpper_testcase1
+ 13. Parameter Settings for User Entity Instance: Testcase1:uut
+ 14. Parameter Settings for User Entity Instance: Testcase1:uut|PISO:PISO_unit
+ 15. Parameter Settings for User Entity Instance: Testcase1:uut|Viterbi_decoding:VD_unit|Branch_metric_unit:BMU
+ 16. Parameter Settings for User Entity Instance: Testcase1:uut|Viterbi_decoding:VD_unit|Path_metric_unit:PMU
+ 17. Parameter Settings for User Entity Instance: Testcase1:uut|Viterbi_decoding:VD_unit|Survivor_path_memory_unit:SPMU|state_machine:u_state_machine|next_state_logic:NSL
+ 18. Parameter Settings for User Entity Instance: Testcase1:uut|Viterbi_decoding:VD_unit|Survivor_path_memory_unit:SPMU|state_machine:u_state_machine|state_memory:SM
+ 19. Parameter Settings for User Entity Instance: Testcase1:uut|Viterbi_decoding:VD_unit|Survivor_path_memory_unit:SPMU|state_machine:u_state_machine|output_logic:OL
+ 20. Parameter Settings for User Entity Instance: Testcase1:uut|SIPO:SIPO_unit
+ 21. Parameter Settings for User Entity Instance: Testcase1:uut|Hex_to_7seg:HEX_0_unit
+ 22. Parameter Settings for User Entity Instance: Testcase1:uut|Hex_to_7seg:HEX_1_unit
+ 23. Port Connectivity Checks: "Testcase1:uut|Viterbi_decoding:VD_unit|Branch_metric_unit:BMU|Hamming_distance:HD3"
+ 24. Port Connectivity Checks: "Testcase1:uut|Viterbi_decoding:VD_unit|Branch_metric_unit:BMU|Hamming_distance:HD2"
+ 25. Port Connectivity Checks: "Testcase1:uut|Viterbi_decoding:VD_unit|Branch_metric_unit:BMU|Hamming_distance:HD1"
+ 26. Port Connectivity Checks: "Testcase1:uut|Viterbi_decoding:VD_unit|Branch_metric_unit:BMU|Hamming_distance:HD0|Full_adder:FA"
+ 27. Port Connectivity Checks: "Testcase1:uut|Viterbi_decoding:VD_unit|Branch_metric_unit:BMU|Hamming_distance:HD0"
  28. Elapsed Time Per Partition
  29. Analysis & Synthesis Messages
 
@@ -41,227 +41,226 @@ Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2024  Intel Corporation. All rights reserved.
-Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and any partner logic 
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Intel Program License 
-Subscription Agreement, the Intel Quartus Prime License Agreement,
-the Intel FPGA IP License Agreement, or other applicable license
-agreement, including, without limitation, that your use is for
-the sole purpose of programming logic devices manufactured by
-Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details, at
-https://fpgasoftware.intel.com/eula.
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
 
 
 
-+----------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                     ;
-+---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Jun  2 14:18:45 2025          ;
-; Quartus Prime Version           ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
-; Revision Name                   ; warpper_testcase1                              ;
-; Top-level Entity Name           ; warpper_testcase1                              ;
-; Family                          ; Cyclone V                                      ;
-; Logic utilization (in ALMs)     ; N/A                                            ;
-; Total registers                 ; 58                                             ;
-; Total pins                      ; 58                                             ;
-; Total virtual pins              ; 0                                              ;
-; Total block memory bits         ; 0                                              ;
-; Total DSP Blocks                ; 0                                              ;
-; Total HSSI RX PCSs              ; 0                                              ;
-; Total HSSI PMA RX Deserializers ; 0                                              ;
-; Total HSSI TX PCSs              ; 0                                              ;
-; Total HSSI PMA TX Serializers   ; 0                                              ;
-; Total PLLs                      ; 0                                              ;
-; Total DLLs                      ; 0                                              ;
-+---------------------------------+------------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Mon Jun 02 15:11:12 2025           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; warpper_testcase1                               ;
+; Top-level Entity Name              ; warpper_testcase1                               ;
+; Family                             ; Cyclone II                                      ;
+; Total logic elements               ; 187                                             ;
+;     Total combinational functions  ; 178                                             ;
+;     Dedicated logic registers      ; 91                                              ;
+; Total registers                    ; 91                                              ;
+; Total pins                         ; 62                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                             ;
-+---------------------------------------------------------------------------------+--------------------+--------------------+
-; Option                                                                          ; Setting            ; Default Value      ;
-+---------------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                          ; 5CEFA7F31C8        ;                    ;
-; Top-level entity name                                                           ; warpper_testcase1  ; warpper_testcase1  ;
-; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
-; Use smart compilation                                                           ; Off                ; Off                ;
-; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
-; Enable compact report table                                                     ; Off                ; Off                ;
-; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
-; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
-; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
-; Preserve fewer node names                                                       ; On                 ; On                 ;
-; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
-; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
-; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
-; State Machine Processing                                                        ; Auto               ; Auto               ;
-; Safe State Machine                                                              ; Off                ; Off                ;
-; Extract Verilog State Machines                                                  ; On                 ; On                 ;
-; Extract VHDL State Machines                                                     ; On                 ; On                 ;
-; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
-; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
-; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
-; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
-; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
-; Parallel Synthesis                                                              ; On                 ; On                 ;
-; DSP Block Balancing                                                             ; Auto               ; Auto               ;
-; NOT Gate Push-Back                                                              ; On                 ; On                 ;
-; Power-Up Don't Care                                                             ; On                 ; On                 ;
-; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
-; Remove Duplicate Registers                                                      ; On                 ; On                 ;
-; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
-; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
-; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
-; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
-; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
-; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
-; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
-; Optimization Technique                                                          ; Balanced           ; Balanced           ;
-; Carry Chain Length                                                              ; 70                 ; 70                 ;
-; Auto Carry Chains                                                               ; On                 ; On                 ;
-; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
-; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
-; Auto ROM Replacement                                                            ; On                 ; On                 ;
-; Auto RAM Replacement                                                            ; On                 ; On                 ;
-; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
-; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
-; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
-; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
-; Strict RAM Replacement                                                          ; Off                ; Off                ;
-; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
-; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
-; Auto Resource Sharing                                                           ; Off                ; Off                ;
-; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
-; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
-; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
-; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
-; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
-; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
-; Report Parameter Settings                                                       ; On                 ; On                 ;
-; Report Source Assignments                                                       ; On                 ; On                 ;
-; Report Connectivity Checks                                                      ; On                 ; On                 ;
-; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
-; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
-; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
-; HDL message level                                                               ; Level2             ; Level2             ;
-; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
-; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
-; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
-; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
-; Clock MUX Protection                                                            ; On                 ; On                 ;
-; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
-; Block Design Naming                                                             ; Auto               ; Auto               ;
-; SDC constraint protection                                                       ; Off                ; Off                ;
-; Synthesis Effort                                                                ; Auto               ; Auto               ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
-; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
-; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
-; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
-; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
-; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
-; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
-+---------------------------------------------------------------------------------+--------------------+--------------------+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP2C35F672C6       ;                    ;
+; Top-level entity name                                                      ; warpper_testcase1  ; warpper_testcase1  ;
+; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
-+----------------------------+-------------+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                  ;
-+-------------------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path          ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                     ; Library ;
-+-------------------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------+---------+
-; ../../02_rtl/ACS.sv                       ; yes             ; User SystemVerilog HDL File  ; /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/ACS.sv                           ;         ;
-; ../../02_rtl/Add_compare_select_unit.sv   ; yes             ; User SystemVerilog HDL File  ; /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Add_compare_select_unit.sv       ;         ;
-; ../../02_rtl/Add_unit.sv                  ; yes             ; User SystemVerilog HDL File  ; /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Add_unit.sv                      ;         ;
-; ../../02_rtl/Branch_metric_unit.sv        ; yes             ; User SystemVerilog HDL File  ; /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Branch_metric_unit.sv            ;         ;
-; ../../02_rtl/Compare_unit.sv              ; yes             ; User SystemVerilog HDL File  ; /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Compare_unit.sv                  ;         ;
-; ../../02_rtl/Full_adder.sv                ; yes             ; User SystemVerilog HDL File  ; /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Full_adder.sv                    ;         ;
-; ../../02_rtl/Hamming_distance.sv          ; yes             ; User SystemVerilog HDL File  ; /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Hamming_distance.sv              ;         ;
-; ../../02_rtl/Hex_to_7seg.sv               ; yes             ; User SystemVerilog HDL File  ; /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Hex_to_7seg.sv                   ;         ;
-; ../../02_rtl/Path_metric_unit.sv          ; yes             ; User SystemVerilog HDL File  ; /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Path_metric_unit.sv              ;         ;
-; ../../02_rtl/PISO.sv                      ; yes             ; User SystemVerilog HDL File  ; /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/PISO.sv                          ;         ;
-; ../../02_rtl/SIPO.sv                      ; yes             ; User SystemVerilog HDL File  ; /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/SIPO.sv                          ;         ;
-; ../../02_rtl/Survivor_path_memory_unit.sv ; yes             ; User SystemVerilog HDL File  ; /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Survivor_path_memory_unit.sv     ;         ;
-; ../../02_rtl/Testcase1.sv                 ; yes             ; User SystemVerilog HDL File  ; /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Testcase1.sv                     ;         ;
-; ../../02_rtl/Viterbi_decoding.sv          ; yes             ; User SystemVerilog HDL File  ; /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Viterbi_decoding.sv              ;         ;
-; warpper_testcase1.sv                      ; yes             ; User SystemVerilog HDL File  ; /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/04_imple/Testcase1/warpper_testcase1.sv ;         ;
-+-------------------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                        ;
++-------------------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path          ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                           ; Library ;
++-------------------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------+---------+
+; ../../02_rtl/ACS.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Document_forme/project_tiny/Viterbi_decoder/02_rtl/ACS.sv                           ;         ;
+; ../../02_rtl/Add_compare_select_unit.sv   ; yes             ; User SystemVerilog HDL File  ; C:/Document_forme/project_tiny/Viterbi_decoder/02_rtl/Add_compare_select_unit.sv       ;         ;
+; ../../02_rtl/Add_unit.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Document_forme/project_tiny/Viterbi_decoder/02_rtl/Add_unit.sv                      ;         ;
+; ../../02_rtl/Branch_metric_unit.sv        ; yes             ; User SystemVerilog HDL File  ; C:/Document_forme/project_tiny/Viterbi_decoder/02_rtl/Branch_metric_unit.sv            ;         ;
+; ../../02_rtl/Compare_unit.sv              ; yes             ; User SystemVerilog HDL File  ; C:/Document_forme/project_tiny/Viterbi_decoder/02_rtl/Compare_unit.sv                  ;         ;
+; ../../02_rtl/Full_adder.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Document_forme/project_tiny/Viterbi_decoder/02_rtl/Full_adder.sv                    ;         ;
+; ../../02_rtl/Hamming_distance.sv          ; yes             ; User SystemVerilog HDL File  ; C:/Document_forme/project_tiny/Viterbi_decoder/02_rtl/Hamming_distance.sv              ;         ;
+; ../../02_rtl/Hex_to_7seg.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Document_forme/project_tiny/Viterbi_decoder/02_rtl/Hex_to_7seg.sv                   ;         ;
+; ../../02_rtl/Path_metric_unit.sv          ; yes             ; User SystemVerilog HDL File  ; C:/Document_forme/project_tiny/Viterbi_decoder/02_rtl/Path_metric_unit.sv              ;         ;
+; ../../02_rtl/PISO.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Document_forme/project_tiny/Viterbi_decoder/02_rtl/PISO.sv                          ;         ;
+; ../../02_rtl/SIPO.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Document_forme/project_tiny/Viterbi_decoder/02_rtl/SIPO.sv                          ;         ;
+; ../../02_rtl/Survivor_path_memory_unit.sv ; yes             ; User SystemVerilog HDL File  ; C:/Document_forme/project_tiny/Viterbi_decoder/02_rtl/Survivor_path_memory_unit.sv     ;         ;
+; ../../02_rtl/Testcase1.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Document_forme/project_tiny/Viterbi_decoder/02_rtl/Testcase1.sv                     ;         ;
+; ../../02_rtl/Viterbi_decoding.sv          ; yes             ; User SystemVerilog HDL File  ; C:/Document_forme/project_tiny/Viterbi_decoder/02_rtl/Viterbi_decoding.sv              ;         ;
+; warpper_testcase1.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Document_forme/project_tiny/Viterbi_decoder/04_imple/Testcase1/warpper_testcase1.sv ;         ;
++-------------------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                ;
-+---------------------------------------------+--------------+
-; Resource                                    ; Usage        ;
-+---------------------------------------------+--------------+
-; Estimate of Logic utilization (ALMs needed) ; 52           ;
-;                                             ;              ;
-; Combinational ALUT usage for logic          ; 79           ;
-;     -- 7 input functions                    ; 0            ;
-;     -- 6 input functions                    ; 24           ;
-;     -- 5 input functions                    ; 40           ;
-;     -- 4 input functions                    ; 3            ;
-;     -- <=3 input functions                  ; 12           ;
-;                                             ;              ;
-; Dedicated logic registers                   ; 58           ;
-;                                             ;              ;
-; I/O pins                                    ; 58           ;
-;                                             ;              ;
-; Total DSP Blocks                            ; 0            ;
-;                                             ;              ;
-; Maximum fan-out node                        ; SW[17]~input ;
-; Maximum fan-out                             ; 73           ;
-; Total fan-out                               ; 680          ;
-; Average fan-out                             ; 2.69         ;
-+---------------------------------------------+--------------+
++------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary          ;
++---------------------------------------------+--------+
+; Resource                                    ; Usage  ;
++---------------------------------------------+--------+
+; Estimated Total logic elements              ; 187    ;
+;                                             ;        ;
+; Total combinational functions               ; 178    ;
+; Logic element usage by number of LUT inputs ;        ;
+;     -- 4 input functions                    ; 93     ;
+;     -- 3 input functions                    ; 21     ;
+;     -- <=2 input functions                  ; 64     ;
+;                                             ;        ;
+; Logic elements by mode                      ;        ;
+;     -- normal mode                          ; 140    ;
+;     -- arithmetic mode                      ; 38     ;
+;                                             ;        ;
+; Total registers                             ; 91     ;
+;     -- Dedicated logic registers            ; 91     ;
+;     -- I/O registers                        ; 0      ;
+;                                             ;        ;
+; I/O pins                                    ; 62     ;
+; Embedded Multiplier 9-bit elements          ; 0      ;
+; Maximum fan-out node                        ; SW[17] ;
+; Maximum fan-out                             ; 73     ;
+; Total fan-out                               ; 861    ;
+; Average fan-out                             ; 2.60   ;
++---------------------------------------------+--------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                           ;
-+---------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+--------------+
-; Compilation Hierarchy Node                  ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                         ; Entity Name               ; Library Name ;
-+---------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+--------------+
-; |warpper_testcase1                          ; 79 (0)              ; 58 (0)                    ; 0                 ; 0          ; 58   ; 0            ; |warpper_testcase1                                                                                                                          ; warpper_testcase1         ; work         ;
-;    |Testcase1:uut|                          ; 79 (0)              ; 58 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut                                                                                                            ; Testcase1                 ; work         ;
-;       |Hex_to_7seg:HEX_0_unit|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|Hex_to_7seg:HEX_0_unit                                                                                     ; Hex_to_7seg               ; work         ;
-;       |Hex_to_7seg:HEX_1_unit|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|Hex_to_7seg:HEX_1_unit                                                                                     ; Hex_to_7seg               ; work         ;
-;       |PISO:PISO_unit|                      ; 29 (29)             ; 24 (24)                   ; 0                 ; 0          ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|PISO:PISO_unit                                                                                             ; PISO                      ; work         ;
-;       |SIPO:SIPO_unit|                      ; 18 (18)             ; 24 (24)                   ; 0                 ; 0          ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|SIPO:SIPO_unit                                                                                             ; SIPO                      ; work         ;
-;       |Viterbi_decoding:VD_unit|            ; 18 (0)              ; 10 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|Viterbi_decoding:VD_unit                                                                                   ; Viterbi_decoding          ; work         ;
-;          |Add_compare_select_unit:ACSU|     ; 16 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|Viterbi_decoding:VD_unit|Add_compare_select_unit:ACSU                                                      ; Add_compare_select_unit   ; work         ;
-;             |ACS:ACS_0|                     ; 4 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|Viterbi_decoding:VD_unit|Add_compare_select_unit:ACSU|ACS:ACS_0                                            ; ACS                       ; work         ;
-;                |Compare_unit:CP|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|Viterbi_decoding:VD_unit|Add_compare_select_unit:ACSU|ACS:ACS_0|Compare_unit:CP                            ; Compare_unit              ; work         ;
-;             |ACS:ACS_1|                     ; 4 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|Viterbi_decoding:VD_unit|Add_compare_select_unit:ACSU|ACS:ACS_1                                            ; ACS                       ; work         ;
-;                |Add_unit:ADD1|              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|Viterbi_decoding:VD_unit|Add_compare_select_unit:ACSU|ACS:ACS_1|Add_unit:ADD1                              ; Add_unit                  ; work         ;
-;             |ACS:ACS_2|                     ; 4 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|Viterbi_decoding:VD_unit|Add_compare_select_unit:ACSU|ACS:ACS_2                                            ; ACS                       ; work         ;
-;                |Compare_unit:CP|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|Viterbi_decoding:VD_unit|Add_compare_select_unit:ACSU|ACS:ACS_2|Compare_unit:CP                            ; Compare_unit              ; work         ;
-;             |ACS:ACS_3|                     ; 4 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|Viterbi_decoding:VD_unit|Add_compare_select_unit:ACSU|ACS:ACS_3                                            ; ACS                       ; work         ;
-;                |Add_unit:ADD1|              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|Viterbi_decoding:VD_unit|Add_compare_select_unit:ACSU|ACS:ACS_3|Add_unit:ADD1                              ; Add_unit                  ; work         ;
-;          |Path_metric_unit:PMU|             ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|Viterbi_decoding:VD_unit|Path_metric_unit:PMU                                                              ; Path_metric_unit          ; work         ;
-;          |Survivor_path_memory_unit:SPMU|   ; 2 (0)               ; 2 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|Viterbi_decoding:VD_unit|Survivor_path_memory_unit:SPMU                                                    ; Survivor_path_memory_unit ; work         ;
-;             |state_machine:u_state_machine| ; 2 (0)               ; 2 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|Viterbi_decoding:VD_unit|Survivor_path_memory_unit:SPMU|state_machine:u_state_machine                      ; state_machine             ; work         ;
-;                |next_state_logic:NSL|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|Viterbi_decoding:VD_unit|Survivor_path_memory_unit:SPMU|state_machine:u_state_machine|next_state_logic:NSL ; next_state_logic          ; work         ;
-;                |state_memory:SM|            ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|Viterbi_decoding:VD_unit|Survivor_path_memory_unit:SPMU|state_machine:u_state_machine|state_memory:SM      ; state_memory              ; work         ;
-+---------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                  ;
++---------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                  ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                         ; Library Name ;
++---------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; |warpper_testcase1                          ; 178 (51)          ; 91 (33)      ; 0           ; 0            ; 0       ; 0         ; 62   ; 0            ; |warpper_testcase1                                                                                                                          ; work         ;
+;    |Testcase1:uut|                          ; 127 (0)           ; 58 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut                                                                                                            ; work         ;
+;       |Hex_to_7seg:HEX_0_unit|              ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|Hex_to_7seg:HEX_0_unit                                                                                     ; work         ;
+;       |Hex_to_7seg:HEX_1_unit|              ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|Hex_to_7seg:HEX_1_unit                                                                                     ; work         ;
+;       |PISO:PISO_unit|                      ; 34 (34)           ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|PISO:PISO_unit                                                                                             ; work         ;
+;       |SIPO:SIPO_unit|                      ; 21 (21)           ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|SIPO:SIPO_unit                                                                                             ; work         ;
+;       |Viterbi_decoding:VD_unit|            ; 44 (0)            ; 10 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|Viterbi_decoding:VD_unit                                                                                   ; work         ;
+;          |Add_compare_select_unit:ACSU|     ; 35 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|Viterbi_decoding:VD_unit|Add_compare_select_unit:ACSU                                                      ; work         ;
+;             |ACS:ACS_0|                     ; 9 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|Viterbi_decoding:VD_unit|Add_compare_select_unit:ACSU|ACS:ACS_0                                            ; work         ;
+;                |Add_unit:ADD0|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|Viterbi_decoding:VD_unit|Add_compare_select_unit:ACSU|ACS:ACS_0|Add_unit:ADD0                              ; work         ;
+;                |Add_unit:ADD1|              ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|Viterbi_decoding:VD_unit|Add_compare_select_unit:ACSU|ACS:ACS_0|Add_unit:ADD1                              ; work         ;
+;             |ACS:ACS_1|                     ; 11 (6)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|Viterbi_decoding:VD_unit|Add_compare_select_unit:ACSU|ACS:ACS_1                                            ; work         ;
+;                |Add_unit:ADD0|              ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|Viterbi_decoding:VD_unit|Add_compare_select_unit:ACSU|ACS:ACS_1|Add_unit:ADD0                              ; work         ;
+;                |Add_unit:ADD1|              ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|Viterbi_decoding:VD_unit|Add_compare_select_unit:ACSU|ACS:ACS_1|Add_unit:ADD1                              ; work         ;
+;             |ACS:ACS_2|                     ; 8 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|Viterbi_decoding:VD_unit|Add_compare_select_unit:ACSU|ACS:ACS_2                                            ; work         ;
+;                |Add_unit:ADD1|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|Viterbi_decoding:VD_unit|Add_compare_select_unit:ACSU|ACS:ACS_2|Add_unit:ADD1                              ; work         ;
+;             |ACS:ACS_3|                     ; 7 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|Viterbi_decoding:VD_unit|Add_compare_select_unit:ACSU|ACS:ACS_3                                            ; work         ;
+;                |Add_unit:ADD0|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|Viterbi_decoding:VD_unit|Add_compare_select_unit:ACSU|ACS:ACS_3|Add_unit:ADD0                              ; work         ;
+;                |Add_unit:ADD1|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|Viterbi_decoding:VD_unit|Add_compare_select_unit:ACSU|ACS:ACS_3|Add_unit:ADD1                              ; work         ;
+;          |Branch_metric_unit:BMU|           ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|Viterbi_decoding:VD_unit|Branch_metric_unit:BMU                                                            ; work         ;
+;             |Hamming_distance:HD2|          ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|Viterbi_decoding:VD_unit|Branch_metric_unit:BMU|Hamming_distance:HD2                                       ; work         ;
+;                |Full_adder:FA|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|Viterbi_decoding:VD_unit|Branch_metric_unit:BMU|Hamming_distance:HD2|Full_adder:FA                         ; work         ;
+;             |Hamming_distance:HD3|          ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|Viterbi_decoding:VD_unit|Branch_metric_unit:BMU|Hamming_distance:HD3                                       ; work         ;
+;                |Full_adder:FA|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|Viterbi_decoding:VD_unit|Branch_metric_unit:BMU|Hamming_distance:HD3|Full_adder:FA                         ; work         ;
+;          |Path_metric_unit:PMU|             ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|Viterbi_decoding:VD_unit|Path_metric_unit:PMU                                                              ; work         ;
+;          |Survivor_path_memory_unit:SPMU|   ; 7 (0)             ; 2 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|Viterbi_decoding:VD_unit|Survivor_path_memory_unit:SPMU                                                    ; work         ;
+;             |state_machine:u_state_machine| ; 7 (0)             ; 2 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|Viterbi_decoding:VD_unit|Survivor_path_memory_unit:SPMU|state_machine:u_state_machine                      ; work         ;
+;                |next_state_logic:NSL|       ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|Viterbi_decoding:VD_unit|Survivor_path_memory_unit:SPMU|state_machine:u_state_machine|next_state_logic:NSL ; work         ;
+;                |state_memory:SM|            ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |warpper_testcase1|Testcase1:uut|Viterbi_decoding:VD_unit|Survivor_path_memory_unit:SPMU|state_machine:u_state_machine|state_memory:SM      ; work         ;
++---------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -280,8 +279,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 58    ;
-; Number of registers using Synchronous Clear  ; 8     ;
+; Total registers                              ; 91    ;
+; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 58    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
@@ -295,12 +294,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------------------------+---------+
 ; Inverted Register                                                     ; Fan out ;
 +-----------------------------------------------------------------------+---------+
-; Testcase1:uut|Viterbi_decoding:VD_unit|Path_metric_unit:PMU|o_PM_1[1] ; 6       ;
-; Testcase1:uut|Viterbi_decoding:VD_unit|Path_metric_unit:PMU|o_PM_1[0] ; 6       ;
-; Testcase1:uut|Viterbi_decoding:VD_unit|Path_metric_unit:PMU|o_PM_2[1] ; 6       ;
-; Testcase1:uut|Viterbi_decoding:VD_unit|Path_metric_unit:PMU|o_PM_2[0] ; 6       ;
-; Testcase1:uut|Viterbi_decoding:VD_unit|Path_metric_unit:PMU|o_PM_3[1] ; 6       ;
-; Testcase1:uut|Viterbi_decoding:VD_unit|Path_metric_unit:PMU|o_PM_3[0] ; 6       ;
+; Testcase1:uut|Viterbi_decoding:VD_unit|Path_metric_unit:PMU|o_PM_1[0] ; 4       ;
+; Testcase1:uut|Viterbi_decoding:VD_unit|Path_metric_unit:PMU|o_PM_1[1] ; 4       ;
+; Testcase1:uut|Viterbi_decoding:VD_unit|Path_metric_unit:PMU|o_PM_2[0] ; 4       ;
+; Testcase1:uut|Viterbi_decoding:VD_unit|Path_metric_unit:PMU|o_PM_2[1] ; 5       ;
+; Testcase1:uut|Viterbi_decoding:VD_unit|Path_metric_unit:PMU|o_PM_3[0] ; 4       ;
+; Testcase1:uut|Viterbi_decoding:VD_unit|Path_metric_unit:PMU|o_PM_3[1] ; 5       ;
 ; Total number of inverted registers = 6                                ;         ;
 +-----------------------------------------------------------------------+---------+
 
@@ -310,8 +309,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
-; 8:1                ; 2 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |warpper_testcase1|Testcase1:uut|PISO:PISO_unit|w_output[0] ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |warpper_testcase1|Testcase1:uut|PISO:PISO_unit|w_output[1] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |warpper_testcase1 ;
++----------------+--------+---------------------------------------------------------+
+; Parameter Name ; Value  ; Type                                                    ;
++----------------+--------+---------------------------------------------------------+
+; SIZE_COUNT     ; 32     ; Signed Integer                                          ;
+; CLOCK_DIV      ; 500000 ; Signed Integer                                          ;
++----------------+--------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +------------------------------------------------------------+
@@ -475,32 +485,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------+-------+----------+--------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; arriav_ff             ; 58                          ;
-;     CLR               ; 33                          ;
-;     ENA CLR           ; 17                          ;
-;     ENA CLR SCLR      ; 8                           ;
-; arriav_lcell_comb     ; 80                          ;
-;     arith             ; 8                           ;
-;         1 data inputs ; 8                           ;
-;     normal            ; 72                          ;
-;         0 data inputs ; 1                           ;
-;         2 data inputs ; 2                           ;
-;         3 data inputs ; 2                           ;
-;         4 data inputs ; 3                           ;
-;         5 data inputs ; 40                          ;
-;         6 data inputs ; 24                          ;
-; boundary_port         ; 58                          ;
-;                       ;                             ;
-; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 2.63                        ;
-+-----------------------+-----------------------------+
-
-
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
@@ -514,87 +498,90 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Mon Jun  2 14:18:38 2025
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Mon Jun 02 15:11:11 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off warpper_testcase1 -c warpper_testcase1
-Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/ACS.sv
-    Info (12023): Found entity 1: ACS File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/ACS.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Add_compare_select_unit.sv
-    Info (12023): Found entity 1: Add_compare_select_unit File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Add_compare_select_unit.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Add_unit.sv
-    Info (12023): Found entity 1: Add_unit File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Add_unit.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Branch_metric_unit.sv
-    Info (12023): Found entity 1: Branch_metric_unit File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Branch_metric_unit.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Compare_unit.sv
-    Info (12023): Found entity 1: Compare_unit File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Compare_unit.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Full_adder.sv
-    Info (12023): Found entity 1: Full_adder File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Full_adder.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Hamming_distance.sv
-    Info (12023): Found entity 1: Hamming_distance File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Hamming_distance.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Hex_to_7seg.sv
-    Info (12023): Found entity 1: Hex_to_7seg File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Hex_to_7seg.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Path_metric_unit.sv
-    Info (12023): Found entity 1: Path_metric_unit File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Path_metric_unit.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/PISO.sv
-    Info (12023): Found entity 1: PISO File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/PISO.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/SIPO.sv
-    Info (12023): Found entity 1: SIPO File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/SIPO.sv Line: 185
-Info (12021): Found 5 design units, including 5 entities, in source file /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Survivor_path_memory_unit.sv
-    Info (12023): Found entity 1: Survivor_path_memory_unit File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Survivor_path_memory_unit.sv Line: 1
-    Info (12023): Found entity 2: state_machine File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Survivor_path_memory_unit.sv Line: 43
-    Info (12023): Found entity 3: next_state_logic File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Survivor_path_memory_unit.sv Line: 86
-    Info (12023): Found entity 4: state_memory File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Survivor_path_memory_unit.sv Line: 139
-    Info (12023): Found entity 5: output_logic File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Survivor_path_memory_unit.sv Line: 168
-Info (12021): Found 1 design units, including 1 entities, in source file /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Testcase1.sv
-    Info (12023): Found entity 1: Testcase1 File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Testcase1.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Viterbi_decoding.sv
-    Info (12023): Found entity 1: Viterbi_decoding File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Viterbi_decoding.sv Line: 1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file /document_forme/project_tiny/viterbi_decoder/02_rtl/acs.sv
+    Info (12023): Found entity 1: ACS
+Info (12021): Found 1 design units, including 1 entities, in source file /document_forme/project_tiny/viterbi_decoder/02_rtl/add_compare_select_unit.sv
+    Info (12023): Found entity 1: Add_compare_select_unit
+Info (12021): Found 1 design units, including 1 entities, in source file /document_forme/project_tiny/viterbi_decoder/02_rtl/add_unit.sv
+    Info (12023): Found entity 1: Add_unit
+Info (12021): Found 1 design units, including 1 entities, in source file /document_forme/project_tiny/viterbi_decoder/02_rtl/branch_metric_unit.sv
+    Info (12023): Found entity 1: Branch_metric_unit
+Info (12021): Found 1 design units, including 1 entities, in source file /document_forme/project_tiny/viterbi_decoder/02_rtl/compare_unit.sv
+    Info (12023): Found entity 1: Compare_unit
+Info (12021): Found 1 design units, including 1 entities, in source file /document_forme/project_tiny/viterbi_decoder/02_rtl/full_adder.sv
+    Info (12023): Found entity 1: Full_adder
+Info (12021): Found 1 design units, including 1 entities, in source file /document_forme/project_tiny/viterbi_decoder/02_rtl/hamming_distance.sv
+    Info (12023): Found entity 1: Hamming_distance
+Info (12021): Found 1 design units, including 1 entities, in source file /document_forme/project_tiny/viterbi_decoder/02_rtl/hex_to_7seg.sv
+    Info (12023): Found entity 1: Hex_to_7seg
+Info (12021): Found 1 design units, including 1 entities, in source file /document_forme/project_tiny/viterbi_decoder/02_rtl/path_metric_unit.sv
+    Info (12023): Found entity 1: Path_metric_unit
+Info (12021): Found 1 design units, including 1 entities, in source file /document_forme/project_tiny/viterbi_decoder/02_rtl/piso.sv
+    Info (12023): Found entity 1: PISO
+Info (12021): Found 1 design units, including 1 entities, in source file /document_forme/project_tiny/viterbi_decoder/02_rtl/sipo.sv
+    Info (12023): Found entity 1: SIPO
+Info (12021): Found 5 design units, including 5 entities, in source file /document_forme/project_tiny/viterbi_decoder/02_rtl/survivor_path_memory_unit.sv
+    Info (12023): Found entity 1: Survivor_path_memory_unit
+    Info (12023): Found entity 2: state_machine
+    Info (12023): Found entity 3: next_state_logic
+    Info (12023): Found entity 4: state_memory
+    Info (12023): Found entity 5: output_logic
+Info (12021): Found 1 design units, including 1 entities, in source file /document_forme/project_tiny/viterbi_decoder/02_rtl/testcase1.sv
+    Info (12023): Found entity 1: Testcase1
+Info (12021): Found 1 design units, including 1 entities, in source file /document_forme/project_tiny/viterbi_decoder/02_rtl/viterbi_decoding.sv
+    Info (12023): Found entity 1: Viterbi_decoding
 Info (12021): Found 1 design units, including 1 entities, in source file warpper_testcase1.sv
-    Info (12023): Found entity 1: warpper_testcase1 File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/04_imple/Testcase1/warpper_testcase1.sv Line: 1
-Warning (10222): Verilog HDL Parameter Declaration warning at PISO.sv(14): Parameter Declaration in module "PISO" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/PISO.sv Line: 14
-Warning (10222): Verilog HDL Parameter Declaration warning at PISO.sv(15): Parameter Declaration in module "PISO" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/PISO.sv Line: 15
-Warning (10222): Verilog HDL Parameter Declaration warning at SIPO.sv(196): Parameter Declaration in module "SIPO" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/SIPO.sv Line: 196
+    Info (12023): Found entity 1: warpper_testcase1
+Warning (10222): Verilog HDL Parameter Declaration warning at PISO.sv(14): Parameter Declaration in module "PISO" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List
+Warning (10222): Verilog HDL Parameter Declaration warning at PISO.sv(15): Parameter Declaration in module "PISO" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List
+Warning (10222): Verilog HDL Parameter Declaration warning at SIPO.sv(196): Parameter Declaration in module "SIPO" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List
 Info (12127): Elaborating entity "warpper_testcase1" for the top level hierarchy
-Warning (10034): Output port "LEDG[6..2]" at warpper_testcase1.sv(5) has no driver File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/04_imple/Testcase1/warpper_testcase1.sv Line: 5
-Info (12128): Elaborating entity "Testcase1" for hierarchy "Testcase1:uut" File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/04_imple/Testcase1/warpper_testcase1.sv Line: 26
-Info (12128): Elaborating entity "PISO" for hierarchy "Testcase1:uut|PISO:PISO_unit" File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Testcase1.sv Line: 34
-Info (12128): Elaborating entity "Viterbi_decoding" for hierarchy "Testcase1:uut|Viterbi_decoding:VD_unit" File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Testcase1.sv Line: 44
-Info (12128): Elaborating entity "Branch_metric_unit" for hierarchy "Testcase1:uut|Viterbi_decoding:VD_unit|Branch_metric_unit:BMU" File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Viterbi_decoding.sv Line: 23
-Info (12128): Elaborating entity "Hamming_distance" for hierarchy "Testcase1:uut|Viterbi_decoding:VD_unit|Branch_metric_unit:BMU|Hamming_distance:HD0" File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Branch_metric_unit.sv Line: 17
-Info (12128): Elaborating entity "Full_adder" for hierarchy "Testcase1:uut|Viterbi_decoding:VD_unit|Branch_metric_unit:BMU|Hamming_distance:HD0|Full_adder:FA" File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Hamming_distance.sv Line: 18
-Info (12128): Elaborating entity "Path_metric_unit" for hierarchy "Testcase1:uut|Viterbi_decoding:VD_unit|Path_metric_unit:PMU" File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Viterbi_decoding.sv Line: 62
-Info (12128): Elaborating entity "Add_compare_select_unit" for hierarchy "Testcase1:uut|Viterbi_decoding:VD_unit|Add_compare_select_unit:ACSU" File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Viterbi_decoding.sv Line: 77
-Info (12128): Elaborating entity "ACS" for hierarchy "Testcase1:uut|Viterbi_decoding:VD_unit|Add_compare_select_unit:ACSU|ACS:ACS_0" File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Add_compare_select_unit.sv Line: 24
-Info (12128): Elaborating entity "Add_unit" for hierarchy "Testcase1:uut|Viterbi_decoding:VD_unit|Add_compare_select_unit:ACSU|ACS:ACS_0|Add_unit:ADD0" File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/ACS.sv Line: 17
-Info (12128): Elaborating entity "Compare_unit" for hierarchy "Testcase1:uut|Viterbi_decoding:VD_unit|Add_compare_select_unit:ACSU|ACS:ACS_0|Compare_unit:CP" File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/ACS.sv Line: 28
-Info (12128): Elaborating entity "Survivor_path_memory_unit" for hierarchy "Testcase1:uut|Viterbi_decoding:VD_unit|Survivor_path_memory_unit:SPMU" File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Viterbi_decoding.sv Line: 89
-Info (12128): Elaborating entity "state_machine" for hierarchy "Testcase1:uut|Viterbi_decoding:VD_unit|Survivor_path_memory_unit:SPMU|state_machine:u_state_machine" File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Survivor_path_memory_unit.sv Line: 39
-Info (12128): Elaborating entity "next_state_logic" for hierarchy "Testcase1:uut|Viterbi_decoding:VD_unit|Survivor_path_memory_unit:SPMU|state_machine:u_state_machine|next_state_logic:NSL" File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Survivor_path_memory_unit.sv Line: 67
-Info (12128): Elaborating entity "state_memory" for hierarchy "Testcase1:uut|Viterbi_decoding:VD_unit|Survivor_path_memory_unit:SPMU|state_machine:u_state_machine|state_memory:SM" File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Survivor_path_memory_unit.sv Line: 76
-Info (12128): Elaborating entity "output_logic" for hierarchy "Testcase1:uut|Viterbi_decoding:VD_unit|Survivor_path_memory_unit:SPMU|state_machine:u_state_machine|output_logic:OL" File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Survivor_path_memory_unit.sv Line: 82
-Info (12128): Elaborating entity "SIPO" for hierarchy "Testcase1:uut|SIPO:SIPO_unit" File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Testcase1.sv Line: 57
-Info (12128): Elaborating entity "Hex_to_7seg" for hierarchy "Testcase1:uut|Hex_to_7seg:HEX_0_unit" File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Testcase1.sv Line: 66
+Warning (10034): Output port "LEDG[6..3]" at warpper_testcase1.sv(6) has no driver
+Info (12128): Elaborating entity "Testcase1" for hierarchy "Testcase1:uut"
+Info (12128): Elaborating entity "PISO" for hierarchy "Testcase1:uut|PISO:PISO_unit"
+Info (12128): Elaborating entity "Viterbi_decoding" for hierarchy "Testcase1:uut|Viterbi_decoding:VD_unit"
+Info (12128): Elaborating entity "Branch_metric_unit" for hierarchy "Testcase1:uut|Viterbi_decoding:VD_unit|Branch_metric_unit:BMU"
+Info (12128): Elaborating entity "Hamming_distance" for hierarchy "Testcase1:uut|Viterbi_decoding:VD_unit|Branch_metric_unit:BMU|Hamming_distance:HD0"
+Info (12128): Elaborating entity "Full_adder" for hierarchy "Testcase1:uut|Viterbi_decoding:VD_unit|Branch_metric_unit:BMU|Hamming_distance:HD0|Full_adder:FA"
+Info (12128): Elaborating entity "Path_metric_unit" for hierarchy "Testcase1:uut|Viterbi_decoding:VD_unit|Path_metric_unit:PMU"
+Info (12128): Elaborating entity "Add_compare_select_unit" for hierarchy "Testcase1:uut|Viterbi_decoding:VD_unit|Add_compare_select_unit:ACSU"
+Info (12128): Elaborating entity "ACS" for hierarchy "Testcase1:uut|Viterbi_decoding:VD_unit|Add_compare_select_unit:ACSU|ACS:ACS_0"
+Info (12128): Elaborating entity "Add_unit" for hierarchy "Testcase1:uut|Viterbi_decoding:VD_unit|Add_compare_select_unit:ACSU|ACS:ACS_0|Add_unit:ADD0"
+Info (12128): Elaborating entity "Compare_unit" for hierarchy "Testcase1:uut|Viterbi_decoding:VD_unit|Add_compare_select_unit:ACSU|ACS:ACS_0|Compare_unit:CP"
+Info (12128): Elaborating entity "Survivor_path_memory_unit" for hierarchy "Testcase1:uut|Viterbi_decoding:VD_unit|Survivor_path_memory_unit:SPMU"
+Info (12128): Elaborating entity "state_machine" for hierarchy "Testcase1:uut|Viterbi_decoding:VD_unit|Survivor_path_memory_unit:SPMU|state_machine:u_state_machine"
+Info (12128): Elaborating entity "next_state_logic" for hierarchy "Testcase1:uut|Viterbi_decoding:VD_unit|Survivor_path_memory_unit:SPMU|state_machine:u_state_machine|next_state_logic:NSL"
+Info (12128): Elaborating entity "state_memory" for hierarchy "Testcase1:uut|Viterbi_decoding:VD_unit|Survivor_path_memory_unit:SPMU|state_machine:u_state_machine|state_memory:SM"
+Info (12128): Elaborating entity "output_logic" for hierarchy "Testcase1:uut|Viterbi_decoding:VD_unit|Survivor_path_memory_unit:SPMU|state_machine:u_state_machine|output_logic:OL"
+Info (12128): Elaborating entity "SIPO" for hierarchy "Testcase1:uut|SIPO:SIPO_unit"
+Info (12128): Elaborating entity "Hex_to_7seg" for hierarchy "Testcase1:uut|Hex_to_7seg:HEX_0_unit"
+Info (13000): Registers with preset signals will power-up high
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDG[2]" is stuck at GND File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/04_imple/Testcase1/warpper_testcase1.sv Line: 5
-    Warning (13410): Pin "LEDG[3]" is stuck at GND File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/04_imple/Testcase1/warpper_testcase1.sv Line: 5
-    Warning (13410): Pin "LEDG[4]" is stuck at GND File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/04_imple/Testcase1/warpper_testcase1.sv Line: 5
-    Warning (13410): Pin "LEDG[5]" is stuck at GND File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/04_imple/Testcase1/warpper_testcase1.sv Line: 5
-    Warning (13410): Pin "LEDG[6]" is stuck at GND File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/04_imple/Testcase1/warpper_testcase1.sv Line: 5
-Info (286030): Timing-Driven Synthesis is running
+    Warning (13410): Pin "LEDG[3]" is stuck at GND
+    Warning (13410): Pin "LEDG[4]" is stuck at GND
+    Warning (13410): Pin "LEDG[5]" is stuck at GND
+    Warning (13410): Pin "LEDG[6]" is stuck at GND
 Info (17049): 1 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 178 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 19 input pins
+Warning (21074): Design contains 3 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "KEY[1]"
+    Warning (15610): No output dependent on input pin "KEY[2]"
+    Warning (15610): No output dependent on input pin "KEY[3]"
+Info (21057): Implemented 279 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 23 input pins
     Info (21059): Implemented 39 output pins
-    Info (21061): Implemented 120 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
-    Info: Peak virtual memory: 463 megabytes
-    Info: Processing ended: Mon Jun  2 14:18:45 2025
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:16
+    Info (21061): Implemented 217 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 14 warnings
+    Info: Peak virtual memory: 4608 megabytes
+    Info: Processing ended: Mon Jun 02 15:11:12 2025
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 

@@ -1,8 +1,8 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="b8334ea90fb0fd5c529b"/>
+    <hash md5_digest_80b="7b2b4eb1e439ca415238"/>
   </project>
   <file_info>
-    <file device="5CEFA7F31C8" path="warpper_testcase1.sof" usercode="0xFFFFFFFF"/>
+    <file device="EP2C35F672C6" path="warpper_testcase1.sof" usercode="0xFFFFFFFF"/>
   </file_info>
 </sld_project_info>
