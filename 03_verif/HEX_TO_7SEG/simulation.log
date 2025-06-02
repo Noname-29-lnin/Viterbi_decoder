@@ -1,0 +1,21 @@
+Pass: Disabled - All segments off
+Hex 0 (0x0) - Output: 01000000 -> PASS
+Hex 1 (0x1) - Output: 01111001 -> PASS
+Hex 2 (0x2) - Output: 00100100 -> PASS
+Hex 3 (0x3) - Output: 00110000 -> PASS
+Hex 4 (0x4) - Output: 00011001 -> PASS
+Hex 5 (0x5) - Output: 00010010 -> PASS
+Hex 6 (0x6) - Output: 00000010 -> PASS
+Hex 7 (0x7) - Output: 01111000 -> PASS
+Hex 8 (0x8) - Output: 00000000 -> PASS
+Hex 9 (0x9) - Output: 00010000 -> PASS
+Hex A (0xa) - Output: 00001000 -> PASS
+Hex b (0xb) - Output: 00000011 -> PASS
+Hex C (0xc) - Output: 01000110 -> PASS
+Hex d (0xd) - Output: 00100001 -> PASS
+Hex E (0xe) - Output: 00000110 -> PASS
+Hex F (0xf) - Output: 00001110 -> PASS
+Pass: Re-Disable - All segments off
+
+All tests completed!
+- tb_Hex_to_7seg.sv:69: Verilog $finish
