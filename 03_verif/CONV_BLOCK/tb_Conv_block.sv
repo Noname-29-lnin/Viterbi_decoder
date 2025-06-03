@@ -63,11 +63,11 @@ task main_test(
     input logic               start
 );
     begin
+        @(negedge i_clk);
         i_start = start;
         i_data  = data;
-        @(posedge i_clk);
         Display_in();
-        // #1;
+        #1;
         Display_out();
     end
 endtask
@@ -81,6 +81,7 @@ task send_serial_bits(
     for (i = length - 1; i >= 0; i--) begin
         main_test(bits[i], 1);
     end
+    i_start = 0;
 endtask
 
 // Main test sequence
