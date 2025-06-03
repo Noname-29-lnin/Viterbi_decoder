@@ -5,12 +5,12 @@ logic w_clk, w_rst_n;
 logic w_stick;
 
 baud_generator #(
-    .SIZE_BAUD      (24 ),// 3byte
-    .BAUDRATE_VALUE (21)
-) uut (
-    .i_clk       (w_clk), // clock for CPU
-    .i_rst_n     (w_rst_n), // active low reset
-    .o_stick     (w_stick)  // baud rate signal
+    .SIZE_BAUD      (24) // 3byte
+) baudrate (
+    .i_clk          (w_clk),    // clock for CPU
+    .i_rst_n        (w_rst_n),  // active low reset
+    .i_baud_rate    (24'd325),
+    .o_stick        (w_stick)   // baud rate signal
 );
 
 always #25 w_clk = ~w_clk; // clock generation

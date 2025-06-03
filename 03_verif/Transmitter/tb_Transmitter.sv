@@ -17,11 +17,11 @@ logic w_valid;
 always #10 w_clk = ~w_clk; // FREQUENCY = 50MHz
 
 baud_generator #(
-    .SIZE_BAUD      (24) ,// 3byte
-    .BAUDRATE_VALUE (325) // BAUD=9600, OVER_SAMPLE=16
+    .SIZE_BAUD      (24) // 3byte
 ) baudrate (
     .i_clk          (w_clk),    // clock for CPU
     .i_rst_n        (w_rst_n),  // active low reset
+    .i_baud_rate    (24'd325),
     .o_stick        (w_stick)   // baud rate signal
 );
 
