@@ -35,6 +35,7 @@ Receiver #(
     .i_rx_en        (w_rx_en), // enable signal for receiver
     .i_fifo_full    (w_fifo_full), // FIFO full signal
     .i_rx_serial    (w_idata), // serial data to be received
+    .i_valid        (1'b1),
 
     .o_rx_data      (w_odata), // data to be received parallel
     .o_rx_done      (w_rx_done) // end signal

@@ -102,4 +102,4 @@ Time =           1956090000 	| wrt_n = 1 |
 Transmitter: 	 | w_tx_en = 1 	| w_fifo_empty = 0 	| w_idata = 00101001 	| w_uart_data = 0 	| o_tx_done = 0
 Receiver: 	 | w_rx_en = 1 	| w_fifo_full = 0 	| w_uart_data = 0 	| w_odata = 00101001 	| o_rx_done = 0
 ---------------------------------------------------------
-- tb_uart.sv:83: Verilog $finish
+- tb_uart.sv:86: Verilog $finish

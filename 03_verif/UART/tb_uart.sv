@@ -13,6 +13,7 @@ logic [SIZE_DATA-1:0] w_idata;
 logic w_uart_data;
 logic [SIZE_DATA-1:0] w_odata;
 logic w_tx_done, w_rx_done;
+logic w_valid_trans;
 
 always #10 w_clk = ~w_clk; // FREQUENCY = 50MHz
 
@@ -36,7 +37,8 @@ Transmitter #(
     .i_fifo_empty   (w_fifo_empty), // FIFO empty signal
     .i_tx_data      (w_idata), // data to be transmitted parallel
     .o_tx_serial    (w_uart_data), // serial data output 
-    .o_tx_done      (w_tx_done) // end signal
+    .o_tx_done      (w_tx_done), // end signal
+    .o_valid        (w_valid_trans)
 );
 
 Receiver #(
@@ -50,6 +52,7 @@ Receiver #(
     .i_rx_en        (w_rx_en), // enable signal for receiver
     .i_fifo_full    (w_fifo_full), // FIFO full signal
     .i_rx_serial    (w_uart_data), // serial data to be received
+    .i_valid        (w_valid_trans),
 
     .o_rx_data      (w_odata), // data to be received parallel
     .o_rx_done      (w_rx_done) // end signal

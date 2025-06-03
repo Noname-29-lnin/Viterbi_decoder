@@ -12,6 +12,7 @@ logic w_fifo_empty;
 logic [SIZE_DATA-1:0] w_idata;
 logic w_odata;
 logic w_tx_done;
+logic w_valid;
 
 always #10 w_clk = ~w_clk; // FREQUENCY = 50MHz
 
@@ -35,7 +36,8 @@ Transmitter #(
     .i_fifo_empty   (w_fifo_empty), // FIFO empty signal
     .i_tx_data      (w_idata), // data to be transmitted parallel
     .o_tx_serial    (w_odata), // serial data output 
-    .o_tx_done      (w_tx_done) // end signal
+    .o_tx_done      (w_tx_done), // end signal
+    .o_valid        (w_valid)
 );
 
 initial begin
@@ -60,7 +62,8 @@ initial begin
 end
 
 always @(w_odata or w_tx_done or w_tx_en) begin
-    $display("Time = %t \t| w_tx_en = %b \t| w_idata = %b \t| w_odata = %b \t| o_tx_done = %b", $time, w_tx_en, w_idata, w_odata, w_tx_done);
+    $display("Time = %t \t| w_tx_en = %b \t| w_idata = %b \t| w_odata = %b \t| o_tx_done = %b \t| o_valid = %b \t|", 
+                $time, w_tx_en, w_idata, w_odata, w_tx_done, w_valid);
 end
 
 endmodule
