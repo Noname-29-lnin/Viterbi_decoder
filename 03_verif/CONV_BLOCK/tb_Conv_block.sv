@@ -86,11 +86,13 @@ endtask
 
 // Main test sequence
 initial begin
+    $display("================ Test Convolutional Block ================");
+    $display(" K = 3, Rate = 1/2, G = [1 1 1][1 0 1]");
     reset_dut();
     #100;
     $display("==========================================================");
     $display("TestCase 1: Input 11011010");
-    $display("Expected output: 1101010001010010 (if R=1/2 conv encoder)");
+    $display("Expected output: 1101010001010010");
     send_serial_bits(8'b11011010, 8);
     #200;
     $display("==========================================================");
@@ -98,8 +100,8 @@ initial begin
     reset_dut();
     #100;
     $display("==========================================================");
-    $display("TestCase 1: Input 10101010");
-    $display("Expected output: 1110001000100010 (if R=1/2 conv encoder)");
+    $display("TestCase 2: Input 10101010");
+    $display("Expected output: 1110001000100010");
     send_serial_bits(8'b10101010, 8);
     #200;
     $display("==========================================================");
@@ -107,8 +109,8 @@ initial begin
     reset_dut();
     #100;
     $display("==========================================================");
-    $display("TestCase 1: Input 00000001");
-    $display("Expected output: 0000000000000011 (if R=1/2 conv encoder)");
+    $display("TestCase 3: Input 00000001");
+    $display("Expected output: 0000000000000011");
     send_serial_bits(8'b00000001, 8);
     #200;
     $display("==========================================================");
