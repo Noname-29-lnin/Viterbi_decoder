@@ -34,7 +34,7 @@ wire w_update_sample, w_update_mid_sample, w_update_data, w_update_idle, w_idata
 
 assign w_update_sample = (count == OVER_SAMPLE-1) ? 1'b1 : 1'b0;
 assign w_update_mid_sample = (count == MID_SAMPLE-1) ? 1'b1 : 1'b0;
-assign w_update_data = (index == SIZE_DATA) ? 1'b1 : 1'b0;
+assign w_update_data = (index == SIZE_DATA-1) ? 1'b1 : 1'b0;
 assign w_update_idle = (i_rx_en & ~i_fifo_full);
 
 reg w_input_next;

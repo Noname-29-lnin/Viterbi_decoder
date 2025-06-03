@@ -1,0 +1,318 @@
+==================== TestCase - Reset ====================
+| Time =                  100 	| i_rst_n = 0 	| i_tx_en = 0 	| i_rx_en = 0 	| i_data = 00 	|
+| Trans 	| Time =                  210 	| i_data = 00000000 	| w_tx_data = 1 	| w_conv_data = 11 	| w_conv_valid = 1 	|
+| Trans 	| Time =                  230 	| i_data = 00000000 	| w_tx_data = 1 	| w_conv_data = 01 	| w_conv_valid = 1 	|
+| Rec 	| Time =                  230 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00000000 	| o_rx_done = 0 	|
+| Time =                  300 	| i_rst_n = 1 	| i_tx_en = 0 	| i_rx_en = 0 	| i_data = 00 	|
+| Time =                  300 	| o_tx_done = 0 	| o_rx_done = 0 	| o_data = 00 	| o_HEX4 = 1000000 	| o_HEX5 = 1000000 	|
+ERROR: Reset failed at time                  300
+=========================================================
+==================== TestCase - Transmit ====================
+| Time =                 1310 	| i_rst_n = 1 	| i_tx_en = 1 	| i_rx_en = 0 	| i_data = 29 	|
+| Trans 	| Time =               978210 	| i_data = 00101001 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Time =               978210 	| o_tx_done = 1 	| o_rx_done = 0 	| o_data = 00 	| o_HEX4 = 1000000 	| o_HEX5 = 1000000 	|
+| Trans 	| Time =               978210 	| i_data = 00101001 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =               978210 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00000000 	| o_rx_done = 0 	|
+| Time =               978210 	| o_tx_done = 1 	| o_rx_done = 0 	| o_data = 00 	| o_HEX4 = 1000000 	| o_HEX5 = 1000000 	|
+=========================================================
+==================== TestCase - Transmit & Receive ====================
+| Time =              2019230 	| i_rst_n = 1 	| i_tx_en = 1 	| i_rx_en = 1 	| i_data = 30 	|
+| Trans 	| Time =              2947250 	| i_data = 00110000 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =              2947250 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00110000 	| o_rx_done = 1 	|
+| Time =              2947250 	| o_tx_done = 0 	| o_rx_done = 1 	| o_data = 30 	| o_HEX4 = 1000000 	| o_HEX5 = 0110000 	|
+ERROR: 7-segment mismatch at time              2947250 | Expected o_HEX4 = 1111110, o_HEX5 = 1111001 | Got o_HEX4 = 1000000, o_HEX5 = 0110000
+| Trans 	| Time =              2947250 	| i_data = 00110000 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =              2947250 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00110000 	| o_rx_done = 1 	|
+| Time =              2947250 	| o_tx_done = 0 	| o_rx_done = 1 	| o_data = 30 	| o_HEX4 = 1000000 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =              2947290 	| i_data = 00110000 	| w_tx_data = 1 	| w_conv_data = 01 	| w_conv_valid = 1 	|
+| Rec 	| Time =              2947290 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00110000 	| o_rx_done = 0 	|
+| Trans 	| Time =              2992890 	| i_data = 00110000 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =              2992890 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00110000 	| o_rx_done = 0 	|
+| Time =              2992890 	| o_tx_done = 1 	| o_rx_done = 0 	| o_data = 30 	| o_HEX4 = 1000000 	| o_HEX5 = 0110000 	|
+=========================================================
+==================== TestCase - Transmit & Receive ====================
+| Time =              3988270 	| i_rst_n = 1 	| i_tx_en = 1 	| i_rx_en = 1 	| i_data = 00 	|
+| Trans 	| Time =              4916290 	| i_data = 00000000 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =              4916290 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00000000 	| o_rx_done = 1 	|
+| Time =              4916290 	| o_tx_done = 0 	| o_rx_done = 1 	| o_data = 00 	| o_HEX4 = 1000000 	| o_HEX5 = 1000000 	|
+ERROR: 7-segment mismatch at time              4916290 | Expected o_HEX4 = 1111110, o_HEX5 = 1111110 | Got o_HEX4 = 1000000, o_HEX5 = 1000000
+| Trans 	| Time =              4916290 	| i_data = 00000000 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =              4916290 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00000000 	| o_rx_done = 1 	|
+| Time =              4916290 	| o_tx_done = 0 	| o_rx_done = 1 	| o_data = 00 	| o_HEX4 = 1000000 	| o_HEX5 = 1000000 	|
+| Trans 	| Time =              4916330 	| i_data = 00000000 	| w_tx_data = 1 	| w_conv_data = 01 	| w_conv_valid = 1 	|
+| Rec 	| Time =              4916330 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00000000 	| o_rx_done = 0 	|
+| Trans 	| Time =              4961930 	| i_data = 00000000 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =              4961930 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00000000 	| o_rx_done = 0 	|
+| Time =              4961930 	| o_tx_done = 1 	| o_rx_done = 0 	| o_data = 00 	| o_HEX4 = 1000000 	| o_HEX5 = 1000000 	|
+=========================================================
+==================== TestCase - Transmit & Receive ====================
+| Time =              5957310 	| i_rst_n = 1 	| i_tx_en = 1 	| i_rx_en = 1 	| i_data = ff 	|
+| Trans 	| Time =              6885330 	| i_data = 11111111 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =              6885330 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 11111111 	| o_rx_done = 1 	|
+| Time =              6885330 	| o_tx_done = 0 	| o_rx_done = 1 	| o_data = ff 	| o_HEX4 = 0001110 	| o_HEX5 = 0001110 	|
+ERROR: 7-segment mismatch at time              6885330 | Expected o_HEX4 = 1000111, o_HEX5 = 1000111 | Got o_HEX4 = 0001110, o_HEX5 = 0001110
+| Trans 	| Time =              6885330 	| i_data = 11111111 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =              6885330 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 11111111 	| o_rx_done = 1 	|
+| Time =              6885330 	| o_tx_done = 0 	| o_rx_done = 1 	| o_data = ff 	| o_HEX4 = 0001110 	| o_HEX5 = 0001110 	|
+| Trans 	| Time =              6885370 	| i_data = 11111111 	| w_tx_data = 1 	| w_conv_data = 01 	| w_conv_valid = 1 	|
+| Rec 	| Time =              6885370 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 11111111 	| o_rx_done = 0 	|
+| Trans 	| Time =              6930970 	| i_data = 11111111 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =              6930970 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 11111111 	| o_rx_done = 0 	|
+| Time =              6930970 	| o_tx_done = 1 	| o_rx_done = 0 	| o_data = ff 	| o_HEX4 = 0001110 	| o_HEX5 = 0001110 	|
+=========================================================
+==================== TestCase - Back-to-Back Transmit ====================
+| Time =              7926350 	| i_rst_n = 1 	| i_tx_en = 1 	| i_rx_en = 0 	| i_data = 55 	|
+| Trans 	| Time =              8900010 	| i_data = 01010101 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Trans 	| Time =              8900010 	| i_data = 10101010 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =              8900010 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 11111111 	| o_rx_done = 0 	|
+| Time =              8900010 	| o_tx_done = 1 	| o_rx_done = 0 	| o_data = ff 	| o_HEX4 = 0001110 	| o_HEX5 = 0001110 	|
+| Time =              8900030 	| i_rst_n = 1 	| i_tx_en = 1 	| i_rx_en = 0 	| i_data = aa 	|
+| Trans 	| Time =              9878010 	| i_data = 10101010 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Time =              9878010 	| o_tx_done = 1 	| o_rx_done = 0 	| o_data = ff 	| o_HEX4 = 0001110 	| o_HEX5 = 0001110 	|
+| Trans 	| Time =              9878010 	| i_data = 10101010 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =              9878010 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 11111111 	| o_rx_done = 0 	|
+| Time =              9878010 	| o_tx_done = 1 	| o_rx_done = 0 	| o_data = ff 	| o_HEX4 = 0001110 	| o_HEX5 = 0001110 	|
+=========================================================
+==================== TestCase - Error Condition ====================
+| Time =             10919030 	| i_rst_n = 1 	| i_tx_en = 1 	| i_rx_en = 1 	| i_data = 3c 	|
+| Trans 	| Time =             11847050 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             11847050 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 1 	|
+| Time =             11847050 	| o_tx_done = 0 	| o_rx_done = 1 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             11847090 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 01 	| w_conv_valid = 1 	|
+| Rec 	| Time =             11847090 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Trans 	| Time =             11892690 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             11892690 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Time =             11892690 	| o_tx_done = 1 	| o_rx_done = 0 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             12825050 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             12825050 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 1 	|
+| Time =             12825050 	| o_tx_done = 0 	| o_rx_done = 1 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             12825090 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 01 	| w_conv_valid = 1 	|
+| Rec 	| Time =             12825090 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Trans 	| Time =             12870690 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             12870690 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Time =             12870690 	| o_tx_done = 1 	| o_rx_done = 0 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             13803050 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             13803050 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 1 	|
+| Time =             13803050 	| o_tx_done = 0 	| o_rx_done = 1 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             13803090 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 01 	| w_conv_valid = 1 	|
+| Rec 	| Time =             13803090 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Trans 	| Time =             13848690 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             13848690 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Time =             13848690 	| o_tx_done = 1 	| o_rx_done = 0 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             14781050 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             14781050 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 1 	|
+| Time =             14781050 	| o_tx_done = 0 	| o_rx_done = 1 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             14781090 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 01 	| w_conv_valid = 1 	|
+| Rec 	| Time =             14781090 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Trans 	| Time =             14826690 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             14826690 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Time =             14826690 	| o_tx_done = 1 	| o_rx_done = 0 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             15759050 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             15759050 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 1 	|
+| Time =             15759050 	| o_tx_done = 0 	| o_rx_done = 1 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             15759090 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 01 	| w_conv_valid = 1 	|
+| Rec 	| Time =             15759090 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Trans 	| Time =             15804690 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             15804690 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Time =             15804690 	| o_tx_done = 1 	| o_rx_done = 0 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             16737050 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             16737050 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 1 	|
+| Time =             16737050 	| o_tx_done = 0 	| o_rx_done = 1 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             16737090 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 01 	| w_conv_valid = 1 	|
+| Rec 	| Time =             16737090 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Trans 	| Time =             16782690 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             16782690 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Time =             16782690 	| o_tx_done = 1 	| o_rx_done = 0 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             17715050 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             17715050 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 1 	|
+| Time =             17715050 	| o_tx_done = 0 	| o_rx_done = 1 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             17715090 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 01 	| w_conv_valid = 1 	|
+| Rec 	| Time =             17715090 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Trans 	| Time =             17760690 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             17760690 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Time =             17760690 	| o_tx_done = 1 	| o_rx_done = 0 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             18693050 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             18693050 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 1 	|
+| Time =             18693050 	| o_tx_done = 0 	| o_rx_done = 1 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             18693090 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 01 	| w_conv_valid = 1 	|
+| Rec 	| Time =             18693090 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Trans 	| Time =             18738690 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             18738690 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Time =             18738690 	| o_tx_done = 1 	| o_rx_done = 0 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             19671050 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             19671050 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 1 	|
+| Time =             19671050 	| o_tx_done = 0 	| o_rx_done = 1 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             19671090 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 01 	| w_conv_valid = 1 	|
+| Rec 	| Time =             19671090 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Trans 	| Time =             19716690 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             19716690 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Time =             19716690 	| o_tx_done = 1 	| o_rx_done = 0 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             20649050 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             20649050 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 1 	|
+| Time =             20649050 	| o_tx_done = 0 	| o_rx_done = 1 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             20649090 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 01 	| w_conv_valid = 1 	|
+| Rec 	| Time =             20649090 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Trans 	| Time =             20694690 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             20694690 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Time =             20694690 	| o_tx_done = 1 	| o_rx_done = 0 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             21627050 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             21627050 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 1 	|
+| Time =             21627050 	| o_tx_done = 0 	| o_rx_done = 1 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             21627090 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 01 	| w_conv_valid = 1 	|
+| Rec 	| Time =             21627090 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Trans 	| Time =             21672690 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             21672690 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Time =             21672690 	| o_tx_done = 1 	| o_rx_done = 0 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             22605050 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             22605050 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 1 	|
+| Time =             22605050 	| o_tx_done = 0 	| o_rx_done = 1 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             22605090 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 01 	| w_conv_valid = 1 	|
+| Rec 	| Time =             22605090 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Trans 	| Time =             22650690 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             22650690 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Time =             22650690 	| o_tx_done = 1 	| o_rx_done = 0 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             23583050 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             23583050 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 1 	|
+| Time =             23583050 	| o_tx_done = 0 	| o_rx_done = 1 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             23583090 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 01 	| w_conv_valid = 1 	|
+| Rec 	| Time =             23583090 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Trans 	| Time =             23628690 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             23628690 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Time =             23628690 	| o_tx_done = 1 	| o_rx_done = 0 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             24561050 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             24561050 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 1 	|
+| Time =             24561050 	| o_tx_done = 0 	| o_rx_done = 1 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             24561090 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 01 	| w_conv_valid = 1 	|
+| Rec 	| Time =             24561090 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Trans 	| Time =             24606690 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             24606690 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Time =             24606690 	| o_tx_done = 1 	| o_rx_done = 0 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             25539050 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             25539050 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 1 	|
+| Time =             25539050 	| o_tx_done = 0 	| o_rx_done = 1 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             25539090 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 01 	| w_conv_valid = 1 	|
+| Rec 	| Time =             25539090 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Trans 	| Time =             25584690 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             25584690 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Time =             25584690 	| o_tx_done = 1 	| o_rx_done = 0 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             26517050 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             26517050 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 1 	|
+| Time =             26517050 	| o_tx_done = 0 	| o_rx_done = 1 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             26517090 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 01 	| w_conv_valid = 1 	|
+| Rec 	| Time =             26517090 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Trans 	| Time =             26562690 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             26562690 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Time =             26562690 	| o_tx_done = 1 	| o_rx_done = 0 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             27495050 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             27495050 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 1 	|
+| Time =             27495050 	| o_tx_done = 0 	| o_rx_done = 1 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             27495090 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 01 	| w_conv_valid = 1 	|
+| Rec 	| Time =             27495090 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Trans 	| Time =             27540690 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             27540690 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Time =             27540690 	| o_tx_done = 1 	| o_rx_done = 0 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             28473050 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             28473050 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 1 	|
+| Time =             28473050 	| o_tx_done = 0 	| o_rx_done = 1 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             28473090 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 01 	| w_conv_valid = 1 	|
+| Rec 	| Time =             28473090 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Trans 	| Time =             28518690 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             28518690 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Time =             28518690 	| o_tx_done = 1 	| o_rx_done = 0 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             29451050 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             29451050 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 1 	|
+| Time =             29451050 	| o_tx_done = 0 	| o_rx_done = 1 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             29451090 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 01 	| w_conv_valid = 1 	|
+| Rec 	| Time =             29451090 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Trans 	| Time =             29496690 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             29496690 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Time =             29496690 	| o_tx_done = 1 	| o_rx_done = 0 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             30429050 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             30429050 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 1 	|
+| Time =             30429050 	| o_tx_done = 0 	| o_rx_done = 1 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             30429090 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 01 	| w_conv_valid = 1 	|
+| Rec 	| Time =             30429090 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Trans 	| Time =             30474690 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             30474690 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Time =             30474690 	| o_tx_done = 1 	| o_rx_done = 0 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             31407050 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             31407050 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 1 	|
+| Time =             31407050 	| o_tx_done = 0 	| o_rx_done = 1 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             31407090 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 01 	| w_conv_valid = 1 	|
+| Rec 	| Time =             31407090 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Trans 	| Time =             31452690 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             31452690 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Time =             31452690 	| o_tx_done = 1 	| o_rx_done = 0 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             32385050 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             32385050 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 1 	|
+| Time =             32385050 	| o_tx_done = 0 	| o_rx_done = 1 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             32385090 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 01 	| w_conv_valid = 1 	|
+| Rec 	| Time =             32385090 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Trans 	| Time =             32430690 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             32430690 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Time =             32430690 	| o_tx_done = 1 	| o_rx_done = 0 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             33363050 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             33363050 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 1 	|
+| Time =             33363050 	| o_tx_done = 0 	| o_rx_done = 1 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             33363090 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 01 	| w_conv_valid = 1 	|
+| Rec 	| Time =             33363090 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Trans 	| Time =             33408690 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             33408690 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Time =             33408690 	| o_tx_done = 1 	| o_rx_done = 0 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             34341050 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             34341050 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 1 	|
+| Time =             34341050 	| o_tx_done = 0 	| o_rx_done = 1 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             34341090 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 01 	| w_conv_valid = 1 	|
+| Rec 	| Time =             34341090 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Trans 	| Time =             34386690 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             34386690 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Time =             34386690 	| o_tx_done = 1 	| o_rx_done = 0 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             35319050 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             35319050 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 1 	|
+| Time =             35319050 	| o_tx_done = 0 	| o_rx_done = 1 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             35319090 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 01 	| w_conv_valid = 1 	|
+| Rec 	| Time =             35319090 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Trans 	| Time =             35364690 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             35364690 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Time =             35364690 	| o_tx_done = 1 	| o_rx_done = 0 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             36297050 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             36297050 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 1 	|
+| Time =             36297050 	| o_tx_done = 0 	| o_rx_done = 1 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             36297090 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 01 	| w_conv_valid = 1 	|
+| Rec 	| Time =             36297090 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Trans 	| Time =             36342690 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             36342690 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Time =             36342690 	| o_tx_done = 1 	| o_rx_done = 0 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             37275050 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             37275050 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 1 	|
+| Time =             37275050 	| o_tx_done = 0 	| o_rx_done = 1 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             37275090 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 01 	| w_conv_valid = 1 	|
+| Rec 	| Time =             37275090 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Trans 	| Time =             37320690 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             37320690 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Time =             37320690 	| o_tx_done = 1 	| o_rx_done = 0 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             38253050 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             38253050 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 1 	|
+| Time =             38253050 	| o_tx_done = 0 	| o_rx_done = 1 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             38253090 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 01 	| w_conv_valid = 1 	|
+| Rec 	| Time =             38253090 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Trans 	| Time =             38298690 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             38298690 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Time =             38298690 	| o_tx_done = 1 	| o_rx_done = 0 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             39231050 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             39231050 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 1 	|
+| Time =             39231050 	| o_tx_done = 0 	| o_rx_done = 1 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             39231090 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 01 	| w_conv_valid = 1 	|
+| Rec 	| Time =             39231090 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Trans 	| Time =             39276690 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             39276690 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Time =             39276690 	| o_tx_done = 1 	| o_rx_done = 0 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             40209050 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             40209050 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 1 	|
+| Time =             40209050 	| o_tx_done = 0 	| o_rx_done = 1 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             40209090 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 01 	| w_conv_valid = 1 	|
+| Rec 	| Time =             40209090 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Trans 	| Time =             40254690 	| i_data = 00111100 	| w_tx_data = 1 	| w_conv_data = 10 	| w_conv_valid = 1 	|
+| Rec 	| Time =             40254690 	| w_vd_valid = 1 	| w_vd_data = 1 	| o_rx_data = 00111100 	| o_rx_done = 0 	|
+| Time =             40254690 	| o_tx_done = 1 	| o_rx_done = 0 	| o_data = 3c 	| o_HEX4 = 1000110 	| o_HEX5 = 0110000 	|
+| Trans 	| Time =             41187050 	| i_data = 00111100 	| w_tx_data = 1 
