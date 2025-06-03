@@ -1,0 +1,62 @@
+==========================================================
+TestCase 1: Input 11011010
+Expected output: 1101010001010010 (if R=1/2 conv encoder)
+| Time =               310000 | i_rst_n = 1 | i_start = 1 | i_data = 1 |
+| Time =               310000 | o_valid = 1 | o_data = 11 |
+| Time =               330000 | i_rst_n = 1 | i_start = 1 | i_data = 1 |
+| Time =               330000 | o_valid = 1 | o_data = 10 |
+| Time =               350000 | i_rst_n = 1 | i_start = 1 | i_data = 0 |
+| Time =               350000 | o_valid = 1 | o_data = 11 |
+| Time =               370000 | i_rst_n = 1 | i_start = 1 | i_data = 1 |
+| Time =               370000 | o_valid = 1 | o_data = 10 |
+| Time =               390000 | i_rst_n = 1 | i_start = 1 | i_data = 1 |
+| Time =               390000 | o_valid = 1 | o_data = 01 |
+| Time =               410000 | i_rst_n = 1 | i_start = 1 | i_data = 0 |
+| Time =               410000 | o_valid = 1 | o_data = 11 |
+| Time =               430000 | i_rst_n = 1 | i_start = 1 | i_data = 1 |
+| Time =               430000 | o_valid = 1 | o_data = 10 |
+| Time =               450000 | i_rst_n = 1 | i_start = 1 | i_data = 0 |
+| Time =               450000 | o_valid = 1 | o_data = 11 |
+==========================================================
+==========================================================
+TestCase 1: Input 10101010
+Expected output: 1110001000100010 (if R=1/2 conv encoder)
+| Time =               970000 | i_rst_n = 1 | i_start = 1 | i_data = 1 |
+| Time =               970000 | o_valid = 1 | o_data = 10 |
+| Time =               990000 | i_rst_n = 1 | i_start = 1 | i_data = 0 |
+| Time =               990000 | o_valid = 1 | o_data = 11 |
+| Time =              1010000 | i_rst_n = 1 | i_start = 1 | i_data = 1 |
+| Time =              1010000 | o_valid = 1 | o_data = 10 |
+| Time =              1030000 | i_rst_n = 1 | i_start = 1 | i_data = 0 |
+| Time =              1030000 | o_valid = 1 | o_data = 11 |
+| Time =              1050000 | i_rst_n = 1 | i_start = 1 | i_data = 1 |
+| Time =              1050000 | o_valid = 1 | o_data = 10 |
+| Time =              1070000 | i_rst_n = 1 | i_start = 1 | i_data = 0 |
+| Time =              1070000 | o_valid = 1 | o_data = 11 |
+| Time =              1090000 | i_rst_n = 1 | i_start = 1 | i_data = 1 |
+| Time =              1090000 | o_valid = 1 | o_data = 10 |
+| Time =              1110000 | i_rst_n = 1 | i_start = 1 | i_data = 0 |
+| Time =              1110000 | o_valid = 1 | o_data = 11 |
+==========================================================
+==========================================================
+TestCase 1: Input 00000001
+Expected output: 0000000000000011 (if R=1/2 conv encoder)
+| Time =              1630000 | i_rst_n = 1 | i_start = 1 | i_data = 0 |
+| Time =              1630000 | o_valid = 1 | o_data = 00 |
+| Time =              1650000 | i_rst_n = 1 | i_start = 1 | i_data = 0 |
+| Time =              1650000 | o_valid = 1 | o_data = 00 |
+| Time =              1670000 | i_rst_n = 1 | i_start = 1 | i_data = 0 |
+| Time =              1670000 | o_valid = 1 | o_data = 00 |
+| Time =              1690000 | i_rst_n = 1 | i_start = 1 | i_data = 0 |
+| Time =              1690000 | o_valid = 1 | o_data = 00 |
+| Time =              1710000 | i_rst_n = 1 | i_start = 1 | i_data = 0 |
+| Time =              1710000 | o_valid = 1 | o_data = 00 |
+| Time =              1730000 | i_rst_n = 1 | i_start = 1 | i_data = 0 |
+| Time =              1730000 | o_valid = 1 | o_data = 00 |
+| Time =              1750000 | i_rst_n = 1 | i_start = 1 | i_data = 0 |
+| Time =              1750000 | o_valid = 1 | o_data = 00 |
+| Time =              1770000 | i_rst_n = 1 | i_start = 1 | i_data = 1 |
+| Time =              1770000 | o_valid = 1 | o_data = 10 |
+==========================================================
+Finish Test ...
+- tb_Conv_block.sv:117: Verilog $finish

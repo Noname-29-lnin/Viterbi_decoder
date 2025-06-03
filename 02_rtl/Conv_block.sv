@@ -1,7 +1,6 @@
 module Conv_block #(
-    parameter SIZE_IN       = 8,
-    parameter SIZE_OUT      = 16,
-    parameter SIZE_LENGTH   = 3
+    parameter SIZE_IN       = 1,
+    parameter SIZE_OUT      = 2
 )(
     input logic                 i_clk   ,
     input logic                 i_rst_n ,
@@ -11,22 +10,52 @@ module Conv_block #(
     output logic [SIZE_OUT-1:0] o_data  ,
     output logic                o_valid 
 );
+logic [SIZE_IN-1:0] w_data_0, w_data_1, w_data_2;
+assign w_data_0 = i_data;
 
-// Shift register 
-logic shift_reg [SIZE_LENGTH-1:0];
+D_FF D_FF_0(
+    .i_clk      (i_clk),
+    .i_rst_n    (i_rst_n),
+    .i_en       (i_start),
+    .i_d        (w_data_0),
+    .o_q        (w_data_1)
+);
+D_FF D_FF_1(
+    .i_clk      (i_clk),
+    .i_rst_n    (i_rst_n),
+    .i_en       (i_start),
+    .i_d        (w_data_1),
+    .o_q        (w_data_2)
+);
 
-always_ff @(posedge i_clk or negedge i_rst_n) begin : proc_shift_reg
+// G = [111][101]
+logic [SIZE_IN-1:0] w_odata_0;
+assign w_odata_1 = w_data_0 ^ w_data_2;
+logic [SIZE_IN-1:0] w_odata_1;
+assign w_odata_0 = w_data_0 ^ w_data_1 ^ w_data_2;
+// OUTPUT
+assign o_data = {w_odata_1, w_odata_0};
+assign o_valid = i_start;
+
+endmodule
+
+module D_FF (
+    input logic i_clk,
+    input logic i_rst_n,
+    input logic i_en,
+    input logic i_d,
+    output logic o_q
+);
+
+always_ff @( posedge i_clk or negedge i_rst_n ) begin : flipflop_unit
     if(~i_rst_n) begin
-        for (int i = 0; i < SIZE_LENGTH; i++) begin
-            shift_reg[i] <= '0;
-        end
-    end else if (i_start) begin
-        shift_reg[0] <= i_data;
-        for (int i = 1; i < SIZE_LENGTH; i++) begin
-            shift_reg[i] <= shift_reg[i-1];
-        end
-    end 
-    
+        o_q <= '0;
+    end else begin
+        if(i_en) 
+            o_q <= i_d;
+        else
+            o_q <= o_q; 
+    end
 end
 
 endmodule
