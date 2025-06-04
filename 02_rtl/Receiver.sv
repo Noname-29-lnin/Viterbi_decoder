@@ -46,7 +46,7 @@ always_ff @( posedge i_clk or negedge i_rst_n ) begin
         w_input_next <= w_idata;
 end
 
-always_comb begin : proc_state
+always @(*) begin : proc_state
     case(state)
         IDLE: begin
             n_state = (~w_idata & i_stick & w_update_idle) ? START : IDLE; // phat hien canh xuong
@@ -122,7 +122,7 @@ always_ff @(posedge i_clk or negedge i_rst_n) begin : proc_rx_done
 end
 
 // assign o_rx_data = (w_rx_done) ? {t_rx_data[7], t_rx_data[6], t_rx_data[5], t_rx_data[4], t_rx_data[3], t_rx_data[2], t_rx_data[1], t_rx_data[0]} : o_rx_data; // output data;
-always_comb begin : proc_rx_data
+always @(*) begin : proc_rx_data
     if(w_rx_done) begin
         for(int i = 0; i < SIZE_DATA; i++) begin
             o_rx_data[i] = t_rx_data[i];

@@ -1,0 +1,892 @@
+|Wrapper
+CLOCK_50 => CLOCK_50.IN1
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+SW[4] => SW[4].IN1
+SW[5] => SW[5].IN1
+SW[6] => SW[6].IN1
+SW[7] => SW[7].IN1
+SW[8] => SW[8].IN1
+SW[9] => SW[9].IN1
+SW[10] => ~NO_FANOUT~
+SW[11] => ~NO_FANOUT~
+SW[12] => ~NO_FANOUT~
+SW[13] => ~NO_FANOUT~
+SW[14] => ~NO_FANOUT~
+SW[15] => ~NO_FANOUT~
+SW[16] => ~NO_FANOUT~
+SW[17] => SW[17].IN1
+LEDR[0] <= SW[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= SW[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= SW[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] <= SW[3].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[4] <= SW[4].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[5] <= SW[5].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[6] <= SW[6].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[7] <= SW[7].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[8] <= Testcase2:comb_3.o_data
+LEDR[9] <= Testcase2:comb_3.o_data
+LEDR[10] <= Testcase2:comb_3.o_data
+LEDR[11] <= Testcase2:comb_3.o_data
+LEDR[12] <= Testcase2:comb_3.o_data
+LEDR[13] <= Testcase2:comb_3.o_data
+LEDR[14] <= Testcase2:comb_3.o_data
+LEDR[15] <= Testcase2:comb_3.o_data
+LEDR[16] <= <GND>
+LEDR[17] <= <GND>
+LEDG[0] <= Testcase2:comb_3.o_tx_done
+LEDG[1] <= Testcase2:comb_3.o_rx_done
+LEDG[2] <= <GND>
+LEDG[3] <= <GND>
+LEDG[4] <= <GND>
+LEDG[5] <= SW[8].DB_MAX_OUTPUT_PORT_TYPE
+LEDG[6] <= SW[9].DB_MAX_OUTPUT_PORT_TYPE
+HEX0[0] <= Testcase2:comb_3.o_HEX4
+HEX0[1] <= Testcase2:comb_3.o_HEX4
+HEX0[2] <= Testcase2:comb_3.o_HEX4
+HEX0[3] <= Testcase2:comb_3.o_HEX4
+HEX0[4] <= Testcase2:comb_3.o_HEX4
+HEX0[5] <= Testcase2:comb_3.o_HEX4
+HEX0[6] <= Testcase2:comb_3.o_HEX4
+HEX1[0] <= Testcase2:comb_3.o_HEX5
+HEX1[1] <= Testcase2:comb_3.o_HEX5
+HEX1[2] <= Testcase2:comb_3.o_HEX5
+HEX1[3] <= Testcase2:comb_3.o_HEX5
+HEX1[4] <= Testcase2:comb_3.o_HEX5
+HEX1[5] <= Testcase2:comb_3.o_HEX5
+HEX1[6] <= Testcase2:comb_3.o_HEX5
+
+
+|Wrapper|Testcase2:comb_3
+i_clk => i_clk.IN5
+i_rst_n => i_rst_n.IN5
+i_tx_en => i_tx_en.IN1
+i_rx_en => i_rx_en.IN1
+i_data[0] => i_data[0].IN1
+i_data[1] => i_data[1].IN1
+i_data[2] => i_data[2].IN1
+i_data[3] => i_data[3].IN1
+i_data[4] => i_data[4].IN1
+i_data[5] => i_data[5].IN1
+i_data[6] => i_data[6].IN1
+i_data[7] => i_data[7].IN1
+o_data[0] <= Receiver:uut_receiver.o_rx_data
+o_data[1] <= Receiver:uut_receiver.o_rx_data
+o_data[2] <= Receiver:uut_receiver.o_rx_data
+o_data[3] <= Receiver:uut_receiver.o_rx_data
+o_data[4] <= Receiver:uut_receiver.o_rx_data
+o_data[5] <= Receiver:uut_receiver.o_rx_data
+o_data[6] <= Receiver:uut_receiver.o_rx_data
+o_data[7] <= Receiver:uut_receiver.o_rx_data
+o_tx_done <= Transmitter:uut_transmitter.o_tx_done
+o_rx_done <= Receiver:uut_receiver.o_rx_done
+o_HEX4[0] <= Hex_to_7seg:HEX_0_unit.o_HEX
+o_HEX4[1] <= Hex_to_7seg:HEX_0_unit.o_HEX
+o_HEX4[2] <= Hex_to_7seg:HEX_0_unit.o_HEX
+o_HEX4[3] <= Hex_to_7seg:HEX_0_unit.o_HEX
+o_HEX4[4] <= Hex_to_7seg:HEX_0_unit.o_HEX
+o_HEX4[5] <= Hex_to_7seg:HEX_0_unit.o_HEX
+o_HEX4[6] <= Hex_to_7seg:HEX_0_unit.o_HEX
+o_HEX5[0] <= Hex_to_7seg:HEX_1_unit.o_HEX
+o_HEX5[1] <= Hex_to_7seg:HEX_1_unit.o_HEX
+o_HEX5[2] <= Hex_to_7seg:HEX_1_unit.o_HEX
+o_HEX5[3] <= Hex_to_7seg:HEX_1_unit.o_HEX
+o_HEX5[4] <= Hex_to_7seg:HEX_1_unit.o_HEX
+o_HEX5[5] <= Hex_to_7seg:HEX_1_unit.o_HEX
+o_HEX5[6] <= Hex_to_7seg:HEX_1_unit.o_HEX
+
+
+|Wrapper|Testcase2:comb_3|baud_generator:baudrate
+i_clk => bdr_count[0].CLK
+i_clk => bdr_count[1].CLK
+i_clk => bdr_count[2].CLK
+i_clk => bdr_count[3].CLK
+i_clk => bdr_count[4].CLK
+i_clk => bdr_count[5].CLK
+i_clk => bdr_count[6].CLK
+i_clk => bdr_count[7].CLK
+i_clk => bdr_count[8].CLK
+i_clk => bdr_count[9].CLK
+i_clk => bdr_count[10].CLK
+i_clk => bdr_count[11].CLK
+i_clk => bdr_count[12].CLK
+i_clk => bdr_count[13].CLK
+i_clk => bdr_count[14].CLK
+i_clk => bdr_count[15].CLK
+i_clk => bdr_count[16].CLK
+i_clk => bdr_count[17].CLK
+i_clk => bdr_count[18].CLK
+i_clk => bdr_count[19].CLK
+i_clk => bdr_count[20].CLK
+i_clk => bdr_count[21].CLK
+i_clk => bdr_count[22].CLK
+i_clk => bdr_count[23].CLK
+i_rst_n => bdr_count[0].ACLR
+i_rst_n => bdr_count[1].ACLR
+i_rst_n => bdr_count[2].ACLR
+i_rst_n => bdr_count[3].ACLR
+i_rst_n => bdr_count[4].ACLR
+i_rst_n => bdr_count[5].ACLR
+i_rst_n => bdr_count[6].ACLR
+i_rst_n => bdr_count[7].ACLR
+i_rst_n => bdr_count[8].ACLR
+i_rst_n => bdr_count[9].ACLR
+i_rst_n => bdr_count[10].ACLR
+i_rst_n => bdr_count[11].ACLR
+i_rst_n => bdr_count[12].ACLR
+i_rst_n => bdr_count[13].ACLR
+i_rst_n => bdr_count[14].ACLR
+i_rst_n => bdr_count[15].ACLR
+i_rst_n => bdr_count[16].ACLR
+i_rst_n => bdr_count[17].ACLR
+i_rst_n => bdr_count[18].ACLR
+i_rst_n => bdr_count[19].ACLR
+i_rst_n => bdr_count[20].ACLR
+i_rst_n => bdr_count[21].ACLR
+i_rst_n => bdr_count[22].ACLR
+i_rst_n => bdr_count[23].ACLR
+i_baud_rate[0] => Equal0.IN23
+i_baud_rate[1] => Equal0.IN22
+i_baud_rate[2] => Equal0.IN21
+i_baud_rate[3] => Equal0.IN20
+i_baud_rate[4] => Equal0.IN19
+i_baud_rate[5] => Equal0.IN18
+i_baud_rate[6] => Equal0.IN17
+i_baud_rate[7] => Equal0.IN16
+i_baud_rate[8] => Equal0.IN15
+i_baud_rate[9] => Equal0.IN14
+i_baud_rate[10] => Equal0.IN13
+i_baud_rate[11] => Equal0.IN12
+i_baud_rate[12] => Equal0.IN11
+i_baud_rate[13] => Equal0.IN10
+i_baud_rate[14] => Equal0.IN9
+i_baud_rate[15] => Equal0.IN8
+i_baud_rate[16] => Equal0.IN7
+i_baud_rate[17] => Equal0.IN6
+i_baud_rate[18] => Equal0.IN5
+i_baud_rate[19] => Equal0.IN4
+i_baud_rate[20] => Equal0.IN3
+i_baud_rate[21] => Equal0.IN2
+i_baud_rate[22] => Equal0.IN1
+i_baud_rate[23] => Equal0.IN0
+o_stick <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Wrapper|Testcase2:comb_3|Transmitter:uut_transmitter
+i_clk => w_tx_done.CLK
+i_clk => w_valid.CLK
+i_clk => o_tx_serial~reg0.CLK
+i_clk => index[0].CLK
+i_clk => index[1].CLK
+i_clk => index[2].CLK
+i_clk => index[3].CLK
+i_clk => count[0].CLK
+i_clk => count[1].CLK
+i_clk => count[2].CLK
+i_clk => count[3].CLK
+i_clk => count[4].CLK
+i_clk => state[0].CLK
+i_clk => state[1].CLK
+i_clk => state[2].CLK
+i_rst_n => index[0].ACLR
+i_rst_n => index[1].ACLR
+i_rst_n => index[2].ACLR
+i_rst_n => index[3].ACLR
+i_rst_n => count[0].ACLR
+i_rst_n => count[1].ACLR
+i_rst_n => count[2].ACLR
+i_rst_n => count[3].ACLR
+i_rst_n => count[4].ACLR
+i_rst_n => state[0].ACLR
+i_rst_n => state[1].ACLR
+i_rst_n => state[2].ACLR
+i_rst_n => w_valid.ACLR
+i_rst_n => o_tx_serial~reg0.PRESET
+i_rst_n => w_tx_done.ACLR
+i_stick => n_count.OUTPUTSELECT
+i_stick => n_count.OUTPUTSELECT
+i_stick => n_count.OUTPUTSELECT
+i_stick => n_count.OUTPUTSELECT
+i_stick => n_count.OUTPUTSELECT
+i_tx_en => w_update_start.IN0
+i_fifo_empty => w_update_start.IN1
+i_tx_data[0] => Mux12.IN7
+i_tx_data[1] => Mux12.IN6
+i_tx_data[2] => Mux12.IN5
+i_tx_data[3] => Mux12.IN4
+i_tx_data[4] => Mux12.IN3
+i_tx_data[5] => Mux12.IN2
+i_tx_data[6] => Mux12.IN1
+i_tx_data[7] => Mux12.IN0
+o_tx_serial <= o_tx_serial~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_tx_done <= w_tx_done.DB_MAX_OUTPUT_PORT_TYPE
+o_valid <= w_valid.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Wrapper|Testcase2:comb_3|Conv_block:uut_Conv
+i_clk => i_clk.IN2
+i_rst_n => i_rst_n.IN2
+i_start => i_start.IN2
+i_data[0] => w_data_0[0].IN1
+o_data[0] <= w_odata_0.DB_MAX_OUTPUT_PORT_TYPE
+o_data[1] <= w_odata_1.DB_MAX_OUTPUT_PORT_TYPE
+o_valid <= i_start.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Wrapper|Testcase2:comb_3|Conv_block:uut_Conv|D_FF:DFF_0
+i_clk => o_q~reg0.CLK
+i_rst_n => o_q~reg0.ACLR
+i_en => o_q~reg0.ENA
+i_d => o_q~reg0.DATAIN
+o_q <= o_q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Wrapper|Testcase2:comb_3|Conv_block:uut_Conv|D_FF:DFF_1
+i_clk => o_q~reg0.CLK
+i_rst_n => o_q~reg0.ACLR
+i_en => o_q~reg0.ENA
+i_d => o_q~reg0.DATAIN
+o_q <= o_q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Wrapper|Testcase2:comb_3|Viterbi_decoding:uut_VD
+i_clk => i_clk.IN2
+i_rst_n => i_rst_n.IN2
+i_valid => i_valid.IN2
+i_data[0] => i_data[0].IN1
+i_data[1] => i_data[1].IN1
+o_decision <= Survivor_path_memory_unit:SPMU.o_decision
+o_valid <= Survivor_path_memory_unit:SPMU.o_valid
+
+
+|Wrapper|Testcase2:comb_3|Viterbi_decoding:uut_VD|Branch_metric_unit:BMU
+i_data[0] => i_data[0].IN4
+i_data[1] => i_data[1].IN4
+o_BM_0[0] <= Hamming_distance:HD0.o_hamming_distance
+o_BM_0[1] <= Hamming_distance:HD0.o_hamming_distance
+o_BM_1[0] <= Hamming_distance:HD1.o_hamming_distance
+o_BM_1[1] <= Hamming_distance:HD1.o_hamming_distance
+o_BM_2[0] <= Hamming_distance:HD2.o_hamming_distance
+o_BM_2[1] <= Hamming_distance:HD2.o_hamming_distance
+o_BM_3[0] <= Hamming_distance:HD3.o_hamming_distance
+o_BM_3[1] <= Hamming_distance:HD3.o_hamming_distance
+
+
+|Wrapper|Testcase2:comb_3|Viterbi_decoding:uut_VD|Branch_metric_unit:BMU|Hamming_distance:HD0
+i_data[0] => w_data_0.IN0
+i_data[1] => w_data_1.IN0
+i_exp_code[0] => w_data_0.IN1
+i_exp_code[1] => w_data_1.IN1
+o_hamming_distance[0] <= Full_adder:FA.o_s
+o_hamming_distance[1] <= Full_adder:FA.o_c
+
+
+|Wrapper|Testcase2:comb_3|Viterbi_decoding:uut_VD|Branch_metric_unit:BMU|Hamming_distance:HD0|Full_adder:FA
+i_a => o_s.IN0
+i_a => o_c.IN0
+i_a => o_c.IN0
+i_b => o_s.IN1
+i_b => o_c.IN1
+i_b => o_c.IN0
+i_c => o_s.IN1
+i_c => o_c.IN1
+i_c => o_c.IN1
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Wrapper|Testcase2:comb_3|Viterbi_decoding:uut_VD|Branch_metric_unit:BMU|Hamming_distance:HD1
+i_data[0] => w_data_0.IN0
+i_data[1] => w_data_1.IN0
+i_exp_code[0] => w_data_0.IN1
+i_exp_code[1] => w_data_1.IN1
+o_hamming_distance[0] <= Full_adder:FA.o_s
+o_hamming_distance[1] <= Full_adder:FA.o_c
+
+
+|Wrapper|Testcase2:comb_3|Viterbi_decoding:uut_VD|Branch_metric_unit:BMU|Hamming_distance:HD1|Full_adder:FA
+i_a => o_s.IN0
+i_a => o_c.IN0
+i_a => o_c.IN0
+i_b => o_s.IN1
+i_b => o_c.IN1
+i_b => o_c.IN0
+i_c => o_s.IN1
+i_c => o_c.IN1
+i_c => o_c.IN1
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Wrapper|Testcase2:comb_3|Viterbi_decoding:uut_VD|Branch_metric_unit:BMU|Hamming_distance:HD2
+i_data[0] => w_data_0.IN0
+i_data[1] => w_data_1.IN0
+i_exp_code[0] => w_data_0.IN1
+i_exp_code[1] => w_data_1.IN1
+o_hamming_distance[0] <= Full_adder:FA.o_s
+o_hamming_distance[1] <= Full_adder:FA.o_c
+
+
+|Wrapper|Testcase2:comb_3|Viterbi_decoding:uut_VD|Branch_metric_unit:BMU|Hamming_distance:HD2|Full_adder:FA
+i_a => o_s.IN0
+i_a => o_c.IN0
+i_a => o_c.IN0
+i_b => o_s.IN1
+i_b => o_c.IN1
+i_b => o_c.IN0
+i_c => o_s.IN1
+i_c => o_c.IN1
+i_c => o_c.IN1
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Wrapper|Testcase2:comb_3|Viterbi_decoding:uut_VD|Branch_metric_unit:BMU|Hamming_distance:HD3
+i_data[0] => w_data_0.IN0
+i_data[1] => w_data_1.IN0
+i_exp_code[0] => w_data_0.IN1
+i_exp_code[1] => w_data_1.IN1
+o_hamming_distance[0] <= Full_adder:FA.o_s
+o_hamming_distance[1] <= Full_adder:FA.o_c
+
+
+|Wrapper|Testcase2:comb_3|Viterbi_decoding:uut_VD|Branch_metric_unit:BMU|Hamming_distance:HD3|Full_adder:FA
+i_a => o_s.IN0
+i_a => o_c.IN0
+i_a => o_c.IN0
+i_b => o_s.IN1
+i_b => o_c.IN1
+i_b => o_c.IN0
+i_c => o_s.IN1
+i_c => o_c.IN1
+i_c => o_c.IN1
+o_s <= o_s.DB_MAX_OUTPUT_PORT_TYPE
+o_c <= o_c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Wrapper|Testcase2:comb_3|Viterbi_decoding:uut_VD|Path_metric_unit:PMU
+i_clk => o_PM_3[0]~reg0.CLK
+i_clk => o_PM_3[1]~reg0.CLK
+i_clk => o_PM_2[0]~reg0.CLK
+i_clk => o_PM_2[1]~reg0.CLK
+i_clk => o_PM_1[0]~reg0.CLK
+i_clk => o_PM_1[1]~reg0.CLK
+i_clk => o_PM_0[0]~reg0.CLK
+i_clk => o_PM_0[1]~reg0.CLK
+i_rst_n => o_PM_3[0]~reg0.PRESET
+i_rst_n => o_PM_3[1]~reg0.PRESET
+i_rst_n => o_PM_2[0]~reg0.PRESET
+i_rst_n => o_PM_2[1]~reg0.PRESET
+i_rst_n => o_PM_1[0]~reg0.PRESET
+i_rst_n => o_PM_1[1]~reg0.PRESET
+i_rst_n => o_PM_0[0]~reg0.ACLR
+i_rst_n => o_PM_0[1]~reg0.ACLR
+i_valid => o_PM_3[0]~reg0.ENA
+i_valid => o_PM_0[1]~reg0.ENA
+i_valid => o_PM_0[0]~reg0.ENA
+i_valid => o_PM_1[1]~reg0.ENA
+i_valid => o_PM_1[0]~reg0.ENA
+i_valid => o_PM_2[1]~reg0.ENA
+i_valid => o_PM_2[0]~reg0.ENA
+i_valid => o_PM_3[1]~reg0.ENA
+i_PM_0[0] => o_PM_0[0]~reg0.DATAIN
+i_PM_0[1] => o_PM_0[1]~reg0.DATAIN
+i_PM_1[0] => o_PM_1[0]~reg0.DATAIN
+i_PM_1[1] => o_PM_1[1]~reg0.DATAIN
+i_PM_2[0] => o_PM_2[0]~reg0.DATAIN
+i_PM_2[1] => o_PM_2[1]~reg0.DATAIN
+i_PM_3[0] => o_PM_3[0]~reg0.DATAIN
+i_PM_3[1] => o_PM_3[1]~reg0.DATAIN
+o_PM_0[0] <= o_PM_0[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_PM_0[1] <= o_PM_0[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_PM_1[0] <= o_PM_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_PM_1[1] <= o_PM_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_PM_2[0] <= o_PM_2[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_PM_2[1] <= o_PM_2[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_PM_3[0] <= o_PM_3[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_PM_3[1] <= o_PM_3[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Wrapper|Testcase2:comb_3|Viterbi_decoding:uut_VD|Add_compare_select_unit:ACSU
+i_BM_0[0] => i_BM_0[0].IN2
+i_BM_0[1] => i_BM_0[1].IN2
+i_BM_1[0] => i_BM_1[0].IN2
+i_BM_1[1] => i_BM_1[1].IN2
+i_BM_2[0] => i_BM_2[0].IN2
+i_BM_2[1] => i_BM_2[1].IN2
+i_BM_3[0] => i_BM_3[0].IN2
+i_BM_3[1] => i_BM_3[1].IN2
+i_PM_0[0] => i_PM_0[0].IN2
+i_PM_0[1] => i_PM_0[1].IN2
+i_PM_1[0] => i_PM_1[0].IN2
+i_PM_1[1] => i_PM_1[1].IN2
+i_PM_2[0] => i_PM_2[0].IN2
+i_PM_2[1] => i_PM_2[1].IN2
+i_PM_3[0] => i_PM_3[0].IN2
+i_PM_3[1] => i_PM_3[1].IN2
+o_PM_0[0] <= ACS:ACS_0.o_PM
+o_PM_0[1] <= ACS:ACS_0.o_PM
+o_PM_1[0] <= ACS:ACS_1.o_PM
+o_PM_1[1] <= ACS:ACS_1.o_PM
+o_PM_2[0] <= ACS:ACS_2.o_PM
+o_PM_2[1] <= ACS:ACS_2.o_PM
+o_PM_3[0] <= ACS:ACS_3.o_PM
+o_PM_3[1] <= ACS:ACS_3.o_PM
+
+
+|Wrapper|Testcase2:comb_3|Viterbi_decoding:uut_VD|Add_compare_select_unit:ACSU|ACS:ACS_0
+i_BM_0[0] => i_BM_0[0].IN1
+i_BM_0[1] => i_BM_0[1].IN1
+i_BM_1[0] => i_BM_1[0].IN1
+i_BM_1[1] => i_BM_1[1].IN1
+i_PM_0[0] => i_PM_0[0].IN1
+i_PM_0[1] => i_PM_0[1].IN1
+i_PM_1[0] => i_PM_1[0].IN1
+i_PM_1[1] => i_PM_1[1].IN1
+o_PM[0] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+o_PM[1] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Wrapper|Testcase2:comb_3|Viterbi_decoding:uut_VD|Add_compare_select_unit:ACSU|ACS:ACS_0|Add_unit:ADD0
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+o_PM[0] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+o_PM[1] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Wrapper|Testcase2:comb_3|Viterbi_decoding:uut_VD|Add_compare_select_unit:ACSU|ACS:ACS_0|Add_unit:ADD1
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+o_PM[0] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+o_PM[1] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Wrapper|Testcase2:comb_3|Viterbi_decoding:uut_VD|Add_compare_select_unit:ACSU|ACS:ACS_0|Compare_unit:CP
+i_metric_path_0[0] => o_compare_less.IN0
+i_metric_path_0[0] => o_compare_less.IN0
+i_metric_path_0[1] => o_compare_less.IN0
+i_metric_path_0[1] => o_compare_less.IN0
+i_metric_path_0[1] => o_compare_less.IN1
+i_metric_path_1[0] => o_compare_less.IN0
+i_metric_path_1[0] => o_compare_less.IN1
+i_metric_path_1[1] => o_compare_less.IN1
+i_metric_path_1[1] => o_compare_less.IN1
+i_metric_path_1[1] => o_compare_less.IN1
+o_compare_less <= o_compare_less.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Wrapper|Testcase2:comb_3|Viterbi_decoding:uut_VD|Add_compare_select_unit:ACSU|ACS:ACS_1
+i_BM_0[0] => i_BM_0[0].IN1
+i_BM_0[1] => i_BM_0[1].IN1
+i_BM_1[0] => i_BM_1[0].IN1
+i_BM_1[1] => i_BM_1[1].IN1
+i_PM_0[0] => i_PM_0[0].IN1
+i_PM_0[1] => i_PM_0[1].IN1
+i_PM_1[0] => i_PM_1[0].IN1
+i_PM_1[1] => i_PM_1[1].IN1
+o_PM[0] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+o_PM[1] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Wrapper|Testcase2:comb_3|Viterbi_decoding:uut_VD|Add_compare_select_unit:ACSU|ACS:ACS_1|Add_unit:ADD0
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+o_PM[0] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+o_PM[1] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Wrapper|Testcase2:comb_3|Viterbi_decoding:uut_VD|Add_compare_select_unit:ACSU|ACS:ACS_1|Add_unit:ADD1
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+o_PM[0] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+o_PM[1] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Wrapper|Testcase2:comb_3|Viterbi_decoding:uut_VD|Add_compare_select_unit:ACSU|ACS:ACS_1|Compare_unit:CP
+i_metric_path_0[0] => o_compare_less.IN0
+i_metric_path_0[0] => o_compare_less.IN0
+i_metric_path_0[1] => o_compare_less.IN0
+i_metric_path_0[1] => o_compare_less.IN0
+i_metric_path_0[1] => o_compare_less.IN1
+i_metric_path_1[0] => o_compare_less.IN0
+i_metric_path_1[0] => o_compare_less.IN1
+i_metric_path_1[1] => o_compare_less.IN1
+i_metric_path_1[1] => o_compare_less.IN1
+i_metric_path_1[1] => o_compare_less.IN1
+o_compare_less <= o_compare_less.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Wrapper|Testcase2:comb_3|Viterbi_decoding:uut_VD|Add_compare_select_unit:ACSU|ACS:ACS_2
+i_BM_0[0] => i_BM_0[0].IN1
+i_BM_0[1] => i_BM_0[1].IN1
+i_BM_1[0] => i_BM_1[0].IN1
+i_BM_1[1] => i_BM_1[1].IN1
+i_PM_0[0] => i_PM_0[0].IN1
+i_PM_0[1] => i_PM_0[1].IN1
+i_PM_1[0] => i_PM_1[0].IN1
+i_PM_1[1] => i_PM_1[1].IN1
+o_PM[0] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+o_PM[1] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Wrapper|Testcase2:comb_3|Viterbi_decoding:uut_VD|Add_compare_select_unit:ACSU|ACS:ACS_2|Add_unit:ADD0
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+o_PM[0] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+o_PM[1] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Wrapper|Testcase2:comb_3|Viterbi_decoding:uut_VD|Add_compare_select_unit:ACSU|ACS:ACS_2|Add_unit:ADD1
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+o_PM[0] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+o_PM[1] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Wrapper|Testcase2:comb_3|Viterbi_decoding:uut_VD|Add_compare_select_unit:ACSU|ACS:ACS_2|Compare_unit:CP
+i_metric_path_0[0] => o_compare_less.IN0
+i_metric_path_0[0] => o_compare_less.IN0
+i_metric_path_0[1] => o_compare_less.IN0
+i_metric_path_0[1] => o_compare_less.IN0
+i_metric_path_0[1] => o_compare_less.IN1
+i_metric_path_1[0] => o_compare_less.IN0
+i_metric_path_1[0] => o_compare_less.IN1
+i_metric_path_1[1] => o_compare_less.IN1
+i_metric_path_1[1] => o_compare_less.IN1
+i_metric_path_1[1] => o_compare_less.IN1
+o_compare_less <= o_compare_less.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Wrapper|Testcase2:comb_3|Viterbi_decoding:uut_VD|Add_compare_select_unit:ACSU|ACS:ACS_3
+i_BM_0[0] => i_BM_0[0].IN1
+i_BM_0[1] => i_BM_0[1].IN1
+i_BM_1[0] => i_BM_1[0].IN1
+i_BM_1[1] => i_BM_1[1].IN1
+i_PM_0[0] => i_PM_0[0].IN1
+i_PM_0[1] => i_PM_0[1].IN1
+i_PM_1[0] => i_PM_1[0].IN1
+i_PM_1[1] => i_PM_1[1].IN1
+o_PM[0] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+o_PM[1] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Wrapper|Testcase2:comb_3|Viterbi_decoding:uut_VD|Add_compare_select_unit:ACSU|ACS:ACS_3|Add_unit:ADD0
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+o_PM[0] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+o_PM[1] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Wrapper|Testcase2:comb_3|Viterbi_decoding:uut_VD|Add_compare_select_unit:ACSU|ACS:ACS_3|Add_unit:ADD1
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[0] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_BM[1] => o_PM.IN0
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[0] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+i_PM[1] => o_PM.IN1
+o_PM[0] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+o_PM[1] <= o_PM.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Wrapper|Testcase2:comb_3|Viterbi_decoding:uut_VD|Add_compare_select_unit:ACSU|ACS:ACS_3|Compare_unit:CP
+i_metric_path_0[0] => o_compare_less.IN0
+i_metric_path_0[0] => o_compare_less.IN0
+i_metric_path_0[1] => o_compare_less.IN0
+i_metric_path_0[1] => o_compare_less.IN0
+i_metric_path_0[1] => o_compare_less.IN1
+i_metric_path_1[0] => o_compare_less.IN0
+i_metric_path_1[0] => o_compare_less.IN1
+i_metric_path_1[1] => o_compare_less.IN1
+i_metric_path_1[1] => o_compare_less.IN1
+i_metric_path_1[1] => o_compare_less.IN1
+o_compare_less <= o_compare_less.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Wrapper|Testcase2:comb_3|Viterbi_decoding:uut_VD|Survivor_path_memory_unit:SPMU
+i_clk => i_clk.IN1
+i_rst_n => i_rst_n.IN1
+i_valid => i_valid.IN1
+i_PM_0[0] => i_PM_0[0].IN1
+i_PM_0[1] => i_PM_0[1].IN1
+i_PM_1[0] => i_PM_1[0].IN1
+i_PM_1[1] => i_PM_1[1].IN1
+i_PM_2[0] => i_PM_2[0].IN1
+i_PM_2[1] => i_PM_2[1].IN1
+i_PM_3[0] => i_PM_3[0].IN1
+i_PM_3[1] => i_PM_3[1].IN1
+o_decision <= state_machine:u_state_machine.o_decision
+o_valid <= state_machine:u_state_machine.o_valid
+
+
+|Wrapper|Testcase2:comb_3|Viterbi_decoding:uut_VD|Survivor_path_memory_unit:SPMU|Compare_unit:CP0
+i_metric_path_0[0] => o_compare_less.IN0
+i_metric_path_0[0] => o_compare_less.IN0
+i_metric_path_0[1] => o_compare_less.IN0
+i_metric_path_0[1] => o_compare_less.IN0
+i_metric_path_0[1] => o_compare_less.IN1
+i_metric_path_1[0] => o_compare_less.IN0
+i_metric_path_1[0] => o_compare_less.IN1
+i_metric_path_1[1] => o_compare_less.IN1
+i_metric_path_1[1] => o_compare_less.IN1
+i_metric_path_1[1] => o_compare_less.IN1
+o_compare_less <= o_compare_less.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Wrapper|Testcase2:comb_3|Viterbi_decoding:uut_VD|Survivor_path_memory_unit:SPMU|Compare_unit:CP1
+i_metric_path_0[0] => o_compare_less.IN0
+i_metric_path_0[0] => o_compare_less.IN0
+i_metric_path_0[1] => o_compare_less.IN0
+i_metric_path_0[1] => o_compare_less.IN0
+i_metric_path_0[1] => o_compare_less.IN1
+i_metric_path_1[0] => o_compare_less.IN0
+i_metric_path_1[0] => o_compare_less.IN1
+i_metric_path_1[1] => o_compare_less.IN1
+i_metric_path_1[1] => o_compare_less.IN1
+i_metric_path_1[1] => o_compare_less.IN1
+o_compare_less <= o_compare_less.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Wrapper|Testcase2:comb_3|Viterbi_decoding:uut_VD|Survivor_path_memory_unit:SPMU|state_machine:u_state_machine
+i_clk => i_clk.IN1
+i_rst_n => i_rst_n.IN1
+i_valid => i_valid.IN1
+i_compare_0 => i_compare_0.IN1
+i_compare_1 => i_compare_1.IN1
+o_decision <= output_logic:OL.o_decision_bit
+o_valid <= state_memory:SM.o_valid
+
+
+|Wrapper|Testcase2:comb_3|Viterbi_decoding:uut_VD|Survivor_path_memory_unit:SPMU|state_machine:u_state_machine|next_state_logic:NSL
+i_valid => o_next_state.OUTPUTSELECT
+i_valid => o_next_state.OUTPUTSELECT
+i_valid => o_valid.DATAIN
+i_compare_0 => o_next_state.DATAA
+i_compare_1 => o_next_state.DATAB
+i_pre_state[0] => Decoder0.IN1
+i_pre_state[0] => o_next_state.DATAB
+i_pre_state[1] => Decoder0.IN0
+i_pre_state[1] => o_next_state.DATAB
+o_next_state[0] <= o_next_state.DB_MAX_OUTPUT_PORT_TYPE
+o_next_state[1] <= o_next_state.DB_MAX_OUTPUT_PORT_TYPE
+o_valid <= i_valid.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Wrapper|Testcase2:comb_3|Viterbi_decoding:uut_VD|Survivor_path_memory_unit:SPMU|state_machine:u_state_machine|state_memory:SM
+i_clk => o_curr_state[0]~reg0.CLK
+i_clk => o_curr_state[1]~reg0.CLK
+i_clk => o_valid~reg0.CLK
+i_rst_n => o_curr_state[0]~reg0.ACLR
+i_rst_n => o_curr_state[1]~reg0.ACLR
+i_rst_n => o_valid~reg0.ACLR
+i_valid => o_valid~reg0.DATAIN
+i_next_state[0] => o_curr_state[0]~reg0.DATAIN
+i_next_state[1] => o_curr_state[1]~reg0.DATAIN
+o_curr_state[0] <= o_curr_state[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_curr_state[1] <= o_curr_state[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_valid <= o_valid~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Wrapper|Testcase2:comb_3|Viterbi_decoding:uut_VD|Survivor_path_memory_unit:SPMU|state_machine:u_state_machine|output_logic:OL
+i_curr_state[0] => Decoder0.IN1
+i_curr_state[1] => Decoder0.IN0
+o_decision_bit <= o_decision_bit.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Wrapper|Testcase2:comb_3|Receiver:uut_receiver
+i_clk => w_rx_done.CLK
+i_clk => t_rx_data[0].CLK
+i_clk => t_rx_data[1].CLK
+i_clk => t_rx_data[2].CLK
+i_clk => t_rx_data[3].CLK
+i_clk => t_rx_data[4].CLK
+i_clk => t_rx_data[5].CLK
+i_clk => t_rx_data[6].CLK
+i_clk => t_rx_data[7].CLK
+i_clk => index[0].CLK
+i_clk => index[1].CLK
+i_clk => index[2].CLK
+i_clk => index[3].CLK
+i_clk => count[0].CLK
+i_clk => count[1].CLK
+i_clk => count[2].CLK
+i_clk => count[3].CLK
+i_clk => count[4].CLK
+i_clk => w_input_next.CLK
+i_clk => state~1.DATAIN
+i_rst_n => index[0].ACLR
+i_rst_n => index[1].ACLR
+i_rst_n => index[2].ACLR
+i_rst_n => index[3].ACLR
+i_rst_n => count[0].ACLR
+i_rst_n => count[1].ACLR
+i_rst_n => count[2].ACLR
+i_rst_n => count[3].ACLR
+i_rst_n => count[4].ACLR
+i_rst_n => w_rx_done.ACLR
+i_rst_n => w_input_next.ACLR
+i_rst_n => t_rx_data[0].ACLR
+i_rst_n => t_rx_data[1].ACLR
+i_rst_n => t_rx_data[2].ACLR
+i_rst_n => t_rx_data[3].ACLR
+i_rst_n => t_rx_data[4].ACLR
+i_rst_n => t_rx_data[5].ACLR
+i_rst_n => t_rx_data[6].ACLR
+i_rst_n => t_rx_data[7].ACLR
+i_rst_n => state~3.DATAIN
+i_stick => n_state.IN1
+i_stick => n_count.OUTPUTSELECT
+i_stick => n_count.OUTPUTSELECT
+i_stick => n_count.OUTPUTSELECT
+i_stick => n_count.OUTPUTSELECT
+i_stick => n_count.OUTPUTSELECT
+i_rx_en => w_update_idle.IN0
+i_fifo_full => w_update_idle.IN1
+i_rx_serial => w_idata.DATAB
+i_valid => w_idata.OUTPUTSELECT
+o_rx_data[0] <= o_rx_data[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+o_rx_data[1] <= o_rx_data[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+o_rx_data[2] <= o_rx_data[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+o_rx_data[3] <= o_rx_data[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+o_rx_data[4] <= o_rx_data[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+o_rx_data[5] <= o_rx_data[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+o_rx_data[6] <= o_rx_data[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+o_rx_data[7] <= o_rx_data[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+o_rx_done <= w_rx_done.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Wrapper|Testcase2:comb_3|Hex_to_7seg:HEX_0_unit
+i_en_hex => o_HEX.OUTPUTSELECT
+i_en_hex => o_HEX.OUTPUTSELECT
+i_en_hex => o_HEX.OUTPUTSELECT
+i_en_hex => o_HEX.OUTPUTSELECT
+i_en_hex => o_HEX.OUTPUTSELECT
+i_en_hex => o_HEX.OUTPUTSELECT
+i_en_hex => o_HEX.OUTPUTSELECT
+i_data[0] => Decoder0.IN3
+i_data[1] => Decoder0.IN2
+i_data[2] => Decoder0.IN1
+i_data[3] => Decoder0.IN0
+o_HEX[0] <= o_HEX.DB_MAX_OUTPUT_PORT_TYPE
+o_HEX[1] <= o_HEX.DB_MAX_OUTPUT_PORT_TYPE
+o_HEX[2] <= o_HEX.DB_MAX_OUTPUT_PORT_TYPE
+o_HEX[3] <= o_HEX.DB_MAX_OUTPUT_PORT_TYPE
+o_HEX[4] <= o_HEX.DB_MAX_OUTPUT_PORT_TYPE
+o_HEX[5] <= o_HEX.DB_MAX_OUTPUT_PORT_TYPE
+o_HEX[6] <= o_HEX.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Wrapper|Testcase2:comb_3|Hex_to_7seg:HEX_1_unit
+i_en_hex => o_HEX.OUTPUTSELECT
+i_en_hex => o_HEX.OUTPUTSELECT
+i_en_hex => o_HEX.OUTPUTSELECT
+i_en_hex => o_HEX.OUTPUTSELECT
+i_en_hex => o_HEX.OUTPUTSELECT
+i_en_hex => o_HEX.OUTPUTSELECT
+i_en_hex => o_HEX.OUTPUTSELECT
+i_data[0] => Decoder0.IN3
+i_data[1] => Decoder0.IN2
+i_data[2] => Decoder0.IN1
+i_data[3] => Decoder0.IN0
+o_HEX[0] <= o_HEX.DB_MAX_OUTPUT_PORT_TYPE
+o_HEX[1] <= o_HEX.DB_MAX_OUTPUT_PORT_TYPE
+o_HEX[2] <= o_HEX.DB_MAX_OUTPUT_PORT_TYPE
+o_HEX[3] <= o_HEX.DB_MAX_OUTPUT_PORT_TYPE
+o_HEX[4] <= o_HEX.DB_MAX_OUTPUT_PORT_TYPE
+o_HEX[5] <= o_HEX.DB_MAX_OUTPUT_PORT_TYPE
+o_HEX[6] <= o_HEX.DB_MAX_OUTPUT_PORT_TYPE
+
+

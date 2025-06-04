@@ -8,9 +8,9 @@ module Transmitter #(
     input wire i_tx_en                      , // start signal
     input wire i_fifo_empty                 , // FIFO empty signal
     input wire [SIZE_DATA - 1 : 0] i_tx_data, // data to be transmitted parallel
-    output logic o_tx_serial                  , // serial data output 
-    output logic o_tx_done                   , // end signal
-    output logic o_valid                     
+    output reg o_tx_serial                  , // serial data output 
+    output wire o_tx_done                   , // end signal
+    output wire o_valid                     
 );
 
 localparam SIZE_STATUS = 3;
@@ -35,7 +35,7 @@ assign w_update_sample = (count == OVER_SAMPLE-1) ? 1'b1 : 1'b0;
 wire w_update_start;
 assign w_update_start = i_tx_en & ~i_fifo_empty; 
 
-always @(*) begin : proc_state
+always_comb begin : proc_state
     case(state) 
         IDLE: begin
             n_state = w_update_start ? START : IDLE;
@@ -81,6 +81,7 @@ reg w_valid;
 always_ff @( posedge i_clk or negedge i_rst_n ) begin : proc_tx_out
     if(~i_rst_n) begin
         o_tx_serial <= 1'b1; // idle state is HIGH
+        w_tx_done   <= 1'b0;
         w_valid     <= 1'b0;
     end else begin
         case(state)
@@ -107,15 +108,13 @@ always_ff @( posedge i_clk or negedge i_rst_n ) begin : proc_tx_out
         endcase
     end
 end
-logic w_update_tx_done;
-assign w_update_tx_done = (state & STOP_I) & (n_state & IDLE);
 always_ff @( posedge i_clk or negedge i_rst_n ) begin : proc_tx_done
     if(~i_rst_n) begin
         w_tx_done <= 1'b0;
     end else begin
         case(state)
             STOP_I: begin
-                w_tx_done <= (w_update_tx_done) ? 1'b1 : 1'b0; // stop bit I
+                w_tx_done <= ((state==STOP_I) && (n_state==IDLE)) ? 1'b1 : 1'b0; // stop bit I
             end
             default: begin
                 w_tx_done <= 1'b0;

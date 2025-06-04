@@ -34,7 +34,6 @@ baud_generator #(
 
 logic w_tx_data;
 logic w_tx_valid;
-logic w_tx_done;
 Transmitter #(
     .SIZE_DATA   (SIZE_DATA),
     .OVER_SAMPLE (OVER_SAMPLE)// oversampling
@@ -46,14 +45,14 @@ Transmitter #(
     .i_fifo_empty   (1'b0), // FIFO empty signal
     .i_tx_data      (i_data), // data to be transmitted parallel
     .o_tx_serial    (w_tx_data), // serial data output 
-    .o_tx_done      (w_tx_done), // end signal
+    .o_tx_done      (o_tx_done), // end signal
     .o_valid        (w_tx_valid)
 );
-assign o_tx_done = w_tx_done;
+
 logic [SIZE_OUT-1:0] w_conv_data;
 logic w_conv_valid;
 // logic w_reset_conv;
-// assign w_reset_conv = i_rst_n & ~w_tx_done;
+// assign w_reset_conv = i_rst_n & ~o_tx_done;
 Conv_block #(
     .SIZE_IN  (SIZE_IN  ),
     .SIZE_OUT (SIZE_OUT )
@@ -70,9 +69,7 @@ Conv_block #(
 logic [SIZE_IN-1:0] w_vd_data;
 logic w_vd_valid; 
 logic w_reset_vd;
-logic w_rx_done;
-assign o_rx_done = w_rx_done;
-assign w_reset_vd = i_rst_n & ~w_rx_done;
+assign w_reset_vd = i_rst_n & ~o_rx_done;
 Viterbi_decoding uut_VD(
     .i_clk          (i_clk),
     .i_rst_n        (w_reset_vd),
@@ -96,12 +93,12 @@ Receiver #(
     .i_valid        (w_vd_valid),
 
     .o_rx_data      (o_data), // data to be received parallel
-    .o_rx_done      (w_rx_done) // end signal
+    .o_rx_done      (o_rx_done) // end signal
 );
 
 logic [SIZE_DATA-1:0] w_odata_Rx;
 logic [SIZE_DATA-1:0] w_odata_Rx_next;
-assign w_odata_Rx = (w_rx_done) ? o_data : w_odata_Rx_next;
+assign w_odata_Rx = (o_rx_done) ? o_data : w_odata_Rx_next;
 always_ff @( posedge i_clk or negedge i_rst_n ) begin : output_Rx_HEX
     if(~i_rst_n)
         w_odata_Rx_next <= '0;
