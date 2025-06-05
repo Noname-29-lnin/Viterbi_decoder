@@ -105,7 +105,7 @@ localparam  [SIZE_STATE-1:0]    IDLE            = 0 ,
 // State INIT
 parameter SIZE_STEP = 9;
 logic [SIZE_STEP-1:0] init_step, ninit_step;
-assign ninit_step = init_step + 1;
+assign ninit_step = init_step + 1'b1;
 
 always @(*) begin : proc_next_state
     case (state)

@@ -1,5 +1,5 @@
 
-State Machine - |wrapper|IP_LCD_timer_counter:uut|state
+State Machine - |wrapper|Testcase_LCD:comb_3|IP_LCD_timer_counter:IP_LCD_timer_counter_uut|state
 Name state.INIT_DONE_WAIT state.INIT_DONE state.DONE_WAIT state.DONE state.DATA_WAIT state.DATA_SETUP state.CMD_WAIT state.CMD_SETUP state.SETCURSOR_WAIT state.SETCURSOR_SETUP state.INIT_STEP state.INIT_WAIT state.INIT_SETUP state.IDLE 
 state.IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 state.INIT_SETUP 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
@@ -15,3 +15,13 @@ state.DONE 0 0 0 1 0 0 0 0 0 0 0 0 0 1
 state.DONE_WAIT 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
 state.INIT_DONE 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
 state.INIT_DONE_WAIT 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |wrapper|Testcase_LCD:comb_3|LCD_control:LCD_control_uut|display
+Name display.DISPLAY_DONE display.DISPLAY_DATA display.DISPLAY_WAIT display.DISPLAY_STRING display.DISPLAY_IDLE display.DISPLAY_INIT display.DISPLAY_RESET 
+display.DISPLAY_RESET 0 0 0 0 0 0 0 
+display.DISPLAY_INIT 0 0 0 0 0 1 1 
+display.DISPLAY_IDLE 0 0 0 0 1 0 1 
+display.DISPLAY_STRING 0 0 0 1 0 0 1 
+display.DISPLAY_WAIT 0 0 1 0 0 0 1 
+display.DISPLAY_DATA 0 1 0 0 0 0 1 
+display.DISPLAY_DONE 1 0 0 0 0 0 1 

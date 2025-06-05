@@ -1,6 +1,6 @@
 Analysis & Synthesis report for wrapper
-Mon Jun 02 11:09:15 2025
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Thu Jun  5 13:36:37 2025
+Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
 ---------------------
@@ -13,206 +13,307 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |wrapper|IP_LCD_timer_counter:uut|state
-  9. Registers Removed During Synthesis
- 10. General Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Parameter Settings for User Entity Instance: IP_LCD_timer_counter:uut
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
- 15. Analysis & Synthesis Suppressed Messages
+  8. State Machine - |wrapper|Testcase_LCD:comb_3|IP_LCD_timer_counter:IP_LCD_timer_counter_uut|state
+  9. State Machine - |wrapper|Testcase_LCD:comb_3|LCD_control:LCD_control_uut|display
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Inverted Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Parameter Settings for User Entity Instance: Top-level Entity: |wrapper
+ 15. Parameter Settings for User Entity Instance: Testcase_LCD:comb_3
+ 16. Parameter Settings for User Entity Instance: Testcase_LCD:comb_3|PISO:PISO_unit
+ 17. Parameter Settings for User Entity Instance: Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Branch_metric_unit:BMU
+ 18. Parameter Settings for User Entity Instance: Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Path_metric_unit:PMU
+ 19. Parameter Settings for User Entity Instance: Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Survivor_path_memory_unit:SPMU|state_machine:u_state_machine|next_state_logic:NSL
+ 20. Parameter Settings for User Entity Instance: Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Survivor_path_memory_unit:SPMU|state_machine:u_state_machine|state_memory:SM
+ 21. Parameter Settings for User Entity Instance: Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Survivor_path_memory_unit:SPMU|state_machine:u_state_machine|output_logic:OL
+ 22. Parameter Settings for User Entity Instance: Testcase_LCD:comb_3|SIPO:SIPO_unit
+ 23. Parameter Settings for User Entity Instance: Testcase_LCD:comb_3|LCD_control:LCD_control_uut
+ 24. Parameter Settings for User Entity Instance: Testcase_LCD:comb_3|LCD_control:LCD_control_uut|HEX_TO_ASCII:hex_to_ascii_iconv_3
+ 25. Parameter Settings for User Entity Instance: Testcase_LCD:comb_3|LCD_control:LCD_control_uut|HEX_TO_ASCII:hex_to_ascii_iconv_2
+ 26. Parameter Settings for User Entity Instance: Testcase_LCD:comb_3|LCD_control:LCD_control_uut|HEX_TO_ASCII:hex_to_ascii_iconv_1
+ 27. Parameter Settings for User Entity Instance: Testcase_LCD:comb_3|LCD_control:LCD_control_uut|HEX_TO_ASCII:hex_to_ascii_iconv_0
+ 28. Parameter Settings for User Entity Instance: Testcase_LCD:comb_3|LCD_control:LCD_control_uut|HEX_TO_ASCII:hex_to_ascii_idata_1
+ 29. Parameter Settings for User Entity Instance: Testcase_LCD:comb_3|LCD_control:LCD_control_uut|HEX_TO_ASCII:hex_to_ascii_idata_0
+ 30. Parameter Settings for User Entity Instance: Testcase_LCD:comb_3|IP_LCD_timer_counter:IP_LCD_timer_counter_uut
+ 31. Port Connectivity Checks: "Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Branch_metric_unit:BMU|Hamming_distance:HD3"
+ 32. Port Connectivity Checks: "Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Branch_metric_unit:BMU|Hamming_distance:HD2"
+ 33. Port Connectivity Checks: "Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Branch_metric_unit:BMU|Hamming_distance:HD1"
+ 34. Port Connectivity Checks: "Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Branch_metric_unit:BMU|Hamming_distance:HD0|Full_adder:FA"
+ 35. Port Connectivity Checks: "Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Branch_metric_unit:BMU|Hamming_distance:HD0"
+ 36. Port Connectivity Checks: "Testcase_LCD:comb_3"
+ 37. Post-Synthesis Netlist Statistics for Top Partition
+ 38. Elapsed Time Per Partition
+ 39. Analysis & Synthesis Messages
+ 40. Analysis & Synthesis Suppressed Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2013 Altera Corporation
-Your use of Altera Corporation's design tools, logic functions 
-and other software and tools, and its AMPP partner logic 
+Copyright (C) 2024  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Altera Program License 
-Subscription Agreement, Altera MegaCore Function License 
-Agreement, or other applicable license agreement, including, 
-without limitation, that your use is for the sole purpose of 
-programming logic devices manufactured by Altera and sold by 
-Altera or its authorized distributors.  Please refer to the 
-applicable agreement for further details.
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 
 
 
-+--------------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                         ;
-+------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Jun 02 11:09:15 2025           ;
-; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
-; Revision Name                      ; wrapper                                         ;
-; Top-level Entity Name              ; wrapper                                         ;
-; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 155                                             ;
-;     Total combinational functions  ; 151                                             ;
-;     Dedicated logic registers      ; 74                                              ;
-; Total registers                    ; 74                                              ;
-; Total pins                         ; 61                                              ;
-; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0                                               ;
-; Embedded Multiplier 9-bit elements ; 0                                               ;
-; Total PLLs                         ; 0                                               ;
-+------------------------------------+-------------------------------------------------+
++------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                       ;
++-----------------------------------+------------------------------------------------+
+; Analysis & Synthesis Status       ; Successful - Thu Jun  5 13:36:37 2025          ;
+; Quartus Prime Version             ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
+; Revision Name                     ; wrapper                                        ;
+; Top-level Entity Name             ; wrapper                                        ;
+; Family                            ; Arria II GX                                    ;
+; Logic utilization                 ; N/A                                            ;
+;     Combinational ALUTs           ; 321                                            ;
+;     Memory ALUTs                  ; 0                                              ;
+;     Dedicated logic registers     ; 171                                            ;
+; Total registers                   ; 171                                            ;
+; Total pins                        ; 57                                             ;
+; Total virtual pins                ; 0                                              ;
+; Total block memory bits           ; 0                                              ;
+; DSP block 18-bit elements         ; 0                                              ;
+; Total GXB Receiver Channel PCS    ; 0                                              ;
+; Total GXB Receiver Channel PMA    ; 0                                              ;
+; Total GXB Transmitter Channel PCS ; 0                                              ;
+; Total GXB Transmitter Channel PMA ; 0                                              ;
+; Total PLLs                        ; 0                                              ;
+; Total DLLs                        ; 0                                              ;
++-----------------------------------+------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                        ;
-+----------------------------------------------------------------------------+--------------------+--------------------+
-; Option                                                                     ; Setting            ; Default Value      ;
-+----------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                     ; EP2C35F672C6       ;                    ;
-; Top-level entity name                                                      ; wrapper            ; wrapper            ;
-; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
-; Use smart compilation                                                      ; Off                ; Off                ;
-; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
-; Enable compact report table                                                ; Off                ; Off                ;
-; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
-; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
-; Preserve fewer node names                                                  ; On                 ; On                 ;
-; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
-; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
-; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
-; State Machine Processing                                                   ; Auto               ; Auto               ;
-; Safe State Machine                                                         ; Off                ; Off                ;
-; Extract Verilog State Machines                                             ; On                 ; On                 ;
-; Extract VHDL State Machines                                                ; On                 ; On                 ;
-; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
-; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
-; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
-; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
-; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
-; Parallel Synthesis                                                         ; On                 ; On                 ;
-; DSP Block Balancing                                                        ; Auto               ; Auto               ;
-; NOT Gate Push-Back                                                         ; On                 ; On                 ;
-; Power-Up Don't Care                                                        ; On                 ; On                 ;
-; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
-; Remove Duplicate Registers                                                 ; On                 ; On                 ;
-; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
-; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
-; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
-; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
-; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
-; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
-; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
-; Optimization Technique                                                     ; Balanced           ; Balanced           ;
-; Carry Chain Length                                                         ; 70                 ; 70                 ;
-; Auto Carry Chains                                                          ; On                 ; On                 ;
-; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
-; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
-; Auto ROM Replacement                                                       ; On                 ; On                 ;
-; Auto RAM Replacement                                                       ; On                 ; On                 ;
-; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
-; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
-; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
-; Strict RAM Replacement                                                     ; Off                ; Off                ;
-; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
-; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
-; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
-; Auto Resource Sharing                                                      ; Off                ; Off                ;
-; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
-; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
-; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
-; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
-; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
-; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
-; Report Parameter Settings                                                  ; On                 ; On                 ;
-; Report Source Assignments                                                  ; On                 ; On                 ;
-; Report Connectivity Checks                                                 ; On                 ; On                 ;
-; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
-; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
-; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
-; HDL message level                                                          ; Level2             ; Level2             ;
-; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
-; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
-; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
-; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
-; Clock MUX Protection                                                       ; On                 ; On                 ;
-; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
-; Block Design Naming                                                        ; Auto               ; Auto               ;
-; SDC constraint protection                                                  ; Off                ; Off                ;
-; Synthesis Effort                                                           ; Auto               ; Auto               ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
-; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
-; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
-; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
-; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
-; Synthesis Seed                                                             ; 1                  ; 1                  ;
-+----------------------------------------------------------------------------+--------------------+--------------------+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                                           ; wrapper            ; wrapper            ;
+; Family name                                                                     ; Arria II GX        ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                        ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                               ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
-+-------------------------------------+
-; Parallel Compilation                ;
-+----------------------------+--------+
-; Processors                 ; Number ;
-+----------------------------+--------+
-; Number detected on machine ; 8      ;
-; Maximum allowed            ; 1      ;
-+----------------------------+--------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
++----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                          ;
-+--------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path     ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                  ; Library ;
-+--------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------+---------+
-; ../../02_rtl/IP_LCD_timer_counter.sv ; yes             ; User SystemVerilog HDL File  ; C:/Document_forme/project_tiny/Viterbi_decoder/02_rtl/IP_LCD_timer_counter.sv ;         ;
-; wrapper.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Document_forme/project_tiny/Viterbi_decoder/04_imple/Testcase2/wrapper.sv  ;         ;
-+--------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                              ;
++-------------------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path          ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                 ; Library ;
++-------------------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------+---------+
+; ../../02_rtl/Viterbi_decoding.sv          ; yes             ; User SystemVerilog HDL File  ; /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Viterbi_decoding.sv          ;         ;
+; ../../02_rtl/ACS.sv                       ; yes             ; User SystemVerilog HDL File  ; /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/ACS.sv                       ;         ;
+; ../../02_rtl/Add_compare_select_unit.sv   ; yes             ; User SystemVerilog HDL File  ; /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Add_compare_select_unit.sv   ;         ;
+; ../../02_rtl/Add_unit.sv                  ; yes             ; User SystemVerilog HDL File  ; /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Add_unit.sv                  ;         ;
+; ../../02_rtl/Compare_unit.sv              ; yes             ; User SystemVerilog HDL File  ; /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Compare_unit.sv              ;         ;
+; ../../02_rtl/Branch_metric_unit.sv        ; yes             ; User SystemVerilog HDL File  ; /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Branch_metric_unit.sv        ;         ;
+; ../../02_rtl/Full_adder.sv                ; yes             ; User SystemVerilog HDL File  ; /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Full_adder.sv                ;         ;
+; ../../02_rtl/Hamming_distance.sv          ; yes             ; User SystemVerilog HDL File  ; /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Hamming_distance.sv          ;         ;
+; ../../02_rtl/Path_metric_unit.sv          ; yes             ; User SystemVerilog HDL File  ; /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Path_metric_unit.sv          ;         ;
+; ../../02_rtl/PISO.sv                      ; yes             ; User SystemVerilog HDL File  ; /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/PISO.sv                      ;         ;
+; ../../02_rtl/Survivor_path_memory_unit.sv ; yes             ; User SystemVerilog HDL File  ; /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Survivor_path_memory_unit.sv ;         ;
+; ../../02_rtl/SIPO.sv                      ; yes             ; User SystemVerilog HDL File  ; /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/SIPO.sv                      ;         ;
+; ../../02_rtl/HEX_TO_ASCII.sv              ; yes             ; User SystemVerilog HDL File  ; /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/HEX_TO_ASCII.sv              ;         ;
+; ../../02_rtl/Testcase_LCD.sv              ; yes             ; User SystemVerilog HDL File  ; /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Testcase_LCD.sv              ;         ;
+; ../../02_rtl/LCD_control.sv               ; yes             ; User SystemVerilog HDL File  ; /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/LCD_control.sv               ;         ;
+; ../../02_rtl/IP_LCD_timer_counter.sv      ; yes             ; User SystemVerilog HDL File  ; /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/IP_LCD_timer_counter.sv      ;         ;
+; wrapper.sv                                ; yes             ; User SystemVerilog HDL File  ; /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/04_imple/Testcase_LCD/wrapper.sv    ;         ;
++-------------------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary          ;
-+---------------------------------------------+--------+
-; Resource                                    ; Usage  ;
-+---------------------------------------------+--------+
-; Estimated Total logic elements              ; 155    ;
-;                                             ;        ;
-; Total combinational functions               ; 151    ;
-; Logic element usage by number of LUT inputs ;        ;
-;     -- 4 input functions                    ; 72     ;
-;     -- 3 input functions                    ; 32     ;
-;     -- <=2 input functions                  ; 47     ;
-;                                             ;        ;
-; Logic elements by mode                      ;        ;
-;     -- normal mode                          ; 112    ;
-;     -- arithmetic mode                      ; 39     ;
-;                                             ;        ;
-; Total registers                             ; 74     ;
-;     -- Dedicated logic registers            ; 74     ;
-;     -- I/O registers                        ; 0      ;
-;                                             ;        ;
-; I/O pins                                    ; 61     ;
-; Embedded Multiplier 9-bit elements          ; 0      ;
-; Maximum fan-out node                        ; SW[17] ;
-; Maximum fan-out                             ; 75     ;
-; Total fan-out                               ; 782    ;
-; Average fan-out                             ; 2.73   ;
-+---------------------------------------------+--------+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++-----------------------------------------------+--------------+
+; Resource                                      ; Usage        ;
++-----------------------------------------------+--------------+
+; Estimated ALUTs Used                          ; 321          ;
+;     -- Combinational ALUTs                    ; 321          ;
+;     -- Memory ALUTs                           ; 0            ;
+;     -- LUT_REGs                               ; 0            ;
+; Dedicated logic registers                     ; 171          ;
+;                                               ;              ;
+; Estimated ALUTs Unavailable                   ; 62           ;
+;     -- Due to unpartnered combinational logic ; 62           ;
+;     -- Due to Memory ALUTs                    ; 0            ;
+;                                               ;              ;
+; Total combinational functions                 ; 321          ;
+; Combinational ALUT usage by number of inputs  ;              ;
+;     -- 7 input functions                      ; 3            ;
+;     -- 6 input functions                      ; 65           ;
+;     -- 5 input functions                      ; 54           ;
+;     -- 4 input functions                      ; 87           ;
+;     -- <=3 input functions                    ; 112          ;
+;                                               ;              ;
+; Combinational ALUTs by mode                   ;              ;
+;     -- normal mode                            ; 269          ;
+;     -- extended LUT mode                      ; 3            ;
+;     -- arithmetic mode                        ; 49           ;
+;     -- shared arithmetic mode                 ; 0            ;
+;                                               ;              ;
+; Estimated ALUT/register pairs used            ; 391          ;
+;                                               ;              ;
+; Total registers                               ; 171          ;
+;     -- Dedicated logic registers              ; 171          ;
+;     -- I/O registers                          ; 0            ;
+;     -- LUT_REGs                               ; 0            ;
+;                                               ;              ;
+;                                               ;              ;
+; I/O pins                                      ; 57           ;
+;                                               ;              ;
+; DSP block 18-bit elements                     ; 0            ;
+;                                               ;              ;
+; Maximum fan-out node                          ; SW[17]~input ;
+; Maximum fan-out                               ; 172          ;
+; Total fan-out                                 ; 1972         ;
+; Average fan-out                               ; 3.25         ;
++-----------------------------------------------+--------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                          ;
-+-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------+--------------+
-; Compilation Hierarchy Node    ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name               ; Library Name ;
-+-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------+--------------+
-; |wrapper                      ; 151 (0)           ; 74 (0)       ; 0           ; 0            ; 0       ; 0         ; 61   ; 0            ; |wrapper                          ; work         ;
-;    |IP_LCD_timer_counter:uut| ; 151 (151)         ; 74 (74)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |wrapper|IP_LCD_timer_counter:uut ; work         ;
-+-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                 ;
++-------------------------------------------------------+---------------------+---------------------------+-------------------+--------------+---------+-----------+-----------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------------+--------------+
+; Compilation Hierarchy Node                            ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 12x12 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                     ; Entity Name               ; Library Name ;
++-------------------------------------------------------+---------------------+---------------------------+-------------------+--------------+---------+-----------+-----------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------------+--------------+
+; |wrapper                                              ; 321 (0)             ; 171 (0)                   ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 57   ; 0            ; |wrapper                                                                                                                                ; wrapper                   ; work         ;
+;    |Testcase_LCD:comb_3|                              ; 321 (0)             ; 171 (0)                   ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |wrapper|Testcase_LCD:comb_3                                                                                                            ; Testcase_LCD              ; work         ;
+;       |IP_LCD_timer_counter:IP_LCD_timer_counter_uut| ; 141 (141)           ; 74 (74)                   ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |wrapper|Testcase_LCD:comb_3|IP_LCD_timer_counter:IP_LCD_timer_counter_uut                                                              ; IP_LCD_timer_counter      ; work         ;
+;       |LCD_control:LCD_control_uut|                   ; 114 (88)            ; 47 (47)                   ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |wrapper|Testcase_LCD:comb_3|LCD_control:LCD_control_uut                                                                                ; LCD_control               ; work         ;
+;          |HEX_TO_ASCII:hex_to_ascii_iconv_0|          ; 5 (5)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |wrapper|Testcase_LCD:comb_3|LCD_control:LCD_control_uut|HEX_TO_ASCII:hex_to_ascii_iconv_0                                              ; HEX_TO_ASCII              ; work         ;
+;          |HEX_TO_ASCII:hex_to_ascii_iconv_1|          ; 4 (4)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |wrapper|Testcase_LCD:comb_3|LCD_control:LCD_control_uut|HEX_TO_ASCII:hex_to_ascii_iconv_1                                              ; HEX_TO_ASCII              ; work         ;
+;          |HEX_TO_ASCII:hex_to_ascii_iconv_2|          ; 5 (5)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |wrapper|Testcase_LCD:comb_3|LCD_control:LCD_control_uut|HEX_TO_ASCII:hex_to_ascii_iconv_2                                              ; HEX_TO_ASCII              ; work         ;
+;          |HEX_TO_ASCII:hex_to_ascii_iconv_3|          ; 5 (5)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |wrapper|Testcase_LCD:comb_3|LCD_control:LCD_control_uut|HEX_TO_ASCII:hex_to_ascii_iconv_3                                              ; HEX_TO_ASCII              ; work         ;
+;          |HEX_TO_ASCII:hex_to_ascii_idata_0|          ; 3 (3)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |wrapper|Testcase_LCD:comb_3|LCD_control:LCD_control_uut|HEX_TO_ASCII:hex_to_ascii_idata_0                                              ; HEX_TO_ASCII              ; work         ;
+;          |HEX_TO_ASCII:hex_to_ascii_idata_1|          ; 4 (4)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |wrapper|Testcase_LCD:comb_3|LCD_control:LCD_control_uut|HEX_TO_ASCII:hex_to_ascii_idata_1                                              ; HEX_TO_ASCII              ; work         ;
+;       |PISO:PISO_unit|                                ; 30 (30)             ; 24 (24)                   ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |wrapper|Testcase_LCD:comb_3|PISO:PISO_unit                                                                                             ; PISO                      ; work         ;
+;       |SIPO:SIPO_unit|                                ; 11 (11)             ; 16 (16)                   ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |wrapper|Testcase_LCD:comb_3|SIPO:SIPO_unit                                                                                             ; SIPO                      ; work         ;
+;       |Viterbi_decoding:VD_unit|                      ; 25 (0)              ; 10 (0)                    ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |wrapper|Testcase_LCD:comb_3|Viterbi_decoding:VD_unit                                                                                   ; Viterbi_decoding          ; work         ;
+;          |Add_compare_select_unit:ACSU|               ; 20 (0)              ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |wrapper|Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Add_compare_select_unit:ACSU                                                      ; Add_compare_select_unit   ; work         ;
+;             |ACS:ACS_0|                               ; 5 (4)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |wrapper|Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Add_compare_select_unit:ACSU|ACS:ACS_0                                            ; ACS                       ; work         ;
+;                |Add_unit:ADD1|                        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |wrapper|Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Add_compare_select_unit:ACSU|ACS:ACS_0|Add_unit:ADD1                              ; Add_unit                  ; work         ;
+;             |ACS:ACS_1|                               ; 6 (4)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |wrapper|Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Add_compare_select_unit:ACSU|ACS:ACS_1                                            ; ACS                       ; work         ;
+;                |Add_unit:ADD1|                        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |wrapper|Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Add_compare_select_unit:ACSU|ACS:ACS_1|Add_unit:ADD1                              ; Add_unit                  ; work         ;
+;             |ACS:ACS_2|                               ; 4 (3)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |wrapper|Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Add_compare_select_unit:ACSU|ACS:ACS_2                                            ; ACS                       ; work         ;
+;                |Add_unit:ADD1|                        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |wrapper|Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Add_compare_select_unit:ACSU|ACS:ACS_2|Add_unit:ADD1                              ; Add_unit                  ; work         ;
+;             |ACS:ACS_3|                               ; 5 (4)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |wrapper|Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Add_compare_select_unit:ACSU|ACS:ACS_3                                            ; ACS                       ; work         ;
+;                |Add_unit:ADD1|                        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |wrapper|Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Add_compare_select_unit:ACSU|ACS:ACS_3|Add_unit:ADD1                              ; Add_unit                  ; work         ;
+;          |Branch_metric_unit:BMU|                     ; 1 (0)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |wrapper|Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Branch_metric_unit:BMU                                                            ; Branch_metric_unit        ; work         ;
+;             |Hamming_distance:HD3|                    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |wrapper|Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Branch_metric_unit:BMU|Hamming_distance:HD3                                       ; Hamming_distance          ; work         ;
+;                |Full_adder:FA|                        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |wrapper|Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Branch_metric_unit:BMU|Hamming_distance:HD3|Full_adder:FA                         ; Full_adder                ; work         ;
+;          |Path_metric_unit:PMU|                       ; 0 (0)               ; 8 (8)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |wrapper|Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Path_metric_unit:PMU                                                              ; Path_metric_unit          ; work         ;
+;          |Survivor_path_memory_unit:SPMU|             ; 4 (0)               ; 2 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |wrapper|Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Survivor_path_memory_unit:SPMU                                                    ; Survivor_path_memory_unit ; work         ;
+;             |state_machine:u_state_machine|           ; 4 (0)               ; 2 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |wrapper|Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Survivor_path_memory_unit:SPMU|state_machine:u_state_machine                      ; state_machine             ; work         ;
+;                |next_state_logic:NSL|                 ; 4 (4)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |wrapper|Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Survivor_path_memory_unit:SPMU|state_machine:u_state_machine|next_state_logic:NSL ; next_state_logic          ; work         ;
+;                |state_memory:SM|                      ; 0 (0)               ; 2 (2)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |wrapper|Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Survivor_path_memory_unit:SPMU|state_machine:u_state_machine|state_memory:SM      ; state_memory              ; work         ;
++-------------------------------------------------------+---------------------+---------------------------+-------------------+--------------+---------+-----------+-----------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------+---------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
 Encoding Type:  One-Hot
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |wrapper|IP_LCD_timer_counter:uut|state                                                                                                                                                                                                                                  ;
+; State Machine - |wrapper|Testcase_LCD:comb_3|IP_LCD_timer_counter:IP_LCD_timer_counter_uut|state                                                                                                                                                                                         ;
 +-----------------------+----------------------+-----------------+-----------------+------------+-----------------+------------------+----------------+-----------------+----------------------+-----------------------+-----------------+-----------------+------------------+------------+
 ; Name                  ; state.INIT_DONE_WAIT ; state.INIT_DONE ; state.DONE_WAIT ; state.DONE ; state.DATA_WAIT ; state.DATA_SETUP ; state.CMD_WAIT ; state.CMD_SETUP ; state.SETCURSOR_WAIT ; state.SETCURSOR_SETUP ; state.INIT_STEP ; state.INIT_WAIT ; state.INIT_SETUP ; state.IDLE ;
 +-----------------------+----------------------+-----------------+-----------------+------------+-----------------+------------------+----------------+-----------------+----------------------+-----------------------+-----------------+-----------------+------------------+------------+
@@ -233,47 +334,68 @@ Encoding Type:  One-Hot
 +-----------------------+----------------------+-----------------+-----------------+------------+-----------------+------------------+----------------+-----------------+----------------------+-----------------------+-----------------+-----------------+------------------+------------+
 
 
-+------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                 ;
-+-------------------------------------------+----------------------------------------+
-; Register name                             ; Reason for Removal                     ;
-+-------------------------------------------+----------------------------------------+
-; IP_LCD_timer_counter:uut|o_LCD_RW         ; Stuck at GND due to stuck port data_in ;
-; IP_LCD_timer_counter:uut|state~4          ; Lost fanout                            ;
-; IP_LCD_timer_counter:uut|state~5          ; Lost fanout                            ;
-; IP_LCD_timer_counter:uut|state~6          ; Lost fanout                            ;
-; IP_LCD_timer_counter:uut|state~7          ; Lost fanout                            ;
-; IP_LCD_timer_counter:uut|state~8          ; Lost fanout                            ;
-; IP_LCD_timer_counter:uut|state~9          ; Lost fanout                            ;
-; IP_LCD_timer_counter:uut|state~10         ; Lost fanout                            ;
-; IP_LCD_timer_counter:uut|state~11         ; Lost fanout                            ;
-; IP_LCD_timer_counter:uut|state~12         ; Lost fanout                            ;
-; IP_LCD_timer_counter:uut|state~13         ; Lost fanout                            ;
-; IP_LCD_timer_counter:uut|state~14         ; Lost fanout                            ;
-; IP_LCD_timer_counter:uut|state~15         ; Lost fanout                            ;
-; IP_LCD_timer_counter:uut|state~16         ; Lost fanout                            ;
-; IP_LCD_timer_counter:uut|state~17         ; Lost fanout                            ;
-; IP_LCD_timer_counter:uut|state~18         ; Lost fanout                            ;
-; IP_LCD_timer_counter:uut|state~19         ; Lost fanout                            ;
-; IP_LCD_timer_counter:uut|state~20         ; Lost fanout                            ;
-; IP_LCD_timer_counter:uut|state~21         ; Lost fanout                            ;
-; IP_LCD_timer_counter:uut|state~22         ; Lost fanout                            ;
-; IP_LCD_timer_counter:uut|state~23         ; Lost fanout                            ;
-; IP_LCD_timer_counter:uut|state~24         ; Lost fanout                            ;
-; IP_LCD_timer_counter:uut|state~25         ; Lost fanout                            ;
-; IP_LCD_timer_counter:uut|state~26         ; Lost fanout                            ;
-; IP_LCD_timer_counter:uut|state~27         ; Lost fanout                            ;
-; IP_LCD_timer_counter:uut|state~28         ; Lost fanout                            ;
-; IP_LCD_timer_counter:uut|state~29         ; Lost fanout                            ;
-; IP_LCD_timer_counter:uut|state~30         ; Lost fanout                            ;
-; IP_LCD_timer_counter:uut|state~31         ; Lost fanout                            ;
-; IP_LCD_timer_counter:uut|state~32         ; Lost fanout                            ;
-; IP_LCD_timer_counter:uut|state~33         ; Lost fanout                            ;
-; IP_LCD_timer_counter:uut|state~34         ; Lost fanout                            ;
-; IP_LCD_timer_counter:uut|state~35         ; Lost fanout                            ;
-; IP_LCD_timer_counter:uut|w_func_next[0,1] ; Lost fanout                            ;
-; Total Number of Removed Registers = 35    ;                                        ;
-+-------------------------------------------+----------------------------------------+
+Encoding Type:  One-Hot
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |wrapper|Testcase_LCD:comb_3|LCD_control:LCD_control_uut|display                                                                                                           ;
++------------------------+----------------------+----------------------+----------------------+------------------------+----------------------+----------------------+-----------------------+
+; Name                   ; display.DISPLAY_DONE ; display.DISPLAY_DATA ; display.DISPLAY_WAIT ; display.DISPLAY_STRING ; display.DISPLAY_IDLE ; display.DISPLAY_INIT ; display.DISPLAY_RESET ;
++------------------------+----------------------+----------------------+----------------------+------------------------+----------------------+----------------------+-----------------------+
+; display.DISPLAY_RESET  ; 0                    ; 0                    ; 0                    ; 0                      ; 0                    ; 0                    ; 0                     ;
+; display.DISPLAY_INIT   ; 0                    ; 0                    ; 0                    ; 0                      ; 0                    ; 1                    ; 1                     ;
+; display.DISPLAY_IDLE   ; 0                    ; 0                    ; 0                    ; 0                      ; 1                    ; 0                    ; 1                     ;
+; display.DISPLAY_STRING ; 0                    ; 0                    ; 0                    ; 1                      ; 0                    ; 0                    ; 1                     ;
+; display.DISPLAY_WAIT   ; 0                    ; 0                    ; 1                    ; 0                      ; 0                    ; 0                    ; 1                     ;
+; display.DISPLAY_DATA   ; 0                    ; 1                    ; 0                    ; 0                      ; 0                    ; 0                    ; 1                     ;
+; display.DISPLAY_DONE   ; 1                    ; 0                    ; 0                    ; 0                      ; 0                    ; 0                    ; 1                     ;
++------------------------+----------------------+----------------------+----------------------+------------------------+----------------------+----------------------+-----------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                                                 ;
++-------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+
+; Register name                                                                                                                             ; Reason for Removal                     ;
++-------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+
+; Testcase_LCD:comb_3|IP_LCD_timer_counter:IP_LCD_timer_counter_uut|o_LCD_RW                                                                ; Stuck at GND due to stuck port data_in ;
+; Testcase_LCD:comb_3|SIPO:SIPO_unit|w_odata_next[0..7]                                                                                     ; Lost fanout                            ;
+; Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Survivor_path_memory_unit:SPMU|state_machine:u_state_machine|state_memory:SM|o_curr_state[0] ; Lost fanout                            ;
+; Testcase_LCD:comb_3|IP_LCD_timer_counter:IP_LCD_timer_counter_uut|state~4                                                                 ; Lost fanout                            ;
+; Testcase_LCD:comb_3|IP_LCD_timer_counter:IP_LCD_timer_counter_uut|state~5                                                                 ; Lost fanout                            ;
+; Testcase_LCD:comb_3|IP_LCD_timer_counter:IP_LCD_timer_counter_uut|state~6                                                                 ; Lost fanout                            ;
+; Testcase_LCD:comb_3|IP_LCD_timer_counter:IP_LCD_timer_counter_uut|state~7                                                                 ; Lost fanout                            ;
+; Testcase_LCD:comb_3|IP_LCD_timer_counter:IP_LCD_timer_counter_uut|state~8                                                                 ; Lost fanout                            ;
+; Testcase_LCD:comb_3|IP_LCD_timer_counter:IP_LCD_timer_counter_uut|state~9                                                                 ; Lost fanout                            ;
+; Testcase_LCD:comb_3|IP_LCD_timer_counter:IP_LCD_timer_counter_uut|state~10                                                                ; Lost fanout                            ;
+; Testcase_LCD:comb_3|IP_LCD_timer_counter:IP_LCD_timer_counter_uut|state~11                                                                ; Lost fanout                            ;
+; Testcase_LCD:comb_3|IP_LCD_timer_counter:IP_LCD_timer_counter_uut|state~12                                                                ; Lost fanout                            ;
+; Testcase_LCD:comb_3|IP_LCD_timer_counter:IP_LCD_timer_counter_uut|state~13                                                                ; Lost fanout                            ;
+; Testcase_LCD:comb_3|IP_LCD_timer_counter:IP_LCD_timer_counter_uut|state~14                                                                ; Lost fanout                            ;
+; Testcase_LCD:comb_3|IP_LCD_timer_counter:IP_LCD_timer_counter_uut|state~15                                                                ; Lost fanout                            ;
+; Testcase_LCD:comb_3|IP_LCD_timer_counter:IP_LCD_timer_counter_uut|state~16                                                                ; Lost fanout                            ;
+; Testcase_LCD:comb_3|IP_LCD_timer_counter:IP_LCD_timer_counter_uut|state~17                                                                ; Lost fanout                            ;
+; Testcase_LCD:comb_3|IP_LCD_timer_counter:IP_LCD_timer_counter_uut|state~18                                                                ; Lost fanout                            ;
+; Testcase_LCD:comb_3|IP_LCD_timer_counter:IP_LCD_timer_counter_uut|state~19                                                                ; Lost fanout                            ;
+; Testcase_LCD:comb_3|IP_LCD_timer_counter:IP_LCD_timer_counter_uut|state~20                                                                ; Lost fanout                            ;
+; Testcase_LCD:comb_3|IP_LCD_timer_counter:IP_LCD_timer_counter_uut|state~21                                                                ; Lost fanout                            ;
+; Testcase_LCD:comb_3|IP_LCD_timer_counter:IP_LCD_timer_counter_uut|state~22                                                                ; Lost fanout                            ;
+; Testcase_LCD:comb_3|IP_LCD_timer_counter:IP_LCD_timer_counter_uut|state~23                                                                ; Lost fanout                            ;
+; Testcase_LCD:comb_3|IP_LCD_timer_counter:IP_LCD_timer_counter_uut|state~24                                                                ; Lost fanout                            ;
+; Testcase_LCD:comb_3|IP_LCD_timer_counter:IP_LCD_timer_counter_uut|state~25                                                                ; Lost fanout                            ;
+; Testcase_LCD:comb_3|IP_LCD_timer_counter:IP_LCD_timer_counter_uut|state~26                                                                ; Lost fanout                            ;
+; Testcase_LCD:comb_3|IP_LCD_timer_counter:IP_LCD_timer_counter_uut|state~27                                                                ; Lost fanout                            ;
+; Testcase_LCD:comb_3|IP_LCD_timer_counter:IP_LCD_timer_counter_uut|state~28                                                                ; Lost fanout                            ;
+; Testcase_LCD:comb_3|IP_LCD_timer_counter:IP_LCD_timer_counter_uut|state~29                                                                ; Lost fanout                            ;
+; Testcase_LCD:comb_3|IP_LCD_timer_counter:IP_LCD_timer_counter_uut|state~30                                                                ; Lost fanout                            ;
+; Testcase_LCD:comb_3|IP_LCD_timer_counter:IP_LCD_timer_counter_uut|state~31                                                                ; Lost fanout                            ;
+; Testcase_LCD:comb_3|IP_LCD_timer_counter:IP_LCD_timer_counter_uut|state~32                                                                ; Lost fanout                            ;
+; Testcase_LCD:comb_3|IP_LCD_timer_counter:IP_LCD_timer_counter_uut|state~33                                                                ; Lost fanout                            ;
+; Testcase_LCD:comb_3|IP_LCD_timer_counter:IP_LCD_timer_counter_uut|state~34                                                                ; Lost fanout                            ;
+; Testcase_LCD:comb_3|IP_LCD_timer_counter:IP_LCD_timer_counter_uut|state~35                                                                ; Lost fanout                            ;
+; Testcase_LCD:comb_3|LCD_control:LCD_control_uut|display~4                                                                                 ; Lost fanout                            ;
+; Testcase_LCD:comb_3|LCD_control:LCD_control_uut|display~5                                                                                 ; Lost fanout                            ;
+; Testcase_LCD:comb_3|LCD_control:LCD_control_uut|display~6                                                                                 ; Lost fanout                            ;
+; Testcase_LCD:comb_3|IP_LCD_timer_counter:IP_LCD_timer_counter_uut|w_func_next[0,1]                                                        ; Lost fanout                            ;
+; Total Number of Removed Registers = 47                                                                                                    ;                                        ;
++-------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -281,36 +403,329 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 74    ;
-; Number of registers using Synchronous Clear  ; 36    ;
-; Number of registers using Synchronous Load   ; 4     ;
-; Number of registers using Asynchronous Clear ; 74    ;
+; Total registers                              ; 171   ;
+; Number of registers using Synchronous Clear  ; 40    ;
+; Number of registers using Synchronous Load   ; 1     ;
+; Number of registers using Asynchronous Clear ; 171   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 6     ;
+; Number of registers using Clock Enable       ; 37    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |wrapper|IP_LCD_timer_counter:uut|o_LCD_DATA[4] ;
-; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |wrapper|IP_LCD_timer_counter:uut|o_LCD_DATA[0] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
++---------------------------------------------------------------------------------------+
+; Inverted Register Statistics                                                          ;
++-----------------------------------------------------------------------------+---------+
+; Inverted Register                                                           ; Fan out ;
++-----------------------------------------------------------------------------+---------+
+; Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Path_metric_unit:PMU|o_PM_1[1] ; 5       ;
+; Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Path_metric_unit:PMU|o_PM_1[0] ; 4       ;
+; Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Path_metric_unit:PMU|o_PM_2[1] ; 6       ;
+; Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Path_metric_unit:PMU|o_PM_2[0] ; 5       ;
+; Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Path_metric_unit:PMU|o_PM_3[1] ; 6       ;
+; Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Path_metric_unit:PMU|o_PM_3[0] ; 5       ;
+; Total number of inverted registers = 6                                      ;         ;
++-----------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: IP_LCD_timer_counter:uut ;
-+----------------+----------+-------------------------------------------+
-; Parameter Name ; Value    ; Type                                      ;
-+----------------+----------+-------------------------------------------+
-; SIZE_DATA      ; 8        ; Signed Integer                            ;
-; SIZE_FUNC      ; 2        ; Signed Integer                            ;
-; FREQ           ; 50000000 ; Signed Integer                            ;
-+----------------+----------+-------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------+
+; 8:1                ; 2 bits    ; 10 ALUTs      ; 10 ALUTs             ; 0 ALUTs                ; Yes        ; |wrapper|Testcase_LCD:comb_3|PISO:PISO_unit|w_output[1]                                  ;
+; 4:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; Yes        ; |wrapper|Testcase_LCD:comb_3|LCD_control:LCD_control_uut|o_data[5]                       ;
+; 5:1                ; 4 bits    ; 12 ALUTs      ; 4 ALUTs              ; 8 ALUTs                ; Yes        ; |wrapper|Testcase_LCD:comb_3|LCD_control:LCD_control_uut|char_counter[0]                 ;
+; 4:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; Yes        ; |wrapper|Testcase_LCD:comb_3|IP_LCD_timer_counter:IP_LCD_timer_counter_uut|o_LCD_DATA[5] ;
+; 6:1                ; 4 bits    ; 16 ALUTs      ; 8 ALUTs              ; 8 ALUTs                ; Yes        ; |wrapper|Testcase_LCD:comb_3|IP_LCD_timer_counter:IP_LCD_timer_counter_uut|o_LCD_DATA[3] ;
+; 19:1               ; 4 bits    ; 48 ALUTs      ; 44 ALUTs             ; 4 ALUTs                ; Yes        ; |wrapper|Testcase_LCD:comb_3|LCD_control:LCD_control_uut|o_data[0]                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |wrapper ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; SIZE_DATA_IN   ; 16    ; Signed Integer                                 ;
+; SIZE_DATA_OUT  ; 8     ; Signed Integer                                 ;
+; SIZE_PISO      ; 2     ; Signed Integer                                 ;
+; SIZE_SIPO      ; 1     ; Signed Integer                                 ;
+; SIZE_DATA      ; 8     ; Signed Integer                                 ;
+; SIZE_FUNC      ; 2     ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Testcase_LCD:comb_3 ;
++----------------+-------+-----------------------------------------+
+; Parameter Name ; Value ; Type                                    ;
++----------------+-------+-----------------------------------------+
+; SIZE_DATA_IN   ; 16    ; Signed Integer                          ;
+; SIZE_DATA_OUT  ; 8     ; Signed Integer                          ;
+; SIZE_PISO      ; 2     ; Signed Integer                          ;
+; SIZE_SIPO      ; 1     ; Signed Integer                          ;
+; SIZE_DATA      ; 8     ; Signed Integer                          ;
+; SIZE_FUNC      ; 2     ; Signed Integer                          ;
++----------------+-------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Testcase_LCD:comb_3|PISO:PISO_unit ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; SIZE_DATA_IN   ; 16    ; Signed Integer                                         ;
+; SIZE_DATA_OUT  ; 2     ; Signed Integer                                         ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Branch_metric_unit:BMU ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; SIZE_DATA      ; 2     ; Signed Integer                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Path_metric_unit:PMU ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; SIZE_DATA      ; 2     ; Signed Integer                                                                        ;
++----------------+-------+---------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Survivor_path_memory_unit:SPMU|state_machine:u_state_machine|next_state_logic:NSL ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; S0             ; 00    ; Unsigned Binary                                                                                                                                    ;
+; S1             ; 01    ; Unsigned Binary                                                                                                                                    ;
+; S2             ; 10    ; Unsigned Binary                                                                                                                                    ;
+; S3             ; 11    ; Unsigned Binary                                                                                                                                    ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Survivor_path_memory_unit:SPMU|state_machine:u_state_machine|state_memory:SM ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; S0             ; 00    ; Unsigned Binary                                                                                                                               ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Survivor_path_memory_unit:SPMU|state_machine:u_state_machine|output_logic:OL ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; S0             ; 00    ; Unsigned Binary                                                                                                                               ;
+; S1             ; 01    ; Unsigned Binary                                                                                                                               ;
+; S2             ; 10    ; Unsigned Binary                                                                                                                               ;
+; S3             ; 11    ; Unsigned Binary                                                                                                                               ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Testcase_LCD:comb_3|SIPO:SIPO_unit ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; SIZE_DATA_IN   ; 1     ; Signed Integer                                         ;
+; SIZE_DATA_OUT  ; 8     ; Signed Integer                                         ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Testcase_LCD:comb_3|LCD_control:LCD_control_uut ;
++----------------+-------+---------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                ;
++----------------+-------+---------------------------------------------------------------------+
+; SIZE_CONV      ; 16    ; Signed Integer                                                      ;
+; SIZE_DATA      ; 8     ; Signed Integer                                                      ;
+; SIZE_FUNC      ; 2     ; Signed Integer                                                      ;
++----------------+-------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Testcase_LCD:comb_3|LCD_control:LCD_control_uut|HEX_TO_ASCII:hex_to_ascii_iconv_3 ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; SIZE_DATA_IN   ; 4     ; Signed Integer                                                                                        ;
+; SIZE_DATA_OUT  ; 8     ; Signed Integer                                                                                        ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Testcase_LCD:comb_3|LCD_control:LCD_control_uut|HEX_TO_ASCII:hex_to_ascii_iconv_2 ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; SIZE_DATA_IN   ; 4     ; Signed Integer                                                                                        ;
+; SIZE_DATA_OUT  ; 8     ; Signed Integer                                                                                        ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Testcase_LCD:comb_3|LCD_control:LCD_control_uut|HEX_TO_ASCII:hex_to_ascii_iconv_1 ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; SIZE_DATA_IN   ; 4     ; Signed Integer                                                                                        ;
+; SIZE_DATA_OUT  ; 8     ; Signed Integer                                                                                        ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Testcase_LCD:comb_3|LCD_control:LCD_control_uut|HEX_TO_ASCII:hex_to_ascii_iconv_0 ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; SIZE_DATA_IN   ; 4     ; Signed Integer                                                                                        ;
+; SIZE_DATA_OUT  ; 8     ; Signed Integer                                                                                        ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Testcase_LCD:comb_3|LCD_control:LCD_control_uut|HEX_TO_ASCII:hex_to_ascii_idata_1 ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; SIZE_DATA_IN   ; 4     ; Signed Integer                                                                                        ;
+; SIZE_DATA_OUT  ; 8     ; Signed Integer                                                                                        ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Testcase_LCD:comb_3|LCD_control:LCD_control_uut|HEX_TO_ASCII:hex_to_ascii_idata_0 ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; SIZE_DATA_IN   ; 4     ; Signed Integer                                                                                        ;
+; SIZE_DATA_OUT  ; 8     ; Signed Integer                                                                                        ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Testcase_LCD:comb_3|IP_LCD_timer_counter:IP_LCD_timer_counter_uut ;
++----------------+----------+------------------------------------------------------------------------------------+
+; Parameter Name ; Value    ; Type                                                                               ;
++----------------+----------+------------------------------------------------------------------------------------+
+; SIZE_DATA      ; 8        ; Signed Integer                                                                     ;
+; SIZE_FUNC      ; 2        ; Signed Integer                                                                     ;
+; FREQ           ; 50000000 ; Signed Integer                                                                     ;
++----------------+----------+------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Branch_metric_unit:BMU|Hamming_distance:HD3" ;
++------------+-------+----------+--------------------------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                                              ;
++------------+-------+----------+--------------------------------------------------------------------------------------+
+; i_exp_code ; Input ; Info     ; Stuck at VCC                                                                         ;
++------------+-------+----------+--------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Branch_metric_unit:BMU|Hamming_distance:HD2" ;
++---------------+-------+----------+-----------------------------------------------------------------------------------+
+; Port          ; Type  ; Severity ; Details                                                                           ;
++---------------+-------+----------+-----------------------------------------------------------------------------------+
+; i_exp_code[1] ; Input ; Info     ; Stuck at VCC                                                                      ;
+; i_exp_code[0] ; Input ; Info     ; Stuck at GND                                                                      ;
++---------------+-------+----------+-----------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Branch_metric_unit:BMU|Hamming_distance:HD1" ;
++---------------+-------+----------+-----------------------------------------------------------------------------------+
+; Port          ; Type  ; Severity ; Details                                                                           ;
++---------------+-------+----------+-----------------------------------------------------------------------------------+
+; i_exp_code[1] ; Input ; Info     ; Stuck at GND                                                                      ;
+; i_exp_code[0] ; Input ; Info     ; Stuck at VCC                                                                      ;
++---------------+-------+----------+-----------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Branch_metric_unit:BMU|Hamming_distance:HD0|Full_adder:FA" ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                  ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------+
+; i_c  ; Input ; Info     ; Stuck at GND                                                                                             ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Branch_metric_unit:BMU|Hamming_distance:HD0" ;
++------------+-------+----------+--------------------------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                                              ;
++------------+-------+----------+--------------------------------------------------------------------------------------+
+; i_exp_code ; Input ; Info     ; Stuck at GND                                                                         ;
++------------+-------+----------+--------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------+
+; Port Connectivity Checks: "Testcase_LCD:comb_3" ;
++------------+-------+----------+-----------------+
+; Port       ; Type  ; Severity ; Details         ;
++------------+-------+----------+-----------------+
+; i_en_LCD   ; Input ; Info     ; Stuck at VCC    ;
+; i_on_LCD   ; Input ; Info     ; Stuck at VCC    ;
+; i_blon_LCD ; Input ; Info     ; Stuck at VCC    ;
++------------+-------+----------+-----------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriaii_ff            ; 171                         ;
+;     CLR               ; 102                         ;
+;     CLR SCLR          ; 32                          ;
+;     ENA CLR           ; 28                          ;
+;     ENA CLR SCLR      ; 8                           ;
+;     ENA CLR SLD       ; 1                           ;
+; boundary_port         ; 57                          ;
+; stratixiv_lcell_comb  ; 323                         ;
+;     arith             ; 49                          ;
+;         1 data inputs ; 49                          ;
+;     extend            ; 3                           ;
+;         7 data inputs ; 3                           ;
+;     normal            ; 271                         ;
+;         0 data inputs ; 2                           ;
+;         2 data inputs ; 20                          ;
+;         3 data inputs ; 43                          ;
+;         4 data inputs ; 87                          ;
+;         5 data inputs ; 54                          ;
+;         6 data inputs ; 65                          ;
+;                       ;                             ;
+; Max LUT depth         ; 5.00                        ;
+; Average LUT depth     ; 3.35                        ;
++-----------------------+-----------------------------+
 
 
 +-------------------------------+
@@ -326,55 +741,115 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit Analysis & Synthesis
-    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Jun 02 11:09:13 2025
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+    Info: Processing started: Thu Jun  5 13:36:30 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off wrapper -c wrapper
-Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 1 design units, including 1 entities, in source file /document_forme/project_tiny/viterbi_decoder/02_rtl/ip_lcd_timer_counter.sv
-    Info (12023): Found entity 1: IP_LCD_timer_counter
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Viterbi_decoding.sv
+    Info (12023): Found entity 1: Viterbi_decoding File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Viterbi_decoding.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/ACS.sv
+    Info (12023): Found entity 1: ACS File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/ACS.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Add_compare_select_unit.sv
+    Info (12023): Found entity 1: Add_compare_select_unit File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Add_compare_select_unit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Add_unit.sv
+    Info (12023): Found entity 1: Add_unit File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Add_unit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Compare_unit.sv
+    Info (12023): Found entity 1: Compare_unit File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Compare_unit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Branch_metric_unit.sv
+    Info (12023): Found entity 1: Branch_metric_unit File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Branch_metric_unit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Full_adder.sv
+    Info (12023): Found entity 1: Full_adder File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Full_adder.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Hamming_distance.sv
+    Info (12023): Found entity 1: Hamming_distance File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Hamming_distance.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Path_metric_unit.sv
+    Info (12023): Found entity 1: Path_metric_unit File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Path_metric_unit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/PISO.sv
+    Info (12023): Found entity 1: PISO File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/PISO.sv Line: 1
+Info (12021): Found 5 design units, including 5 entities, in source file /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Survivor_path_memory_unit.sv
+    Info (12023): Found entity 1: Survivor_path_memory_unit File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Survivor_path_memory_unit.sv Line: 1
+    Info (12023): Found entity 2: state_machine File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Survivor_path_memory_unit.sv Line: 43
+    Info (12023): Found entity 3: next_state_logic File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Survivor_path_memory_unit.sv Line: 86
+    Info (12023): Found entity 4: state_memory File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Survivor_path_memory_unit.sv Line: 139
+    Info (12023): Found entity 5: output_logic File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Survivor_path_memory_unit.sv Line: 168
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/SIPO.sv
+    Info (12023): Found entity 1: SIPO File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/SIPO.sv Line: 185
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/HEX_TO_ASCII.sv
+    Info (12023): Found entity 1: HEX_TO_ASCII File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/HEX_TO_ASCII.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Testcase_LCD.sv
+    Info (12023): Found entity 1: Testcase_LCD File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Testcase_LCD.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/LCD_control.sv
+    Info (12023): Found entity 1: LCD_control File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/LCD_control.sv Line: 518
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/IP_LCD_timer_counter.sv
+    Info (12023): Found entity 1: IP_LCD_timer_counter File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/IP_LCD_timer_counter.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file wrapper.sv
-    Info (12023): Found entity 1: wrapper
-Warning (10222): Verilog HDL Parameter Declaration warning at IP_LCD_timer_counter.sv(24): Parameter Declaration in module "IP_LCD_timer_counter" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List
-Warning (10222): Verilog HDL Parameter Declaration warning at IP_LCD_timer_counter.sv(87): Parameter Declaration in module "IP_LCD_timer_counter" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List
-Warning (10222): Verilog HDL Parameter Declaration warning at IP_LCD_timer_counter.sv(105): Parameter Declaration in module "IP_LCD_timer_counter" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List
+    Info (12023): Found entity 1: wrapper File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/04_imple/Testcase_LCD/wrapper.sv Line: 1
+Warning (10222): Verilog HDL Parameter Declaration warning at PISO.sv(14): Parameter Declaration in module "PISO" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/PISO.sv Line: 14
+Warning (10222): Verilog HDL Parameter Declaration warning at PISO.sv(15): Parameter Declaration in module "PISO" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/PISO.sv Line: 15
+Warning (10222): Verilog HDL Parameter Declaration warning at SIPO.sv(196): Parameter Declaration in module "SIPO" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/SIPO.sv Line: 196
+Warning (10222): Verilog HDL Parameter Declaration warning at LCD_control.sv(568): Parameter Declaration in module "LCD_control" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/LCD_control.sv Line: 568
+Warning (10222): Verilog HDL Parameter Declaration warning at IP_LCD_timer_counter.sv(24): Parameter Declaration in module "IP_LCD_timer_counter" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/IP_LCD_timer_counter.sv Line: 24
+Warning (10222): Verilog HDL Parameter Declaration warning at IP_LCD_timer_counter.sv(88): Parameter Declaration in module "IP_LCD_timer_counter" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/IP_LCD_timer_counter.sv Line: 88
+Warning (10222): Verilog HDL Parameter Declaration warning at IP_LCD_timer_counter.sv(106): Parameter Declaration in module "IP_LCD_timer_counter" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/IP_LCD_timer_counter.sv Line: 106
+Critical Warning (10846): Verilog HDL Instantiation warning at wrapper.sv(77): instance has no name File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/04_imple/Testcase_LCD/wrapper.sv Line: 77
 Info (12127): Elaborating entity "wrapper" for the top level hierarchy
-Warning (10034): Output port "LEDG[5..4]" at wrapper.sv(6) has no driver
-Info (12128): Elaborating entity "IP_LCD_timer_counter" for hierarchy "IP_LCD_timer_counter:uut"
-Warning (10230): Verilog HDL assignment warning at IP_LCD_timer_counter.sv(107): truncated value with size 32 to match size of target (9)
-Info (10264): Verilog HDL Case Statement information at IP_LCD_timer_counter.sv(151): all case item expressions in this case statement are onehot
-Info (10264): Verilog HDL Case Statement information at IP_LCD_timer_counter.sv(182): all case item expressions in this case statement are onehot
-Info (10264): Verilog HDL Case Statement information at IP_LCD_timer_counter.sv(194): all case item expressions in this case statement are onehot
-Info (10264): Verilog HDL Case Statement information at IP_LCD_timer_counter.sv(208): all case item expressions in this case statement are onehot
-Info (10264): Verilog HDL Case Statement information at IP_LCD_timer_counter.sv(260): all case item expressions in this case statement are onehot
-Info (10264): Verilog HDL Case Statement information at IP_LCD_timer_counter.sv(282): all case item expressions in this case statement are onehot
+Warning (10034): Output port "LEDG[6..3]" at wrapper.sv(6) has no driver File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/04_imple/Testcase_LCD/wrapper.sv Line: 6
+Info (12128): Elaborating entity "Testcase_LCD" for hierarchy "Testcase_LCD:comb_3" File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/04_imple/Testcase_LCD/wrapper.sv Line: 77
+Info (12128): Elaborating entity "PISO" for hierarchy "Testcase_LCD:comb_3|PISO:PISO_unit" File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Testcase_LCD.sv Line: 45
+Info (12128): Elaborating entity "Viterbi_decoding" for hierarchy "Testcase_LCD:comb_3|Viterbi_decoding:VD_unit" File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Testcase_LCD.sv Line: 55
+Info (12128): Elaborating entity "Branch_metric_unit" for hierarchy "Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Branch_metric_unit:BMU" File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Viterbi_decoding.sv Line: 23
+Info (12128): Elaborating entity "Hamming_distance" for hierarchy "Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Branch_metric_unit:BMU|Hamming_distance:HD0" File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Branch_metric_unit.sv Line: 17
+Info (12128): Elaborating entity "Full_adder" for hierarchy "Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Branch_metric_unit:BMU|Hamming_distance:HD0|Full_adder:FA" File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Hamming_distance.sv Line: 18
+Info (12128): Elaborating entity "Path_metric_unit" for hierarchy "Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Path_metric_unit:PMU" File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Viterbi_decoding.sv Line: 39
+Info (12128): Elaborating entity "Add_compare_select_unit" for hierarchy "Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Add_compare_select_unit:ACSU" File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Viterbi_decoding.sv Line: 54
+Info (12128): Elaborating entity "ACS" for hierarchy "Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Add_compare_select_unit:ACSU|ACS:ACS_0" File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Add_compare_select_unit.sv Line: 24
+Info (12128): Elaborating entity "Add_unit" for hierarchy "Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Add_compare_select_unit:ACSU|ACS:ACS_0|Add_unit:ADD0" File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/ACS.sv Line: 17
+Info (12128): Elaborating entity "Compare_unit" for hierarchy "Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Add_compare_select_unit:ACSU|ACS:ACS_0|Compare_unit:CP" File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/ACS.sv Line: 28
+Info (12128): Elaborating entity "Survivor_path_memory_unit" for hierarchy "Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Survivor_path_memory_unit:SPMU" File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Viterbi_decoding.sv Line: 66
+Info (12128): Elaborating entity "state_machine" for hierarchy "Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Survivor_path_memory_unit:SPMU|state_machine:u_state_machine" File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Survivor_path_memory_unit.sv Line: 39
+Info (12128): Elaborating entity "next_state_logic" for hierarchy "Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Survivor_path_memory_unit:SPMU|state_machine:u_state_machine|next_state_logic:NSL" File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Survivor_path_memory_unit.sv Line: 67
+Info (12128): Elaborating entity "state_memory" for hierarchy "Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Survivor_path_memory_unit:SPMU|state_machine:u_state_machine|state_memory:SM" File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Survivor_path_memory_unit.sv Line: 76
+Info (12128): Elaborating entity "output_logic" for hierarchy "Testcase_LCD:comb_3|Viterbi_decoding:VD_unit|Survivor_path_memory_unit:SPMU|state_machine:u_state_machine|output_logic:OL" File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Survivor_path_memory_unit.sv Line: 82
+Info (12128): Elaborating entity "SIPO" for hierarchy "Testcase_LCD:comb_3|SIPO:SIPO_unit" File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Testcase_LCD.sv Line: 68
+Info (12128): Elaborating entity "LCD_control" for hierarchy "Testcase_LCD:comb_3|LCD_control:LCD_control_uut" File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Testcase_LCD.sv Line: 91
+Info (10264): Verilog HDL Case Statement information at LCD_control.sv(640): all case item expressions in this case statement are onehot File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/LCD_control.sv Line: 640
+Info (10264): Verilog HDL Case Statement information at LCD_control.sv(753): all case item expressions in this case statement are onehot File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/LCD_control.sv Line: 753
+Info (12128): Elaborating entity "HEX_TO_ASCII" for hierarchy "Testcase_LCD:comb_3|LCD_control:LCD_control_uut|HEX_TO_ASCII:hex_to_ascii_iconv_3" File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/LCD_control.sv Line: 594
+Info (12128): Elaborating entity "IP_LCD_timer_counter" for hierarchy "Testcase_LCD:comb_3|IP_LCD_timer_counter:IP_LCD_timer_counter_uut" File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/Testcase_LCD.sv Line: 115
+Info (10264): Verilog HDL Case Statement information at IP_LCD_timer_counter.sv(152): all case item expressions in this case statement are onehot File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/IP_LCD_timer_counter.sv Line: 152
+Info (10264): Verilog HDL Case Statement information at IP_LCD_timer_counter.sv(183): all case item expressions in this case statement are onehot File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/IP_LCD_timer_counter.sv Line: 183
+Info (10264): Verilog HDL Case Statement information at IP_LCD_timer_counter.sv(195): all case item expressions in this case statement are onehot File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/IP_LCD_timer_counter.sv Line: 195
+Info (10264): Verilog HDL Case Statement information at IP_LCD_timer_counter.sv(209): all case item expressions in this case statement are onehot File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/IP_LCD_timer_counter.sv Line: 209
+Info (10264): Verilog HDL Case Statement information at IP_LCD_timer_counter.sv(261): all case item expressions in this case statement are onehot File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/IP_LCD_timer_counter.sv Line: 261
+Info (10264): Verilog HDL Case Statement information at IP_LCD_timer_counter.sv(283): all case item expressions in this case statement are onehot File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/02_rtl/IP_LCD_timer_counter.sv Line: 283
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDG[3]" is stuck at GND
-    Warning (13410): Pin "LEDG[4]" is stuck at GND
-    Warning (13410): Pin "LEDG[5]" is stuck at GND
-    Warning (13410): Pin "LCD_RW" is stuck at GND
-Info (17049): 34 registers lost all their fanouts during netlist optimizations.
-Info (144001): Generated suppressed messages file C:/Document_forme/project_tiny/Viterbi_decoder/04_imple/Testcase2/output_files/wrapper.map.smsg
+    Warning (13410): Pin "LEDG[3]" is stuck at GND File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/04_imple/Testcase_LCD/wrapper.sv Line: 6
+    Warning (13410): Pin "LEDG[4]" is stuck at GND File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/04_imple/Testcase_LCD/wrapper.sv Line: 6
+    Warning (13410): Pin "LEDG[5]" is stuck at GND File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/04_imple/Testcase_LCD/wrapper.sv Line: 6
+    Warning (13410): Pin "LEDG[6]" is stuck at GND File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/04_imple/Testcase_LCD/wrapper.sv Line: 6
+    Warning (13410): Pin "LCD_EN" is stuck at GND File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/04_imple/Testcase_LCD/wrapper.sv Line: 9
+    Warning (13410): Pin "LCD_ON" is stuck at VCC File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/04_imple/Testcase_LCD/wrapper.sv Line: 11
+    Warning (13410): Pin "LCD_BLON" is stuck at VCC File: /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/04_imple/Testcase_LCD/wrapper.sv Line: 13
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 46 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/04_imple/Testcase_LCD/output_files/wrapper.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 3 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "KEY[1]"
-    Warning (15610): No output dependent on input pin "KEY[2]"
-    Warning (15610): No output dependent on input pin "KEY[3]"
-Info (21057): Implemented 225 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 23 input pins
+Info (21057): Implemented 447 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 19 input pins
     Info (21059): Implemented 38 output pins
-    Info (21061): Implemented 164 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 15 warnings
-    Info: Peak virtual memory: 4608 megabytes
-    Info: Processing ended: Mon Jun 02 11:09:15 2025
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info (21061): Implemented 390 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 18 warnings
+    Info: Peak virtual memory: 507 megabytes
+    Info: Processing ended: Thu Jun  5 13:36:37 2025
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:16
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Document_forme/project_tiny/Viterbi_decoder/04_imple/Testcase2/output_files/wrapper.map.smsg.
+The suppressed messages can be found in /home/noname_lnin/Documents/project_tiny/Viterbi_decoder/04_imple/Testcase_LCD/output_files/wrapper.map.smsg.
 
 
