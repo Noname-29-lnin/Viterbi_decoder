@@ -202,3 +202,36 @@ State = 4
 Nex State = 2
 Decision Bit = 0
 Viterbi Data: 110110
+
+------------------- Input Data -------------------
+Input data: 11011011
+The constraint length K = 3
+The number of input M = 1
+The number of output N = 2
+Enter the Generator Polynomial Matrix (G[n][k]): = [(1 1 1) (1 0 1)]
+
+Input data: 11011011
+
+------------- Ouput Conv Data -------------
+
+Conv Data: 1101010001010001
+
+------------- Viterbi Decoder -------------
+Viterbi data: 1101010001010001
+Viterbi Data: 11011011
+
+------------- Ouput Conv Data -------------
+
+Conv Data: 1101010001010001
+
+------------- Viterbi Decoder -------------
+Viterbi data: 1101110001010001
+Viterbi Data: 11011011
+
+------------- Ouput Conv Data -------------
+
+Conv Data: 1101010001010001
+
+------------- Viterbi Decoder -------------
+Viterbi data: 1101110001000001
+Viterbi Data: 11011011
